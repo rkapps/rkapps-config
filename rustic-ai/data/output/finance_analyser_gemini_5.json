@@ -1,0 +1,183 @@
+{
+    "sections": [
+        {
+            "title": "Market Context: Semiconductor Peer Comparison",
+            "type": "context",
+            "content": "NVIDIA (NVDA) is currently undergoing a period of relative underperformance compared to its primary semiconductor peers. While the broader sector has seen explosive year-to-date growth, NVDA is trading in a consolidation phase, characterized by a more conservative valuation multiple and neutral technical indicators compared to high-momentum peers like AMD and ARM."
+        },
+        {
+            "title": "Valuation and Performance Metrics",
+            "type": "table",
+            "layout": "column",
+            "headers": [
+                "Ticker",
+                "YTD Performance",
+                "Forward P/E",
+                "Market Cap"
+            ],
+            "rows": [
+                [
+                    {
+                        "value": "NVDA"
+                    },
+                    {
+                        "value": "9.86%",
+                        "signal": "neutral"
+                    },
+                    {
+                        "value": "24.21"
+                    },
+                    {
+                        "value": "$5.02T"
+                    }
+                ],
+                [
+                    {
+                        "value": "AMD"
+                    },
+                    {
+                        "value": "139.30%",
+                        "signal": "up"
+                    },
+                    {
+                        "value": "72.46"
+                    },
+                    {
+                        "value": "$892.36B"
+                    }
+                ],
+                [
+                    {
+                        "value": "ARM"
+                    },
+                    {
+                        "value": "283.20%",
+                        "signal": "up"
+                    },
+                    {
+                        "value": "188.68"
+                    },
+                    {
+                        "value": "$440.64B"
+                    }
+                ],
+                [
+                    {
+                        "value": "AVGO"
+                    },
+                    {
+                        "value": "13.75%",
+                        "signal": "up"
+                    },
+                    {
+                        "value": "34.13"
+                    },
+                    {
+                        "value": "$1.79T"
+                    }
+                ],
+                [
+                    {
+                        "value": "TSM"
+                    },
+                    {
+                        "value": "42.92%",
+                        "signal": "up"
+                    },
+                    {
+                        "value": "27.32"
+                    },
+                    {
+                        "value": "$2.21T"
+                    }
+                ]
+            ]
+        },
+        {
+            "title": "Comparative Price Momentum (YTD)",
+            "type": "bar_chart",
+            "data": [
+                {
+                    "name": "ARM",
+                    "values": [
+                        283.2
+                    ]
+                },
+                {
+                    "name": "AMD",
+                    "values": [
+                        139.3
+                    ]
+                },
+                {
+                    "name": "TSM",
+                    "values": [
+                        42.92
+                    ]
+                },
+                {
+                    "name": "AVGO",
+                    "values": [
+                        13.75
+                    ]
+                },
+                {
+                    "name": "NVDA",
+                    "values": [
+                        9.86
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Technical Indicators",
+            "type": "metric_cards",
+            "data": [
+                {
+                    "label": "NVDA RSI (14-Day)",
+                    "value": "45.58",
+                    "status": "Neutral"
+                },
+                {
+                    "label": "ARM RSI (14-Day)",
+                    "value": "63.10",
+                    "status": "Overbought Risk"
+                },
+                {
+                    "label": "AMD RSI (14-Day)",
+                    "value": "53.35",
+                    "status": "Neutral"
+                },
+                {
+                    "label": "AVGO RSI (14-Day)",
+                    "value": "36.57",
+                    "status": "Oversold Risk"
+                }
+            ]
+        },
+        {
+            "title": "Investment Insights",
+            "type": "insight_cards",
+            "data": [
+                {
+                    "number": 1,
+                    "title": "Valuation Disconnect",
+                    "evidence": "NVDA's Forward P/E of 24.21 is significantly lower than AMD (72.46) and ARM (188.68), suggesting a more attractive entry point on a fundamental basis despite lagging price action.",
+                    "source": "Fundamental Snapshot"
+                },
+                {
+                    "number": 2,
+                    "title": "Momentum Lag",
+                    "evidence": "NVDA has returned 9.86% YTD, trailing significantly behind ARM (283.2%) and AMD (139.3%), indicating a shift in short-term capital flows toward peers.",
+                    "source": "Performance Data"
+                },
+                {
+                    "number": 3,
+                    "title": "Consolidation vs. Extension",
+                    "evidence": "NVDA's RSI of 45.58 suggests a neutral consolidation phase, while ARM's RSI of 63.10 indicates it is approaching overbought territory.",
+                    "source": "Technical Indicators"
+                }
+            ]
+        }
+    ]
+}

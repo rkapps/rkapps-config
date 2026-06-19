@@ -1,0 +1,189 @@
+{
+  "agents": [
+   {
+      "id": "chat",
+      "name": "General Assistant",
+      "description": "You are a helpful, knowledgeable assistant.",
+      "preset": "balanced",
+      "execution": "pipeline_agent",
+      "system_prompt": "prompts/agents/chat-system.md",
+      "standalone": true,
+      "tools": [
+      ],
+      "model_assignment": {
+        "default": { "provider": "gemini", "model": "gemini-3-flash-preview" },
+        "allowed": [
+          { "provider": "anthropic", "model": "claude-sonnet-4-6" },
+          { "provider": "anthropic", "model": "claude-opus-4-6" },
+          { "provider": "openai",    "model": "gpt-5.4" },
+          { "provider": "openai",    "model": "gpt-5.4-mini" },
+          { "provider": "local",     "model": "llama3.1:8b" },
+          { "provider": "gemini",    "model": "gemini-3-flash-preview"}
+        ]
+      },
+      "conversation": {
+        "default_strategy": "stateful",
+        "allowed_strategies": [
+          "stateful"
+        ]
+      }
+    },
+    {
+      "id": "finance-analyser",
+      "name": "Finance Analyser Agent",
+      "description": "Analyses stocks, tickers, ML signals and portfolios.",
+      "preset": "thorough",
+      "execution": "pipeline",
+      "system_prompt": "prompts/agents/finance-analyser-system.md",
+      "standalone": true,
+      "tools": [
+      ],
+      "pipeline": {
+        "type": "dynamic",
+        "available_agents": [
+          { "id": "finance-data",              "preset": "precise"  },          
+          { "id": "finance-synthesizer",       "preset": "precise"   }
+        ],
+        "stages": []
+      },
+      "model_assignment": {
+        "default": { "provider": "gemini", "model": "gemini-3-flash-preview" },
+        "allowed": []
+      },
+      "conversation": {
+        "default_strategy": "stateful",
+        "allowed_strategies": [
+          "stateless",
+          "stateful"
+        ]
+      }
+    },
+    {
+      "id": "finance-data",
+      "name": "Finance Data Agent",
+      "description": "Returns finance data stocks, tickers, ML signals and portfolios.",
+      "preset": "thorough",
+      "execution": "pipeline_agent",
+      "system_prompt": "prompts/agents/finance-data-system.md",
+      "standalone": false,
+      "tools": [
+        "ticker_indicator",
+        "ticker_peers",
+        "ticker_price_history",
+        "ticker_screening",
+        "ticker_sentiment",
+        "ticker_snapshot",
+        "ticker_taxonomy"
+      ],
+      "model_assignment": {
+        "default": { "provider": "gemini", "model": "gemini-3-flash-preview" },
+        "allowed": [
+          { "provider": "anthropic", "model": "claude-sonnet-4-6" },
+          { "provider": "anthropic", "model": "claude-opus-4-6" },
+          { "provider": "openai",    "model": "gpt-5.4" },
+          { "provider": "openai",    "model": "gpt-5.4-mini" },
+          { "provider": "local",     "model": "llama3.1:8b" },
+          { "provider": "gemini",    "model": "gemini-3-flash-preview"}
+        ]
+      },
+      "conversation": {
+        "default_strategy": "stateful",
+        "allowed_strategies": [
+          "stateful"
+        ]
+      }
+    },
+    {
+      "id": "finance-synthesizer",
+      "name": "Finance Synthesizer Agent",
+      "description": "Synthesises macro-economic, demographic, market proxy and web research data into actionable consumer intelligence for business owners. Produces clear insights with regional context and strategic recommendations.",
+      "execution": "pipeline_agent",
+      "system_prompt": "prompts/agents/finance-synthesizer-system.md",
+      "standalone": false,
+      "tools": [],
+      "model_assignment": {
+        "default": { "provider": "gemini", "model": "gemini-3-flash-preview" },
+        "allowed": []
+      },
+      "conversation": {
+        "default_strategy": "stateless",
+        "allowed_strategies": [
+          "stateless"
+        ]
+      }
+    },
+    {
+      "id": "economic-data",
+      "name": "Economic Data Agent",
+      "description": "Retrieves and synthesises macro-economic data from government sources — Federal Reserve (FRED), Bureau of Economic Analysis (BEA), and U.S. Census Bureau. Provides national and regional context on consumer spending, income, demographics, housing, and employment. Use for macro-level trend analysis, regional comparisons, and economic benchmarking.",
+      "execution": "pipeline_agent",
+      "system_prompt": "prompts/agents/economic-data-system.md",
+      "standalone": false,
+      "tools": [
+        "fred_series",
+        "bea_data",
+        "census_data"
+      ],
+      "mcp_tools": [],
+      "model_assignment": {
+        "default": { "provider": "gemini", "model": "gemini-3-flash-preview" },
+        "allowed": []
+      },
+      "conversation": {
+        "default_strategy": "stateful",
+        "allowed_strategies": [
+          "stateless",
+          "stateful"
+        ]
+      }
+    },
+    {
+      "id": "web-research",
+      "name": "Web Research Agent",
+      "description": "Retrieves content from specific URLs using web scraping. Use for reading articles, reports, industry publications, and web pages when a specific URL is known. Not for broad searches — only targeted URL retrieval.",
+      "execution": "pipeline_agent",
+      "system_prompt": "prompts/agents/web-research-system.md",
+      "standalone": false,
+      "tools": [],
+      "mcp_tools": [
+        "Apify___apify--rag-web-browser"
+      ],
+      "model_assignment": {
+        "default": { "provider": "gemini", "model": "gemini-3-flash-preview" },
+        "allowed": []
+      },
+      "conversation": {
+        "default_strategy": "stateful",
+        "allowed_strategies": [
+          "stateless",
+          "stateful"
+        ]
+      }
+    },
+    {
+      "id": "web-sentiment",
+      "name": "Web Sentiment Agent",
+      "description": "Retrieves real-time consumer sentiment and trend data using Apify actors — Google Trends, Yelp reviews, Reddit discussions and web news. Use for current consumer buzz, search trends and review sentiment. Results are slow — best used in batch jobs or on-demand requests.",
+      "execution": "pipeline_agent",
+      "system_prompt": "prompts/agents/web-sentiment-system.md",
+      "standalone": false,
+      "tools": [],
+      "mcp_tools": [
+        "Apify___call-actor",
+        "Apify___get-actor-run",
+        "Apify___get-dataset-items"
+      ],
+      "model_assignment": {
+        "default": { "provider": "gemini", "model": "gemini-3-flash-preview" },
+        "allowed": []
+      },
+      "conversation": {
+        "default_strategy": "stateful",
+        "allowed_strategies": [
+          "stateless",
+          "stateful"
+        ]
+      }
+    }
+  ]
+}

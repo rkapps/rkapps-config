@@ -1,0 +1,14 @@
+{
+  "type": "bar_chart",
+  "title": "Historical Performance (%)",
+  "orientation": "vertical",
+  "format": "percent",
+  "groups": ["1 Month", "3 Month", "6 Month", "YTD", "1 Year"],
+  "data": [
+    { "name": "NVDA", "values": [-7.13, 18.64, 13.21, 9.86, 40.86] },
+    { "name": "AMD",  "values": [23.77, 154.55, 140.12, 139.3, 304.2] },
+    { "name": "INTC", "values": [9.3, 176.04, 228.9, 228.18, 463.52] },
+    { "name": "AVGO", "values": [-4.42, 26.79, 15.89, 13.75, 57.63] },
+    { "name": "TSM",  "values": [10.32, 31.55, 50.31, 42.92, 104.6] }
+  ]
+}

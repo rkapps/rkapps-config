@@ -1,0 +1,28 @@
+{
+  "type": "table",
+  "layout": "column",
+  "headers": ["Metric", "NVDA", "AMD", "INTC"],
+  "rows": [
+    [
+      { "value": "Price" },
+      { "value": "$204.65", "signal": "neutral" },
+      { "value": "$512.48", "signal": "up" },
+      { "value": "$121.10", "signal": "down" }
+    ],
+    [
+      { "value": "Analyst" },
+      { "value": "Buy", "signal": "up", "indicator": "dot" },
+      { "value": "Buy", "signal": "up", "indicator": "dot" },
+      { "value": "Hold", "signal": "neutral", "indicator": "dot" }
+    ],
+    [
+      { "value": "YTD Return" },
+      { "value": "+9.86%", "signal": "up", "indicator": "arrow" },
+      { "value": "+139.3%", "signal": "up", "indicator": "arrow" },
+      { "value": "+228.18%", "signal": "up", "indicator": "arrow" }
+    ]
+  ],
+  "totals": [
+    [{ "value": "Total" }, { "value": "$28,904,400" }, { "value": "$32,701,334" }, { "value": "--", "signal": "neutral" }]
+  ]
+}

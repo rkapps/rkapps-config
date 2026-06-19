@@ -1,0 +1,45 @@
+{
+  "report": {
+    "title": "AAPL vs MAGA Stocks: Comparative Buy Analysis",
+    "date": "2026-06-17",
+    "sections": {
+      "valuation_ranking": {
+        "rank_order": ["META", "MSFT", "GOOGL", "AMZN", "AAPL"],
+        "narrative": "Apple is the most expensive stock in this group by almost every valuation measure, and it is not particularly close. At a PE of 36.23 and a PEG of 2.395, you are paying a significant premium for earnings growth that the market is already pricing in. META sits at the opposite end of the spectrum with a PE of 21.83 and a PEG of just 0.867, meaning the market is underpricing its earnings growth relative to all four peers. A PEG below 1.0 is a textbook signal that a stock is cheap relative to its growth rate. MSFT follows at a PEG of 1.215, GOOGL at 1.454, and AMZN at 1.834. AAPL at 2.395 means you are paying roughly 2.75 times more per unit of growth than META. For a business owner thinking about where each dollar of investment capital is working hardest, META and MSFT offer the most earnings growth per dollar spent at current prices."
+      },
+      "upside_ranking": {
+        "rank_order": ["MSFT", "META", "AMZN", "GOOGL", "AAPL"],
+        "narrative": "Analyst consensus price targets tell a stark story for Apple holders. AAPL carries just 5.67% upside to its consensus target of $312.72 from its current price of $295.95. That is not a buy thesis — that is effectively a hold. Every single MAGA stock offers substantially more room to run. MSFT leads with 48.17% upside to $561.39, META offers 45.77% to $827.32, AMZN sits at 31.58% to $312.51, and GOOGL provides 19.03% to $432.83. AAPL would need to underperform all four of its MAGA peers by a significant margin before any of those targets become questionable on a relative basis. The 52-week high for AAPL is $317.40, which means the analyst consensus target of $312.72 does not even ask the stock to make a new high — it asks it to approach its old one."
+      },
+      "momentum_ranking": {
+        "rank_order": ["AAPL", "GOOGL", "AMZN", "META", "MSFT"],
+        "narrative": "This is the one category where Apple holds a genuine advantage. AAPL is the only stock in this group trading above both its 50-day and 200-day moving averages, sitting 3.07% above its SMA50 and 10.62% above its SMA200, and it carries a confirmed Golden Cross — a structurally bullish technical configuration. GOOGL and AMZN also hold Golden Crosses but are trading below or near their SMA50 levels, which weakens the signal. META and MSFT are both in confirmed Death Cross territory, meaning their 50-day average has fallen below the 200-day average — a pattern associated with sustained downward price pressure. MSFT is the most technically compromised of the group, with an RSI of 34.73 approaching oversold territory, a MACD well below its signal line, and a price sitting 16.29% below its SMA200. Every single stock across the group shows a bearish MACD, so no stock here has clean, unambiguous momentum in its favour. AAPL simply has the least broken technical picture, not a strong one."
+      },
+      "sentiment_ranking": {
+        "rank_order": ["GOOGL", "AMZN", "AAPL", "MSFT", "META"],
+        "narrative": "Sentiment across the group is cautiously constructive but nowhere is it clean. GOOGL leads with the highest average sentiment score at 0.3036, supported by bullish analyst coverage and price target upgrades. AMZN follows at 0.2742 on the back of Wall Street reiterating 34% upside calls and infrastructure expansion narratives. AAPL scores 0.2727 — nearly identical to AMZN — but its near-term narrative was dented by an 8% slide following WWDC 2026, suggesting the market punished underwhelming AI progress. MSFT scores 0.2332 with a split between long-term AI bulls and near-term sceptics raising concerns about cash flow sustainability and an active lawsuit challenging its AI narrative. META scores 0.1953 overall but carries an important nuance: its bullish fundamental case is well-supported by Morgan Stanley and others who view it as a long-term AI winner, while the bearish scores are almost entirely driven by short-term price action and volatility rather than deteriorating fundamentals."
+      },
+      "composite_ranking": {
+        "rank_order": ["META", "MSFT", "GOOGL", "AMZN", "AAPL"],
+        "scores": {
+          "META": {"value": 1, "upside": 2, "momentum": 4, "sentiment": 5, "composite": "Strong Buy case on value and upside, weakened by technicals"},
+          "MSFT": {"value": 2, "upside": 1, "momentum": 5, "sentiment": 4, "composite": "Highest upside, approaching oversold, technically distressed but may be near a floor"},
+          "GOOGL": {"value": 3, "upside": 4, "momentum": 2, "sentiment": 1, "composite": "Balanced across all four dimensions, no glaring weakness"},
+          "AMZN": {"value": 4, "upside": 3, "momentum": 3, "sentiment": 2, "composite": "Solid upside, neutral technicals, constructive sentiment"},
+          "AAPL": {"value": 5, "upside": 5, "momentum": 1, "sentiment": 3, "composite": "Expensive, minimal upside, best technicals — a hold, not a buy"}
+        }
+      },
+      "buy_recommendation": {
+        "primary_pick": "META",
+        "secondary_pick": "MSFT",
+        "watchlist": "GOOGL",
+        "hold": "AMZN",
+        "avoid_adding": "AAPL",
+        "narrative": "META is the standout buy when you stack all four dimensions together. Its PEG of 0.867 is the only sub-1.0 reading in the group, meaning you are buying earnings growth at a discount — something that is genuinely rare in this tier of mega-cap technology. The 45.77% analyst upside to $827.32 is not a fringe target; it is the consensus across major institutions including Morgan Stanley. The Death Cross and bearish MACD are real negatives, and the stock has dropped over 13% year-to-date and 18% over the past year, which explains the technical deterioration. But that price weakness is exactly what has created the valuation opportunity. The bearish price signals are a symptom of the discount, not evidence of a broken business. MSFT is the most contrarian pick and carries the most near-term risk, but it also carries the highest analyst upside of the entire group at 48.17% to $561.39. With an RSI of 34.73 approaching oversold, a price sitting 21.3% below its year-to-date starting point, and a Death Cross in place, MSFT is technically distressed — but stocks approaching oversold territory with strong analyst consensus and no fundamental deterioration often represent the most asymmetric setups. GOOGL deserves a place on a watchlist: balanced fundamentals, a 19.03% upside target, the best sentiment score in the group, and a Golden Cross still intact make it the most technically stable of the MAGA names. AMZN is reasonable but not compelling — its upside is real at 31.58%, but a PE of 31.66 and a PEG of 1.834 mean you are not getting a bargain, and its RSI at 43.5 signals drifting momentum rather than an inflection point. AAPL should not be added to at current prices. A 5.67% upside to analyst consensus, a PE of 36.23, a PEG of 2.395, and a post-WWDC selloff that even positive AI coverage could not reverse all point to a stock where the growth expectations are already embedded in the price. The Golden Cross and relatively clean technical picture make it worth holding if already owned, but deploying fresh capital into AAPL at $295.95 when META offers the same broad technology exposure at a fraction of the valuation multiple is difficult to justify on any value-based framework."
+      },
+      "key_caveats": {
+        "narrative": "META and MSFT both carry Death Crosses, which means price momentum is structurally negative in the near term — these picks require a time horizon measured in quarters, not weeks. MSFT faces an active AI-related lawsuit that has not yet resolved, and any adverse outcome could pressure the stock further before the technical picture improves. META's year-to-date loss of 13.87% and one-year loss of 18.16% mean any buyer accepts the possibility of further drawdown before the consensus target is approached. AAPL's clean technical structure means it could continue to outperform on a short-term momentum basis even as the fundamental value case remains weak — if your priority is capital preservation and near-term stability over return potential, AAPL is the safest technical hold in the group. The bearish MACD reading across all five stocks is a macro-level signal, not a company-specific one, and likely reflects broader market conditions applying equal pressure across large-cap technology as a sector."
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "insight_cards",
+  "title": "Optional Title",
+  "data": [
+    {
+      "number": 1,
+      "title": "Insight title",
+      "evidence": "Supporting evidence or detail for this insight.",
+      "source": "Optional source",
+      "signal": "down"
+    },
+    {
+      "number": 2,
+      "title": "Another insight",
+      "evidence": "More supporting detail here."
+    }
+  ]
+}

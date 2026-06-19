@@ -1,0 +1,31 @@
+{
+  "type": "metric_cards",
+  "title": "Key Metrics at a Glance",
+  "data": [
+    {
+      "label": "Current Price",
+      "value": "$121.10",
+      "benchmark": "$93.12 target",
+      "change": "-23.1%",
+      "status": "down"
+    },
+    {
+      "label": "EPS (TTM)",
+      "value": "-$0.60",
+      "benchmark": "Unprofitable",
+      "status": "down"
+    },
+    {
+      "label": "Forward P/E",
+      "value": "147.06x",
+      "benchmark": "30x S&P avg",
+      "status": "down"
+    },
+    {
+      "label": "PEG Ratio",
+      "value": "0.501",
+      "benchmark": "1.0 fair value",
+      "status": "up"
+    }
+  ]
+}

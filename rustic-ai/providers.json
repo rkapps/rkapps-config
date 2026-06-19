@@ -1,0 +1,88 @@
+{
+  "llm_providers": [
+    {
+      "id": "anthropic",
+      "llm": "Anthropic",
+      "enabled": true,
+      "api_key_env": "ANTHROPIC_API_KEY",
+      "default_model": "claude-sonnet-4-6",
+      "models": [
+        {
+          "id": "claude-sonnet-4-6",
+          "input_cost_per_1k": 0.00300,
+          "cached_read_cost_per_1k": 0.00030,
+          "cached_write_cost_per_1k": 0.00375,
+          "output_cost_per_1k": 0.01500
+        },
+        {
+          "id": "claude-haiku-4-5",
+          "input_cost_per_1k": 0.00080,
+          "cached_read_cost_per_1k": 0.00008,
+          "cached_write_cost_per_1k": 0.00100,
+          "output_cost_per_1k": 0.00400
+        }
+      ]
+    },
+    {
+      "id": "openai",
+      "llm": "OpenAI",
+      "enabled": true,
+      "api_key_env": "OPENAI_API_KEY",
+      "default_model": "gpt-4o",
+      "models": [
+        {
+          "id": "gpt-5.4",
+          "input_cost_per_1k": 0.00250,
+          "cached_read_cost_per_1k": 0.00125,
+          "cached_write_cost_per_1k": 0.0,
+          "output_cost_per_1k": 0.01500
+        },
+        {
+          "id": "gpt-5.4-mini",
+          "input_cost_per_1k": 0.00075,
+          "cached_read_cost_per_1k": 0.000375,
+          "cached_write_cost_per_1k": 0.0,
+          "output_cost_per_1k": 0.00450
+        },
+        {
+          "id": "gpt-5.4-nano",
+          "input_cost_per_1k": 0.00010,
+          "cached_read_cost_per_1k": 0.00005,
+          "cached_write_cost_per_1k": 0.0,
+          "output_cost_per_1k": 0.00040
+        }
+      ]
+    },
+    {
+      "id": "gemini",
+      "llm": "Gemini",
+      "enabled": true,
+      "api_key_env": "GEMINI_API_KEY",
+      "default_model": "gemini-3-flash-preview",
+      "models": [
+        {
+          "id": "gemini-3.1-flash-lite-preview",
+          "input_cost_per_1k": 0.000037,
+          "cached_read_cost_per_1k": 0.0000093,
+          "cached_write_cost_per_1k": 0.0,
+          "output_cost_per_1k": 0.000150
+        },
+        {
+          "id": "gemini-3-flash-preview",
+          "input_cost_per_1k": 0.000075,
+          "cached_read_cost_per_1k": 0.0000188,
+          "cached_write_cost_per_1k": 0.0,
+          "output_cost_per_1k": 0.000300
+        },
+        {
+          "id": "gemini-3.5-flash",
+          "input_cost_per_1k": 0.0015,
+          "cached_read_cost_per_1k": 0.0000188,
+          "cached_write_cost_per_1k": 0.0,
+          "output_cost_per_1k": 0.00900
+        }
+      ]
+    }
+  
+  ]
+}
