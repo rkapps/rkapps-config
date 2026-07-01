@@ -1,0 +1,35 @@
+{
+  "type": "consumer_buzz",
+  "title": "Consumer Sentiment",
+  "sentiment": [
+    {
+      "source": "Reddit",
+      "icon": "message-circle",
+      "rating": "4.2",
+      "max_rating": "5",
+      "signal": "up",
+      "theme": "Buzz around new features"
+    },
+    {
+      "source": "Twitter",
+      "icon": "brand-twitter",
+      "rating": "3.1",
+      "max_rating": "5",
+      "signal": "down",
+      "theme": "Complaints about pricing"
+    },
+    {
+      "source": "App Store",
+      "icon": "device-mobile",
+      "rating": "3.8",
+      "max_rating": "5",
+      "signal": "neutral",
+      "theme": "Mixed reviews"
+    }
+  ],
+  "related_searches": [
+    "brand reviews",
+    "competitor comparison",
+    "price drop"
+  ]
+}

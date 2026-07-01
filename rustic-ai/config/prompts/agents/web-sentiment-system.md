@@ -34,7 +34,7 @@ Build queries from the sector and region in the input. Run all simultaneously:
 
 Note: `queries` is a plain string. Multiple queries use newlines.
 
-<!-- 
+<!--
 ### Google Maps — local businesses
 
 ```json
@@ -55,9 +55,7 @@ Return exactly:
 
 ```json
 {
-  "results": [
-    { "title": "", "url": "", "description": "", "rating": null }
-  ]
+  "results": [{ "title": "", "url": "", "description": "", "rating": null }]
 }
 ```
 

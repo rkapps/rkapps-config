@@ -1,0 +1,149 @@
+{
+  "finance-data": {
+    "snapshots": [
+      {
+        "fundamentals": {
+          "analyst_consensus": "Buy",
+          "analyst_target_price": 300.59,
+          "beta": 2.202,
+          "eps": 6.53,
+          "forward_pe": 21.93,
+          "pb_ratio": 23.86,
+          "pe_ratio": 29.48,
+          "peg_ratio": 0.593,
+          "ps_ratio": 18.4,
+          "total_assets": 4663269130000
+        },
+        "industry": "Semiconductors",
+        "name": "NVIDIA Corporation",
+        "performance": {
+          "1M": { "perc": -8.71, "price": 210.8988735097 },
+          "1W": { "perc": -7.73, "price": 208.65 },
+          "1Y": { "perc": 22.21, "price": 157.5438925342 },
+          "2Y": { "perc": 56.1, "price": 123.3404375924 },
+          "3M": { "perc": 10.52, "price": 174.2008313919 },
+          "5Y": { "perc": 865.82, "price": 19.9344321442 },
+          "6M": { "perc": 3.36, "price": 186.2769996503 },
+          "Ytd": { "perc": 3.36, "price": 186.2769996503 }
+        },
+        "price": {
+          "change_amt": 6.43,
+          "change_perc": 3.34,
+          "high": 195.55,
+          "last": 198.96,
+          "low": 191.22,
+          "open": 193.12,
+          "prev": 192.53,
+          "wk52_high": 236.26,
+          "wk52_low": 151.29
+        },
+        "sector": "Technology",
+        "symbol": "NVDA"
+      },
+      {
+        "fundamentals": {
+          "analyst_consensus": "Buy",
+          "analyst_target_price": 500.4,
+          "beta": 2.492,
+          "eps": 3.03,
+          "forward_pe": 74.07,
+          "pb_ratio": 13.19,
+          "pe_ratio": 172.14,
+          "peg_ratio": 1.249,
+          "ps_ratio": 22.71,
+          "total_assets": 850488656000
+        },
+        "industry": "Semiconductors",
+        "name": "Advanced Micro Devices Inc",
+        "price": { "last": 579.11, "symbol": "AMD" },
+        "symbol": "AMD"
+      },
+      {
+        "fundamentals": {
+          "analyst_consensus": "Buy",
+          "analyst_target_price": 478.95,
+          "beta": 1.25,
+          "eps": 11.54,
+          "pe_ratio": 37.47,
+          "ps_ratio": 0.546,
+          "total_assets": 2242372174000
+        },
+        "industry": "Semiconductors",
+        "name": "Taiwan Semiconductor Manufacturing Company Limited",
+        "price": { "last": 471.45, "symbol": "TSM" },
+        "symbol": "TSM"
+      },
+      {
+        "fundamentals": {
+          "analyst_consensus": "Buy",
+          "analyst_target_price": 523.73,
+          "beta": 1.433,
+          "eps": 6.02,
+          "pe_ratio": 60.63,
+          "ps_ratio": 23.01,
+          "total_assets": 1736611856000
+        },
+        "industry": "Semiconductors",
+        "name": "Broadcom Ltd",
+        "price": { "last": 376.765, "symbol": "AVGO" },
+        "symbol": "AVGO"
+      }
+    ],
+    "indicators": [
+      {
+        "bb_lower": 191.56,
+        "bb_upper": 223.97,
+        "macd": -3.7,
+        "macd_signal": -1.79,
+        "rsi_14": 29.17,
+        "sma_200": 190.64,
+        "sma_50": 210.09,
+        "symbol": "NVDA"
+      },
+      {
+        "bb_lower": 460.88,
+        "bb_upper": 563.91,
+        "macd": 24.87,
+        "rsi_14": 52.41,
+        "symbol": "AMD"
+      },
+      {
+        "bb_lower": 407.1,
+        "bb_upper": 464.54,
+        "macd": 9.31,
+        "rsi_14": 60.16,
+        "symbol": "TSM"
+      },
+      {
+        "bb_lower": 335.01,
+        "bb_upper": 472.38,
+        "macd": -10.17,
+        "rsi_14": 34.5,
+        "symbol": "AVGO"
+      }
+    ],
+    "sentiment": [
+      {
+        "label": "Bullish",
+        "score": 0.530521,
+        "source": "Yahoo Finance",
+        "symbol": "NVDA",
+        "title": "Nova, Penguin Solutions, and Impinj Stocks Trade Up, What You Need To Know"
+      },
+      {
+        "label": "Somewhat-Bullish",
+        "score": 0.345004,
+        "source": "Simply Wall Street",
+        "symbol": "NVDA",
+        "title": "How Investors May Respond To Allegro MicroSystems (ALGM) Tapping Nvidia’s Extended AI Infrastructure Roadmap"
+      },
+      {
+        "label": "Neutral",
+        "score": 0.105361,
+        "source": "The Globe and Mail",
+        "symbol": "AVGO",
+        "title": "The Zacks Analyst Blog Highlights NVIDIA, Intel, AMD and Broadcom"
+      }
+    ]
+  }
+}

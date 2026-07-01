@@ -19,51 +19,51 @@ Federal Reserve time series data.
 
 Consumer Spending:
 
-- DCAFRC1A027NBEA  → Clothing and footwear (annual)
-- DFFFRC1A027NBEA  → Furniture and furnishings (annual)
-- DFDHRC1Q027SBEA  → Furnishings and durable household equipment (quarterly)
-- DREQRC1Q027SBEA  → Recreational goods and vehicles (quarterly)
-- DSERRE1Q027SBEA  → Food services and accommodation (quarterly)
-- RSFSXMV          → Building materials retail (monthly)
-- MRTSSM44X72USS   → Clothing stores retail sales (monthly)
-- MRTSSM722USS     → Food services retail sales (monthly)
+- DCAFRC1A027NBEA → Clothing and footwear (annual)
+- DFFFRC1A027NBEA → Furniture and furnishings (annual)
+- DFDHRC1Q027SBEA → Furnishings and durable household equipment (quarterly)
+- DREQRC1Q027SBEA → Recreational goods and vehicles (quarterly)
+- DSERRE1Q027SBEA → Food services and accommodation (quarterly)
+- RSFSXMV → Building materials retail (monthly)
+- MRTSSM44X72USS → Clothing stores retail sales (monthly)
+- MRTSSM722USS → Food services retail sales (monthly)
 
 Consumer Health:
 
-- CPIAUCSL   → Consumer Price Index (monthly)
-- UMCSENT    → Consumer sentiment (monthly)
-- UNRATE     → Unemployment rate (monthly)
-- DSPIC96    → Real disposable personal income (monthly)
-- PCE        → Total personal consumption (monthly)
+- CPIAUCSL → Consumer Price Index (monthly)
+- UMCSENT → Consumer sentiment (monthly)
+- UNRATE → Unemployment rate (monthly)
+- DSPIC96 → Real disposable personal income (monthly)
+- PCE → Total personal consumption (monthly)
 
 Housing:
 
-- HOUST      → Housing starts (monthly)
-- PERMIT     → Building permits (monthly)
+- HOUST → Housing starts (monthly)
+- PERMIT → Building permits (monthly)
 - RHORUSQ156N → Homeownership rate (quarterly)
 
 ## fred_series Frequency Reference
 
 Always pass the correct frequency for each series:
 
-| Series | Frequency |
-|--------|-----------|
-| DCAFRC1A027NBEA  | a |
-| DFFFRC1A027NBEA  | a |
-| DFDHRC1Q027SBEA  | q |
-| DREQRC1Q027SBEA  | q |
-| DSERRE1Q027SBEA  | q |
-| RSFSXMV          | m |
-| MRTSSM44X72USS   | m |
-| MRTSSM722USS     | m |
-| CPIAUCSL         | m |
-| UMCSENT          | m |
-| UNRATE           | m |
-| DSPIC96          | m |
-| PCE              | m |
-| HOUST            | m |
-| PERMIT           | m |
-| RHORUSQ156N      | q |
+| Series          | Frequency |
+| --------------- | --------- |
+| DCAFRC1A027NBEA | a         |
+| DFFFRC1A027NBEA | a         |
+| DFDHRC1Q027SBEA | q         |
+| DREQRC1Q027SBEA | q         |
+| DSERRE1Q027SBEA | q         |
+| RSFSXMV         | m         |
+| MRTSSM44X72USS  | m         |
+| MRTSSM722USS    | m         |
+| CPIAUCSL        | m         |
+| UMCSENT         | m         |
+| UNRATE          | m         |
+| DSPIC96         | m         |
+| PCE             | m         |
+| HOUST           | m         |
+| PERMIT          | m         |
+| RHORUSQ156N     | q         |
 
 ### bea_data
 
@@ -98,7 +98,7 @@ Key variables:
 - B17001_002E → Below poverty level
 - B23025_005E → Unemployed
 
-geo: state:* | county:* | us:1
+geo: state:_ | county:_ | us:1
 dataset: acs1 (1-year) | acs5 (5-year, includes rural areas)
 year: 2023 is latest available
 
@@ -157,7 +157,7 @@ Make exactly ONE turn of tool calls. All calls in that turn simultaneously.
 
 **Multiple states:**
 
-- census_data(variables=[B19013_001E, B25077_001E, B25003_002E], geo=state:*, dataset=acs5, year=2023)
+- census_data(variables=[B19013_001E, B25077_001E, B25003_002E], geo=state:\*, dataset=acs5, year=2023)
 - bea_data(dataset=regional, table_name=CAINC1, line_code=1, geo_fips=STATE, year=LAST5)
 
 **National only:**
@@ -173,10 +173,10 @@ After the single tool turn completes — generate the JSON output.
 
 Respond only with raw JSON:
 {
-  "observation_date": "2026-05",
-  "consumer_spending": { ... },
-  "consumer_health": { ... },
-  "housing": { ... },
-  "regional": { ... },
-  "demographics": { ... }
+"observation_date": "2026-05",
+"consumer_spending": { ... },
+"consumer_health": { ... },
+"housing": { ... },
+"regional": { ... },
+"demographics": { ... }
 }
