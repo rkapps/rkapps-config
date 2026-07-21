@@ -1,0 +1,166 @@
+{
+  "sections": [
+    {
+      "title": "Furniture Industry Macro Environment",
+      "type": "context",
+      "group": "context",
+      "content": "The US furniture and furnishings sector is navigating a complex macro environment in mid-2026. Furniture and furnishings spending reached $293.9B in 2025, up 4.3% YoY, while furnishings and durable household equipment spending hit $521.9B in Q1 2026. However, consumer sentiment has collapsed to 44.8 in May 2026 from 60.7 in June 2025, and housing starts dropped sharply to 1,177K in May 2026 from 1,392K in April. Despite affordability concerns dominating social discourse, retail sales grew 0.2% MoM in June 2026, with furniture stores flat at 0.0% MoM. The K-shaped economy is evident—upper-income consumers continue spending while middle-class buyers pull back on big-ticket items."
+    },
+    {
+      "title": "Key Furniture Market Metrics",
+      "type": "metric_cards",
+      "group": "metrics",
+      "data": [
+        { "label": "Furniture Spending", "value": "$293.9B", "benchmark": "2025 annual", "change": "+4.3%", "status": "up" },
+        { "label": "Consumer Sentiment", "value": "44.8", "benchmark": "May 2026", "change": "-26.2%", "status": "down" },
+        { "label": "CPI", "value": "333.98", "benchmark": "May 2026", "change": "+4.2%", "status": "up" },
+        { "label": "Housing Starts", "value": "1,177K", "benchmark": "May 2026", "change": "-15.4%", "status": "down" },
+        { "label": "Building Materials Sales", "value": "$623.4B", "benchmark": "May 2026", "change": "+4.4%", "status": "up" },
+        { "label": "Unemployment", "value": "4.2%", "benchmark": "Jun 2026", "change": "+0.1pp", "status": "neutral" }
+      ]
+    },
+    {
+      "title": "Consumer Price Index Trend (12-Month)",
+      "type": "bar_chart",
+      "group": "national",
+      "orientation": "vertical",
+      "format": "number",
+      "groups": ["May25", "Jun25", "Jul25", "Aug25", "Sep25", "Nov25", "Dec25", "Jan26", "Feb26", "Mar26", "Apr26", "May26"],
+      "data": [{ "name": "CPI", "values": [320.62, 321.435, 322.169, 323.291, 324.245, 325.063, 326.031, 326.588, 327.46, 330.293, 332.407, 333.979] }]
+    },
+    {
+      "title": "Consumer Sentiment Trend (12-Month)",
+      "type": "bar_chart",
+      "group": "national",
+      "orientation": "vertical",
+      "format": "number",
+      "groups": ["May25", "Jun25", "Jul25", "Aug25", "Sep25", "Nov25", "Dec25", "Jan26", "Feb26", "Mar26", "Apr26", "May26"],
+      "data": [{ "name": "UMCSENT", "values": [60.7, 61.7, 58.2, 55.1, 53.6, 51.0, 52.9, 56.4, 56.6, 53.3, 49.8, 44.8] }]
+    },
+    {
+      "title": "Housing Starts Trend (12-Month)",
+      "type": "bar_chart",
+      "group": "national",
+      "orientation": "vertical",
+      "format": "number",
+      "groups": ["May25", "Jun25", "Jul25", "Aug25", "Sep25", "Nov25", "Dec25", "Jan26", "Feb26", "Mar26", "Apr26", "May26"],
+      "data": [{ "name": "HOUST", "values": [1379, 1432, 1291, 1319, 1273, 1319, 1378, 1385, 1346, 1522, 1392, 1177] }]
+    },
+    {
+      "title": "Building Materials Retail Sales Trend",
+      "type": "bar_chart",
+      "group": "national",
+      "orientation": "vertical",
+      "format": "number",
+      "groups": ["May25", "Jun25", "Jul25", "Aug25", "Sep25", "Nov25", "Dec25", "Jan26", "Feb26", "Mar26", "Apr26", "May26"],
+      "data": [{ "name": "RSFSXMV", "values": [586272, 588742, 592134, 592652, 593611, 596008, 596072, 596884, 602258, 614158, 618378, 623444] }]
+    },
+    {
+      "title": "PCE Breakdown by Category (BEA NIPA)",
+      "type": "table",
+      "group": "national",
+      "layout": "column",
+      "headers": ["Category", "2022", "2023", "2024", "2025"],
+      "rows": [
+        [{ "value": "Total PCE" }, { "value": "$17.69T" }, { "value": "$18.83T" }, { "value": "$19.90T" }, { "value": "$20.95T" }],
+        [{ "value": "Goods" }, { "value": "$5.94T" }, { "value": "$6.12T" }, { "value": "$6.26T" }, { "value": "$6.51T" }],
+        [{ "value": "Durable Goods" }, { "value": "$2.08T" }, { "value": "$2.14T" }, { "value": "$2.18T" }, { "value": "$2.27T" }],
+        [{ "value": "Furnishings & Durable Equipment" }, { "value": "$476.1B" }, { "value": "$479.9B" }, { "value": "$490.0B" }, { "value": "$507.3B" }],
+        [{ "value": "Housing" }, { "value": "$2.68T" }, { "value": "$2.94T" }, { "value": "$3.15T" }, { "value": "$3.31T" }],
+        [{ "value": "PCE ex Food/Energy" }, { "value": "$15.47T" }, { "value": "$16.63T" }, { "value": "$17.66T" }, { "value": "$18.66T" }]
+      ],
+      "totals": [[{ "value": "Furnishings YoY Growth" }, { "value": "—" }, { "value": "+0.8%" }, { "value": "+2.1%" }, { "value": "+3.5%" }]]
+    },
+    {
+      "title": "US Demographics (Census ACS 2023)",
+      "type": "table",
+      "group": "national",
+      "layout": "column",
+      "headers": ["Metric", "Value"],
+      "rows": [
+        [{ "value": "Total Population" }, { "value": "332,387,540" }],
+        [{ "value": "Median Age" }, { "value": "38.7" }],
+        [{ "value": "Median Income" }, { "value": "$78,538" }],
+        [{ "value": "Median Home Value" }, { "value": "$303,400" }],
+        [{ "value": "Owner-Occupied Units" }, { "value": "82,892,037" }],
+        [{ "value": "Renter-Occupied Units" }, { "value": "44,590,828" }],
+        [{ "value": "Population in Poverty" }, { "value": "40,390,045" }]
+      ]
+    },
+    {
+      "title": "BEA Regional Earnings (US Total)",
+      "type": "table",
+      "group": "regional",
+      "layout": "column",
+      "headers": ["Metric", "2022", "2023", "2024"],
+      "rows": [
+        [{ "value": "Personal Income" }, { "value": "$22.14T" }, { "value": "$23.58T" }, { "value": "$24.90T" }],
+        [{ "value": "GDP" }, { "value": "$22.08T" }, { "value": "$22.72T" }, { "value": "$23.36T" }],
+        [{ "value": "Retail Trade Earnings" }, { "value": "$869.9B" }, { "value": "$912.8B" }, { "value": "$939.1B" }],
+        [{ "value": "Building Material Dealers" }, { "value": "$76.0B" }, { "value": "$79.9B" }, { "value": "$82.0B" }],
+        [{ "value": "Furniture Manufacturing" }, { "value": "$26.3B" }, { "value": "$26.0B" }, { "value": "$26.6B" }]
+      ]
+    },
+    {
+      "title": "Consumer Sentiment Signals",
+      "type": "consumer_buzz",
+      "group": "consumer",
+      "sentiment": [
+        { "source": "Reddit r/MiddleClassFinance", "icon": "message-circle", "rating": "2.1", "max_rating": "5", "signal": "down", "theme": "95% report affordability crisis" },
+        { "source": "Reddit r/Bogleheads", "icon": "message-circle", "rating": "2.4", "max_rating": "5", "signal": "down", "theme": "Costs outpace official inflation" },
+        { "source": "Reddit r/Economics", "icon": "message-circle", "rating": "3.0", "max_rating": "5", "signal": "neutral", "theme": "Furnishings spending growing" },
+        { "source": "Reddit r/NoStupidQuestions", "icon": "message-circle", "rating": "2.0", "max_rating": "5", "signal": "down", "theme": "Delaying big-ticket purchases" }
+      ],
+      "related_searches": ["affordable furniture", "furniture financing", "used furniture", "DIY home decor", "furniture sales"]
+    },
+    {
+      "title": "Strategic Insights for Furniture Retailers",
+      "type": "insight_cards",
+      "group": "insights",
+      "data": [
+        {
+          "number": "1",
+          "title": "K-Shaped Spending Requires Tiered Strategy",
+          "evidence": "Furnishings spending grew 3.5% to $507.3B in 2025, but consumer sentiment collapsed to 44.8 from 60.7 a year earlier. Reddit discussions show upper-income consumers continuing to spend while middle-class buyers delay purchases.",
+          "source": "BEA NIPA T20305, FRED UMCSENT, Reddit r/MiddleClassFinance"
+        },
+        {
+          "number": "2",
+          "title": "Housing Slowdown Threatens Furniture Demand",
+          "evidence": "Housing starts dropped 15.4% MoM to 1,177K in May 2026 from 1,392K in April. New home purchases drive furniture demand, and the sharp decline signals weakening pipeline for Q3-Q4 2026.",
+          "source": "FRED HOUST"
+        },
+        {
+          "number": "3",
+          "title": "Building Materials Resilience Shows Renovation Demand",
+          "evidence": "Building materials retail sales rose 4.4% to $623.4B in May 2026 from $596.9B in January. Consumers are investing in existing homes rather than buying new, creating opportunity for furniture retailers to bundle with renovation purchases.",
+          "source": "FRED RSFSXMV"
+        },
+        {
+          "number": "4",
+          "title": "E-commerce Shift Accelerates in Furniture",
+          "evidence": "US e-commerce market projected to grow at 10.53% CAGR through 2031, reaching $2.28T. Furniture retailers must invest in digital channels as in-store traffic faces affordability headwinds.",
+          "source": "Mordor Intelligence US E-commerce Report"
+        },
+        {
+          "number": "5",
+          "title": "Inflation Pressures Margin and Pricing Power",
+          "evidence": "CPI rose to 333.98 in May 2026, up 4.2% YoY. Furniture stores posted 0.0% MoM sales growth in June 2026, indicating consumers are resistant to price increases despite input cost pressures.",
+          "source": "FRED CPIAUCSL, Trading Economics Retail Sales"
+        }
+      ]
+    },
+    {
+      "title": "Suggested Follow-Up Queries",
+      "type": "suggested_prompts",
+      "group": "prompts",
+      "data": [
+        "Show furniture spending trends by US region for 2024-2026",
+        "Compare furniture store sales vs e-commerce furniture sales growth",
+        "Analyze housing starts impact on furniture demand by metro area",
+        "Track consumer sentiment correlation with furniture purchases",
+        "Show building materials and furniture cross-category purchase patterns"
+      ]
+    }
+  ]
+}

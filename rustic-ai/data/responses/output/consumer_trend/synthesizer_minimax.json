@@ -1,0 +1,100 @@
+{
+  "sections": [
+    {
+      "type": "context",
+      "title": "Macro Environment for 2026 Discretionary Spending",
+      "content": "The U.S. consumer entered mid-2026 under a measurable cost-of-living squeeze. Headline CPI has reaccelerated to 333.979 by May 2026, up from 320.62 twelve months earlier — a roughly 4.2% year-over-year jump that outpaces wage growth in real terms. The Federal Reserve's preferred poverty and saving indicators point in the same direction: Real Disposable Personal Income has slipped from $18,134.6 in January 2026 to $17,983.8 by May 2026, and the personal saving rate has compressed from 5.4% in 2024 to 4.6% in 2025. Households are absorbing higher prices by drawing down savings rather than cutting back visibly — yet, behind the topline, Consumer Sentiment has fallen from 61.7 in July 2025 to 44.8 in May 2026, and single-family Housing Starts have collapsed to 1,177K in May 2026 from a March peak of 1,522K."
+    },
+    {
+      "type": "metric_cards",
+      "title": "Inflation Pulse — May 2026",
+      "data": [
+        { "label": "CPI (May 2026)", "value": "333.98", "benchmark": "vs 320.62 May 2025", "change": "+4.17%", "status": "up" },
+        { "label": "Consumer Sentiment", "value": "44.8", "benchmark": "vs 61.7 Jul 2025", "change": "-27.4%", "status": "down" },
+        { "label": "Real Disposable Income", "value": "$17,983.8", "benchmark": "vs $18,134.6 Jan 2026", "change": "-0.83%", "status": "down" },
+        { "label": "Unemployment Rate", "value": "4.2%", "benchmark": "vs 4.1% Jun 2025", "change": "+0.1 pp", "status": "up" },
+        { "label": "Personal Saving Rate", "value": "4.6%", "benchmark": "vs 5.4% in 2024", "change": "-0.8 pp", "status": "down" }
+      ]
+    },
+    {
+      "type": "bar_chart",
+      "title": "CPI Monthly Trajectory (Jul 2025 – May 2026)",
+      "orientation": "vertical",
+      "format": "number",
+      "data": [
+        {
+          "name": "CPI Level",
+          "values": [
+            { "label": "Jul 2025", "value": 322.169 },
+            { "label": "Aug 2025", "value": 323.291 },
+            { "label": "Sep 2025", "value": 324.245 },
+            { "label": "Oct 2025", "value": 325.063 },
+            { "label": "Nov 2025", "value": 325.063 },
+            { "label": "Dec 2025", "value": 326.031 },
+            { "label": "Jan 2026", "value": 326.588 },
+            { "label": "Feb 2026", "value": 327.46 },
+            { "label": "Mar 2026", "value": 330.293 },
+            { "label": "Apr 2026", "value": 332.407 },
+            { "label": "May 2026", "value": 333.979 }
+          ]
+        }
+      ],
+      "groups": ["Headline CPI"]
+    },
+    {
+      "type": "table",
+      "title": "Spending Category Trajectory — Furniture-adjacent Sectors",
+      "layout": "column",
+      "headers": ["Spending Category", "2022", "2023", "2024", "2025", "Q1 2026"],
+      "rows": [
+        [{ "value": "Furnishings & Durable Household Equipment" }, { "value": "$476,136M" }, { "value": "$479,861M", "signal": "up" }, { "value": "$490,018M", "signal": "up" }, { "value": "$507,340M", "signal": "up" }, { "value": "$521,899M", "signal": "up" }],
+        [{ "value": "Durable Goods (Total)" }, { "value": "$2,077,929M" }, { "value": "$2,141,043M", "signal": "up" }, { "value": "$2,178,085M", "signal": "up" }, { "value": "$2,265,413M", "signal": "up" }, { "value": "N/A", "signal": "neutral" }],
+        [{ "value": "Housing (PCE)" }, { "value": "$2,679,332M" }, { "value": "$2,940,731M", "signal": "up" }, { "value": "$3,146,981M", "signal": "up" }, { "value": "$3,310,951M", "signal": "up" }, { "value": "N/A", "signal": "neutral" }],
+        [{ "value": "Total PCE" }, { "value": "$17,690,013M" }, { "value": "$18,833,150M", "signal": "up" }, { "value": "$19,896,009M", "signal": "up" }, { "value": "$20,954,857M", "signal": "up" }, { "value": "N/A", "signal": "neutral" }],
+        [{ "value": "Building Materials Retail Sales" }, { "value": "N/A" }, { "value": "N/A", "signal": "neutral" }, { "value": "N/A", "signal": "neutral" }, { "value": "$586,272M", "signal": "up" }, { "value": "$596,884M", "signal": "up" }]
+      ],
+      "totals": [[{ "value": "Real Disposable Income ($B chained)" }, { "value": "N/A" }, { "value": "4.0%", "signal": "up" }, { "value": "2.9%", "signal": "up" }, { "value": "1.7%", "signal": "down" }, { "value": "N/A", "signal": "neutral" }]]
+    },
+    {
+      "type": "context",
+      "title": "Industry Implications — Furniture, Apparel & Electronics",
+      "content": "Furniture is the only discretionary category with rich direct instrumentation in the macro feed, but the cross-industry signal is consistent and worth reading. Furnishings spend has continued climbing to $521.9B in Q1 2026 — still up 3.7% year-over-year against Q1 2025 ($503.1B) — yet Building Materials retail sales growth has flatlined between $596B and $623B (May 2026), suggesting that renovation-driven furniture demand is cooling as the 30-year mortgage lock-in effect thaws. Apparel and Electronics are not separately broken out in the BEA PCE table, but both fall under 'Durable Goods' (electronics) and 'Non-durable Goods X food and energy' (apparel). Both climbed 4.0% in 2025 before inflation began biting into 2026 income. The combination of falling real income, falling savings rate, and collapsing sentiment implies the next two quarters will see retailers compete aggressively for a smaller pool of discretionary dollars."
+    },
+    {
+      "type": "insight_cards",
+      "title": "Five Strategic Findings for Retail Operators",
+      "data": [
+        {
+          "number": "1",
+          "title": "Inflation has re-accelerated, not normalised",
+          "evidence": "CPI rose from 320.62 in May 2025 to 333.98 in May 2026, a +4.17% YoY move — above the Fed's 2% target and accelerating month-over-month since February 2026 (+0.27% → +0.47% in May).",
+          "source": "FRED CPIAUCSL"
+        },
+        {
+          "number": "2",
+          "title": "The consumer is discounting, not delisting",
+          "evidence": "Personal Saving Rate has fallen from 5.4% (2024) to 4.6% (2025), yet total PCE kept climbing to $20.95T — households are choosing to spend and drawing down safety buffers rather than deferring purchases.",
+          "source": "BEA Table T20100"
+        },
+        { "number": "3", "title": "Sentiment collapse signals demand risk for Q3 2026", "evidence": "UMCSENT fell from 61.7 (July 2025) to 44.8 (May 2026), a 27.4% drop over ten months — historically a leading indicator of discretionary pullback inside two quarters.", "source": "FRED UMCSENT" },
+        {
+          "number": "4",
+          "title": "Furnishings is decoupling from housing",
+          "evidence": "Furnishings spending grew 3.7% YoY to $521.9B in Q1 2026 even as Housing Starts fell to 1,177K in May 2026 (vs 1,522K peak). The renovation pipeline is softening, but replacement demand and small-ticket furniture continue to carry the category.",
+          "source": "FRED HOUST + BEA T20305"
+        },
+        {
+          "number": "5",
+          "title": "Electronics and Apparel face the steepest 2026 squeeze",
+          "evidence": "Both Durable Goods ($2.27T in 2025, +4.0%) and the broader Non-durable basket are growing nominally but losing ground against real disposable income (-0.83% Jan→May 2026). For non-essential categories, the next 90 days will determine whether price hikes stick or volume breaks.",
+          "source": "FRED DSPIC96 + BEA T20305"
+        }
+      ]
+    },
+    {
+      "type": "context",
+      "title": "Strategic Synthesis",
+      "content": "Three industries, one cost-of-living reality: Furniture demand remains resilient on the back of replacement cycles and stagnant new-home inventory, but the underlying consumer is weakening in real terms. Apparel and Electronics retailers face the highest exposure to discretionary pullback because both categories compete for the same monthly discretionary dollar that rising shelter, food, and credit costs are already absorbing. The data is furniture-weighted; if Apparel or Electronics-specific inputs (e.g., Census MRTS series) become available, the same framework can be re-run with category-level precision."
+    }
+  ]
+}

@@ -38,11 +38,44 @@ Respond with a single JSON object only. No prose outside the JSON. No markdown c
   "sections": [
     {
       "title": "Section Title",
-      "type": "Section Type"
+      "type": "Section Type",
+      "group": ""
     }
   ]
 }
 ```
+
+## Layout Groups
+
+Add a `group` field to every section using exactly these group names:
+
+| Group        | Sections                                    | Layout                                       |
+| ------------ | ------------------------------------------- | -------------------------------------------- |
+| `"context"`  | context                                     | full width                                   |
+| `"metrics"`  | metric_cards                                | full width                                   |
+| `"national"` | fred bar charts + bea tables + census table | sections with same group render side by side |
+| `"regional"` | bea regional charts + tables                | sections with same group render side by side |
+| `"consumer"` | consumer_buzz + sentiment sections          | side by side                                 |
+| `"insights"` | insight_cards                               | full width                                   |
+| `"prompts"`  | suggested_prompts                           | full width                                   |
+
+### Layout Rules
+
+- Never put more than 2 sections in the same group
+- `"context"`, `"metrics"`, `"insights"`, `"prompts"` — always unique, always full width
+- `"national"` — group fred, bea nipa, census sections in pairs (2 per row max)
+- `"regional"` — group bea regional sections in pairs (2 per row max)
+- `"consumer"` — consumer_buzz and sentiment side by side
+- Never invent new group names — only use the groups listed above
+- Always add `"group"` field to every section — never omit it
+
+## Chart Type Selection
+
+- `bar_chart` — comparing discrete categories or groups
+  e.g. revenue by region, performance by ticker, PCE by category
+
+- `line_chart` — trends over time, continuous series
+  e.g. CPI over 12 months, sentiment trend, housing starts over time
 
 ## Critical Field Names
 
@@ -51,12 +84,15 @@ Respond with a single JSON object only. No prose outside the JSON. No markdown c
 | context       | `type`, `title` and `content`                                 |
 | metric_cards  | `type`, `title` and `data`                                    |
 | bar_chart     | `type`, `title`, `orientation`, `format`, `data` and `groups` |
+| line_chart    | `type`, `title`, `orientation`, `format`, `data` and `groups` |
 | table         | `type`, `title`, `layout`, `headers` and `rows` and `totals`  |
 | insight_cards | `type`, `title` and `data`                                    |
 | consumer_buzz | `type`, `title`, `sentiment` and `related_searches`           |
+| prompts       | `type`, `title` and `suggested_prompts`                       |
 
 metric_cards data items: `label`, `value`, `status` (and optional `benchmark`)
-bar_char data items: `name` and `values`
+bar_chart data items: `name` and `values`
+line_chart data items: `name` and `values`
 table rows: array of cell objects with `value` and optional `signal`
 insight_cards data items: `number`, `title`, `evidence`, `source`
 signal values: `"up"`, `"down"`, `"neutral"` only
@@ -100,40 +136,15 @@ Never put context or explanation in `benchmark` — that belongs in `context` or
 ```json
 {
   "type": "table",
-  "title": "Regional Summary",
   "layout": "column",
-  "headers": ["Region", "Avg Traffic", "Avg Sale"],
+  "group": "market"
+  "headers": ["Metric", "NVDA", "AMD", "INTC"],
   "rows": [
-    [
-      { "value": "Southwest" },
-      { "value": "$204.65" },
-      { "value": "$512.48" },
-      { "value": "$121.10" }
-    ],
-    [
-      { "value": "West" },
-      { "value": "31.76x" },
-      { "value": "181.81x" },
-      { "value": "N/A", "signal": "down" }
-    ]
-  ]
-}
-```
-
-### table totals row
-
-Use `totals` for summary/aggregate rows rendered differently from data rows (bold, border-top, different background):
-
-```json
-{
-  "totals": [
-    [
-      { "value": "Total" },
-      { "value": "$28,904,400" },
-      { "value": "$32,701,334" },
-      { "value": "--" }
-    ]
-  ]
+    [{ "value": "Price" }, { "value": "$204.65", "signal": "neutral" }, { "value": "$512.48", "signal": "up" }, { "value": "$121.10", "signal": "down" }],
+    [{ "value": "Analyst" }, { "value": "Buy", "signal": "up", "indicator": "dot" }, { "value": "Buy", "signal": "up", "indicator": "dot" }, { "value": "Hold", "signal": "neutral", "indicator": "dot" }],
+    [{ "value": "YTD Return" }, { "value": "+9.86%", "signal": "up", "indicator": "arrow" }, { "value": "+139.3%", "signal": "up", "indicator": "arrow" }, { "value": "+228.18%", "signal": "up", "indicator": "arrow" }]
+  ],
+  "totals": [[{ "value": "Total" }, { "value": "$28,904,400" }, { "value": "$32,701,334" }, { "value": "--", "signal": "neutral" }]]
 }
 ```
 
@@ -168,6 +179,44 @@ Use `"horizontal"` when:
 - Values span a very wide range (e.g. 9% to 463%)
 - Comparing 5+ items
 
+Example-
+
+```json
+{
+  "type": "bar_chart",
+  "title": "Historical Performance (%)",
+  "group": "Performance"
+  "orientation": "vertical",
+  "format": "percent",
+  "groups": ["1 Month", "3 Month", "6 Month", "YTD", "1 Year"],
+  "data": [
+    { "name": "NVDA", "values": [-7.13, 18.64, 13.21, 9.86, 40.86] },
+    { "name": "AMD", "values": [23.77, 154.55, 140.12, 139.3, 304.2] },
+    { "name": "INTC", "values": [9.3, 176.04, 228.9, 228.18, 463.52] },
+    { "name": "AVGO", "values": [-4.42, 26.79, 15.89, 13.75, 57.63] },
+    { "name": "TSM", "values": [10.32, 31.55, 50.31, 42.92, 104.6] }
+  ]
+}
+```
+
+### line_chart
+
+- `format: "percent"` — append % to values
+- `format: "currency"` — format as dollars
+- `format: "number"` — raw number (default)
+
+Example
+
+```json
+{
+  "type": "line_chart",
+  "title": "Consumer Price Index Trend (12-Month)",
+  "format": "number",
+  "groups": ["May25", "Jun25", "Jul25", "Aug25"],
+  "data": [{ "name": "CPI", "values": [320.6, 321.4, 322.2, 323.3] }]
+}
+```
+
 ### consumer_buzz fields
 
 | Field        | Required | Description                                                                        |
@@ -182,6 +231,41 @@ Use `"horizontal"` when:
 
 `related_searches` — array of short search terms, max 5 items.
 
+```json
+{
+  "type": "consumer_buzz",
+  "title": "Consumer Sentiment",
+  "group": "Trends"
+  "sentiment": [
+    {
+      "source": "Reddit",
+      "icon": "message-circle",
+      "rating": "4.2",
+      "max_rating": "5",
+      "signal": "up",
+      "theme": "Buzz around new features"
+    },
+    {
+      "source": "Twitter",
+      "icon": "brand-twitter",
+      "rating": "3.1",
+      "max_rating": "5",
+      "signal": "down",
+      "theme": "Complaints about pricing"
+    },
+    {
+      "source": "App Store",
+      "icon": "device-mobile",
+      "rating": "3.8",
+      "max_rating": "5",
+      "signal": "neutral",
+      "theme": "Mixed reviews"
+    }
+  ],
+  "related_searches": ["brand reviews", "competitor comparison", "price drop"]
+}
+```
+
 ### insight_cards
 
 Numbered insights with evidence and source. Always include as the final section.
@@ -192,3 +276,16 @@ Numbered insights with evidence and source. Always include as the final section.
 - Never invent analyst names, price targets, or article titles not in the input.
 - If a field is null or missing — omit it or show N/A.
 - Never embed emoji in values — use signal field instead.
+
+## Suggested Prompts
+
+- Add a section with suggested prompts. Add explicit stock symbols or names instead of it, they.
+
+```json
+{
+  "title": "Suggested Prompts",
+  "type": "suggested_prompts",
+  "prompts": ["suggestion 1", "suggestion 2"],
+  "group": "prompts"
+}
+```

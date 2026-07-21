@@ -1,0 +1,171 @@
+{
+  "fred_series": [
+    {
+      "series_id": "CPIAUCSL",
+      "name": "Consumer Price Index",
+      "category": "consumer_health",
+      "frequency": "m",
+      "sector": "common",
+      "description": "Consumer Price Index for all urban consumers (monthly)"
+    },
+    {
+      "series_id": "CPIUFDNS",
+      "name": "CPI Food at Home",
+      "category": "consumer_health",
+      "frequency": "m",
+      "sector": "grocery",
+      "description": "CPI for food at home — grocery price inflation (monthly)"
+    },
+    {
+      "series_id": "DCAFRC1A027NBEA",
+      "name": "Clothing and Footwear Spending",
+      "category": "consumer_spending",
+      "frequency": "a",
+      "sector": "apparel",
+      "description": "Clothing and footwear consumer spending (annual)"
+    },
+    {
+      "series_id": "DFDHRC1Q027SBEA",
+      "name": "Furnishings and Durable Equipment Spending",
+      "category": "consumer_spending",
+      "frequency": "q",
+      "sector": "furniture",
+      "description": "Furnishings and durable household equipment spending (quarterly)"
+    },
+    {
+      "series_id": "DFFFRC1A027NBEA",
+      "name": "Furniture and Furnishings Spending",
+      "category": "consumer_spending",
+      "frequency": "a",
+      "sector": "furniture",
+      "description": "Furniture and furnishings consumer spending (annual)"
+    },
+    {
+      "series_id": "DREQRC1Q027SBEA",
+      "name": "Recreational Goods and Vehicles Spending",
+      "category": "consumer_spending",
+      "frequency": "q",
+      "sector": "recreation",
+      "description": "Recreational goods and vehicles spending (quarterly)"
+    },
+    {
+      "series_id": "DSERRE1Q027SBEA",
+      "name": "Food Services and Accommodation Spending",
+      "category": "consumer_spending",
+      "frequency": "q",
+      "sector": "food_restaurant",
+      "description": "Food services and accommodation spending (quarterly)"
+    },
+    {
+      "series_id": "DSPIC96",
+      "name": "Real Disposable Personal Income",
+      "category": "consumer_health",
+      "frequency": "m",
+      "sector": "common",
+      "description": "Real disposable personal income (monthly)"
+    },
+    { "series_id": "HOUST", "name": "Housing Starts", "category": "housing", "frequency": "m", "sector": "furniture", "description": "Housing starts — new residential construction (monthly)" },
+    {
+      "series_id": "HPIPONM226S",
+      "name": "House Price Index",
+      "category": "housing",
+      "frequency": "m",
+      "sector": "auto",
+      "description": "House price index — wealth effect on auto purchases (monthly)"
+    },
+    {
+      "series_id": "MRTSSM44X72USS",
+      "name": "Clothing Stores Retail Sales",
+      "category": "consumer_spending",
+      "frequency": "m",
+      "sector": "apparel",
+      "description": "Clothing stores retail sales (monthly)"
+    },
+    {
+      "series_id": "MRTSSM4431USS",
+      "name": "Electronics and Appliance Store Sales",
+      "category": "consumer_spending",
+      "frequency": "m",
+      "sector": "electronics",
+      "description": "Electronics and appliance store retail sales (monthly)"
+    },
+    {
+      "series_id": "MRTSSM4451USS",
+      "name": "Grocery Store Retail Sales",
+      "category": "consumer_spending",
+      "frequency": "m",
+      "sector": "grocery",
+      "description": "Grocery store retail sales (monthly)"
+    },
+    {
+      "series_id": "MRTSSM722USS",
+      "name": "Food Services and Drinking Places Sales",
+      "category": "consumer_spending",
+      "frequency": "m",
+      "sector": "food_restaurant",
+      "description": "Food services and drinking places retail sales (monthly)"
+    },
+    {
+      "series_id": "PCE",
+      "name": "Personal Consumption Expenditures",
+      "category": "consumer_health",
+      "frequency": "m",
+      "sector": "common",
+      "description": "Total personal consumption expenditures (monthly)"
+    },
+    { "series_id": "PERMIT", "name": "Building Permits", "category": "housing", "frequency": "m", "sector": "furniture", "description": "Building permits issued for new housing units (monthly)" },
+    { "series_id": "RHORUSQ156N", "name": "Homeownership Rate", "category": "housing", "frequency": "q", "sector": "furniture", "description": "Homeownership rate (quarterly)" },
+    {
+      "series_id": "RSFSXMV",
+      "name": "Building Materials Retail Sales",
+      "category": "consumer_spending",
+      "frequency": "m",
+      "sector": "furniture",
+      "description": "Building materials and garden supply retail sales (monthly)"
+    },
+    { "series_id": "TOTALSA", "name": "Total Vehicle Sales", "category": "consumer_spending", "frequency": "m", "sector": "auto", "description": "Total vehicle sales (monthly)" },
+    {
+      "series_id": "UMCSENT",
+      "name": "Consumer Sentiment",
+      "category": "consumer_health",
+      "frequency": "m",
+      "sector": "common",
+      "description": "University of Michigan consumer sentiment index (monthly)"
+    },
+    { "series_id": "UNRATE", "name": "Unemployment Rate", "category": "consumer_health", "frequency": "m", "sector": "common", "description": "Unemployment rate (monthly)" }
+  ],
+  "bea_nipa": [
+    { "table": "T20305", "series_code": "DCLORC", "sector": "apparel", "description": "Clothing and footwear PCE" },
+    { "table": "T20305", "series_code": "DDURRC", "sector": "common", "description": "Total durable goods PCE" },
+    { "table": "T20305", "series_code": "DFDHRC", "sector": "furniture", "description": "Furnishings and durable household equipment PCE" },
+    { "table": "T20305", "series_code": "DFFFRC", "sector": "furniture", "description": "Furniture and furnishings PCE" },
+    { "table": "T20305", "series_code": "DFXARC", "sector": "grocery", "description": "Food and beverages purchased for off-premises consumption PCE" },
+    { "table": "T20305", "series_code": "DHSGRC", "sector": "furniture", "description": "Housing PCE" },
+    { "table": "T20305", "series_code": "DMOTRC", "sector": "auto", "description": "Motor vehicles and parts PCE" },
+    { "table": "T20305", "series_code": "DNDGRC", "sector": "common", "description": "Total nondurable goods PCE" },
+    { "table": "T20305", "series_code": "DODGRC", "sector": "electronics", "description": "Other durable goods PCE" },
+    { "table": "T20305", "series_code": "DRCARC", "sector": "recreation", "description": "Recreation services PCE" },
+    { "table": "T20305", "series_code": "DREQRC", "sector": "recreation", "description": "Recreational goods and vehicles PCE" },
+    { "table": "T20305", "series_code": "DFSARC", "sector": "food_restaurant", "description": "Food services and accommodations PCE" },
+    { "table": "T20100", "series_code": "DPCERC", "sector": "common", "description": "Total personal consumption expenditures" },
+    { "table": "T20100", "series_code": "DSPIC", "sector": "common", "description": "Disposable personal income" }
+  ],
+  "bea_regional": [
+    { "table": "CAINC1", "line_code": 1, "description": "Total personal income by state" },
+    { "table": "CAINC4", "line_code": 10, "description": "Retail trade earnings by state" },
+    { "table": "CAINC5N", "line_code": 10, "description": "Wages and salaries by state" },
+    { "code": "CAGDP1", "line_code": "1", "description": "GDP by state" }
+  ],
+  "census": [
+    { "variable": "B01002_001E", "sector": "common", "description": "Median age — age distribution affects category mix" },
+    { "variable": "B01003_001E", "sector": "common", "description": "Total population — market size baseline" },
+    { "variable": "B15003_022E", "sector": "electronics", "description": "Bachelor degree holders — education correlates with tech adoption" },
+    { "variable": "B17001_002E", "sector": "common", "description": "Population below poverty level — constrains discretionary spend" },
+    { "variable": "B19013_001E", "sector": "common", "description": "Median household income — purchasing power indicator" },
+    { "variable": "B19301_001E", "sector": "common", "description": "Per capita income — broad purchasing power indicator" },
+    { "variable": "B23025_004E", "sector": "common", "description": "Employed population — employment drives consumer spending" },
+    { "variable": "B25003_002E", "sector": "furniture", "description": "Owner-occupied housing units — primary furniture buyer segment" },
+    { "variable": "B25003_003E", "sector": "furniture", "description": "Renter-occupied housing units — secondary furniture market" },
+    { "variable": "B25077_001E", "sector": "furniture", "description": "Median home value — housing wealth drives furniture spend" }
+  ]
+}

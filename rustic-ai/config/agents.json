@@ -1,19 +1,16 @@
 {
   "agents": [
-   {
+    {
       "id": "chat",
       "name": "General Assistant",
       "description": "You are a helpful, knowledgeable assistant.",
       "execution": "pipeline_agent",
       "system_prompt": "prompts/agents/chat-system.md",
       "standalone": true,
-      "tools": [
-      ],
+      "tools": [],
       "conversation": {
         "default_strategy": "stateful",
-        "allowed_strategies": [
-          "stateful"
-        ]
+        "allowed_strategies": ["stateful"]
       }
     },
     {
@@ -21,49 +18,33 @@
       "name": "Finance Analyser Agent",
       "description": "Analyses stocks, tickers, ML signals and portfolios.",
       "execution": "pipeline",
-      "llm_config": { "preset": "precise"},     
+      "llm_config": { "preset": "precise" },
       "system_prompt": "prompts/agents/finance-analyser-system.md",
       "standalone": true,
-      "tools": [
-      ],
+      "tools": [],
       "pipeline": {
         "type": "dynamic",
-        "available_agents": [
-          { "id": "finance-data" },          
-          { "id": "finance-synthesizer"       }
-        ],
+        "available_agents": [{ "id": "finance-data" }, { "id": "finance-synthesizer" }],
         "stages": []
       },
       "conversation": {
         "default_strategy": "stateful",
-        "allowed_strategies": [
-          "stateless",
-          "stateful"
-        ]
+        "allowed_strategies": ["stateless", "stateful"]
       }
     },
     {
       "id": "finance-data",
       "name": "Finance Data Agent",
       "description": "Returns finance data stocks, tickers, ML signals and portfolios.",
-      "llm_config": { "llm": "gemini", "model": "gemini-3.0-flash-preview", "preset": "data"},
+      "llm_config": { "preset": "data" },
       "execution": "pipeline_agent",
       "system_prompt": "prompts/agents/finance-data-system.md",
+      "response_format_schema_path": "schemas/finance-data-response-schema.json",
       "standalone": false,
-      "tools": [
-        "ticker_indicator",
-        "ticker_peers",
-        "ticker_price_history",
-        "ticker_screening",
-        "ticker_sentiment",
-        "ticker_snapshot",
-        "ticker_taxonomy"
-      ],
+      "tools": ["ticker_indicator", "ticker_peers", "ticker_price_history", "ticker_performance", "ticker_screening", "ticker_sentiment", "ticker_snapshot", "ticker_taxonomy"],
       "conversation": {
         "default_strategy": "stateful",
-        "allowed_strategies": [
-          "stateful"
-        ]
+        "allowed_strategies": ["stateful"]
       }
     },
     {
@@ -71,15 +52,13 @@
       "name": "Finance Synthesizer Agent",
       "description": "Synthesises macro-economic, demographic, market proxy and web research data into actionable consumer intelligence for business owners. Produces clear insights with regional context and strategic recommendations.",
       "execution": "pipeline_agent",
-      "llm_config": { "preset": "precise"},     
+      "llm_config": { "preset": "thorough" },
       "system_prompt": "prompts/agents/finance-synthesizer-system.md",
       "standalone": false,
       "tools": [],
       "conversation": {
         "default_strategy": "stateless",
-        "allowed_strategies": [
-          "stateless"
-        ]
+        "allowed_strategies": ["stateless"]
       }
     },
     {
@@ -87,21 +66,15 @@
       "name": "Economic Data Agent",
       "description": "Retrieves and synthesises macro-economic data from government sources — Federal Reserve (FRED), Bureau of Economic Analysis (BEA), and U.S. Census Bureau. Provides national and regional context on consumer spending, income, demographics, housing, and employment. Use for macro-level trend analysis, regional comparisons, and economic benchmarking.",
       "execution": "pipeline_agent",
-      "llm_config": { "llm": "gemini", "model": "gemini-3.0-flash-preview", "preset": "data"},
+      "llm_config": { "preset": "data" },
       "system_prompt": "prompts/agents/economic-data-system.md",
+      "response_format_schema_path": "schemas/economic-data-response-schema.json",
       "standalone": false,
-      "tools": [
-        "fred_series",
-        "bea_data",
-        "census_data"
-      ],
+      "tools": ["economic_taxonomy", "fred_series", "bea_nipa_data", "bea_regional_data", "census_data"],
       "mcp_tools": [],
       "conversation": {
         "default_strategy": "stateful",
-        "allowed_strategies": [
-          "stateless",
-          "stateful"
-        ]
+        "allowed_strategies": ["stateless", "stateful"]
       }
     },
     {
@@ -109,19 +82,14 @@
       "name": "Web Research Agent",
       "description": "Retrieves content from specific URLs using web scraping. Use for reading articles, reports, industry publications, and web pages when a specific URL is known. Not for broad searches — only targeted URL retrieval.",
       "execution": "pipeline_agent",
-      "llm_config": { "llm": "gemini", "model": "gemini-3.0-flash-preview", "preset": "data"},
-      "system_prompt": "prompts/agents/web-research-system.md",
+      "llm_config": { "preset": "data" },
+      "system_prompt": "prompts/agents/economic-data-system.md",
       "standalone": false,
       "tools": [],
-      "mcp_tools": [
-        "Apify___apify--rag-web-browser"
-      ],
+      "mcp_tools": ["Tavily___tavily_extract"],
       "conversation": {
         "default_strategy": "stateful",
-        "allowed_strategies": [
-          "stateless",
-          "stateful"
-        ]
+        "allowed_strategies": ["stateless", "stateful"]
       }
     },
     {
@@ -129,49 +97,36 @@
       "name": "Web Sentiment Agent",
       "description": "Retrieves real-time consumer sentiment and trend data using Apify actors — Google Trends, Yelp reviews, Reddit discussions and web news. Use for current consumer buzz, search trends and review sentiment. Results are slow — best used in batch jobs or on-demand requests.",
       "execution": "pipeline_agent",
-      "llm_config": { "llm": "gemini", "model": "gemini-3.0-flash-preview", "preset": "data"},
+      "llm_config": { "preset": "data" },
       "system_prompt": "prompts/agents/web-sentiment-system.md",
       "standalone": false,
       "tools": [],
-      "mcp_tools": [
-        "Apify___call-actor",
-        "Apify___get-actor-run",
-        "Apify___get-dataset-items"
-      ],
+      "mcp_tools": ["Tavily___tavily_search", "Tavily___tavily_extract"],
       "conversation": {
         "default_strategy": "stateful",
-        "allowed_strategies": [
-          "stateless",
-          "stateful"
-        ]
+        "allowed_strategies": ["stateless", "stateful"]
       }
     },
     {
       "id": "consumer-trend",
-      "name": "Consumer Intelligence & Trend Strategist",
+      "name": "Consumer Trend Analyst Agent",
       "description": "Orchestrates multi-layer consumer intelligence research combining macro-economic data, financial market signals, and web research. Answers business questions about market expansion, regional performance, consumer trends, and competitive positioning by coordinating specialist agents across economic, financial, and web data sources.",
       "execution": "pipeline",
-      "llm_config": { "preset": "precise"},     
+      "llm_config": { "preset": "precise" },
       "system_prompt": "prompts/agents/consumer-trend-system.md",
       "standalone": true,
       "tools": [],
       "pipeline": {
-        "type": "dynamic",
-        "available_agents": [
-          { "id": "economic-data"                  },
-          { "id": "finance-analyser"               },
-          { "id": "web-research"                   },
-          { "id": "web-sentiment"                  },
-          { "id": "consumer-trend-synthesizer",     "preset": "precise"  } 
-        ],
-        "stages": []
+        "type": "deterministic",
+        "available_agents": [],
+        "stages": [
+          { "name": "data_gathering", "parallel": true, "relay": true, "sub_agents": [{ "id": "economic-data" }, { "id": "finance-data" }, { "id": "web-research" }, { "id": "web-sentiment" }] },
+          { "name": "synthesize", "parallel": false, "relay": false, "sub_agents": [{ "id": "consumer-trend-synthesizer" }] }
+        ]
       },
       "conversation": {
         "default_strategy": "stateful",
-        "allowed_strategies": [
-          "stateless",
-          "stateful"
-        ]
+        "allowed_strategies": ["stateless", "stateful"]
       }
     },
     {
@@ -179,15 +134,13 @@
       "name": "Consumer Trend Synthesizer Agent",
       "description": "Synthesises macro-economic, demographic, market proxy and web research data into actionable consumer intelligence for business owners. Produces clear insights with regional context and strategic recommendations.",
       "execution": "pipeline_agent",
-      "llm_config": { "preset": "thorough"},
+      "llm_config": { "preset": "thorough" },
       "system_prompt": "prompts/agents/consumer-trend-synthesizer-system.md",
       "standalone": false,
       "tools": [],
       "conversation": {
         "default_strategy": "stateless",
-        "allowed_strategies": [
-          "stateless"
-        ]
+        "allowed_strategies": ["stateless"]
       }
     }
   ]

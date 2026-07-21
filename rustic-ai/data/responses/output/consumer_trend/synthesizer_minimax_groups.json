@@ -1,0 +1,129 @@
+{
+  "sections": [
+    {
+      "title": "Furniture Industry Backdrop — Western US Perspective",
+      "type": "context",
+      "content": "Returned datasets are national US-level only; no state-by-state western breakdown was supplied. The synthesis below applies US macro indicators that disproportionately affect western state furniture markets — where elevated home values, household formation, and renovation exposure run hotter than the national mean. Furnishings spending has compounded steadily (2022 → 2025: $476.1B → $507.3B), while consumer sentiment, real disposable income, and single-family housing starts have deteriorated sharply in early 2026. For western retailers, the conflicting signals — softening demand indicators versus enduring renovation spend in building materials — define the strategy window heading into H2 2026.",
+      "group": "framing"
+    },
+    {
+      "title": "Key Consumer & Furniture Metrics",
+      "type": "metric_cards",
+      "data": [
+        { "label": "Furnishings Spend", "value": "$507.3B", "benchmark": "2022: $476.1B", "change": "+6.6%", "status": "up" },
+        { "label": "CPI (May 2026)", "value": "333.98", "benchmark": "vs 320.62 (May 2025)", "change": "+4.2%", "status": "up" },
+        { "label": "Consumer Sentiment", "value": "44.8", "benchmark": "vs 61.7 (Jul 2025)", "change": "-27.4%", "status": "down" },
+        { "label": "Real Disp. Income", "value": "$17,984", "benchmark": "vs $18,135 peak", "change": "-0.83%", "status": "down" },
+        { "label": "Unemployment", "value": "4.2%", "benchmark": "vs 4.1% (Jun 2025)", "change": "+0.1pp", "status": "neutral" },
+        { "label": "Building Materials", "value": "$623.4B", "benchmark": "vs $586.3B (Jun 2025)", "change": "+6.3%", "status": "up" }
+      ],
+      "group": "snapshot"
+    },
+    {
+      "title": "Furnishings Spending vs Total Durable Goods Purchase",
+      "type": "bar_chart",
+      "orientation": "vertical",
+      "format": "currency",
+      "groups": ["2022", "2023", "2024", "2025"],
+      "data": [
+        { "name": "Furnishings & HH Equipment", "values": [476136, 479861, 490018, 507340] },
+        { "name": "Total Durable Goods", "values": [2077929, 2141043, 2178085, 2265413] },
+        { "name": "Housing PCE", "values": [2679332, 2940731, 3146981, 3310951] }
+      ],
+      "group": "trends"
+    },
+    {
+      "title": "Housing & Real Estate Indicators (Relevance to Furniture Demand)",
+      "type": "table",
+      "layout": "column",
+      "headers": ["Indicator", "Latest", "Year-Ago", "Trend"],
+      "rows": [
+        [
+          { "value": "Housing Starts (May 2026)", "signal": "down" },
+          { "value": "1,177K", "signal": "down" },
+          { "value": "1,379K", "signal": "neutral" },
+          { "value": "Sliding", "signal": "down" }
+        ],
+        [
+          { "value": "Building Permits (May 2026)", "signal": "down" },
+          { "value": "1,410K", "signal": "down" },
+          { "value": "1,399K", "signal": "neutral" },
+          { "value": "Softening", "signal": "down" }
+        ],
+        [
+          { "value": "Homeownership Rate (Q1 2026)", "signal": "up" },
+          { "value": "65.3%", "signal": "up" },
+          { "value": "65.1%", "signal": "neutral" },
+          { "value": "Stable", "signal": "neutral" }
+        ],
+        [
+          { "value": "Median Home Value (ACS)", "signal": "up" },
+          { "value": "$332,700", "signal": "up" },
+          { "value": "$281,900 (2022)", "signal": "up" },
+          { "value": "Accelerating", "signal": "up" }
+        ],
+        [
+          { "value": "Building Materials Retail (May)", "signal": "up" },
+          { "value": "$623.4B", "signal": "up" },
+          { "value": "$586.3B", "signal": "up" },
+          { "value": "Rising", "signal": "up" }
+        ]
+      ],
+      "totals": [[{ "value": "Combined Direction" }, { "value": "Mixed" }, { "value": "Largely Positive", "signal": "neutral" }]],
+      "group": "real_estate"
+    },
+    {
+      "title": "Macro Consumer Environment",
+      "type": "table",
+      "layout": "column",
+      "headers": ["Metric", "Latest", "Prior Reference", "Direction"],
+      "rows": [
+        [{ "value": "CPI Index" }, { "value": "333.98 (May 2026)", "signal": "up" }, { "value": "320.62 (May 2025)", "signal": "neutral" }, { "value": "Persistent Inflation", "signal": "up" }],
+        [{ "value": "PCE ($B)" }, { "value": "22,059.8 (May 2026)", "signal": "up" }, { "value": "20,868.4 (Jun 2025)", "signal": "neutral" }, { "value": "Expanding", "signal": "up" }],
+        [{ "value": "Real Disp. Personal Income" }, { "value": "$17,984 (May 2026)", "signal": "down" }, { "value": "$18,135 (Jan 2026)", "signal": "up" }, { "value": "Eroding", "signal": "down" }],
+        [{ "value": "Unemployment Rate" }, { "value": "4.2% (Jun 2026)", "signal": "neutral" }, { "value": "4.1% (Jun 2025)", "signal": "neutral" }, { "value": "Stable", "signal": "neutral" }],
+        [{ "value": "Consumer Sentiment" }, { "value": "44.8 (May 2026)", "signal": "down" }, { "value": "61.7 (Jul 2025)", "signal": "up" }, { "value": "Sharp Fall", "signal": "down" }],
+        [{ "value": "Personal Savings Rate" }, { "value": "4.6% (2025)", "signal": "down" }, { "value": "5.4% (2024)", "signal": "neutral" }, { "value": "Declining", "signal": "down" }],
+        [{ "value": "Home Median Age" }, { "value": "38.9 (ACS)", "signal": "up" }, { "value": "38.5 (2022)", "signal": "neutral" }, { "value": "Aging", "signal": "up" }]
+      ],
+      "totals": [[{ "value": "Net Macro Signal" }, { "value": "Mixed" }, { "value": "—", "signal": "neutral" }]],
+      "group": "macro"
+    },
+    {
+      "title": "Strategic Insights for Western US Furniture Retailers",
+      "type": "insight_cards",
+      "data": [
+        {
+          "number": "1",
+          "title": "Furnishings spend outpaces broader durable goods modestly",
+          "evidence": "Furnishings & HH equipment PCE rose from $476.1B (2022) to $507.3B (2025), a +6.6% cumulative gain. Total durable goods grew faster (+9.0%) but pulled by autos — furnishings gaining share within household segment of demand.",
+          "source": "BEA NIPA Table 2.3.5"
+        },
+        {
+          "number": "2",
+          "title": "Housing starts contraction poses replacement-cycle risk",
+          "evidence": "May 2026 housing starts dropped to 1,177K from a Q1 average near 1,418K — a ~17% decline in 4 months. Western markets (CA, WA, OR, AZ) typically lead this cycle and signal fewer new-home furniture furnish opportunities in late 2026.",
+          "source": "FRED HOUST Series"
+        },
+        {
+          "number": "3",
+          "title": "Real income erosion dampens discretionary ticket size",
+          "evidence": "Real disposable personal income fell from $18,135 (Jan 2026) to $17,984 (May 2026) — 5-month decline of 0.83%. Combined with sentiment falling 27.4% from July 2025, furniture trade-down risk is elevated.",
+          "source": "FRED DSPIC96 + UMCSENT"
+        },
+        {
+          "number": "4",
+          "title": "Building materials momentum signals renovation tailwind",
+          "evidence": "Building materials retail sales climbed steadily from $586.3B (Jun 2025) to $623.4B (May 2026), +6.3% in 12 months. Western household renovation exposure is among the highest nationally given elevated median home values ($332,700 in 2024, +18% vs 2022).",
+          "source": "FRED RSFSXMV + ACS B25077"
+        },
+        {
+          "number": "5",
+          "title": "Inflation + savings attrition compresses net furniture demand",
+          "evidence": "CPI +4.2% YoY to 333.98 means furniture unit volumes must rise faster than spend to grow. Personal savings rate fell from 5.4% (2024) to 4.6% (2025), indicating households have less buffer for future purchases — favouring essentials and lower-ticket SKUs.",
+          "source": "FRED CPIAUCSL + NIPA A072RC"
+        }
+      ]
+    }
+  ]
+}

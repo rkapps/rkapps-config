@@ -1,0 +1,99 @@
+{
+  "decisions": [
+    {
+      "prompt": "what is the outlook for the furniture industry in the united states",
+      "models": [
+        {
+          "gemini-3.5-flash": {
+            "agents": [
+              { "id": "economic-data", "goal": "Retrieve consumer spending, income and demographic signals for the Furniture industry in the United States relevant to: what is the outlook for the furniture industry in the united states" },
+              { "id": "web-sentiment", "goal": "Find consumer sentiment, reviews and social buzz for Furniture retailers and products in the United States" },
+              { "id": "finance-data", "goal": "Retrieve market, competitor, and sector financial signals for the Furniture industry in the United States" }
+            ],
+            "execution": "parallel",
+            "stop": false,
+            "reasoning": "Industry: Furniture. Region: United States. The user is asking for a comprehensive outlook, which requires a full market picture combining economic indicators, consumer sentiment, and financial/competitor performance."
+          }
+        }
+      ]
+    },
+    {
+      "prompt": "what is the outlook for the furniture industry in the united states",
+      "models": [
+        {
+          "accounts/fireworks/models/minimax-m3": {
+            "agents": [
+              {
+                "id": "economic-data",
+                "goal": "Retrieve consumer spending, income and demographic signals for the Furniture industry in the United States relevant to: outlook for the furniture industry"
+              },
+              { "id": "web-sentiment", "goal": "Find consumer sentiment, reviews and social buzz for Furniture retailers and products in the United States relevant to: outlook for the furniture industry" },
+              { "id": "finance-data", "goal": "Retrieve market, competitor and sector signals for the Furniture industry in the United States relevant to: outlook for the furniture industry" }
+            ],
+            "execution": "parallel",
+            "stop": false,
+            "reasoning": "Industry: Furniture. Region: United States. Question seeks a full market picture of the furniture industry's outlook, so gathering economic signals, consumer sentiment, and financial/competitor signals in parallel."
+          }
+        }
+      ]
+    },
+    {
+      "prompt": "analyse inflation for 2026",
+      "models": [
+        {
+          "gemini-3.5-flash": {
+            "agents": [
+              {
+                "id": "economic-data",
+                "goal": "Retrieve macroeconomic signals, inflation forecasts, and consumer spending projections for 2026 across the Furniture, Apparel, and Electronics industries."
+              },
+              { "id": "web-research", "goal": "Search for 2026 inflation forecasts, economic outlook reports, and retail industry impact analyses." },
+              { "id": "web-sentiment", "goal": "Find consumer sentiment, concerns, and social buzz regarding inflation expectations and cost-of-living projections for 2026." }
+            ],
+            "execution": "parallel",
+            "stop": false,
+            "reasoning": "Industry: Furniture, Apparel, Electronics. Region: Global/US. The user is asking for a forward-looking inflation analysis for 2026, which requires macroeconomic data, web research for forecasts, and consumer sentiment analysis."
+          }
+        }
+      ]
+    },
+    {
+      "prompt": "analyse inflation for 2026",
+      "models": [
+        {
+          "accounts/fireworks/models/glm-5p2": {
+            "agents": [
+              {
+                "id": "economic-data",
+                "goal": "Retrieve macroeconomic inflation forecasts, CPI projections, and consumer price trend signals for 2026 relevant to retail consumer spending across Furniture, Apparel, and Electronics industries. Region: unspecified/global."
+              },
+              { "id": "web-sentiment", "goal": "Find consumer sentiment, discussions, and social buzz related to inflation expectations and concerns for 2026 affecting Furniture, Apparel, and Electronics purchasing decisions." }
+            ],
+            "execution": "parallel",
+            "stop": false,
+            "reasoning": "Industry: Furniture, Apparel, Electronics. Region: Global/US. The user is asking for a forward-looking inflation analysis for 2026, which requires macroeconomic data, web research for forecasts, and consumer sentiment analysis."
+          }
+        }
+      ]
+    },
+    {
+      "prompt": "Compare furniture vs electronics consumer spending",
+      "models": [
+        {
+          "accounts/fireworks/models/glm-5p2": {
+            "agents": [
+              {
+                "id": "economic-data",
+                "goal": "Retrieve consumer spending, income and demographic signals for the Furniture and Electronics industries at a national level relevant to: Compare furniture vs electronics consumer spending"
+              },
+              { "id": "web-sentiment", "goal": "Find consumer sentiment, reviews and social buzz for Furniture and Electronics retailers and products at a national level relevant to: Compare furniture vs electronics consumer spending" }
+            ],
+            "execution": "parallel",
+            "stop": false,
+            "reasoning": "Industry: Furniture and Electronics. Region: National (not specified). Question type: Spending trends / consumer behaviour — requires economic-data and web-sentiment."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "sections": [
+    {
+      "type": "context",
+      "title": "Macro Environment for U.S. Furniture",
+      "content": "The U.S. furniture industry enters Q2 2026 operating against a split backdrop. Furnishings and durable household equipment personal consumption expenditures reached $507.3B in 2025, a 3.5% rise over the $490.0B recorded in 2024, and the quarterly trajectory continues to expand with Q1 2026 annualising at $521.9B versus $503.1B a year prior. The foundation supporting household consumption remains intact, with unemployment holding inside a tight 4.1%–4.4% corridor through the period and real disposable personal income stabilising near $18,000. Durable goods PCE grew from $2.08T in 2022 to $2.27T in 2025, confirming that furniture sits inside a broader pattern of households continuing to allocate capital toward physical goods even as the macro-mood deteriorates."
+    },
+    {
+      "type": "metric_cards",
+      "title": "Furniture Demand — Headline Indicators",
+      "data": [
+        { "label": "Furnishings PCE 2025", "value": "$507.3B", "benchmark": "$490.0B (2024)", "change": "+3.5%", "status": "up" },
+        { "label": "Furniture Spending 2025", "value": "$293.9B", "benchmark": "$200.0B (2019)", "change": "+46.9%", "status": "up" },
+        { "label": "Q1 2026 Annualised", "value": "$521.9B", "benchmark": "$503.1B (Q1 2025)", "change": "+3.7%", "status": "up" },
+        { "label": "Consumer Sentiment", "value": "44.8", "benchmark": "61.7 (Jul 2025)", "change": "-27.4%", "status": "down" },
+        { "label": "Housing Starts", "value": "1,177k", "benchmark": "1,522k (Mar 2026)", "change": "-22.7%", "status": "down" },
+        { "label": "Saving Rate", "value": "4.6%", "benchmark": "5.6% (2023)", "change": "-1.0pt", "status": "down" }
+      ]
+    },
+    {
+      "type": "context",
+      "title": "Demand Trajectory & Structural Strength",
+      "content": "Long-run substitution into furniture has been durable. Outlays on furnishings and durable household equipment have more than tripled from the $158.2B baseline in 2014 to the $521.9B annualised figure recorded in Q1 2026, an implied compound annual growth rate above 8%. Quarterly progression through 2025 — $503.1B (Q1), $507.3B (Q4 cumulative reaching $507–$511B range), and the Q1 2026 annualised headline — confirms continued expansion, although the year-over-year acceleration has moderated into the mid-single-digit range. The underlying furniture-and-furnishings series (DFFFRC1A027NBEA) climbed from $168.5B in 2015 to $293.9B in 2025, reinforcing the case that demand growth is structural rather than purely cyclical. Furniture is behaving as a defensive discretionary category: households continue prioritising home investment even as general sentiment deteriorates, partly because replacement cycles for major pieces lag other discretionary purchases by several years."
+    },
+    {
+      "type": "table",
+      "title": "State-Level Opportunity Profile",
+      "layout": "column",
+      "headers": ["State", "Population", "Median Income", "Median Home Value", "Owner-Occupied Units", "Furniture Mfg Earnings 2024"],
+      "rows": [
+        [{ "value": "Texas" }, { "value": "29.64M" }, { "value": "$76,292", "signal": "up" }, { "value": "$260,400", "signal": "neutral" }, { "value": "6,723,729", "signal": "up" }, { "value": "$1.79B", "signal": "up" }],
+        [{ "value": "Florida" }, { "value": "21.93M" }, { "value": "$71,711", "signal": "neutral" }, { "value": "$325,000", "signal": "up" }, { "value": "5,756,809", "signal": "up" }, { "value": "$1.17B", "signal": "up" }],
+        [{ "value": "California" }, { "value": "39.24M" }, { "value": "$96,334", "signal": "up" }, { "value": "$695,400", "signal": "neutral" }, { "value": "7,494,811", "signal": "neutral" }, { "value": "$2.38B", "signal": "neutral" }],
+        [{ "value": "Pennsylvania" }, { "value": "12.99M" }, { "value": "$76,081", "signal": "neutral" }, { "value": "$240,500", "signal": "neutral" }, { "value": "3,629,624", "signal": "neutral" }, { "value": "$1.22B", "signal": "neutral" }],
+        [{ "value": "Arizona" }, { "value": "7.27M" }, { "value": "$76,872", "signal": "neutral" }, { "value": "$358,900", "signal": "up" }, { "value": "1,873,231", "signal": "neutral" }, { "value": "$424.7M", "signal": "neutral" }],
+        [{ "value": "Ohio" }, { "value": "11.78M", "signal": "neutral" }, { "value": "$69,680", "signal": "down" }, { "value": "$199,200", "signal": "down" }, { "value": "3,235,568", "signal": "neutral" }, { "value": "$1.20B", "signal": "down" }]
+      ],
+      "totals": [[{ "value": "Total (states)" }, { "value": "120.85M" }, { "value": "--" }, { "value": "--" }, { "value": "28,712,772" }, { "value": "$8.18B" }]]
+    },
+    {
+      "type": "bar_chart",
+      "title": "Furniture Manufacturing Earnings by State (2022–2024)",
+      "orientation": "horizontal",
+      "format": "currency",
+      "groups": ["2022", "2023", "2024"],
+      "data": [
+        { "name": "California", "values": ["$2.40B", "$2.36B", "$2.38B"] },
+        { "name": "Texas", "values": ["$1.63B", "$1.72B", "$1.79B"] },
+        { "name": "Pennsylvania", "values": ["$1.21B", "$1.20B", "$1.22B"] },
+        { "name": "Ohio", "values": ["$1.21B", "$1.20B", "$1.20B"] },
+        { "name": "Florida", "values": ["$1.11B", "$1.11B", "$1.17B"] },
+        { "name": "Arizona", "values": ["$421.1M", "$425.3M", "$424.7M"] }
+      ]
+    },
+    {
+      "type": "context",
+      "title": "Risk Factors & Consumer Signals",
+      "content": "Two indicators stand out as material headwinds for the year ahead. The University of Michigan Consumer Sentiment Index collapsed from 61.7 in July 2025 to 44.8 in May 2026, a decline of more than 16 points that historically precedes pullbacks in big-ticket discretionary purchases such as furniture, where average tickets routinely exceed several thousand dollars. The personal saving rate has declined from 5.6% in 2023 to 4.6% in 2025, leaving households with thinner buffer to fund large purchases without credit support. CPI has drifted upward from 320.6 to 334.0, indicating that input cost pressure on manufacturers — particularly those reliant on imported components — is intensifying rather than easing. Housing starts slid from a March 2026 peak of 1,522k to 1,177k in May 2026, a 22.7% single-quarter contraction that directly reduces first-time buyer furniture demand and second-order renovation spending on furnishings. Building permits oscillated between 1,390k and 1,540k during the window, telling us that developers remain cautious on forward construction pipelines. The homeownership rate held essentially flat at 65.3% in Q1 2026 versus 65.1% a year earlier, so the headwind is concentrated in transaction volume rather than tenure mix."
+    },
+    {
+      "type": "context",
+      "title": "Consumer Credit Context",
+      "content": "Regional bank performance supports a healthy credit backdrop for consumer financing of furniture purchases. Fifth Third Bancorp trades at $57.05 with a Buy analyst consensus and a $60.80 target, PNC Financial Services trades at $251.88 with a $267.38 target and Buy rating, and U.S. Bancorp trades at $62.14 with a $67.43 target and Buy rating. One-year returns across the three stood at +34.8% (FITB), +31.9% (PNC), and +37.3% (USB), and prevailing fifty-day simple moving averages sit above two-hundred-day averages across the cohort, indicating constructive momentum. Credit availability remains open at the consumer-finance interface, which is meaningful because mid- and high-ticket furniture retail relies heavily on promotional financing to convert hesitant shoppers. This mitigates — but does not offset — the demand-softening impact of the consumer sentiment decline."
+    },
+    {
+      "type": "context",
+      "title": "Regional & Manufacturing Implications",
+      "content": "Manufacturing earnings tell a clear geographic story. Texas furniture manufacturing earnings grew from $1.63B in 2022 to $1.79B in 2024, a 9.9% cumulative expansion that aligns with the state's population growth to 29.64M and accelerating household formation. Florida earnings rose from $1.11B to $1.17B, a 5.1% gain consistent with continued in-migration. By contrast, Ohio earnings slipped from $1.21B to $1.20B and California from $2.40B to $2.38B — manufacturing bases that are flat to marginally contracting — while Arizona and Pennsylvania held essentially unchanged. The pattern aligns with Sun Belt demographic momentum and suggests that operators and capital allocators concentrated in Texas, Florida, and the wider Southeast are positioned to outpace national averages. Established manufacturing clusters in the Midwest and Pacific Coast face more challenging conditions tied to softer regional housing turnover and rising labour cost dynamics."
+    },
+    {
+      "type": "context",
+      "title": "Forward-Looking Outlook",
+      "content": "The second half of 2026 will be defined by the tension between secular demand momentum and weakening consumer confidence. The base case suggests mid-single-digit revenue growth across the furniture category: replacement cycles, demographic household formation in the Sun Belt, and tight credit conditions that favour promotional financing should keep category dollars above 2025 levels even as gross margins compress under tariff and input cost pressure. Operators positioned in Texas and Florida should outpace national averages, while Ohio, California, Pennsylvania, and Arizona carry more exposure to a slowing construction cycle and flat-to-declining manufacturing payrolls. The downside case — a sharper sentiment break combined with further housing deterioration — could flatten category growth by late 2026 and force a promotional reset that pressures independent retailers disproportionately. The upside case requires either a sentiment stabilisation near current levels or a housing-starts recovery from the May 2026 trough of 1,177k. Watch the Michigan Index and housing-starts monthly prints as the two leading indicators most likely to swing the trajectory."
+    },
+    {
+      "type": "insight_cards",
+      "title": "Strategic Insights for Furniture Operators",
+      "data": [
+        {
+          "number": "1",
+          "title": "Structural demand momentum is intact even as growth moderates",
+          "evidence": "Furnishings PCE has more than tripled since 2014, from $158.2B to $521.9B annualised in Q1 2026; YoY growth of +3.5% in 2025 and +3.7% in Q1 2026 confirms continued expansion at decelerating pace.",
+          "source": "BEA NIPA T20305"
+        },
+        {
+          "number": "2",
+          "title": "Consumer sentiment collapse is the most acute discretionary risk",
+          "evidence": "University of Michigan Consumer Sentiment fell from 61.7 (Jul 2025) to 44.8 (May 2026), a 27.4% decline that historically correlates with pullbacks in big-ticket discretionary purchases.",
+          "source": "FRED UMCSENT"
+        },
+        {
+          "number": "3",
+          "title": "Housing slowdown caps near-term ceiling on new-home-linked demand",
+          "evidence": "Housing starts contracted 22.7% from 1,522k in Mar 2026 to 1,177k in May 2026; building permits in the 1,390–1,540k range signal continued developer caution.",
+          "source": "FRED HOUST & PERMIT"
+        },
+        {
+          "number": "4",
+          "title": "Texas and Florida are emerging manufacturing and consumption hubs",
+          "evidence": "Texas furniture mfg earnings grew from $1.63B (2022) to $1.79B (2024), +9.9% cumulative; Florida grew from $1.11B to $1.17B, +5.1%. Texas population of 29.64M and Florida of 21.93M reinforce household-formation tailwinds.",
+          "source": "BEA Regional CAINC5N-521"
+        },
+        {
+          "number": "5",
+          "title": "Ohio, California, Pennsylvania face manufacturing headwinds",
+          "evidence": "Ohio mfg earnings slipped from $1.21B to $1.20B; California dipped from $2.40B to $2.38B; Pennsylvania flat at $1.22B. Aligns with softer regional housing turnover.",
+          "source": "BEA Regional CAINC5N-521"
+        },
+        {
+          "number": "6",
+          "title": "Credit availability supports financing-led demand",
+          "evidence": "Regional banks FITB, PNC, USB all carry Buy analyst consensus with mean targets 6–8% above current; one-year price returns +31.9% to +37.3%. Healthy consumer-finance capacity offsets part of the sentiment-driven hesitancy.",
+          "source": "Analyst snapshots FITB/PNC/USB"
+        },
+        {
+          "number": "7",
+          "title": "Consumer saving rate contraction reduces big-ticket headroom",
+          "evidence": "Personal saving rate fell from 5.6% (2023) to 4.6% (2025), a 1.0-percentage-point compression in the cash buffer available to fund large furniture purchases outright.",
+          "source": "BEA NIPA T20100"
+        },
+        {
+          "number": "8",
+          "title": "CPI drift from 320.6 to 334.0 signals input-cost pressure",
+          "evidence": "Twelve-month CPIClimb of +4.2% sustains landed-cost pressure on import-dependent furniture categories and squeezes gross margins for retailers absorbing the increase.",
+          "source": "FRED CPIAUCSL"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,183 @@
+{
+  "sections": [
+    {
+      "title": "Sector Context",
+      "type": "context",
+      "content": "All five semiconductor leaders closed lower in the latest session, with declines ranging from -2.32% (TSM) to -5.84% (INTC). The drop followed Broadcom earnings-related sector pressure even as Tier-1 analyst consensus remains Buy on four of five names. Long-term uptrends remain intact — every ticker trades above its 200-day SMA by 3% to 71% — though four of five are testing below their 50-day SMA, flagging near-term weakness. TSM's beta of 1.25 makes it the most defensive name in the cohort, while AMD's 2.47 beta explains both its 70%+ premium to SMA-200 and its -5.33% drawdown on the day.",
+      "group": "overview"
+    },
+    {
+      "title": "Fundamentals & Valuation",
+      "type": "table",
+      "layout": "column",
+      "headers": ["Metric", "AMD", "AVGO", "INTC", "NVDA", "TSM"],
+      "rows": [
+        [{ "value": "Price" }, { "value": "$500.94", "signal": "down" }, { "value": "$374.45", "signal": "down" }, { "value": "$96.98", "signal": "down" }, { "value": "$207.40", "signal": "down" }, { "value": "$409.74", "signal": "down" }],
+        [
+          { "value": "Daily Change" },
+          { "value": "-5.33%", "signal": "down", "indicator": "arrow" },
+          { "value": "-5.03%", "signal": "down", "indicator": "arrow" },
+          { "value": "-5.84%", "signal": "down", "indicator": "arrow" },
+          { "value": "-2.40%", "signal": "down", "indicator": "arrow" },
+          { "value": "-2.32%", "signal": "down", "indicator": "arrow" }
+        ],
+        [{ "value": "52W High" }, { "value": "$584.73" }, { "value": "$494.18" }, { "value": "$142.35" }, { "value": "$236.26" }, { "value": "$479.00" }],
+        [{ "value": "52W Low" }, { "value": "$149.22" }, { "value": "$270.99" }, { "value": "$18.96" }, { "value": "$163.85" }, { "value": "$221.66" }],
+        [{ "value": "EPS (TTM)" }, { "value": "$3.07" }, { "value": "$6.07" }, { "value": "($0.60)", "signal": "down", "note": "Net loss" }, { "value": "$6.80" }, { "value": "$11.52" }],
+        [
+          { "value": "P/E (TTM)" },
+          { "value": "178.5x", "signal": "down", "note": "Growth premium — priced for expansion" },
+          { "value": "65.0x", "signal": "down", "note": "Growth premium — priced for expansion" },
+          { "value": "N/A", "note": "Negative earnings — not meaningful" },
+          { "value": "31.2x" },
+          { "value": "36.5x" }
+        ],
+        [
+          { "value": "Forward P/E" },
+          { "value": "75.8x", "note": "Sharp earnings ramp priced in" },
+          { "value": "20.8x", "signal": "up", "note": "Most attractive forward multiple in peer group" },
+          { "value": "117.7x", "note": "High — pricing in steep earnings recovery" },
+          { "value": "23.2x", "note": "Reasonable vs 31.2x trailing" },
+          { "value": "27.2x", "note": "Reasonable premium vs peers" }
+        ],
+        [
+          { "value": "PEG" },
+          { "value": "1.28", "note": "Premium to growth" },
+          { "value": "0.44", "signal": "up", "note": "Lowest PEG in group" },
+          { "value": "0.50", "signal": "up", "note": "Low PEG on recovery bets" },
+          { "value": "0.63", "signal": "up", "note": "Reasonable for AI tailwind" },
+          { "value": "1.32", "note": "Highest PEG in group" }
+        ],
+        [{ "value": "P/S" }, { "value": "23.9x" }, { "value": "24.9x" }, { "value": "10.1x", "signal": "up", "note": "Cheapest on sales basis" }, { "value": "20.2x" }, { "value": "0.53x", "signal": "up", "note": "Fab vs fabless mix effect" }],
+        [{ "value": "Beta" }, { "value": "2.47", "signal": "down", "note": "Highest volatility" }, { "value": "1.46" }, { "value": "2.19", "note": "Volatile recovery name" }, { "value": "2.21" }, { "value": "1.25", "signal": "up", "note": "Most defensive in cohort" }],
+        [{ "value": "Analyst Target" }, { "value": "$525.40" }, { "value": "$524.51" }, { "value": "$104.39" }, { "value": "$301.62" }, { "value": "$498.24" }],
+        [{ "value": "Upside to Target" }, { "value": "+4.9%" }, { "value": "+40.1%", "signal": "up", "indicator": "arrow" }, { "value": "+7.6%" }, { "value": "+45.4%", "signal": "up", "indicator": "arrow" }, { "value": "+21.6%", "signal": "up", "indicator": "arrow" }],
+        [
+          { "value": "Consensus" },
+          { "value": "Buy", "signal": "up", "indicator": "dot" },
+          { "value": "Buy", "signal": "up", "indicator": "dot" },
+          { "value": "Hold", "signal": "neutral", "indicator": "dot" },
+          { "value": "Buy", "signal": "up", "indicator": "dot" },
+          { "value": "Buy", "signal": "up", "indicator": "dot" }
+        ]
+      ],
+      "group": "fundamentals"
+    },
+    {
+      "title": "Technical Indicators",
+      "type": "table",
+      "layout": "column",
+      "headers": ["Metric", "AMD", "AVGO", "INTC", "NVDA", "TSM"],
+      "rows": [
+        [{ "value": "RSI-14" }, { "value": "47.9", "note": "Neutral momentum" }, { "value": "42.3", "note": "Neutral momentum" }, { "value": "32.8", "note": "Approaching oversold" }, { "value": "63.8", "note": "Elevated but neutral" }, { "value": "38.4", "note": "Soft momentum, neutral" }],
+        [
+          { "value": "vs SMA-50" },
+          { "value": "+1.6%", "signal": "up", "indicator": "arrow" },
+          { "value": "-7.4%", "signal": "down", "indicator": "arrow" },
+          { "value": "-17.5%", "signal": "down", "indicator": "arrow" },
+          { "value": "-1.1%", "signal": "down", "indicator": "arrow" },
+          { "value": "-3.7%", "signal": "down", "indicator": "arrow" }
+        ],
+        [
+          { "value": "vs SMA-200" },
+          { "value": "+70.8%", "signal": "up", "indicator": "arrow" },
+          { "value": "+3.0%", "signal": "up", "indicator": "arrow" },
+          { "value": "+52.6%", "signal": "up", "indicator": "arrow" },
+          { "value": "+8.0%", "signal": "up", "indicator": "arrow" },
+          { "value": "+16.9%", "signal": "up", "indicator": "arrow" }
+        ],
+        [{ "value": "MACD" }, { "value": "+14.89" }, { "value": "-3.59" }, { "value": "-2.81" }, { "value": "+0.17" }, { "value": "-0.13" }],
+        [{ "value": "MACD Signal" }, { "value": "+18.85" }, { "value": "-5.52" }, { "value": "+0.57" }, { "value": "-1.77" }, { "value": "+4.27" }],
+        [
+          { "value": "MACD Bias" },
+          { "value": "Below signal", "signal": "down", "note": "Bearish momentum" },
+          { "value": "Above signal", "signal": "up", "note": "Bearish setup but recovering" },
+          { "value": "Below signal", "signal": "down", "note": "Bearish momentum" },
+          { "value": "Above signal", "signal": "up", "note": "Clean bullish crossover" },
+          { "value": "Below signal", "signal": "down", "note": "Bearish momentum" }
+        ],
+        [
+          { "value": "BB Position" },
+          { "value": "Mid-band", "note": "Neutral band position" },
+          { "value": "Near lower band", "note": "Testing support" },
+          { "value": "Lower third", "note": "Testing support" },
+          { "value": "Mid-band", "note": "Neutral band position" },
+          { "value": "At lower band", "signal": "down", "note": "Critical support test" }
+        ]
+      ],
+      "group": "technicals"
+    },
+    {
+      "title": "Recent Sentiment Coverage",
+      "type": "table",
+      "layout": "column",
+      "headers": ["Ticker", "Headline", "Sentiment", "Source", "Date"],
+      "rows": [
+        [{ "value": "AMD" }, { "value": "VanEck Semiconductor ETF Hits All-Time High on Memory Chip Strength", "signal": "up" }, { "value": "AD HOC NEWS", "note": "Score 0.745" }, { "value": "2026-05-12" }],
+        [{ "value": "Broadcom / Sector" }, { "value": "Broadcom Earnings Spark Semiconductor Sector Sell-Off", "signal": "up", "note": "Somewhat-Bullish" }, { "value": "Yahoo Finance UK", "note": "Score 0.274" }, { "value": "2026-06-04" }],
+        [{ "value": "TSM" }, { "value": "$250B US Investment Deal Strengthens 'Silicon Shield' Strategy", "signal": "up" }, { "value": "Crypto Briefing", "note": "Score 0.494" }, { "value": "2026-06-06" }],
+        [{ "value": "TSM" }, { "value": "TSM Targets $430 — Analysts Project 28% EPS Growth", "signal": "up" }, { "value": "Foreign Policy Journal", "note": "Score 0.838" }, { "value": "2026-05-29" }],
+        [{ "value": "AVGO" }, { "value": "RF Front End Module Market — Broadcom Among Key Players", "signal": "up" }, { "value": "openPR", "note": "Score 0.671" }, { "value": "2026-05-13" }],
+        [{ "value": "INTC" }, { "value": "Trailing-Edge Foundry Strategies — GlobalFoundries, UMC, SMIC", "signal": "up", "note": "Somewhat-Bullish" }, { "value": "Tom's Hardware", "note": "Score 0.263" }, { "value": "2026-05-28" }],
+        [{ "value": "TSM" }, { "value": "US Fab Buildout Underway — Specialty Chemical Supply Chains Lagging", "signal": "neutral" }, { "value": "Speciality Chemicals Magazine", "note": "Score 0.141" }, { "value": "2026-06-01" }]
+      ],
+      "group": "technicals"
+    },
+    {
+      "title": "Key Insights",
+      "type": "insight_cards",
+      "data": [
+        {
+          "number": "1",
+          "title": "Sector pullback tests support rather than invalidates the trend",
+          "evidence": "All five tickers fell between -2.32% and -5.84% on the day, yet every name still trades above its 200-day SMA by 3% to 71%. The trigger was Broadcom earnings, per Yahoo Finance UK — not a structural breakdown. AMD's price sits 1.6% above SMA-50 while the rest are 1-17.5% below, suggesting the cohort is stretching supports rather than reversing long-term uptrends.",
+          "source": "Cross-Reference: Fundamentals & Technicals"
+        },
+        {
+          "number": "2",
+          "title": "AVGO carries the cleanest valuation in the peer set",
+          "evidence": "AVGO's 20.8x forward P/E is the cohort's lowest, its 0.44 PEG is the only sub-0.5 reading, and its $524.51 target implies +40% upside. The MACD (-3.59) sits above its signal line (-5.52) even after today's -5.03% drop, hinting at recovering momentum. Risk: the +40% upside assumes AVGO sustains its AI/custom-silicon trajectory.",
+          "source": "Fundamental & Technical Comparison"
+        },
+        {
+          "number": "3",
+          "title": "INTC is the outlier — negative earnings against a 117x forward P/E",
+          "evidence": "INTC is the only name with negative trailing EPS (-$0.60), a Hold consensus, and the highest forward P/E in the group (117.7x) — pricing in a recovery not yet visible in the data. The technicals match this uncertainty: RSI at 32.8 sits closest to oversold and price is 17.5% below the 50-day SMA, the deepest pullback in the cohort. Failure to deliver the implied earnings rebound would compound the multiple compression risk.",
+          "source": "Cross-Reference: Fundamentals & Technicals"
+        },
+        {
+          "number": "4",
+          "title": "NVDA shows the only clean MACD bullish crossover in the group",
+          "evidence": "Despite the sector-wide decline, NVDA's MACD (+0.17) crossed above its signal line (-1.77) and RSI at 63.8 sits elevated but neutral. The $301.62 target implies +45% upside, the largest in the peer set. This combination of positive MACD bias and largest analyst upside — while price sits only 1.1% below SMA-50 — is unusual during a 2.4% down day.",
+          "source": "Cross-Reference: Fundamentals & Technicals"
+        },
+        {
+          "number": "5",
+          "title": "TSM is the structural defensive pick",
+          "evidence": "TSM carries the lowest beta in the cohort (1.25) and declined the least today (-2.32%). The $250B US investment headline (Crypto Briefing, 0.494 Bullish score) layers onto a $498.24 analyst target (+21.6% upside) and 28% EPS growth projections (Foreign Policy Journal, 0.838 score). The trade-off: TSM sits right at its lower Bollinger Band ($409.21) and below SMA-50, flagging short-term support risk.",
+          "source": "Cross-Reference: Fundamentals, Technicals & Sentiment"
+        },
+        {
+          "number": "6",
+          "title": "AMD and TSM carry the highest growth premiums relative to upside",
+          "evidence": "AMD's 178.5x trailing P/E and 75.8x forward P/E, paired with TSM's 1.32 PEG (highest in group), sit alongside the two narrowest upsides to target (+4.9% AMD, +21.6% TSM). By contrast, AVGO and NVDA combine reasonable forward multiples with +40% to +45% upside, leaving AMD and TSM more exposed to negative earnings revisions during the current pullback.",
+          "source": "Fundamental Comparison Table"
+        }
+      ],
+      "group": "insights"
+    },
+    {
+      "title": "Suggested Prompts",
+      "type": "suggested_prompts",
+      "suggested_prompts": [
+        "Deep dive on AVGO valuation — is the 20.8x forward P/E a buying opportunity?",
+        "NVDA MACD bullish crossover — momentum divergence versus sector tape",
+        "INTC earnings recovery thesis — what would justify the 117.7x forward P/E?",
+        "TSM $250B US investment — execution risk and timeline breakdown",
+        "Semiconductor sector support levels — where do the 50-day SMAs sit?",
+        "Compare AMD and NVDA forward earnings growth trajectories"
+      ],
+      "group": "prompts"
+    }
+  ]
+}

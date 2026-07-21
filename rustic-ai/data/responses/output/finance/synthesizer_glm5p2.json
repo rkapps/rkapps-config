@@ -1,0 +1,150 @@
+{
+  "sections": [
+    {
+      "title": "Context",
+      "type": "context",
+      "group": "overview",
+      "content": "A comprehensive comparison of 10 semiconductor stocks reveals a mixed landscape of valuations and performance. While AI-driven demand has propelled massive YTD gains for **INTC** (+162.82%) and **ARM** (+139.69%), classic value plays like **SWKS** (-7.26% YTD) lag behind. Analyst consensus leans heavily toward Buy across the sector, with **NVDA** and **AMD** maintaining strong momentum despite elevated multiples."
+    },
+    {
+      "title": "Key Metrics",
+      "type": "metric_cards",
+      "group": "snapshot",
+      "data": [
+        { "label": "NVIDIA Corp", "value": "$207.40", "status": "down", "change": "-2.40%" },
+        { "label": "Adv Micro Dev", "value": "$500.94", "status": "down", "change": "-5.33%" },
+        { "label": "Broadcom Ltd", "value": "$374.45", "status": "down", "change": "-5.03%" },
+        { "label": "TSMC", "value": "$409.74", "status": "down", "change": "-2.32%" },
+        { "label": "Intel Corp", "value": "$96.98", "status": "down", "change": "-5.84%" }
+      ]
+    },
+    {
+      "title": "Fundamentals & Consensus",
+      "type": "table",
+      "layout": "column",
+      "group": "fundamentals",
+      "headers": ["Metric", "NVDA", "AMD", "AVGO", "TSM", "INTC", "ARM"],
+      "rows": [
+        [{ "value": "Price" }, { "value": "$207.40" }, { "value": "$500.94" }, { "value": "$374.45" }, { "value": "$409.74" }, { "value": "$96.98" }, { "value": "$262.01" }],
+        [
+          { "value": "P/E Ratio" },
+          { "value": "31.15", "signal": "up", "note": "Deep value" },
+          { "value": "178.54", "signal": "down", "note": "Growth premium — priced for expansion" },
+          { "value": "64.96", "signal": "down", "note": "Growth premium — priced for expansion" },
+          { "value": "36.49", "signal": "down", "note": "Growth premium — priced for expansion" },
+          { "value": "N/A", "note": "Negative earnings — not meaningful" },
+          { "value": "333.75", "signal": "down", "note": "Growth premium — priced for expansion" }
+        ],
+        [
+          { "value": "Forward P/E" },
+          { "value": "23.2", "note": "Priced for moderate growth" },
+          { "value": "75.76", "note": "High forward premium" },
+          { "value": "20.83", "note": "Attractive forward valuation" },
+          { "value": "27.17", "note": "Priced for moderate growth" },
+          { "value": "117.65", "note": "High forward premium" },
+          { "value": "128.21", "note": "High forward premium" }
+        ],
+        [{ "value": "PEG Ratio" }, { "value": "0.626" }, { "value": "1.28" }, { "value": "0.437" }, { "value": "1.319" }, { "value": "0.501" }, { "value": "2.32" }],
+        [
+          { "value": "Analyst Consensus" },
+          { "value": "Buy", "signal": "up", "indicator": "dot" },
+          { "value": "Buy", "signal": "up", "indicator": "dot" },
+          { "value": "Buy", "signal": "up", "indicator": "dot" },
+          { "value": "Buy", "signal": "up", "indicator": "dot" },
+          { "value": "Hold", "signal": "neutral", "indicator": "dot" },
+          { "value": "Buy", "signal": "up", "indicator": "dot" }
+        ],
+        [{ "value": "Analyst Target" }, { "value": "$301.62" }, { "value": "$525.40" }, { "value": "$524.51" }, { "value": "$498.24" }, { "value": "$104.39" }, { "value": "$303.97" }]
+      ]
+    },
+    {
+      "title": "Historical Performance (%)",
+      "type": "bar_chart",
+      "orientation": "horizontal",
+      "format": "percent",
+      "group": "performance",
+      "groups": ["YTD", "1Y", "6M"],
+      "data": [
+        { "name": "NVDA", "values": [11.34, 21.18, 11.5] },
+        { "name": "AMD", "values": [133.91, 212.93, 116.08] },
+        { "name": "AVGO", "values": [8.59, 34.32, 6.86] },
+        { "name": "TSM", "values": [35.51, 74.34, 20.27] },
+        { "name": "INTC", "values": [162.82, 327.41, 106.52] },
+        { "name": "ARM", "values": [139.69, 70.25, 147.69] }
+      ]
+    },
+    {
+      "title": "Technical Indicators",
+      "type": "table",
+      "layout": "column",
+      "group": "technicals",
+      "headers": ["Metric", "NVDA", "AMD", "AVGO", "INTC", "MRVL", "SWKS"],
+      "rows": [
+        [{ "value": "Price" }, { "value": "$207.40" }, { "value": "$500.94" }, { "value": "$374.45" }, { "value": "$96.98" }, { "value": "$188.30" }, { "value": "$57.63" }],
+        [
+          { "value": "RSI-14" },
+          { "value": "63.8", "note": "Neutral momentum" },
+          { "value": "47.93", "note": "Neutral momentum" },
+          { "value": "42.3", "note": "Neutral momentum" },
+          { "value": "32.79", "signal": "up", "note": "Oversold — potential reversal watch" },
+          { "value": "29.43", "signal": "up", "note": "Oversold — potential reversal watch" },
+          { "value": "27.65", "signal": "up", "note": "Oversold — potential reversal watch" }
+        ],
+        [{ "value": "MACD" }, { "value": "0.17" }, { "value": "14.89" }, { "value": "-3.59" }, { "value": "-2.81" }, { "value": "-7.69" }, { "value": "-3.92" }],
+        [{ "value": "SMA-50" }, { "value": "$209.61" }, { "value": "$493.09" }, { "value": "$404.07" }, { "value": "$117.50" }, { "value": "$234.66" }, { "value": "$70.21" }],
+        [{ "value": "SMA-200" }, { "value": "$192.14" }, { "value": "$293.31" }, { "value": "$363.41" }, { "value": "$63.56" }, { "value": "$128.80" }, { "value": "$65.39" }],
+        [{ "value": "Beta" }, { "value": "2.211" }, { "value": "2.469" }, { "value": "1.462" }, { "value": "2.187" }, { "value": "2.197" }, { "value": "1.497" }]
+      ]
+    },
+    {
+      "title": "Recent News Sentiment",
+      "type": "table",
+      "layout": "column",
+      "group": "technicals",
+      "headers": ["Ticker", "Sentiment", "Source", "Headline"],
+      "rows": [
+        [{ "value": "AMD" }, { "value": "Bullish", "signal": "up", "indicator": "badge" }, { "value": "The Globe and Mail" }, { "value": "Zacks Analyst Blog Highlights Advanced Micro Devices, Intel, Arm Holdings, NVIDIA and QUALCOMM" }],
+        [{ "value": "INTC" }, { "value": "Somewhat-Bullish", "signal": "up", "indicator": "badge" }, { "value": "TradingView" }, { "value": "Focus on 5 AI Behemoths Carving a Niche in the Server CPU Chip Market" }],
+        [{ "value": "TSM" }, { "value": "Bullish", "signal": "up", "indicator": "badge" }, { "value": "Taipei Times" }, { "value": "TSMC says AI demand affecting supply" }]
+      ]
+    },
+    {
+      "title": "Bull vs Bear",
+      "type": "table",
+      "layout": "column",
+      "group": "risk",
+      "headers": ["Ticker", "Bull Case", "Bear Case"],
+      "rows": [
+        [{ "value": "NVDA" }, { "value": "AI market leader, P/E of 31.15 is cheap for growth, MACD bullish crossover." }, { "value": "Valued at 25x P/B, RSI approaching overbought." }],
+        [{ "value": "AMD" }, { "value": "YTD gain of 133.91%, strong AI momentum." }, { "value": "P/E of 178.54 is extremely high, priced for perfection." }],
+        [{ "value": "INTC" }, { "value": "Massive YTD gain (162.82%), oversold RSI (32.79) may reverse." }, { "value": "Negative EPS, Hold consensus, trading below $100." }]
+      ]
+    },
+    {
+      "title": "Key Insights",
+      "type": "insight_cards",
+      "group": "insights",
+      "data": [
+        {
+          "number": 1,
+          "title": "INTC's massive YTD gain outpaces NVDA despite negative earnings",
+          "evidence": "**INTC** has returned **162.82%** YTD, dwarfing **NVDA's** **11.34%**, despite Intel having a negative EPS of **-0.6** and a Hold consensus. This divergence highlights a market betting heavily on Intel's turnaround in the AI server CPU market, though the lack of current profitability poses a significant risk.",
+          "source": "YTD Return Data & Fundamental Comparison Table"
+        },
+        {
+          "number": 2,
+          "title": "MRVL and SWKS show oversold technical signals",
+          "evidence": "**MRVL** has an RSI of **29.43** and **SWKS** has an RSI of **27.65**, placing both in oversold territory. Cross-referencing with their YTD performance, MRVL is up **121.9%** while SWKS is down **-7.26%**. This suggests a potential short-term reversal for SWKS, while MRVL's dip might be a buy-the-dip opportunity in a strong uptrend.",
+          "source": "RSI Data & YTD Return Data"
+        },
+        {
+          "number": 3,
+          "title": "AVGO offers the most attractive valuation relative to growth",
+          "evidence": "**AVGO** has a PEG ratio of **0.437**, the lowest among the major semis, alongside a Forward P/E of **20.83**. Compared to **NVDA's** PEG of 0.626 and Forward P/E of 23.2, Broadcom presents a compelling value proposition for investors seeking AI exposure with lower multiples, backed by a Buy consensus and $524.51 target.",
+          "source": "Fundamental Comparison Table"
+        }
+      ]
+    },
+    { "title": "Suggested Prompts", "type": "suggested_prompts", "group": "prompts", "suggested_prompts": ["Detailed analysis of NVDA valuation vs AVGO", "Deep dive into INTC turnaround potential", "Evaluate TSM technical indicators"] }
+  ]
+}

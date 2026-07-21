@@ -1,0 +1,186 @@
+{
+  "sections": [
+    {
+      "title": "NVDA vs Semiconductor Peers — Snapshot",
+      "type": "context",
+      "content": "Eleven semiconductor peers are compared against NVDA on price, valuation, performance, technicals, and analyst sentiment. NVDA closed at $203.53 with a 32.26 trailing P/E and a 24.04 forward P/E — the most reasonable premium in the high-growth AI cohort. Analyst consensus is Buy with a $301.62 target, implying ~48% upside, the largest implied appreciation in the group. The cohort is bifurcated: AI-pure plays (NVDA, AMD, ARM, MRVL) trade at elevated multiples but have diverged sharply on YTD performance, while legacy and analog names (INTC, TXN, NXPI, SWKS) cluster at lower multiples with mixed momentum."
+    },
+    {
+      "title": "Peer Comparison Table",
+      "type": "table",
+      "layout": "column",
+      "headers": ["Metric", "NVDA", "AMD", "ARM", "AVGO", "CRUS", "INTC", "MRVL", "NXPI", "SWKS", "TSM", "TXN"],
+      "rows": [
+        {
+          "value": "Price",
+          "raw": [{ "value": "$203.53" }, { "value": "$534.39" }, { "value": "$281.17" }, { "value": "$384.05" }, { "value": "$137.36" }, { "value": "$103.12" }, { "value": "$222.44" }, { "value": "$278.39" }, { "value": "$56.58" }, { "value": "$421.58" }, { "value": "$305.55" }]
+        },
+        {
+          "value": { "value": "P/E (TTM)", "signal": "neutral" },
+          "raw": [
+            { "value": "32.26", "note": "Mid-range premium" },
+            { "value": "185.35", "signal": "down", "note": "Growth premium — priced for expansion" },
+            { "value": "383.32", "signal": "down", "note": "Growth premium — priced for expansion" },
+            { "value": "64.01", "signal": "down", "note": "Growth premium — priced for expansion" },
+            { "value": "19.15", "note": "Reasonable for analog/mixed-signal" },
+            { "value": "N/A", "note": "Negative earnings — not meaningful" },
+            { "value": "81.31", "signal": "down", "note": "Growth premium — priced for expansion" },
+            { "value": "27.94", "note": "Reasonable for auto/industrial" },
+            { "value": "25.16", "note": "Mature-cycle valuation" },
+            { "value": "37.75", "note": "Premium for foundry scale" },
+            { "value": "53.15", "signal": "down", "note": "Growth premium — priced for expansion" }
+          ]
+        },
+        {
+          "value": { "value": "Forward P/E", "signal": "up" },
+          "raw": [
+            { "value": "24.04", "note": "Implies ~33% EPS growth — aggressive but credible" },
+            { "value": "79.37", "note": "Implies ~134% EPS growth — extreme" },
+            { "value": "147.06", "note": "Implies ~161% EPS growth — speculative" },
+            { "value": "21.41", "note": "Implies ~199% EPS growth on AI/custom-silicon ramp" },
+            { "value": "15.60", "note": "Implies ~23% EPS growth — realistic" },
+            { "value": "125.00", "note": "Implies margin recovery from negative base" },
+            { "value": "58.14", "note": "Implies ~40% EPS growth" },
+            { "value": "19.96", "note": "Implies ~40% EPS growth" },
+            { "value": "11.61", "note": "Implies ~117% EPS growth — turnaround bet" },
+            { "value": "27.93", "note": "Implies ~35% EPS growth" },
+            { "value": "40.82", "note": "Implies ~30% EPS growth" }
+          ]
+        },
+        {
+          "value": { "value": "Consensus", "indicator": "dot" },
+          "raw": [
+            { "value": "Buy", "signal": "up" },
+            { "value": "Buy", "signal": "up" },
+            { "value": "Buy", "signal": "up" },
+            { "value": "Buy", "signal": "up" },
+            { "value": "Buy", "signal": "up" },
+            { "value": "Hold", "signal": "neutral" },
+            { "value": "Buy", "signal": "up" },
+            { "value": "Buy", "signal": "up" },
+            { "value": "Hold", "signal": "neutral" },
+            { "value": "N/A" },
+            { "value": "Hold", "signal": "neutral" }
+          ]
+        },
+        {
+          "value": { "value": "YTD Return", "indicator": "arrow" },
+          "raw": [
+            { "value": "+9.26%", "signal": "up" },
+            { "value": "+149.53%", "signal": "up" },
+            { "value": "+157.22%", "signal": "up" },
+            { "value": "+11.37%", "signal": "up" },
+            { "value": "+15.92%", "signal": "up" },
+            { "value": "+179.46%", "signal": "up" },
+            { "value": "+162.13%", "signal": "up" },
+            { "value": "+29.36%", "signal": "up" },
+            { "value": "-8.95%", "signal": "down" },
+            { "value": "+39.43%", "signal": "up" },
+            { "value": "+78.18%", "signal": "up" }
+          ]
+        },
+        { "value": { "value": "Beta" }, "raw": [{ "value": "2.211" }, { "value": "2.469" }, { "value": "3.770" }, { "value": "1.462" }, { "value": "1.163" }, { "value": "2.187" }, { "value": "2.197" }, { "value": "1.805" }, { "value": "1.497" }, { "value": "1.246" }, { "value": "1.310" }] },
+        {
+          "value": { "value": "RSI (14)" },
+          "raw": [
+            { "value": "52.38", "note": "Neutral momentum" },
+            { "value": "50.22", "note": "Neutral momentum" },
+            { "value": "30.93", "note": "Neutral momentum" },
+            { "value": "49.33", "note": "Neutral momentum" },
+            { "value": "22.78", "signal": "up", "note": "Oversold — potential reversal watch" },
+            { "value": "28.89", "signal": "up", "note": "Oversold — potential reversal watch" },
+            { "value": "35.21", "note": "Neutral momentum" },
+            { "value": "42.05", "note": "Neutral momentum" },
+            { "value": "21.51", "signal": "up", "note": "Oversold — potential reversal watch" },
+            { "value": "39.51", "note": "Neutral momentum" },
+            { "value": "52.98", "note": "Neutral momentum" }
+          ]
+        },
+        {
+          "value": { "value": "MACD" },
+          "raw": [
+            { "value": "-1.47 / -2.68", "note": "Bearish crossover" },
+            { "value": "17.03 / 20.61", "note": "Bullish" },
+            { "value": "-8.16 / 1.95", "note": "Bearish" },
+            { "value": "-4.50 / -7.54", "note": "Bearish" },
+            { "value": "-5.21 / -4.59", "note": "Bearish" },
+            { "value": "-1.38 / 2.26", "note": "Bearish" },
+            { "value": "-5.03 / 4.12", "note": "Bearish" },
+            { "value": "-4.34 / -3.54", "note": "Bearish" },
+            { "value": "-3.84 / -2.75", "note": "Bearish" },
+            { "value": "2.71 / 6.43", "note": "Bullish" },
+            { "value": "1.77 / 1.86", "note": "Neutral" }
+          ]
+        },
+        {
+          "value": { "value": "Analyst Target" },
+          "raw": [{ "value": "$301.62" }, { "value": "$516.12" }, { "value": "$298.84" }, { "value": "$523.73" }, { "value": "$184.25" }, { "value": "$101.95" }, { "value": "$252.26" }, { "value": "$308.07" }, { "value": "$73.65" }, { "value": "$490.34" }, { "value": "$298.00" }]
+        },
+        {
+          "value": { "value": "Implied Upside" },
+          "raw": [
+            { "value": "+48.2%", "signal": "up" },
+            { "value": "-3.4%", "signal": "down" },
+            { "value": "+6.3%", "signal": "up" },
+            { "value": "+36.4%", "signal": "up" },
+            { "value": "+34.1%", "signal": "up" },
+            { "value": "-1.1%", "signal": "neutral" },
+            { "value": "+13.4%", "signal": "up" },
+            { "value": "+10.7%", "signal": "up" },
+            { "value": "+30.2%", "signal": "up" },
+            { "value": "+16.3%", "signal": "up" },
+            { "value": "-2.5%", "signal": "down" }
+          ]
+        }
+      ],
+      "totals": []
+    },
+    {
+      "title": "Key Insights — NVDA in Context",
+      "type": "insight_cards",
+      "data": [
+        {
+          "number": "01",
+          "title": "NVDA offers the cleanest valuation among AI-pure plays",
+          "evidence": "NVDA trades at a 24.04 forward P/E, materially below ARM at 147.06, AMD at 79.37, and MRVL at 58.14, despite leading the segment on EPS ($6.54) and analyst conviction. **Cross-referencing the Forward P/E and Trailing P/E rows**, only NVDA and AVGO sit below 65x forward, yet NVDA carries a higher absolute EPS base. **The implication is that NVDA offers growth-style returns at a value-style multiple relative to its AI cohort** — a rare configuration that has historically supported slower drawdowns in corrective tape.",
+          "source": "Cross-Reference: Fundamentals & Forward Estimates"
+        },
+        {
+          "number": "02",
+          "title": "NVDA is the segment laggard on YTD performance",
+          "evidence": "NVDA's **+9.26% YTD** return trails every peer except SWKS (-8.95%), while INTC (+179.46%), ARM (+157.22%), AMD (+149.53%), and MRVL (+162.13%) have all more than doubled. **The contrast is sharp**: peers with weaker fundamentals (INTC is loss-making with a Hold rating) have outperformed NVDA on price action alone. **This implies momentum-driven rotation has moved capital away from NVDA despite its superior consensus and EPS base**, creating a relative-value setup that could resolve either via NVDA catch-up or via peer mean-reversion.",
+          "source": "Cross-Reference: YTD Performance & Fundamentals"
+        },
+        {
+          "number": "03",
+          "title": "NVDA carries the largest implied analyst upside in the peer set",
+          "evidence": "The $301.62 target against $203.53 spot implies **+48.2% upside** — roughly 12 points above AVGO (+36.4%), the next closest Buy-rated peer. **AMD (-3.4%) and TXN (-2.5%)** already trade above consensus targets, signaling they have absorbed expected re-rating. **The implication is sell-side conviction remains highest on NVDA**, which matters when consensus revisions drive multiple expansion in the AI complex.",
+          "source": "Cross-Reference: Analyst Target & Spot Price"
+        },
+        {
+          "number": "04",
+          "title": "Technical posture is neutral, not euphoric",
+          "evidence": "NVDA's RSI of **52.38** sits in the neutral band, MACD at -1.47 vs signal -2.68 is mildly bearish, and the stock is below its $209.08 SMA-50 but above its $191.80 SMA-200 — a textbook consolidation profile. **In contrast, AMD's RSI of 50.22 with a +17.03 MACD shows bullish extension** after a 149% YTD run, while CRUS (RSI 22.78), INTC (RSI 28.89), and SWKS (RSI 21.51) are flashing **oversold signals**. **The implication is NVDA is entering any next leg with cleaner technicals than its high-flyer peers**, reducing the risk of a momentum-driven pullback.",
+          "source": "RSI & MACD Data"
+        },
+        {
+          "number": "05",
+          "title": "Beta/return profile favors NVDA on a risk-adjusted read",
+          "evidence": "NVDA's beta of **2.211** is below AMD (2.469), ARM (3.770), and MRVL (2.197), and only modestly above INTC (2.187), yet its Buy consensus and 48% upside skew are the highest in the cohort. **SWKS (1.497 beta) and TSM (1.246) are the lowest-beta names** but offer weaker upside or a Hold rating. **The implication is NVDA delivers a more favorable risk/reward ratio than nearly every AI peer**, which is meaningful for sizing decisions when sector volatility is elevated.",
+          "source": "Cross-Reference: Beta, Consensus & Target"
+        }
+      ]
+    },
+    {
+      "title": "Suggested Prompts",
+      "type": "suggested_prompts",
+      "prompts": [
+        "Deep-dive NVDA fundamentals and earnings quality vs AMD",
+        "Show performance breakdown across 1Y/2Y/5Y for the full peer set",
+        "Compare sentiment headlines between NVDA and INTC after the RTX Spark launch",
+        "Evaluate AVGO as a lower-beta alternative to NVDA",
+        "Rank peers by implied analyst upside sorted descending"
+      ]
+    }
+  ]
+}

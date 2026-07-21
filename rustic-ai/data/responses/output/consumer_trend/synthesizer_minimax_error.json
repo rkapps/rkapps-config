@@ -1,0 +1,7 @@
+{
+  "economic-data": {},
+  "web-sentiment": {
+    "error": "Input validation failed for Actor 'apify/google-search-scraper' (please report this to the developer). All four parallel calls returned errors and no dataset was produced.\\n\\nError: We could not run the Actor because the previous run failed too many times. Please try again later or contact support.",
+    "id": "wW6PdUgKSaZbsx7XEP"
+  }
+}

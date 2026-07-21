@@ -1,0 +1,231 @@
+{
+  "sections": [
+    {
+      "title": "Extreme Valuation Cybersecurity Stocks — Overview",
+      "type": "context",
+      "content": "Five tickers returned from the universe with valuation, performance, technical, and sentiment data. **SPCX is a data classification error** — it represents Space Exploration Technologies (Aerospace & Defense), not cybersecurity, and is excluded from the cybersecurity peer analysis below. Among the **four genuine cybersecurity names (BOX, CRWD, FFIV, OKTA)**, valuation extremes are sharp on both ends of the spectrum: **OKTA carries the highest traditional P/E at 110.57x**, while **FFIV offers the lowest at 34.61x** among profitable peers. **CRWD's forward P/E of 172.41x is the most stretched growth premium** in the set, yet its RSI of 20.62 suggests extreme oversold conditions. **BOX** is the outlier — its PEG of 0.595 is the lowest in the cohort despite elevated absolute multiples, hinting at growth-adjusted hidden value. Sentiment skews bullish on both CRWD and FFIV around the AI-cybersecurity demand narrative, though CRWD carries mixed headlines tied to the 'Claude Mythos' model launch.",
+      "group": "overview"
+    },
+    {
+      "title": "Fundamental Comparison — Valuation Profile",
+      "type": "table",
+      "layout": "column",
+      "headers": ["Metric", "BOX", "CRWD", "FFIV", "OKTA", "SPCX"],
+      "rows": [
+        [{ "value": "Price" }, { "value": "$31.41", "signal": "neutral" }, { "value": "$203.76", "signal": "neutral" }, { "value": "$403.41", "signal": "neutral" }, { "value": "$147.74", "signal": "neutral" }, { "value": "$131.11", "signal": "neutral" }],
+        [
+          { "value": "P/E (TTM)", "note": "<15 deep value; >50 growth premium" },
+          { "value": "48.23x", "signal": "down", "note": "Premium territory" },
+          { "value": "NM", "signal": "neutral", "note": "Negative earnings" },
+          { "value": "34.61x", "signal": "up", "note": "Reasonable vs peers" },
+          { "value": "110.57x", "signal": "down", "note": "Highest in cohort" },
+          { "value": "NM", "signal": "neutral", "note": "Negative EPS — N/A" }
+        ],
+        [
+          { "value": "Forward P/E" },
+          { "value": "15.77x", "signal": "up", "note": "Implies strong forward earnings" },
+          { "value": "172.41x", "signal": "down", "note": "Extreme growth premium" },
+          { "value": "24.21x", "signal": "neutral", "note": "Reasonable forward" },
+          { "value": "36.50x", "signal": "down", "note": "Elevated forward" },
+          { "value": "NM", "signal": "neutral", "note": "N/A" }
+        ],
+        [
+          { "value": "P/S", "note": "Sales multiple" },
+          { "value": "6.14x", "signal": "down" },
+          { "value": "41.33x", "signal": "down" },
+          { "value": "7.55x", "signal": "down" },
+          { "value": "8.97x", "signal": "down" },
+          { "value": "93.35x", "signal": "down", "note": "Aerospace, not cybersecurity" }
+        ],
+        [
+          { "value": "P/B", "note": "Book multiple" },
+          { "value": "31.79x", "signal": "down" },
+          { "value": "46.31x", "signal": "down" },
+          { "value": "6.51x", "signal": "neutral" },
+          { "value": "3.52x", "signal": "neutral" },
+          { "value": "51.9x", "signal": "down" }
+        ],
+        [
+          { "value": "PEG", "note": "<1 undervalued vs growth" },
+          { "value": "0.595", "signal": "up", "note": "Deep value — lowest in cohort" },
+          { "value": "6.85", "signal": "down", "note": "Worst PEG — growth priced" },
+          { "value": "1.819", "signal": "down", "note": "Elevated" },
+          { "value": "1.325", "signal": "neutral", "note": "Premium but reasonable" },
+          { "value": "N/A", "signal": "neutral" }
+        ],
+        [{ "value": "EPS", "note": "Earnings per share" }, { "value": "$0.64" }, { "value": "-$0.02" }, { "value": "$12.46" }, { "value": "$1.38" }, { "value": "-$0.67" }],
+        [{ "value": "Beta", "note": "Volatility vs market" }, { "value": "1.414" }, { "value": "1.237" }, { "value": "1.030" }, { "value": "0.773" }, { "value": "N/A" }],
+        [
+          { "value": "YTD Return", "note": "Year-to-date performance" },
+          { "value": "+5.02%", "signal": "down", "indicator": "arrow" },
+          { "value": "+73.87%", "signal": "up", "indicator": "arrow" },
+          { "value": "+58.04%", "signal": "up", "indicator": "arrow" },
+          { "value": "+70.86%", "signal": "up", "indicator": "arrow" },
+          { "value": "N/A" }
+        ],
+        [
+          { "value": "1Y Return", "note": "12-month performance" },
+          { "value": "-3.18%", "signal": "down", "indicator": "arrow" },
+          { "value": "+73.25%", "signal": "up", "indicator": "arrow" },
+          { "value": "+37.63%", "signal": "up", "indicator": "arrow" },
+          { "value": "+62.23%", "signal": "up", "indicator": "arrow" },
+          { "value": "N/A" }
+        ],
+        [{ "value": "Analyst Target", "note": "Mean price target" }, { "value": "$32.50" }, { "value": "$186.07" }, { "value": "$409.00" }, { "value": "$122.95" }, { "value": "$242.22" }],
+        [
+          { "value": "Consensus", "note": "Wall Street rating" },
+          { "value": "Hold", "signal": "neutral", "indicator": "dot" },
+          { "value": "Buy", "signal": "up", "indicator": "dot" },
+          { "value": "Hold", "signal": "neutral", "indicator": "dot" },
+          { "value": "Buy", "signal": "up", "indicator": "dot" },
+          { "value": "Buy", "signal": "up", "indicator": "dot" }
+        ]
+      ],
+      "group": "fundamentals"
+    },
+    {
+      "title": "Performance Comparison (%)",
+      "type": "bar_chart",
+      "orientation": "vertical",
+      "format": "percent",
+      "groups": ["1M", "3M", "6M", "YTD", "1Y"],
+      "data": [
+        { "name": "BOX", "values": [22.46, 32.25, 21.51, 5.02, -3.18] },
+        { "name": "CRWD", "values": [19.95, 92.25, 79.57, 73.87, 73.25] },
+        { "name": "FFIV", "values": [3.74, 29.77, 50.4, 58.04, 37.63] },
+        { "name": "OKTA", "values": [27.07, 104.48, 64.98, 70.86, 62.23] }
+      ],
+      "group": "performance"
+    },
+    {
+      "title": "Technical Indicators",
+      "type": "table",
+      "layout": "column",
+      "headers": ["Metric", "BOX", "CRWD", "FFIV", "OKTA"],
+      "rows": [
+        [
+          { "value": "RSI (14)", "note": ">70 overbought; <30 oversold" },
+          { "value": "86.14", "signal": "down", "note": "Overbought — consolidation risk" },
+          { "value": "20.62", "signal": "up", "note": "Extreme oversold — reversal watch" },
+          { "value": "39.90", "signal": "neutral", "note": "Neutral momentum" },
+          { "value": "60.10", "signal": "neutral", "note": "Neutral momentum" }
+        ],
+        [
+          { "value": "Price vs SMA50", "note": "Trend filter" },
+          { "value": "Above", "signal": "up" },
+          { "value": "Below", "signal": "down", "note": "SMA value reflects pre-split data" },
+          { "value": "Above", "signal": "up" },
+          { "value": "Above", "signal": "up" }
+        ],
+        [
+          { "value": "MACD", "note": "Momentum signal" },
+          { "value": "1.11", "signal": "up" },
+          { "value": "-126.77", "signal": "down", "note": "Negative momentum" },
+          { "value": "9.57", "signal": "up" },
+          { "value": "10.13", "signal": "up" }
+        ],
+        [
+          { "value": "MACD Signal", "note": "Trigger line" },
+          { "value": "0.78", "signal": "up" },
+          { "value": "-90.31", "signal": "down" },
+          { "value": "10.88", "signal": "neutral" },
+          { "value": "10.04", "signal": "neutral" }
+        ],
+        [{ "value": "Bollinger Upper", "note": "Resistance band" }, { "value": "$30.94" }, { "value": "$982.14" }, { "value": "$441.39" }, { "value": "$162.14" }],
+        [{ "value": "Bollinger Lower", "note": "Support band" }, { "value": "$23.40" }, { "value": "-$31.61" }, { "value": "$375.45" }, { "value": "$107.93" }]
+      ],
+      "group": "technicals"
+    },
+    {
+      "title": "Sentiment",
+      "type": "table",
+      "layout": "column",
+      "headers": ["Metric", "CRWD", "FFIV"],
+      "rows": [
+        [{ "value": "Top Headline" }, { "value": "AI multiples cybersecurity threat — PANW & CRWD are main beneficiaries" }, { "value": "Buy 4 Cybersecurity Bigwigs for a Strong & Secure Portfolio in 2026" }],
+        [{ "value": "Sentiment" }, { "value": "Somewhat-Bullish", "signal": "up", "indicator": "badge" }, { "value": "Bullish", "signal": "up", "indicator": "badge" }],
+        [{ "value": "Source" }, { "value": "Proactive Investors" }, { "value": "The Globe and Mail / TradingView" }],
+        [{ "value": "Headline 2" }, { "value": "Cybersecurity stocks fall on Anthropic 'Claude Mythos' news" }, { "value": "Buy 4 Cybersecurity Bigwigs for 2026 (duplicate)" }],
+        [{ "value": "Headline 3" }, { "value": "Claude Mythos rally pushed cyber stocks to record highs" }, { "value": "—" }],
+        [{ "value": "Overall Bias" }, { "value": "Bullish", "signal": "up", "indicator": "dot" }, { "value": "Bullish", "signal": "up", "indicator": "dot" }]
+      ],
+      "group": "technicals"
+    },
+    {
+      "title": "Extreme Valuation Profile — Bull vs Bear",
+      "type": "table",
+      "layout": "column",
+      "headers": ["Profile", "Ticker", "Supporting Data", "Risk Caveat"],
+      "rows": [
+        [{ "value": "Most Extended Growth Premium", "signal": "down" }, { "value": "CRWD" }, { "value": "Forward P/E 172.41x, P/S 41.33x, PEG 6.85 — highest forward multiple in cohort" }, { "value": "Negative EPS today; RSI 20.62 signals severe oversold, but multiple compression risk remains" }],
+        [{ "value": "Premium on Optics, Reasonable on Growth", "signal": "down" }, { "value": "OKTA" }, { "value": "P/E 110.57x highest in peer set; PEG 1.325 supports premium" }, { "value": "Forward P/E 36.5x still elevated — any growth deceleration would compress multiple sharply" }],
+        [{ "value": "Hidden Deep Value", "signal": "up" }, { "value": "BOX" }, { "value": "PEG 0.595 LOWEST in cohort — implies growth justifies the P/E 48.23x" }, { "value": "P/B 31.79x elevated; RSI 86.14 overbought — technical risk to thesis" }],
+        [{ "value": "Most Reasonable Cybersecurity Valuation", "signal": "up" }, { "value": "FFIV" }, { "value": "P/E 34.61x LOWEST among profitable peers, P/B 6.51x reasonable, +58.04% YTD momentum" }, { "value": "PEG 1.819 slightly elevated; YTD return already prices in much of the upside" }],
+        [{ "value": "Classification Error", "signal": "neutral" }, { "value": "SPCX" }, { "value": "P/S 93.35x, P/B 51.9x — but this is SpaceX (Aerospace), not cybersecurity" }, { "value": "Should be excluded from any cybersecurity valuation screen" }]
+      ],
+      "group": "risk"
+    },
+    {
+      "title": "Investment Insights",
+      "type": "insight_cards",
+      "data": [
+        {
+          "number": "1",
+          "title": "OKTA carries the highest traditional P/E but growth-justified",
+          "evidence": "**OKTA's P/E of 110.57x** is the highest in the cybersecurity cohort, triggering growth-premium signal under standard valuation rules. However, its **PEG of 1.325** sits below peers like CRWD (6.85) and FFIV (1.819), implying the premium is partially supported by expected earnings growth. This is the rare case where a high absolute multiple may not signal a stretched valuation. Source: Fundamental Comparison Table.",
+          "source": "Fundamental Comparison Table"
+        },
+        {
+          "number": "2",
+          "title": "CRWD shows the most extreme forward valuation — RSI confirms setup",
+          "evidence": "**CRWD's forward P/E of 172.41x** is the most stretched in the cohort, paired with a P/S of 41.33x and PEG of 6.85 — the worst in the peer set. Yet **RSI sits at 20.62**, indicating extreme oversold conditions and a potential reversal watch. This is a textbook setup: **highest forward premium plus deepest oversold reading**, suggesting either a violent mean-reversion bounce or sustained multiple compression. Source: Cross-Reference: Fundamentals & Technicals.",
+          "source": "Cross-Reference: Fundamentals & Technicals"
+        },
+        {
+          "number": "3",
+          "title": "BOX — the hidden value anomaly inside the cohort",
+          "evidence": "**BOX's PEG of 0.595** is the LOWEST across all five returned tickers, suggesting growth-adjusted undervaluation despite an elevated absolute P/E of 48.23x and P/B of 31.79x. Cross-referenced with performance, BOX delivered **+32.25% over 3M** but **-3.18% over 1Y** — inconsistent with peer strength, hinting at idiosyncratic re-rating risk. Source: Fundamental Comparison Table.",
+          "source": "Fundamental Comparison Table"
+        },
+        {
+          "number": "4",
+          "title": "FFIV offers the most reasonable valuation with momentum intact",
+          "evidence": "**FFIV's P/E of 34.61x** is the lowest among the four profitable cybersecurity tickers, with P/B of 6.51x the most moderate in the cohort. Cross-referenced with performance, **+58.04% YTD and RSI of 39.90** show the stock has momentum without overheating. This is the **most balanced risk/reward profile** in the set: reasonable entry multiple, positive technical trend, and bullish sentiment coverage. Source: 1Y & YTD Return Data + Technicals.",
+          "source": "Cross-Reference: Fundamentals & Technicals"
+        },
+        {
+          "number": "5",
+          "title": "SPCX is not a cybersecurity stock — screen error flagged",
+          "evidence": "SPCX (Space Exploration Technologies Corp.) is classified under **Industrials / Aerospace & Defense**, not cybersecurity. Its **P/S of 93.35x and P/B of 51.9x** reflect SpaceX's private-market valuation re-rating via tender offers, not public company fundamentals. **Excluding SPCX**, the genuine cybersecurity cohort is BOX, CRWD, FFIV, OKTA. Source: Sector Classification Data.",
+          "source": ""
+        },
+        {
+          "number": "6",
+          "title": "BOX technical overbought warns against chasing valuation anomaly",
+          "evidence": "**BOX's RSI of 86.14** is deep into overbought territory, contrasting sharply with **CRWD's RSI of 20.62** at the other extreme. **The 65.5-point RSI spread within the same peer set** is unusually wide, indicating one of these names is due for a mean-reversion move. BOX's positive valuation case (lowest PEG) is partially offset by short-term technical exhaustion. Flag the risk that the hidden-value thesis could trigger on a pullback rather than continuation. Source: Technical Indicators Table.",
+          "source": "Technical Indicators Table"
+        },
+        {
+          "number": "7",
+          "title": "Sentiment alignment — CRWD and FFIV share bullish AI-cyber narrative",
+          "evidence": "CRWD headlines span both **Bearish ('Cybersecurity stocks fall on Claude Mythos')** and **Bullish ('AI multiplying the cybersecurity threat — PANW and CRWD are the main beneficiaries')**, with Overall Bias landing **Bullish**. FFIV carries **uniformly Bullish sentiment** around cybersecurity portfolio inclusion. Both names benefit from the same underlying thesis — **AI-driven demand for endpoint/network security infrastructure** — but differ sharply on valuation discipline. Source: Sentiment Table.",
+          "source": "Sentiment Table"
+        }
+      ],
+      "group": "insights"
+    },
+    {
+      "title": "Suggested Prompts",
+      "type": "suggested_prompts",
+      "suggested_prompts": [
+        "Screen for cybersecurity stocks with PEG under 1.0",
+        "Compare CRWD vs PANW vs S versus the cybersecurity peer set",
+        "Show 5-year valuation trends for FFIV and OKTA",
+        "Find oversold cybersecurity stocks with RSI under 30 but Buy-rated",
+        "Show me deep-value cybersecurity stocks trading under P/E 30",
+        "Compare sentiment between CRWD, FFIV, and OKTA over the last 90 days"
+      ],
+      "group": "prompts"
+    }
+  ]
+}

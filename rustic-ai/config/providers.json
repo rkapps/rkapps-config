@@ -3,96 +3,112 @@
     {
       "id": "anthropic",
       "llm": "Anthropic",
-      "enabled": true,
+      "enabled": false,
       "api_key_env": "ANTHROPIC_API_KEY",
       "default_model": "claude-sonnet-4-6",
       "models": [
         {
           "id": "claude-sonnet-4-6",
-          "input_cost_per_1k": 0.00300,
-          "cached_read_cost_per_1k": 0.00030,
+          "enabled": true,
+          "input_cost_per_1k": 0.003,
+          "cached_read_cost_per_1k": 0.0003,
           "cached_write_cost_per_1k": 0.00375,
-          "output_cost_per_1k": 0.01500
+          "output_cost_per_1k": 0.015
         },
         {
           "id": "claude-haiku-4-5",
-          "input_cost_per_1k": 0.00100,
+          "enabled": true,
+          "input_cost_per_1k": 0.001,
           "cached_read_cost_per_1k": 0.00008,
-          "cached_write_cost_per_1k": 0.00100,
-          "output_cost_per_1k": 0.00500
+          "cached_write_cost_per_1k": 0.001,
+          "output_cost_per_1k": 0.005
         }
       ]
     },
     {
       "id": "openai",
       "llm": "OpenAI",
-      "enabled": true,
+      "enabled": false,
       "api_key_env": "OPENAI_API_KEY",
       "default_model": "gpt-4o",
       "models": [
         {
           "id": "gpt-5.4",
+          "enabled": true,
           "input_cost_per_1k": 0.00125,
           "cached_read_cost_per_1k": 0.000375,
           "cached_write_cost_per_1k": 0.0,
-          "output_cost_per_1k": 0.00750
+          "output_cost_per_1k": 0.0075
         },
         {
           "id": "gpt-5.4-mini",
+          "enabled": false,
           "input_cost_per_1k": 0.00075,
           "cached_read_cost_per_1k": 0.000375,
           "cached_write_cost_per_1k": 0.0,
-          "output_cost_per_1k": 0.00450
+          "output_cost_per_1k": 0.0045
         },
         {
           "id": "gpt-5.4-nano",
-          "input_cost_per_1k": 0.00010,
+          "enabled": false,
+          "input_cost_per_1k": 0.0001,
           "cached_read_cost_per_1k": 0.00005,
           "cached_write_cost_per_1k": 0.0,
-          "output_cost_per_1k": 0.00040
+          "output_cost_per_1k": 0.0004
         }
       ]
     },
     {
       "id": "gemini",
       "llm": "Gemini",
-      "enabled": true,
+      "enabled": false,
       "api_key_env": "GEMINI_API_KEY",
       "default_model": "gemini-3-flash-preview",
       "models": [
         {
           "id": "gemini-3.5-flash",
+          "enabled": true,
           "input_cost_per_1k": 0.0027,
           "cached_read_cost_per_1k": 0.0000093,
           "cached_write_cost_per_1k": 0.0,
-          "output_cost_per_1k": 0.00160
+          "output_cost_per_1k": 0.009
         },
         {
           "id": "gemini-3.1-flash-lite-preview",
+          "enabled": false,
           "input_cost_per_1k": 0.000037,
           "cached_read_cost_per_1k": 0.0000093,
           "cached_write_cost_per_1k": 0.0,
-          "output_cost_per_1k": 0.000150
+          "output_cost_per_1k": 0.00015
         },
         {
           "id": "gemini-3-flash-preview",
+          "enabled": true,
           "input_cost_per_1k": 0.000075,
           "cached_read_cost_per_1k": 0.0000188,
           "cached_write_cost_per_1k": 0.0,
-          "output_cost_per_1k": 0.000300
+          "output_cost_per_1k": 0.0003
+        },
+        {
+          "id": "gemini-3.1-pro-preview",
+          "enabled": true,
+          "input_cost_per_1k": 0.004,
+          "cached_read_cost_per_1k": 0.0000188,
+          "cached_write_cost_per_1k": 0.0,
+          "output_cost_per_1k": 0.018
         }
       ]
-    }
-    ,
+    },
     {
       "id": "groq",
       "llm": "Groq",
-      "enabled": true,
+      "enabled": false,
       "api_key_env": "GROQ_API_KEY",
       "default_model": "qwen/qwen3.6-27b",
       "models": [
         {
           "id": "qwen/qwen3-32b",
+          "enabled": true,
           "input_cost_per_1k": 0.00029,
           "cached_read_cost_per_1k": 0.0000093,
           "cached_write_cost_per_1k": 0.0,
@@ -100,17 +116,150 @@
         },
         {
           "id": "qwen/qwen3.6-27b",
-          "input_cost_per_1k": 0.00060,
+          "enabled": true,
+          "input_cost_per_1k": 0.0006,
           "cached_read_cost_per_1k": 0.0000093,
           "cached_write_cost_per_1k": 0.0,
           "output_cost_per_1k": 0.00084
         },
         {
           "id": "llama-3.3-70b-versatile",
+          "enabled": true,
           "input_cost_per_1k": 0.00059,
           "cached_read_cost_per_1k": 0.0000188,
           "cached_write_cost_per_1k": 0.0,
           "output_cost_per_1k": 0.00079
+        }
+      ]
+    },
+    {
+      "id": "together",
+      "llm": "Together",
+      "enabled": true,
+      "api_key_env": "TOGETHER_API_KEY",
+      "default_model": "MiniMaxAI/MiniMax-M3",
+      "models": [
+        {
+          "id": "zai-org/GLM-5.2",
+          "enabled": true,
+          "input_cost_per_1k": 0.0014,
+          "cached_read_cost_per_1k": 0.00026,
+          "cached_write_cost_per_1k": 0.0,
+          "output_cost_per_1k": 0.0044
+        },
+        {
+          "id": "MiniMaxAI/MiniMax-M3",
+          "enabled": true,
+          "input_cost_per_1k": 0.0003,
+          "cached_read_cost_per_1k": 0.0000093,
+          "cached_write_cost_per_1k": 0.0,
+          "output_cost_per_1k": 0.004
+        },
+        {
+          "id": "moonshotai/Kimi-K2.7-Code",
+          "enabled": true,
+          "input_cost_per_1k": 0.00095,
+          "cached_read_cost_per_1k": 0.0000188,
+          "cached_write_cost_per_1k": 0.0,
+          "output_cost_per_1k": 0.0012
+        },
+        {
+          "id": "Qwen/Qwen2.5-7B-Instruct-Turbo",
+          "enabled": false,
+          "input_cost_per_1k": 0.0003,
+          "cached_read_cost_per_1k": 0.0000188,
+          "cached_write_cost_per_1k": 0.0,
+          "output_cost_per_1k": 0.0012
+        },
+        {
+          "id": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+          "enabled": false,
+          "input_cost_per_1k": 0.00104,
+          "cached_read_cost_per_1k": 0.0000188,
+          "cached_write_cost_per_1k": 0.0,
+          "output_cost_per_1k": 0.0
+        },
+        {
+          "id": "openai/gpt-oss-120b",
+          "enabled": false,
+          "input_cost_per_1k": 0.00015,
+          "cached_read_cost_per_1k": 0.0000188,
+          "cached_write_cost_per_1k": 0.0,
+          "output_cost_per_1k": 0.0006
+        },
+        {
+          "id": "deepseek-ai/DeepSeek-V4-Pro",
+          "enabled": true,
+          "input_cost_per_1k": 0.00174,
+          "cached_read_cost_per_1k": 0.0000188,
+          "cached_write_cost_per_1k": 0.0,
+          "output_cost_per_1k": 0.00348
+        },
+        {
+          "id": "google/gemma-4-31B-it",
+          "enabled": false,
+          "input_cost_per_1k": 0.00039,
+          "cached_read_cost_per_1k": 0.0000188,
+          "cached_write_cost_per_1k": 0.0,
+          "output_cost_per_1k": 0.00097
+        }
+      ]
+    },
+    {
+      "id": "fireworks",
+      "llm": "Fireworks",
+      "enabled": true,
+      "api_key_env": "FIREWORKS_API_KEY",
+      "default_model": "models/glm-5p2",
+      "models": [
+        {
+          "id": "accounts/fireworks/models/glm-5p2",
+          "enabled": true,
+          "input_cost_per_1k": 0.0014,
+          "cached_read_cost_per_1k": 0.00026,
+          "cached_write_cost_per_1k": 0.0,
+          "output_cost_per_1k": 0.0044
+        },
+        {
+          "id": "accounts/fireworks/models/kimi-k2p7-code",
+          "enabled": true,
+          "input_cost_per_1k": 0.0014,
+          "cached_read_cost_per_1k": 0.00026,
+          "cached_write_cost_per_1k": 0.0,
+          "output_cost_per_1k": 0.0044
+        },
+        {
+          "id": "accounts/fireworks/models/minimax-m3",
+          "enabled": true,
+          "input_cost_per_1k": 0.0014,
+          "cached_read_cost_per_1k": 0.00026,
+          "cached_write_cost_per_1k": 0.0,
+          "output_cost_per_1k": 0.0044
+        },
+        {
+          "id": "accounts/fireworks/models/deepseek-v4-pro",
+          "enabled": true,
+          "input_cost_per_1k": 0.00174,
+          "cached_read_cost_per_1k": 0.0000188,
+          "cached_write_cost_per_1k": 0.0,
+          "output_cost_per_1k": 0.00348
+        }
+      ]
+    },
+    {
+      "id": "mistral",
+      "llm": "Mistral",
+      "enabled": true,
+      "api_key_env": "MISTRAL_API_KEY",
+      "default_model": "mistral-small-latest",
+      "models": [
+        {
+          "id": "mistral-small-latest",
+          "enabled": true,
+          "input_cost_per_1k": 0.0014,
+          "cached_read_cost_per_1k": 0.00026,
+          "cached_write_cost_per_1k": 0.0,
+          "output_cost_per_1k": 0.0044
         }
       ]
     }

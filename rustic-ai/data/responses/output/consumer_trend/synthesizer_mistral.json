@@ -1,0 +1,79 @@
+{
+  "sections": [
+    {
+      "title": "2026 US Inflation Snapshot: CPI Trend and Consumer Impact",
+      "type": "context",
+      "group": "snapshot",
+      "content": "Consumer Price Index (CPI) rose from 320.62 in January 2025 to 333.979 in May 2026, marking a 4.17% year-over-year increase. This upward trend reflects persistent inflationary pressures, though the pace has moderated compared to prior years. Real disposable personal income grew by 1.7% in 2025 but shows signs of deceleration, while personal consumption expenditures continue to rise steadily, indicating resilient consumer spending despite economic headwinds."
+    },
+    {
+      "title": "Macroeconomic Indicators",
+      "type": "metric_cards",
+      "group": "snapshot",
+      "data": [
+        { "label": "CPI YoY Change", "value": "+4.17%", "status": "up" },
+        { "label": "Real Disposable Income Growth", "value": "+1.7%", "status": "neutral" },
+        { "label": "Unemployment Rate", "value": "4.3%", "status": "neutral" },
+        { "label": "Consumer Sentiment", "value": "44.8", "benchmark": "vs 61.7 (Jul 2025)", "status": "down" }
+      ]
+    },
+    {
+      "title": "Housing Market and Building Materials",
+      "type": "table",
+      "layout": "column",
+      "group": "housing",
+      "headers": ["Metric", "2025 Jan", "2026 May", "YoY Change"],
+      "rows": [
+        [{ "value": "Housing Starts" }, { "value": "1,385k", "signal": "neutral" }, { "value": "1,177k", "signal": "down" }, { "value": "-15%", "signal": "down" }],
+        [{ "value": "Building Permits" }, { "value": "1,393k", "signal": "neutral" }, { "value": "1,410k", "signal": "up" }, { "value": "+1.2%", "signal": "up" }],
+        [{ "value": "Building Materials Retail Sales" }, { "value": "$596.9B", "signal": "neutral" }, { "value": "$623.4B", "signal": "up" }, { "value": "+4.5%", "signal": "up" }]
+      ]
+    },
+    {
+      "title": "Sector-Specific Consumer Trends",
+      "type": "table",
+      "layout": "column",
+      "group": "sectors",
+      "headers": ["Sector", "Performance Trend", "Key Driver"],
+      "rows": [
+        [{ "value": "Furniture" }, { "value": "Mixed", "signal": "neutral" }, { "value": "Housing market volatility" }],
+        [{ "value": "Apparel" }, { "value": "Positive", "signal": "up" }, { "value": "Consumer discretionary resilience" }],
+        [{ "value": "Electronics" }, { "value": "Mixed", "signal": "neutral" }, { "value": "Pricing sensitivity" }]
+      ]
+    },
+    {
+      "title": "Consumer Sentiment vs. Spending Capacity",
+      "type": "bar_chart",
+      "title": "Consumer Sentiment and Disposable Income Growth (2025-2026)",
+      "group": "analysis",
+      "orientation": "horizontal",
+      "format": "number",
+      "data": [
+        { "name": "Consumer Sentiment (Index)", "values": [61.7, 56.6, 53.3, 49.8, 44.8] },
+        { "name": "Real Disposable Income Growth (%)", "values": [5.7, 2.9, 1.7, 1.5, 1.3] }
+      ],
+      "groups": ["Jul 2025", "Feb 2026", "Mar 2026", "Apr 2026", "May 2026"]
+    },
+    {
+      "title": "Inflation-Driven Consumer Behavior Insights",
+      "type": "insight_cards",
+      "title": "",
+      "data": [
+        {
+          "number": 1,
+          "title": "Pricing Sensitivity in Discretionary Sectors",
+          "evidence": "Consumer sentiment at 44.8 (May 2026) signals heightened price sensitivity, particularly in apparel and electronics where demand remains elastic despite inflation.",
+          "source": "UMCSENT (Consumer Sentiment Index)"
+        },
+        { "number": 2, "title": "Housing Market Lag Impacting Furniture Demand", "evidence": "Housing starts declined 15% YoY (May 2026), while building materials retail sales rose 4.5%, suggesting deferred discretionary spending on home furnishings.", "source": "HOUST, RSFSXMV (FRED)" },
+        { "number": 3, "title": "Stable Employment Supports Gradual Spending", "evidence": "Unemployment remained stable at ~4.3%, supporting steady personal consumption expenditures despite low consumer confidence.", "source": "UNRATE (FRED)" },
+        {
+          "number": 4,
+          "title": "Mixed Sector Performance Reflects Inflation Resilience",
+          "evidence": "Furniture and electronics show mixed performance with bearish outliers (e.g., Ethan Allen, GoPro), while apparel brands like Columbia Sportswear demonstrate resilience.",
+          "source": "Finance Data Snapshots"
+        }
+      ]
+    }
+  ]
+}

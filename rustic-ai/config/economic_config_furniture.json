@@ -1,0 +1,123 @@
+{
+  "fred_series": [
+    { "series_id": "CPIAUCSL", "name": "Consumer Price Index", "category": "consumer_health", "frequency": "m", "description": "Consumer Price Index for all urban consumers (monthly)" },
+    { "series_id": "DFFFRC1A027NBEA", "name": "Furniture and Furnishings Spending", "category": "consumer_spending", "frequency": "a", "description": "Furniture and furnishings consumer spending (annual)" },
+    { "series_id": "DFDHRC1Q027SBEA", "name": "Furnishings and Durable Equipment Spending", "category": "consumer_spending", "frequency": "q", "description": "Furnishings and durable household equipment spending (quarterly)" },
+    { "series_id": "DSPIC96", "name": "Real Disposable Personal Income", "category": "consumer_health", "frequency": "m", "description": "Real disposable personal income (monthly)" },
+    { "series_id": "HOUST", "name": "Housing Starts", "category": "housing", "frequency": "m", "description": "Housing starts — new residential construction (monthly)" },
+    { "series_id": "PCE", "name": "Personal Consumption Expenditures", "category": "consumer_health", "frequency": "m", "description": "Total personal consumption expenditures (monthly)" },
+    { "series_id": "PERMIT", "name": "Building Permits", "category": "housing", "frequency": "m", "description": "Building permits issued for new housing units (monthly)" },
+    { "series_id": "RHORUSQ156N", "name": "Homeownership Rate", "category": "housing", "frequency": "q", "description": "Homeownership rate — share of occupied units that are owner-occupied (quarterly)" },
+    { "series_id": "RSFSXMV", "name": "Building Materials Retail Sales", "category": "consumer_spending", "frequency": "m", "description": "Building materials and garden supply retail sales (monthly)" },
+    { "series_id": "UMCSENT", "name": "Consumer Sentiment", "category": "consumer_health", "frequency": "m", "description": "University of Michigan consumer sentiment index (monthly)" },
+    { "series_id": "UNRATE", "name": "Unemployment Rate", "category": "consumer_health", "frequency": "m", "description": "Unemployment rate (monthly)" }
+  ],
+  "bea_nipa": [
+    { "table_name": "T20100", "series_code": "A065RC", "description": "Personal income" },
+    { "table_name": "T20100", "series_code": "A067RC", "description": "Disposable personal income, current dollars" },
+    { "table_name": "T20100", "series_code": "DPCERC", "description": "Personal consumption expenditures" },
+    { "table_name": "T20100", "series_code": "A072RC", "description": "Personal saving as percentage of disposable personal income" },
+    { "table_name": "T20100", "series_code": "A067RX", "description": "Disposable personal income, chained dollars" },
+    { "table_name": "T20100", "series_code": "A067RL", "description": "Disposable personal income percent change, chained dollars" },
+    { "table_name": "T20305", "series_code": "DPCERC", "description": "Personal consumption expenditures total" },
+    { "table_name": "T20305", "series_code": "DGDSRC", "description": "Goods total PCE" },
+    { "table_name": "T20305", "series_code": "DDURRC", "description": "Durable goods total PCE" },
+    { "table_name": "T20305", "series_code": "DFDHRC", "description": "Furnishings and durable household equipment PCE" },
+    { "table_name": "T20305", "series_code": "DHSGRC", "description": "Housing PCE" },
+    { "table_name": "T20305", "series_code": "DPCCRC", "description": "PCE excluding food and energy" }
+  ],
+  "bea_regional": [
+    { "code": "CAINC1", "line_code": "1", "description": "Total personal income by state" },
+    { "code": "CAINC5N", "line_code": "700", "description": "Retail trade total earnings by state" },
+    { "code": "CAINC5N", "line_code": "704", "description": "Building material and garden equipment dealers earnings by state" },
+    { "code": "CAINC5N", "line_code": "521", "description": "Furniture and related product manufacturing earnings by state" },
+    { "code": "CAGDP1", "line_code": "1", "description": "GDP by state" }
+  ],
+  "census": [
+    { "variable": "B25077_001E", "description": "Median home value — key indicator of housing wealth and furniture spending capacity" },
+    { "variable": "B19013_001E", "description": "Median household income — purchasing power for furniture" },
+    { "variable": "B25003_002E", "description": "Owner-occupied housing units — homeowners are primary furniture buyers" },
+    { "variable": "B25003_003E", "description": "Renter-occupied housing units — renters as secondary furniture market" },
+    { "variable": "B01002_001E", "description": "Median age — older demographics correlate with higher home furnishing spend" },
+    { "variable": "B01003_001E", "description": "Total population — market size baseline" },
+    { "variable": "B17001_002E", "description": "Population below poverty level — indicator of constrained discretionary spend" },
+    { "variable": "B23025_004E", "description": "Employed population — employment drives household formation and furniture demand" }
+  ],
+  "geo_reference": {
+    "national": {
+      "fips": "00000",
+      "name": "United States"
+    },
+    "regions": {
+      "northeast": {
+        "fips": ["09000", "23000", "25000", "33000", "34000", "36000", "42000", "44000", "50000"],
+        "states": ["Connecticut", "Maine", "Massachusetts", "New Hampshire", "New Jersey", "New York", "Pennsylvania", "Rhode Island", "Vermont"]
+      },
+      "midwest": {
+        "fips": ["17000", "18000", "19000", "20000", "26000", "27000", "29000", "31000", "38000", "39000", "46000", "55000"],
+        "states": ["Illinois", "Indiana", "Iowa", "Kansas", "Michigan", "Minnesota", "Missouri", "Nebraska", "North Dakota", "Ohio", "South Dakota", "Wisconsin"]
+      },
+      "south": {
+        "fips": ["01000", "05000", "10000", "11000", "12000", "13000", "21000", "22000", "24000", "28000", "37000", "40000", "45000", "47000", "48000", "51000", "54000"],
+        "states": ["Alabama", "Arkansas", "Delaware", "District of Columbia", "Florida", "Georgia", "Kentucky", "Louisiana", "Maryland", "Mississippi", "North Carolina", "Oklahoma", "South Carolina", "Tennessee", "Texas", "Virginia", "West Virginia"]
+      },
+      "west": {
+        "fips": ["02000", "04000", "06000", "08000", "15000", "16000", "30000", "32000", "35000", "41000", "49000", "53000", "56000"],
+        "states": ["Alaska", "Arizona", "California", "Colorado", "Hawaii", "Idaho", "Montana", "Nevada", "New Mexico", "Oregon", "Utah", "Washington", "Wyoming"]
+      }
+    },
+    "states": {
+      "Alabama": "01000",
+      "Alaska": "02000",
+      "Arizona": "04000",
+      "Arkansas": "05000",
+      "California": "06000",
+      "Colorado": "08000",
+      "Connecticut": "09000",
+      "Delaware": "10000",
+      "District of Columbia": "11000",
+      "Florida": "12000",
+      "Georgia": "13000",
+      "Hawaii": "15000",
+      "Idaho": "16000",
+      "Illinois": "17000",
+      "Indiana": "18000",
+      "Iowa": "19000",
+      "Kansas": "20000",
+      "Kentucky": "21000",
+      "Louisiana": "22000",
+      "Maine": "23000",
+      "Maryland": "24000",
+      "Massachusetts": "25000",
+      "Michigan": "26000",
+      "Minnesota": "27000",
+      "Mississippi": "28000",
+      "Missouri": "29000",
+      "Montana": "30000",
+      "Nebraska": "31000",
+      "Nevada": "32000",
+      "New Hampshire": "33000",
+      "New Jersey": "34000",
+      "New Mexico": "35000",
+      "New York": "36000",
+      "North Carolina": "37000",
+      "North Dakota": "38000",
+      "Ohio": "39000",
+      "Oklahoma": "40000",
+      "Oregon": "41000",
+      "Pennsylvania": "42000",
+      "Rhode Island": "44000",
+      "South Carolina": "45000",
+      "South Dakota": "46000",
+      "Tennessee": "47000",
+      "Texas": "48000",
+      "Utah": "49000",
+      "Vermont": "50000",
+      "Virginia": "51000",
+      "Washington": "53000",
+      "West Virginia": "54000",
+      "Wisconsin": "55000",
+      "Wyoming": "56000"
+    }
+  }
+}

@@ -25,30 +25,59 @@ If the question spans multiple industries — include all relevant ones in the g
 | economic-data              | Macro economic signals, demographic data  |
 | web-sentiment              | Consumer sentiment, reviews, social buzz  |
 | web-research               | Specific URLs, reports, deep web research |
-| finance-orchestrator       | Market / competitor / sector signals      |
+| finance-data               | Market / competitor / sector signals      |
 | consumer-trend-synthesizer | Final synthesis — stop: true only         |
 
 ## Agent Selection Rules
 
-| User question type                   | Agents                                             |
-| ------------------------------------ | -------------------------------------------------- |
-| Spending trends / consumer behaviour | economic-data, web-sentiment                       |
-| Market expansion / new location      | economic-data, web-sentiment, web-research         |
-| Competitor / industry performance    | finance-orchestrator, web-sentiment                |
-| Specific reports / URLs / news       | web-research                                       |
-| Social buzz / reviews / sentiment    | web-sentiment                                      |
-| Product trends / category trends     | economic-data, web-sentiment                       |
-| Full market picture                  | economic-data, web-sentiment, finance-orchestrator |
+| User question type                   | Agents                                     |
+| ------------------------------------ | ------------------------------------------ |
+| Spending trends / consumer behaviour | economic-data, web-sentiment               |
+| Market expansion / new location      | economic-data, web-sentiment, web-research |
+| Competitor / industry performance    | finance-data, web-sentiment                |
+| Specific reports / URLs / news       | web-research                               |
+| Social buzz / reviews / sentiment    | web-sentiment                              |
+| Product trends / category trends     | economic-data, web-sentiment               |
+| Full market picture                  | economic-data, web-sentiment, finance-data |
+
+## Finance Data Usage
+
+Use finance-data only when the query relates to a specific consumer sector. Pull sector ETFs or representative stocks, not individual company analysis.
+
+### Sector mappings — use these when relevant:
+
+| Sector                 | ETFs         | Representative Stocks         |
+| ---------------------- | ------------ | ----------------------------- |
+| Furniture & Home       | No major ETF | RH, WSM, FLXS, LZB, ETH, BBBY |
+| Home Improvement       | XHB          | HD, LOW, BLDR                 |
+| Apparel & Retail       | XRT, XLY     | NKE, LULU, TJX, ROST, GPS     |
+| Consumer Staples       | XLP          | PG, KO, WMT, COST             |
+| Consumer Discretionary | XLY          | AMZN, TGT, MCD, SBUX          |
+| Real Estate / Housing  | XHB, ITB     | DHI, LEN, PHM, TOL            |
+
+### When to use finance-data:
+
+- Query mentions a specific retail sector → pull relevant ETF + top 3-4 stocks
+- Query asks about consumer spending patterns → pull XLY, XLP ETFs for sector context
+- Query is purely macro (CPI, housing starts, income) → skip finance-data entirely
+
+### When NOT to use finance-data:
+
+- General economic outlook queries
+- Regional economic analysis
+- Government data only queries
+
+Always limit to 5 tickers maximum.
 
 ## Examples
 
 "Is furniture spending growing in the Southwest?" → `["economic-data", "web-sentiment"]`
 "What are consumers saying about fast fashion?" → `["web-sentiment"]`
-"How are electronics retailers performing?" → `["finance-orchestrator", "web-sentiment"]`
+"How are electronics retailers performing?" → `["finance-data", "web-sentiment"]`
 "Should we expand furniture retail into Phoenix?" → `["economic-data", "web-sentiment", "web-research"]`
 "What does the latest NRF report say about apparel?" → `["web-research"]`
 "Compare furniture vs electronics consumer spending" → `["economic-data", "web-sentiment"]`
-"What are competitors doing in the electronics space?" → `["finance-orchestrator", "web-research", "web-sentiment"]`
+"What are competitors doing in the electronics space?" → `["finance-data", "web-research", "web-sentiment"]`
 "Is sustainable apparel trending?" → `["web-sentiment", "web-research"]`
 
 ## Decision Sequence
@@ -74,25 +103,3 @@ Classify industry and region from the user's question. Select all agents needed 
   "reasoning": "Industry: [classified industry]. Region: [classified region]."
 }
 ```
-
-### Decision 2 — always
-
-Build a focused synthesizer goal from the actual agent outputs:
-
-```json
-{
-  "agents": [
-    {
-      "id": "consumer-trend-synthesizer",
-      "goal": "Synthesise consumer trend findings for [industry] in [region]. Business question: [user question]. Key findings: [brief summary of agent outputs]"
-    }
-  ],
-  "execution": "sequential",
-  "stop": true,
-  "reasoning": "All data gathered."
-}
-```
-
-## Response Format
-
-Respond with raw JSON only. No markdown. No code fences. No explanation. One decision per response.

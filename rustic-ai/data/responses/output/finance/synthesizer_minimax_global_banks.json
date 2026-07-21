@@ -1,0 +1,296 @@
+{
+  "sections": [
+    {
+      "type": "context",
+      "title": "Global Banks Snapshot",
+      "group": "overview",
+      "content": "Cross-section comparison of 10 global banks across the **Banks - Global** industry — four US money-centers (BAC, C, JPM), two Canadian banks (BMO, TD), three European banks (BCS, DB, HSBC, UBS) and one Indian-banked ADR (IBN). They span P/Es from 9.79 (DB) to 20.11 (TD), and YTD performance from -3.11% (DB) to +43.15% (BMO). Today's tape is broadly defensive: **8 of 10 are red**, led by UBS -2.85% and C -2.36%; only HSBC (+0.06%) and IBN (+0.58%) sit flat-to-up. Combined reported total assets reach ~**$2,690B**, dominated by JPM's $922.16B. Across the group, **7 of 10 carry Buy consensus**, all 10 trade at sub-21x trailing P/E, and **8 of 10 are within 5% of their 52-week highs** — a signal of broad sector strength heading into the next catalyst window."
+    },
+    {
+      "type": "table",
+      "title": "Valuation & Fundamentals",
+      "group": "fundamentals",
+      "layout": "column",
+      "headers": ["Metric", "BAC", "BCS", "BMO", "C", "DB", "HSBC", "IBN", "JPM", "TD", "UBS"],
+      "rows": [
+        [
+          { "value": "Price" },
+          { "value": "$61.49", "signal": "down" },
+          { "value": "$28.23", "signal": "down" },
+          { "value": "$182.62", "signal": "down" },
+          { "value": "$131.71", "signal": "down" },
+          { "value": "$36.06", "signal": "down" },
+          { "value": "$100.52", "signal": "up" },
+          { "value": "$29.57", "signal": "up" },
+          { "value": "$343.15", "signal": "down" },
+          { "value": "$123.90", "signal": "down" },
+          { "value": "$53.50", "signal": "down" }
+        ],
+        [
+          { "value": "Today's Δ" },
+          { "value": "-0.16%", "signal": "down", "indicator": "arrow" },
+          { "value": "-0.42%", "signal": "down", "indicator": "arrow" },
+          { "value": "-0.56%", "signal": "down", "indicator": "arrow" },
+          { "value": "-2.36%", "signal": "down", "indicator": "arrow" },
+          { "value": "-1.37%", "signal": "down", "indicator": "arrow" },
+          { "value": "+0.06%", "signal": "up", "indicator": "arrow" },
+          { "value": "+0.58%", "signal": "up", "indicator": "arrow" },
+          { "value": "-1.08%", "signal": "down", "indicator": "arrow" },
+          { "value": "-0.72%", "signal": "down", "indicator": "arrow" },
+          { "value": "-2.85%", "signal": "down", "indicator": "arrow" }
+        ],
+        [
+          { "value": "P/E (TTM)" },
+          { "value": "14.79", "signal": "up", "note": "Below peer median" },
+          { "value": "12.02", "signal": "up", "note": "Deep value" },
+          { "value": "19.49", "note": "Growth premium" },
+          { "value": "17.40", "note": "In-line" },
+          { "value": "9.79", "signal": "up", "note": "Deep value" },
+          { "value": "16.41", "note": "In-line" },
+          { "value": "18.24", "note": "Growth premium" },
+          { "value": "14.86", "signal": "up", "note": "Below peer median" },
+          { "value": "20.11", "note": "Highest P/E" },
+          { "value": "19.32", "note": "Growth premium" }
+        ],
+        [
+          { "value": "Fwd P/E" },
+          { "value": "13.33", "note": "Modest growth expected" },
+          { "value": "10.02", "note": "Modest growth expected" },
+          { "value": "15.29", "note": "Growth premium" },
+          { "value": "13.21", "note": "Modest growth expected" },
+          { "value": "9.32", "note": "Modest growth expected" },
+          { "value": "11.47", "note": "Modest growth expected" },
+          { "value": "17.54", "note": "Growth premium" },
+          { "value": "15.11", "note": "Growth premium" },
+          { "value": "16.00", "note": "Growth premium" },
+          { "value": "15.87", "note": "Growth premium" }
+        ],
+        [{ "value": "P/B" }, { "value": "1.53" }, { "value": "0.91" }, { "value": "2.12" }, { "value": "1.25" }, { "value": "0.76" }, { "value": "1.71" }, { "value": "2.73" }, { "value": "2.61" }, { "value": "2.51" }, { "value": "1.85" }],
+        [{ "value": "Beta" }, { "value": "1.18" }, { "value": "0.88" }, { "value": "1.15" }, { "value": "1.09" }, { "value": "0.98" }, { "value": "0.57" }, { "value": "0.24" }, { "value": "0.98" }, { "value": "0.88" }, { "value": "0.83" }],
+        [{ "value": "EPS" }, { "value": "$4.10" }, { "value": "$2.29" }, { "value": "$9.28" }, { "value": "$7.66" }, { "value": "$3.64" }, { "value": "$6.05" }, { "value": "$1.59" }, { "value": "$23.35" }, { "value": "$6.11" }, { "value": "$2.85" }],
+        [{ "value": "Total Assets" }, { "value": "$425.4B" }, { "value": "$92.8B" }, { "value": "$126.7B" }, { "value": "$227.3B" }, { "value": "$68.2B" }, { "value": "$340.4B" }, { "value": "$104.0B" }, { "value": "$922.2B" }, { "value": "$203.0B" }, { "value": "$180.5B" }],
+        [
+          { "value": "52W Range" },
+          { "value": "$43.80-$62.03" },
+          { "value": "$18.31-$28.43" },
+          { "value": "$106.83-$183.72" },
+          { "value": "$85.99-$147.96" },
+          { "value": "$26.40-$37.95" },
+          { "value": "$57.78-$100.80" },
+          { "value": "$25.08-$34.30" },
+          { "value": "$276.44-$351.24" },
+          { "value": "$69.92-$124.87" },
+          { "value": "$35.02-$55.15" }
+        ],
+        [{ "value": "Target Price" }, { "value": "$65.79" }, { "value": "$29.19" }, { "value": "$161.55" }, { "value": "$155.85" }, { "value": "$39.00" }, { "value": "$114.63" }, { "value": "$35.73" }, { "value": "$364.81" }, { "value": "$112.94" }, { "value": "$52.20" }],
+        [
+          { "value": "Implied Upside" },
+          { "value": "+7.0%", "signal": "up", "indicator": "arrow" },
+          { "value": "+3.4%", "signal": "up", "indicator": "arrow" },
+          { "value": "-11.5%", "signal": "down", "indicator": "arrow" },
+          { "value": "+18.3%", "signal": "up", "indicator": "arrow" },
+          { "value": "+8.2%", "signal": "up", "indicator": "arrow" },
+          { "value": "+14.0%", "signal": "up", "indicator": "arrow" },
+          { "value": "+20.8%", "signal": "up", "indicator": "arrow" },
+          { "value": "+6.3%", "signal": "up", "indicator": "arrow" },
+          { "value": "-8.8%", "signal": "down", "indicator": "arrow" },
+          { "value": "-2.4%", "signal": "down", "indicator": "arrow" }
+        ],
+        [
+          { "value": "Analyst" },
+          { "value": "Buy", "signal": "up", "indicator": "dot" },
+          { "value": "Buy", "signal": "up", "indicator": "dot" },
+          { "value": "Hold", "signal": "neutral", "indicator": "dot" },
+          { "value": "Buy", "signal": "up", "indicator": "dot" },
+          { "value": "Buy", "signal": "up", "indicator": "dot" },
+          { "value": "Hold", "signal": "neutral", "indicator": "dot" },
+          { "value": "Buy", "signal": "up", "indicator": "dot" },
+          { "value": "Buy", "signal": "up", "indicator": "dot" },
+          { "value": "Buy", "signal": "up", "indicator": "dot" },
+          { "value": "Hold", "signal": "neutral", "indicator": "dot" }
+        ]
+      ],
+      "totals": [
+        [{ "value": "Total Assets" }, { "value": "$425.4B" }, { "value": "$92.8B" }, { "value": "$126.7B" }, { "value": "$227.3B" }, { "value": "$68.2B" }, { "value": "$340.4B" }, { "value": "$104.0B" }, { "value": "$922.2B" }, { "value": "$203.0B" }, { "value": "$180.5B" }],
+        [{ "value": "Consensus Split" }, { "value": "Buy" }, { "value": "Buy" }, { "value": "Hold" }, { "value": "Buy" }, { "value": "Buy" }, { "value": "Hold" }, { "value": "Buy" }, { "value": "Buy" }, { "value": "Buy" }, { "value": "Hold" }],
+        [{ "value": "Average P/E", "note": "Mean of 10" }, { "value": "17.4x" }]
+      ]
+    },
+    {
+      "type": "bar_chart",
+      "title": "Performance History (%)",
+      "group": "performance",
+      "orientation": "vertical",
+      "format": "percent",
+      "groups": ["1M", "3M", "6M", "YTD", "1Y"],
+      "data": [
+        { "name": "BAC", "values": [8.18, 15.48, 18.2, 13.84, 37.5] },
+        { "name": "BCS", "values": [8.66, 16.17, 9.15, 12.23, 53.72] },
+        { "name": "BMO", "values": [7.71, 21.17, 36.22, 43.15, 66.74] },
+        { "name": "C", "values": [-7.89, 0.12, 12.69, 14.0, 49.61] },
+        { "name": "DB", "values": [3.38, 10.9, -3.91, -3.11, 23.92] },
+        { "name": "HSBC", "values": [6.43, 9.69, 26.01, 32.19, 68.77] },
+        { "name": "IBN", "values": [5.16, 2.67, -4.21, -0.77, -10.44] },
+        { "name": "JPM", "values": [4.09, 11.08, 10.87, 7.99, 22.34] },
+        { "name": "TD", "values": [5.5, 18.38, 33.92, 34.53, 72.86] },
+        { "name": "UBS", "values": [6.02, 23.9, 14.38, 17.02, 50.66] }
+      ]
+    },
+    {
+      "type": "table",
+      "title": "Technical Indicators",
+      "group": "technicals",
+      "layout": "column",
+      "headers": ["Indicator", "BAC", "BCS", "BMO", "C", "DB", "HSBC", "IBN", "JPM", "TD", "UBS"],
+      "rows": [
+        [
+          { "value": "RSI-14" },
+          { "value": "76.21", "signal": "down", "note": "Overbought — consolidation risk" },
+          { "value": "67.70", "note": "Neutral momentum" },
+          { "value": "70.35", "signal": "down", "note": "Overbought — consolidation risk" },
+          { "value": "30.76", "note": "Near oversold — reversal watch" },
+          { "value": "64.22", "note": "Neutral momentum" },
+          { "value": "68.99", "note": "Neutral momentum" },
+          { "value": "61.06", "note": "Neutral momentum" },
+          { "value": "71.87", "signal": "down", "note": "Overbought — consolidation risk" },
+          { "value": "73.14", "signal": "down", "note": "Overbought — consolidation risk" },
+          { "value": "62.84", "note": "Neutral momentum" }
+        ],
+        [{ "value": "SMA-50" }, { "value": "$54.77" }, { "value": "$25.22" }, { "value": "$166.38" }, { "value": "$133.80" }, { "value": "$33.28" }, { "value": "$93.32" }, { "value": "$27.38" }, { "value": "$316.87" }, { "value": "$114.76" }, { "value": "$48.60" }],
+        [{ "value": "SMA-200" }, { "value": "$52.90" }, { "value": "$23.69" }, { "value": "$142.74" }, { "value": "$116.96" }, { "value": "$34.66" }, { "value": "$82.96" }, { "value": "$29.06" }, { "value": "$309.50" }, { "value": "$97.20" }, { "value": "$43.38" }],
+        [
+          { "value": "Price vs SMA-200" },
+          { "value": "+16.2%", "signal": "up", "indicator": "arrow" },
+          { "value": "+19.2%", "signal": "up", "indicator": "arrow" },
+          { "value": "+27.9%", "signal": "up", "indicator": "arrow" },
+          { "value": "+12.6%", "signal": "up", "indicator": "arrow" },
+          { "value": "+4.0%", "signal": "up", "indicator": "arrow" },
+          { "value": "+21.2%", "signal": "up", "indicator": "arrow" },
+          { "value": "+1.8%", "signal": "up", "indicator": "arrow" },
+          { "value": "+10.9%", "signal": "up", "indicator": "arrow" },
+          { "value": "+27.5%", "signal": "up", "indicator": "arrow" },
+          { "value": "+23.3%", "signal": "up", "indicator": "arrow" }
+        ],
+        [
+          { "value": "MACD" },
+          { "value": "+1.62", "signal": "up" },
+          { "value": "+0.72", "signal": "down" },
+          { "value": "+4.34", "signal": "up" },
+          { "value": "+0.03", "signal": "neutral" },
+          { "value": "+0.78", "signal": "up" },
+          { "value": "+1.80", "signal": "up" },
+          { "value": "+0.55", "signal": "down" },
+          { "value": "+6.82", "signal": "up" },
+          { "value": "+2.17", "signal": "down" },
+          { "value": "+1.50", "signal": "up" }
+        ],
+        [{ "value": "BB Upper" }, { "value": "$61.23" }, { "value": "$28.35" }, { "value": "$183.29" }, { "value": "$148.18" }, { "value": "$37.16" }, { "value": "$100.23" }, { "value": "$30.15" }, { "value": "$344.01" }, { "value": "$123.50" }, { "value": "$54.32" }],
+        [{ "value": "BB Lower" }, { "value": "$55.70" }, { "value": "$25.93" }, { "value": "$169.14" }, { "value": "$133.15" }, { "value": "$33.17" }, { "value": "$92.70" }, { "value": "$27.97" }, { "value": "$324.20" }, { "value": "$117.15" }, { "value": "$47.99" }]
+      ]
+    },
+    {
+      "type": "table",
+      "title": "Sentiment Highlights",
+      "group": "technicals",
+      "layout": "column",
+      "headers": ["Metric", "BAC", "BCS", "C", "DB", "HSBC"],
+      "rows": [
+        [{ "value": "Headlines Tracked" }, { "value": 2 }, { "value": 1 }, { "value": 1 }, { "value": 1 }, { "value": 5 }],
+        [
+          { "value": "Top Score" },
+          { "value": "+0.33", "signal": "up", "indicator": "arrow" },
+          { "value": "+0.18", "signal": "up", "indicator": "arrow" },
+          { "value": "+0.34", "signal": "up", "indicator": "arrow" },
+          { "value": "+0.62", "signal": "up", "indicator": "arrow" },
+          { "value": "+0.82", "signal": "up", "indicator": "arrow" }
+        ],
+        [
+          { "value": "Top Label" },
+          { "value": "Somewhat-Bullish", "signal": "up", "indicator": "badge" },
+          { "value": "Somewhat-Bullish", "signal": "up", "indicator": "badge" },
+          { "value": "Somewhat-Bullish", "signal": "up", "indicator": "badge" },
+          { "value": "Bullish", "signal": "up", "indicator": "badge" },
+          { "value": "Bullish", "signal": "up", "indicator": "badge" }
+        ],
+        [{ "value": "Top Headline" }, { "value": "Instant international payouts" }, { "value": "Zacks Industry Outlook on HSBC/UBS" }, { "value": "2026 Banking on Climate Chaos" }, { "value": "Global Private Banking Innovation" }, { "value": "Forbes digital accessibility" }],
+        [{ "value": "Source" }, { "value": "Stock Titan" }, { "value": "TradingView" }, { "value": "Stand.earth" }, { "value": "Deutsche Bank WM" }, { "value": "HSBC" }, { "value": "Insider Monkey" }],
+        [{ "value": "Coverage" }, { "value": "Complete" }, { "value": "Complete" }, { "value": "Complete" }, { "value": "Complete" }, { "value": "5 items, range -0.07 to +0.82" }]
+      ]
+    },
+    {
+      "type": "table",
+      "title": "Bull vs Bear Cases",
+      "group": "risk",
+      "layout": "row",
+      "headers": ["Case", "Ticker", "Supporting Data", "Caveat"],
+      "rows": [
+        [{ "value": "BULL", "signal": "up", "indicator": "badge" }, { "value": "JPM" }, { "value": "$922.16B assets; Fwd P/E 15.11; Buy; $364.81 target (+6.3%)" }, { "value": "RSI 71.87 — overbought" }],
+        [{ "value": "BULL", "signal": "up", "indicator": "badge" }, { "value": "HSBC" }, { "value": "+32.19% YTD / +68.77% 1Y; $340.4B assets; Hold; $114.63 target (+14.0%)" }, { "value": "Fwd P/E 11.47 contingent on rate path" }],
+        [{ "value": "BULL", "signal": "up", "indicator": "badge" }, { "value": "BCS" }, { "value": "P/E 12.02; +53.72% 1Y; +266.54% 5Y; Buy" }, { "value": "Beta 0.88 — lower volatility comp" }],
+        [{ "value": "BULL", "signal": "up", "indicator": "badge" }, { "value": "C" }, { "value": "RSI 30.76 (near oversold); Buy; $155.85 target (+18.3%) — largest implied upside" }, { "value": "YTD +14.0% but 1M -7.89%" }],
+        [{ "value": "BEAR", "signal": "down", "indicator": "badge" }, { "value": "IBN" }, { "value": "-10.44% 1Y (only red); -0.77% YTD; SMA-200 above price" }, { "value": "P/E 18.24 despite weakness" }],
+        [{ "value": "BEAR", "signal": "down", "indicator": "badge" }, { "value": "DB" }, { "value": "Price below SMA-200 (-3.91% 6M); YTD -3.11%" }, { "value": "P/E 9.79 — value-trap risk" }],
+        [{ "value": "BEAR", "signal": "down", "indicator": "badge" }, { "value": "BAC" }, { "value": "RSI 76.21 — most overbought in group" }, { "value": "Price at upper BB ($61.23 vs $61.49)" }],
+        [{ "value": "BEAR", "signal": "down", "indicator": "badge" }, { "value": "TD" }, { "value": "RSI 73.14 overbought; analyst target $112.94 below price (-8.8%)" }, { "value": "Still leading 1Y at +72.86%" }]
+      ]
+    },
+    {
+      "type": "insight_cards",
+      "title": "Key Insights",
+      "group": "insights",
+      "data": [
+        {
+          "number": "1",
+          "title": "Eight of Ten Banks Cluster Within 5% of 52W Highs",
+          "evidence": "Eight banks trade within 5% of their 52-week highs — **HSBC** at 99.7% (100.52 vs 100.80), **BMO** at 99.4% (182.62 vs 183.72), **BCS** at 99.3%, **BAC** at 99.1%, **TD** at 99.2%, **JPM** at 97.7%, **UBS** at 97.0%, and **DB** at 95.0%. Only **C** at 89.0% (131.71 vs 147.96) and **IBN** at 86.2% (29.57 vs 34.30) sit further from their peaks. This *concentration near highs* signals broad sector strength but raises mean-reversion risk should sentiment shift.",
+          "source": "Cross-Reference: Performance & 52W Range Data"
+        },
+        {
+          "number": "2",
+          "title": "Four Banks Flash Overbought RSI",
+          "evidence": "**BAC** (76.21), **TD** (73.14), **JPM** (71.87) and **BMO** (70.35) all print RSI-14 above the 70 overbought threshold, while prices already touch or exceed their Bollinger upper bands (BAC 61.23 vs 61.49; BMO 183.29 ceiling; JPM 344.01 ceiling). Counter-signal: **C** at **RSI 30.76** is the closest to oversold in the group, with a -2.36% session and -7.89% 1-month move suggesting the consolidation cycle has begun for the laggard.",
+          "source": "Technical Indicators Data"
+        },
+        {
+          "number": "3",
+          "title": "DB and BCS Screen Cheapest, But Payoff Lags",
+          "evidence": "**Deutsche Bank** trades at **P/E 9.79** and **Barclays** at **12.02** — the two lowest in the peer set, well below BMO/TD's 19-20x tier. Both carry **Buy** consensus with targets of $39 (+8.2%) and $29.19 (+3.4%) respectively. However, DB's **YTD is -3.11%** and 6-month return -3.91%, so the value trade has not paid short-term — analysts are pricing forward earnings recovery that the tape hasn't confirmed.",
+          "source": "Cross-Reference: Fundamentals & Performance Data"
+        },
+        {
+          "number": "4",
+          "title": "ICICI Bank — Sole Negative 1-Year Performer",
+          "evidence": "**IBN** is the only bank with a negative 1-year return at **-10.44%** and has lost ground across every window except 1M (+5.16%) and 1W (+1.55%). The contrast with **TD** (+72.86%) and **HSBC** (+68.77%) over the same 1Y horizon is the widest divergence in the group, at >83 percentage points. Despite this, **IBN carries a Buy consensus** and a $35.73 target implying 20.8% upside — most optimistic implied return in the set.",
+          "source": "Cross-Reference: Performance & Fundamentals Data"
+        },
+        {
+          "number": "5",
+          "title": "JPMorgan Asset Base vs European Peers",
+          "evidence": "**JPM** leads total assets at **$922.16B**, ~13.5x Deutsche Bank's **$68.19B** and 2.7x HSBC's **$340.39B**. EPS scales accordingly — JPM $23.35 is 2.5x BMO's $9.28 and 3.9x TD's $6.11. With Fwd P/E of 15.11 and a Buy consensus ($364.81 target), the market is paying a premium for JPM's deposit, trading and capital-markets franchise versus European peers where P/B is just 0.76 (DB) to 1.71 (HSBC).",
+          "source": "Fundamental Comparison Table"
+        },
+        {
+          "number": "6",
+          "title": "HSBC Sentiment Most Polarized in Group",
+          "evidence": "HSBC's five scored headlines span from -0.07 (Neutral — AD HOC NEWS) to +0.82 (Bullish — HSBC Forbes accessibility piece) — the widest spread of any tracked bank. By contrast, **DB's** single scored headline at +0.62 (Bullish, Deutsche Bank Wealth Management) and **C's** +0.34 (Somewhat-Bullish, Stand.earth) show more uniform framing. **BAC** carries two Somewhat-Bullish headlines both at +0.33 — soft but consistent positive signal.",
+          "source": "TradingView & StockStory Sentiment Data"
+        }
+      ]
+    },
+    {
+      "type": "suggested_prompts",
+      "title": "Suggested Prompts",
+      "group": "prompts",
+      "suggested_prompts": [
+        "Deep dive valuation compare: HSBC vs DB vs BCS",
+        "Overbought global banks risk screen — BAC JPM TD BMO",
+        "Cheapest global banks by P/E with Buy consensus",
+        "Why is IBN down -10.44% over 1 year — fundamental analysis",
+        "Compare US money centers — JPM vs BAC vs C",
+        "Top European bank ADR plays under $40 share price",
+        "Citigroup reversal setup — RSI 30.76 and Buy target $155.85",
+        "Sentiment polarization: HSBC headline risk vs DB and BAC stability"
+      ]
+    }
+  ]
+}

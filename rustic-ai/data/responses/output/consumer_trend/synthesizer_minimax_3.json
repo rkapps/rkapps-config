@@ -1,0 +1,177 @@
+{
+  "sections": [
+    {
+      "title": "Context: ARM at an inflection point",
+      "type": "context",
+      "content": "Arm Holdings (NASDAQ: ARM) trades at **$273.62**, down **-2.69%** on the session and **-26.17%** over the past month after a euphoric mid-year run. The stock rallied **+167.5%** over six months and **+157.22%** YTD on AI-driven royalty narrative, but the pullback has now pushed price below the SMA50 ($312.56) while the **SMA200** at **$182.81** remains well above current price. Valuation is extreme — trailing P/E of **383.32**, forward P/E of **147.06**, and **P/S** of **64.91** — placing ARM as the most expensive large-cap semiconductor in the peer group. Consensus remains **Buy** with a **$298.84** street target (~9.2% upside), though a **Beta of 3.77** means drawdown risk is amplified versus the sector."
+    },
+    {
+      "title": "Key Fundamentals & Valuation",
+      "type": "table",
+      "layout": "row",
+      "headers": ["Metric", "Value"],
+      "rows": [
+        [{ "value": "Last Price" }, { "value": "$273.62", "signal": "down" }],
+        [{ "value": "Daily Change" }, { "value": "-2.69%", "signal": "down", "indicator": "arrow" }],
+        [{ "value": "52-Week Range" }, { "value": "$100.02 – $452.70", "signal": "neutral" }],
+        [{ "value": "Total Assets" }, { "value": "$319.3B", "signal": "neutral" }],
+        [{ "value": "EPS (TTM)" }, { "value": "$0.78", "signal": "neutral" }],
+        [{ "value": "P/E (Trailing)" }, { "value": "383.32x", "signal": "down", "note": "Growth premium — priced for expansion" }, { "value": "P/E (Trailing)" }],
+        [{ "value": "Forward P/E" }, { "value": "147.06x", "signal": "down", "note": "Implies 2.6x EPS expansion baked into forecast" }, { "value": "Forward P/E" }],
+        [{ "value": "PEG Ratio" }, { "value": "2.67", "signal": "down", "note": "Premium to growth rate — expensive vs fundamentals" }, { "value": "PEG Ratio" }],
+        [{ "value": "P/B" }, { "value": "41.69x", "signal": "down" }],
+        [{ "value": "P/S" }, { "value": "64.91x", "signal": "down" }],
+        [{ "value": "Beta" }, { "value": "3.77", "signal": "down", "note": "Highest in the peer set — volatility risk" }, { "value": "Beta" }],
+        [{ "value": "Analyst Target" }, { "value": "$298.84", "signal": "up", "note": "~9.2% upside to current price" }, { "value": "Analyst Target" }],
+        [{ "value": "Consensus" }, { "value": "Buy", "signal": "up", "indicator": "dot" }]
+      ]
+    },
+    { "title": "Performance Trajectory", "type": "bar_chart", "orientation": "horizontal", "format": "percent", "groups": ["1W", "1M", "3M", "6M", "YTD", "1Y", "2Y"], "data": [{ "name": "ARM", "values": [-6.41, -26.17, 76.46, 167.5, 157.22, 94.53, 55.19] }] },
+    {
+      "title": "Semiconductor Peer Comparison",
+      "type": "table",
+      "layout": "column",
+      "headers": ["Metric", "ARM", "AMD", "AVGO", "NVDA", "TSM", "MRVL"],
+      "rows": [
+        [{ "value": "Price" }, { "value": "$273.62" }, { "value": "$528.76" }, { "value": "$394.01" }, { "value": "$210.02" }, { "value": "$419.88" }, { "value": "$206.32" }],
+        [
+          { "value": "Daily Δ" },
+          { "value": "-2.69%", "signal": "down", "indicator": "arrow" },
+          { "value": "-1.05%", "signal": "down", "indicator": "arrow" },
+          { "value": "+2.59%", "signal": "up", "indicator": "arrow" },
+          { "value": "+3.19%", "signal": "up", "indicator": "arrow" },
+          { "value": "-0.40%", "signal": "down", "indicator": "arrow" },
+          { "value": "-7.25%", "signal": "down", "indicator": "arrow" }
+        ],
+        [{ "value": "P/E" }, { "value": "383.32x", "signal": "down" }, { "value": "185.35x", "signal": "down" }, { "value": "64.01x", "signal": "down" }, { "value": "32.26x", "signal": "neutral" }, { "value": "37.75x", "signal": "neutral" }, { "value": "81.31x", "signal": "down" }],
+        [{ "value": "Forward P/E" }, { "value": "147.06x", "signal": "down" }, { "value": "79.37x", "signal": "down" }, { "value": "21.41x", "signal": "neutral" }, { "value": "24.04x", "signal": "neutral" }, { "value": "27.93x", "signal": "neutral" }, { "value": "58.14x", "signal": "down" }],
+        [{ "value": "Beta" }, { "value": "3.77", "signal": "down" }, { "value": "2.47", "signal": "down" }, { "value": "1.46", "signal": "neutral" }, { "value": "2.21", "signal": "down" }, { "value": "1.25", "signal": "neutral" }, { "value": "2.20", "signal": "down" }],
+        [
+          { "value": "YTD Return" },
+          { "value": "+157.22%", "signal": "up", "indicator": "arrow" },
+          { "value": "+149.53%", "signal": "up", "indicator": "arrow" },
+          { "value": "+11.37%", "signal": "up", "indicator": "arrow" },
+          { "value": "+9.26%", "signal": "up", "indicator": "arrow" },
+          { "value": "+39.43%", "signal": "up", "indicator": "arrow" },
+          { "value": "+162.13%", "signal": "up", "indicator": "arrow" }
+        ],
+        [
+          { "value": "Consensus" },
+          { "value": "Buy", "signal": "up", "indicator": "dot" },
+          { "value": "Buy", "signal": "up", "indicator": "dot" },
+          { "value": "Buy", "signal": "up", "indicator": "dot" },
+          { "value": "Buy", "signal": "up", "indicator": "dot" },
+          { "value": "— ", "signal": "neutral" },
+          { "value": "Buy", "signal": "up", "indicator": "dot" }
+        ],
+        [{ "value": "Target Price" }, { "value": "$298.84" }, { "value": "$516.12" }, { "value": "$523.73" }, { "value": "$301.62" }, { "value": "$490.34" }, { "value": "$252.26" }]
+      ]
+    },
+    {
+      "title": "Technical Indicators",
+      "type": "table",
+      "layout": "row",
+      "headers": ["Indicator", "Reading", "Signal"],
+      "rows": [
+        [{ "value": "RSI(14)" }, { "value": "30.93" }, { "value": "Neutral momentum — hovering near oversold threshold", "signal": "neutral" }],
+        [{ "value": "SMA(50)" }, { "value": "$312.56" }, { "value": "Price trading below — short-term trend broken", "signal": "down" }],
+        [{ "value": "SMA(200)" }, { "value": "$182.81" }, { "value": "Price above — long-term uptrend intact", "signal": "up" }],
+        [{ "value": "MACD" }, { "value": "-8.16" }, { "value": "Bearish — below zero line, momentum fading", "signal": "down" }],
+        [{ "value": "MACD Signal" }, { "value": "1.95" }, { "value": "Recent bearish crossover on MACD line", "signal": "down" }],
+        [{ "value": "Bollinger Lower" }, { "value": "$261.74" }, { "value": "Price ($273.62) testing lower band — volatility expansion", "signal": "down" }],
+        [{ "value": "Bollinger Upper" }, { "value": "$437.02" }, { "value": "Upper band indicates prior blow-off high pressure", "signal": "neutral" }]
+      ]
+    },
+    {
+      "title": "News Sentiment Breakdown",
+      "type": "table",
+      "layout": "row",
+      "headers": ["Article", "Source", "Sentiment", "Date"],
+      "rows": [
+        [{ "value": "Record Q4 FY2026 earnings — AI beat" }, { "value": "Investing.com", "signal": "up" }, { "value": "+0.70" }],
+        [{ "value": "+50% weekly rally on AI architecture dominance" }, { "value": "Foreign Policy Journal", "signal": "up" }, { "value": "+0.73" }],
+        [{ "value": "Stock opened +3.91% post-news" }, { "value": "TradingKey", "signal": "up" }, { "value": "+0.89" }],
+        [{ "value": "Target hikes after AI earnings beat" }, { "value": "StocksToTrade", "signal": "up" }, { "value": "+0.50" }],
+        [{ "value": "Outpaces Synopsys in AI chip design" }, { "value": "Foreign Policy Journal", "signal": "up" }, { "value": "+0.44" }],
+        [{ "value": "AI royalty growth — ESOP shelf filing" }, { "value": "Simply Wall Street", "signal": "up" }, { "value": "+0.25" }],
+        [{ "value": "CEO on AI CPU export-control limits" }, { "value": "Global Times", "signal": "neutral" }, { "value": "-0.14" }],
+        [{ "value": "Bronstein Gewirtz shareholder investigation" }, { "value": "ACCESS Newswire", "signal": "down" }, { "value": "-0.37" }],
+        [{ "value": "US antitrust probe over chip tech" }, { "value": "Insider Monkey", "signal": "down" }, { "value": "-0.44" }]
+      ]
+    },
+    {
+      "title": "Bull Case vs Bear Case",
+      "type": "table",
+      "layout": "column",
+      "headers": ["Dimension", "Bull Case", "Bear Case"],
+      "rows": [
+        [
+          { "value": "Royalty Model" },
+          { "value": "Arm collects royalties from every CPU shipped globally — AI compute acceleration expands royalty base structurally", "signal": "up", "indicator": "dot" },
+          { "value": "Export controls could squeeze SME customers and backfire on US chip sector; AI CPU design proliferation is hard to restrict globally", "signal": "down", "indicator": "dot" }
+        ],
+        [
+          { "value": "Valuation" },
+          { "value": "Consensus Buy with $298.84 target; analysts raising targets post-Q4 earnings beat", "signal": "up", "indicator": "dot" },
+          { "value": "Trailing P/E 383x, forward 147x, P/B 41.69x — most expensive mega-cap semiconductor", "signal": "down", "indicator": "dot" }
+        ],
+        [{ "value": "Price Action" }, { "value": "+157% YTD; SMA200 ($182.81) holds as long-term anchor", "signal": "up", "indicator": "dot" }, { "value": "-26% in one month; broke SMA50 ($312.56); MACD negative crossover", "signal": "down", "indicator": "dot" }],
+        [{ "value": "Regulatory" }, { "value": "AI architecture dominance reaffirmed in earnings commentary", "signal": "up", "indicator": "dot" }, { "value": "Active US antitrust probe AND active shareholder investigation by Bronstein Gewirtz", "signal": "down", "indicator": "dot" }],
+        [{ "value": "Volatility" }, { "value": "Recent 50% weekly rally shows momentum when AI narrative re-ignites", "signal": "up", "indicator": "dot" }, { "value": "Beta 3.77 — highest in peer group; implied downside if AI narrative fades", "signal": "down", "indicator": "dot" }]
+      ]
+    },
+    {
+      "title": "Key Insights",
+      "type": "insight_cards",
+      "data": [
+        {
+          "number": "1",
+          "title": "AI royalty thesis remains the dominant driver",
+          "evidence": "Six of nine ARM-specific articles carry a bullish label, led by the **+0.70** score on Investing.com's Q4 FY2026 earnings transcript showing record results, and a **+0.89** TradingKey article flagging a **+3.91%** opening session post-news. The narrative around Arm's CPU architecture dominance in AI workloads is the singular force supporting the **+157.22% YTD** return and the **+167.5%** six-month move. **Risk:** Sentiment concentration — a single narrative shift could remove the float premium that justifies the **383x trailing P/E**.",
+          "source": "Sentiment Aggregation & Performance Data"
+        },
+        {
+          "number": "2",
+          "title": "Regulatory risk is bifurcating the sentiment split",
+          "evidence": "Despite six bullish pieces, ARM carries two notable negative signals: a **US antitrust probe** over chip technology (Insider Monkey, score **-0.44**) and an active **Bronstein Gewirtz Grossman shareholder investigation** (ACCESS Newswire, score **-0.37**). Combined with a CEO interview focused on **AI CPU export controls** (Global Times, neutral **-0.14**), this trio of regulatory/legal signals forms the structural offset to the AI bullish case and could become the catalyst in any further drawdown.",
+          "source": "Sentiment Articles on Regulatory/Legal Themes"
+        },
+        {
+          "number": "3",
+          "title": "Technical setup suggests capitulation-watch, not capitulation",
+          "evidence": "RSI(14) at **30.93** sits one tick above the oversold threshold of **30**, with MACD printing **-8.16** against a signal line at **+1.95** — a fresh bearish crossover. Price at **$273.62** is testing the Bollinger lower band of **$261.74**, but critical SMA200 support at **$182.81** remains intact. **Cross-reference:** This is consistent with a -26% one-month drawdown from a parabolic move — typical of healthy corrections within larger uptrends. **Risk:** A close below $261.74 volume-confirmed would open the door to the **$182 SMA200** retest.",
+          "source": "MACD & Bollinger & RSI Cross-Reference"
+        },
+        {
+          "number": "4",
+          "title": "ARM is structurally more volatile than its peer set",
+          "evidence": "Beta of **3.77** is the highest in the semiconductor comparison cohort, exceeding **AMD (2.47)**, **NVDA (2.21)**, and **MRVL (2.20)**. Combined with a forward P/E of **147.06x** versus the peer median closer to **25-30x**, ARM's option-adjusted downside skew is materially wider. Any AI narrative wobble translates into disproportionately larger percentage moves compared to **AVGO (Beta 1.46)** or **TSM (Beta 1.25)**.",
+          "source": "Cross-Reference: Beta vs Forward P/E vs Peers"
+        },
+        {
+          "number": "5",
+          "title": "Upside-to-target is thin relative to historical moves",
+          "evidence": "The street target of **$298.84** implies only **~9.2%** upside from the current $273.62, versus the **+94.53%** one-year return and **+157.22%** YTD already booked. **Contrast:** Peer NVDA offers **~43.6%** upside to its **$301.62** target, AVGO offers **~32.9%**, and NXPI offers **~10.2%** — ARM's tight upside-to-target implies analysts have already substantially repriced the AI royalty thesis. **Implication:** Further upside requires target hikes, not just multiple maintenance.",
+          "source": "Cross-Reference: Analyst Targets vs Recent Returns"
+        },
+        {
+          "number": "6",
+          "title": "Peer comparison reveals an outlier valuation regime",
+          "evidence": "Sorted by trailing P/E, the peer gradient is **CRUS 19.15x → NXPI 27.94x → NVDA 32.26x → TSM 37.75x → TXN 53.15x → AVGO 64.01x → MRVL 81.31x → AMD 185.35x → ARM 383.32x**. ARM is **2.07x** AMD's multiple and **5.99x** NVDA's. **Cross-reference:** PEG of **2.67** also ranks worst in the set (vs AVGO 0.45 and NVDA 0.65), meaning the growth-adjusted premium is equally stretched. **Risk:** If AI royalty growth misses a quarter, the multiple compression could exceed 30% before the stock finds equilibrium.",
+          "source": "Fundamental Comparison Table"
+        }
+      ]
+    },
+    {
+      "title": "Suggested Prompts",
+      "type": "suggested_prompts",
+      "prompts": [
+        "Compare ARM vs AVGO valuation and risk profile",
+        "Show ARM technical signals over the last 60 days",
+        "Drill into ARM AI royalty growth versus licensing revenue mix",
+        "Estimate ARM target price sensitivity to royalty-per-chip",
+        "Compare sentiment trends for ARM vs AMD over the past month"
+      ]
+    }
+  ]
+}
