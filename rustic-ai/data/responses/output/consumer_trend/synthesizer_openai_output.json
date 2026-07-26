@@ -1,0 +1,92 @@
+{
+  "sections": [
+    {
+      "type": "context",
+      "title": "California Furniture Market Outlook",
+      "content": "California's furniture industry is navigating a complex landscape marked by robust regional personal income growth of $3.40 trillion in 2024 and high median home values of $695,400, contrasted against a sharp decline in national consumer sentiment to 44.8 in May 2026. While macro housing starts have softened to 1,177.0k units, consumer spending on furniture and furnishings nationally has steadily climbed to $293.90 billion. In California, this translates to a bifurcated market where high-end experiential retail and custom solid-wood local boutiques thrive, while mass-market retailers face severe logistical friction and quality complaints.",
+      "group": "context"
+    },
+    {
+      "type": "metric_cards",
+      "title": "Key Market Indicators",
+      "data": [
+        { "label": "CA Median Home Value", "value": "$695,400", "status": "neutral", "benchmark": "2023 Census" },
+        { "label": "CA Personal Income", "value": "$3.40T", "change": "+6.8%", "status": "up", "benchmark": "2024 BEA" },
+        { "label": "US Furniture Spending", "value": "$293.9B", "change": "+4.3%", "status": "up", "benchmark": "2025 FRED" },
+        { "label": "US Consumer Sentiment", "value": "44.8", "change": "-26.2%", "status": "down", "benchmark": "May 2026 vs May 2025" }
+      ],
+      "group": "metrics"
+    },
+    {
+      "type": "line_chart",
+      "title": "National Furniture & Furnishings Spending Trend ($ Billions)",
+      "format": "number",
+      "groups": ["2020", "2021", "2022", "2023", "2024", "2025"],
+      "data": [{ "name": "Furniture Spending", "values": [216.8, 262.5, 274.6, 276.8, 281.9, 293.9] }],
+      "group": "national"
+    },
+    {
+      "type": "bar_chart",
+      "title": "California Industry Earnings ($ Millions)",
+      "orientation": "horizontal",
+      "format": "number",
+      "groups": ["2022", "2023", "2024"],
+      "data": [
+        { "name": "Furniture Manufacturing", "values": [2399.6, 2359.7, 2376.3] },
+        { "name": "Building Material Dealers", "values": [8080.8, 8463.0, 8621.1] }
+      ],
+      "group": "regional"
+    },
+    {
+      "type": "consumer_buzz",
+      "title": "California Consumer Sentiment & Buzz",
+      "sentiment": [
+        { "source": "Yelp & Reddit (Local Boutiques)", "icon": "star", "rating": "4.8", "max_rating": "5", "signal": "up", "theme": "High demand for custom solid wood" },
+        { "source": "Reddit (Mass Retailers)", "icon": "message-circle", "rating": "2.1", "max_rating": "5", "signal": "down", "theme": "Frustration with delivery and durability" },
+        { "source": "Social Media (Design Trends)", "icon": "device-mobile", "rating": "4.5", "max_rating": "5", "signal": "up", "theme": "Shift to warm, vintage aesthetics" }
+      ],
+      "related_searches": ["Olive Ateliers Los Angeles", "Costco sectional couch reviews", "Thuma bed frame assembly", "solid wood furniture Southern California", "Restoration Hardware Corte Madera"],
+      "group": "consumer"
+    },
+    {
+      "type": "insight_cards",
+      "title": "Strategic Insights for California Furniture Retailers",
+      "data": [
+        {
+          "number": 1,
+          "title": "Capitalize on the 'Warm Aesthetic' Shift",
+          "evidence": "Consumers are moving away from pale-wood minimalism toward darker-toned woods, reclaimed pieces, and vintage-inspired items, driving massive social media buzz for local brands like Olive Ateliers and Lulu & Georgia.",
+          "source": "Web Sentiment Analysis"
+        },
+        {
+          "number": 2,
+          "title": "Address the Mass-Market Logistics Gap",
+          "evidence": "While national furniture spending rose to $293.90 billion in 2025, major discount retailers like Bob's and Jerome's face severe backlash over delivery delays and poor durability, prompting budget-conscious buyers to pivot to Costco.",
+          "source": "Yelp & Reddit Reviews / FRED"
+        },
+        {
+          "number": 3,
+          "title": "Leverage High-End Resilience and Customization",
+          "evidence": "California's high median home value of $695,400 and $3.40 trillion personal income support premium players like Restoration Hardware and local custom shops (e.g., Sofa U Love), which maintain near-perfect 4.9+ star ratings.",
+          "source": "Census / BEA Regional / Yelp"
+        }
+      ],
+      "group": "insights"
+    },
+    {
+      "type": "prompts",
+      "title": "Suggested Prompts",
+      "suggested_prompts": [
+        "How can California furniture retailers adapt to the state's strict Extended Producer Responsibility (EPR) laws?",
+        "Analyze the financial performance and market share of Wayfair (W) versus La-Z-Boy (LZB) in the current retail climate.",
+        "What marketing strategies should local solid-wood furniture boutiques use to compete with Costco's growing popularity?"
+      ],
+      "prompts": [
+        "How can California furniture retailers adapt to the state's strict Extended Producer Responsibility (EPR) laws?",
+        "Analyze the financial performance and market share of Wayfair (W) versus La-Z-Boy (LZB) in the current retail climate.",
+        "What marketing strategies should local solid-wood furniture boutiques use to compete with Costco's growing popularity?"
+      ],
+      "group": "prompts"
+    }
+  ]
+}

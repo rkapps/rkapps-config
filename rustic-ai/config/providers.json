@@ -3,7 +3,7 @@
     {
       "id": "anthropic",
       "llm": "Anthropic",
-      "enabled": false,
+      "enabled": true,
       "api_key_env": "ANTHROPIC_API_KEY",
       "default_model": "claude-sonnet-4-6",
       "models": [
@@ -28,7 +28,7 @@
     {
       "id": "openai",
       "llm": "OpenAI",
-      "enabled": false,
+      "enabled": true,
       "api_key_env": "OPENAI_API_KEY",
       "default_model": "gpt-4o",
       "models": [
@@ -61,7 +61,7 @@
     {
       "id": "gemini",
       "llm": "Gemini",
-      "enabled": false,
+      "enabled": true,
       "api_key_env": "GEMINI_API_KEY",
       "default_model": "gemini-3-flash-preview",
       "models": [

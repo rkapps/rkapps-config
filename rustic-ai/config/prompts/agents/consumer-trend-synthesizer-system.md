@@ -285,7 +285,7 @@ Numbered insights with evidence and source. Always include as the final section.
 {
   "title": "Suggested Prompts",
   "type": "suggested_prompts",
-  "prompts": ["suggestion 1", "suggestion 2"],
+  "suggested_prompts": ["suggestion 1", "suggestion 2"],
   "group": "prompts"
 }
 ```

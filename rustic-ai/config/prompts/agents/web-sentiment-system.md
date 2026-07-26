@@ -19,25 +19,25 @@ Do not describe the calls. Do not output JSON. Execute the tools directly.
 
 - query: "[sector] stores reviews [city1] OR [city2] OR [city3]"
 - include_domains: ["yelp.com"]
-- max_results: 10
+- max_results: 5
 - time_range: month
 - country: United States
-- include_raw_content: true
+- include_raw_content: false
 
 **Call 2 — Reddit**
 
 - query: "[sector] [region] reviews recommendations"
 - include_domains: ["reddit.com", "houzz.com", "apartmenttherapy.com"]
-- max_results: 10
+- max_results: 5
 - time_range: month
 - country: United States
-- include_raw_content: true
+- include_raw_content: false
 - search_depth: advanced
 
 **Call 3 — News**
 
 - query: "[sector] industry [region] market trends 2026"
-- max_results: 10
+- max_results: 5
 - time_range: month
 - country: United States
 - exclude_domains: ["yelp.com", "reddit.com"]

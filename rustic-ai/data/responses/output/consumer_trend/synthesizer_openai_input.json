@@ -1,0 +1,1570 @@
+{
+  "economic-data": {
+    "fred_series": [
+      {
+        "series_id": "CPIAUCSL",
+        "category": "consumer_health",
+        "name": "Consumer Price Index",
+        "observations": [
+          {
+            "date": "2026-05-01",
+            "value": 333.979
+          },
+          {
+            "date": "2026-04-01",
+            "value": 332.407
+          },
+          {
+            "date": "2026-03-01",
+            "value": 330.293
+          },
+          {
+            "date": "2026-02-01",
+            "value": 327.46
+          },
+          {
+            "date": "2026-01-01",
+            "value": 326.588
+          },
+          {
+            "date": "2025-12-01",
+            "value": 326.031
+          },
+          {
+            "date": "2025-11-01",
+            "value": 325.063
+          },
+          {
+            "date": "2025-09-01",
+            "value": 324.245
+          },
+          {
+            "date": "2025-08-01",
+            "value": 323.291
+          },
+          {
+            "date": "2025-07-01",
+            "value": 322.169
+          },
+          {
+            "date": "2025-06-01",
+            "value": 321.435
+          },
+          {
+            "date": "2025-05-01",
+            "value": 320.62
+          }
+        ]
+      },
+      {
+        "series_id": "DFFFRC1A027NBEA",
+        "category": "consumer_spending",
+        "name": "Furniture and Furnishings Spending",
+        "observations": [
+          {
+            "date": "2025-01-01",
+            "value": 293.895
+          },
+          {
+            "date": "2024-01-01",
+            "value": 281.899
+          },
+          {
+            "date": "2023-01-01",
+            "value": 276.849
+          },
+          {
+            "date": "2022-01-01",
+            "value": 274.586
+          },
+          {
+            "date": "2021-01-01",
+            "value": 262.517
+          },
+          {
+            "date": "2020-01-01",
+            "value": 216.803
+          },
+          {
+            "date": "2019-01-01",
+            "value": 200.049
+          },
+          {
+            "date": "2018-01-01",
+            "value": 193.122
+          },
+          {
+            "date": "2017-01-01",
+            "value": 182.279
+          },
+          {
+            "date": "2016-01-01",
+            "value": 175.593
+          },
+          {
+            "date": "2015-01-01",
+            "value": 168.489
+          },
+          {
+            "date": "2014-01-01",
+            "value": 158.173
+          }
+        ]
+      },
+      {
+        "series_id": "DFDHRC1Q027SBEA",
+        "category": "consumer_spending",
+        "name": "Furnishings and Durable Equipment Spending",
+        "observations": [
+          {
+            "date": "2026-01-01",
+            "value": 521.899
+          },
+          {
+            "date": "2025-10-01",
+            "value": 510.964
+          },
+          {
+            "date": "2025-07-01",
+            "value": 507.997
+          },
+          {
+            "date": "2025-04-01",
+            "value": 507.27
+          },
+          {
+            "date": "2025-01-01",
+            "value": 503.129
+          },
+          {
+            "date": "2024-10-01",
+            "value": 501.823
+          },
+          {
+            "date": "2024-07-01",
+            "value": 493.577
+          },
+          {
+            "date": "2024-04-01",
+            "value": 485.049
+          },
+          {
+            "date": "2024-01-01",
+            "value": 479.623
+          },
+          {
+            "date": "2023-10-01",
+            "value": 477.666
+          },
+          {
+            "date": "2023-07-01",
+            "value": 479.778
+          },
+          {
+            "date": "2023-04-01",
+            "value": 477.942
+          }
+        ]
+      },
+      {
+        "series_id": "DSPIC96",
+        "category": "consumer_health",
+        "name": "Real Disposable Personal Income",
+        "observations": [
+          {
+            "date": "2026-05-01",
+            "value": 17983.8
+          },
+          {
+            "date": "2026-04-01",
+            "value": 17938.8
+          },
+          {
+            "date": "2026-03-01",
+            "value": 18030.5
+          },
+          {
+            "date": "2026-02-01",
+            "value": 18051.9
+          },
+          {
+            "date": "2026-01-01",
+            "value": 18134.6
+          },
+          {
+            "date": "2025-12-01",
+            "value": 18018.5
+          },
+          {
+            "date": "2025-11-01",
+            "value": 18035.1
+          },
+          {
+            "date": "2025-10-01",
+            "value": 18037.3
+          },
+          {
+            "date": "2025-09-01",
+            "value": 18094.6
+          },
+          {
+            "date": "2025-08-01",
+            "value": 18076.9
+          },
+          {
+            "date": "2025-07-01",
+            "value": 18040.9
+          },
+          {
+            "date": "2025-06-01",
+            "value": 17962.1
+          }
+        ]
+      },
+      {
+        "series_id": "HOUST",
+        "category": "housing",
+        "name": "Housing Starts",
+        "observations": [
+          {
+            "date": "2026-05-01",
+            "value": 1177.0
+          },
+          {
+            "date": "2026-04-01",
+            "value": 1392.0
+          },
+          {
+            "date": "2026-03-01",
+            "value": 1522.0
+          },
+          {
+            "date": "2026-02-01",
+            "value": 1346.0
+          },
+          {
+            "date": "2026-01-01",
+            "value": 1385.0
+          },
+          {
+            "date": "2025-12-01",
+            "value": 1378.0
+          },
+          {
+            "date": "2025-11-01",
+            "value": 1319.0
+          },
+          {
+            "date": "2025-10-01",
+            "value": 1273.0
+          },
+          {
+            "date": "2025-09-01",
+            "value": 1319.0
+          },
+          {
+            "date": "2025-08-01",
+            "value": 1291.0
+          },
+          {
+            "date": "2025-07-01",
+            "value": 1432.0
+          },
+          {
+            "date": "2025-06-01",
+            "value": 1379.0
+          }
+        ]
+      },
+      {
+        "series_id": "PCE",
+        "category": "consumer_health",
+        "name": "Personal Consumption Expenditures",
+        "observations": [
+          {
+            "date": "2026-05-01",
+            "value": 22059.8
+          },
+          {
+            "date": "2026-04-01",
+            "value": 21903.7
+          },
+          {
+            "date": "2026-03-01",
+            "value": 21814.7
+          },
+          {
+            "date": "2026-02-01",
+            "value": 21611.4
+          },
+          {
+            "date": "2026-01-01",
+            "value": 21478.7
+          },
+          {
+            "date": "2025-12-01",
+            "value": 21445.9
+          },
+          {
+            "date": "2025-11-01",
+            "value": 21356.0
+          },
+          {
+            "date": "2025-10-01",
+            "value": 21288.1
+          },
+          {
+            "date": "2025-09-01",
+            "value": 21202.4
+          },
+          {
+            "date": "2025-08-01",
+            "value": 21123.8
+          },
+          {
+            "date": "2025-07-01",
+            "value": 21007.3
+          },
+          {
+            "date": "2025-06-01",
+            "value": 20868.4
+          }
+        ]
+      },
+      {
+        "series_id": "PERMIT",
+        "category": "housing",
+        "name": "Building Permits",
+        "observations": [
+          {
+            "date": "2026-05-01",
+            "value": 1410.0
+          },
+          {
+            "date": "2026-04-01",
+            "value": 1423.0
+          },
+          {
+            "date": "2026-03-01",
+            "value": 1363.0
+          },
+          {
+            "date": "2026-02-01",
+            "value": 1540.0
+          },
+          {
+            "date": "2026-01-01",
+            "value": 1393.0
+          },
+          {
+            "date": "2025-12-01",
+            "value": 1482.0
+          },
+          {
+            "date": "2025-11-01",
+            "value": 1414.0
+          },
+          {
+            "date": "2025-10-01",
+            "value": 1418.0
+          },
+          {
+            "date": "2025-09-01",
+            "value": 1444.0
+          },
+          {
+            "date": "2025-08-01",
+            "value": 1347.0
+          },
+          {
+            "date": "2025-07-01",
+            "value": 1400.0
+          },
+          {
+            "date": "2025-06-01",
+            "value": 1399.0
+          }
+        ]
+      },
+      {
+        "series_id": "RHORUSQ156N",
+        "category": "housing",
+        "name": "Homeownership Rate",
+        "observations": [
+          {
+            "date": "2026-01-01",
+            "value": 65.3
+          },
+          {
+            "date": "2025-10-01",
+            "value": 65.7
+          },
+          {
+            "date": "2025-07-01",
+            "value": 65.3
+          },
+          {
+            "date": "2025-04-01",
+            "value": 65.0
+          },
+          {
+            "date": "2025-01-01",
+            "value": 65.1
+          },
+          {
+            "date": "2024-10-01",
+            "value": 65.7
+          },
+          {
+            "date": "2024-07-01",
+            "value": 65.6
+          },
+          {
+            "date": "2024-04-01",
+            "value": 65.6
+          },
+          {
+            "date": "2024-01-01",
+            "value": 65.6
+          },
+          {
+            "date": "2023-10-01",
+            "value": 65.7
+          },
+          {
+            "date": "2023-07-01",
+            "value": 66.0
+          },
+          {
+            "date": "2023-04-01",
+            "value": 65.9
+          }
+        ]
+      },
+      {
+        "series_id": "RSFSXMV",
+        "category": "consumer_spending",
+        "name": "Building Materials Retail Sales",
+        "observations": [
+          {
+            "date": "2026-05-01",
+            "value": 623444.0
+          },
+          {
+            "date": "2026-04-01",
+            "value": 618378.0
+          },
+          {
+            "date": "2026-03-01",
+            "value": 614158.0
+          },
+          {
+            "date": "2026-02-01",
+            "value": 602258.0
+          },
+          {
+            "date": "2026-01-01",
+            "value": 596884.0
+          },
+          {
+            "date": "2025-12-01",
+            "value": 596072.0
+          },
+          {
+            "date": "2025-11-01",
+            "value": 596008.0
+          },
+          {
+            "date": "2025-10-01",
+            "value": 593611.0
+          },
+          {
+            "date": "2025-09-01",
+            "value": 592652.0
+          },
+          {
+            "date": "2025-08-01",
+            "value": 592134.0
+          },
+          {
+            "date": "2025-07-01",
+            "value": 588742.0
+          },
+          {
+            "date": "2025-06-01",
+            "value": 586272.0
+          }
+        ]
+      },
+      {
+        "series_id": "UMCSENT",
+        "category": "consumer_health",
+        "name": "Consumer Sentiment",
+        "observations": [
+          {
+            "date": "2026-05-01",
+            "value": 44.8
+          },
+          {
+            "date": "2026-04-01",
+            "value": 49.8
+          },
+          {
+            "date": "2026-03-01",
+            "value": 53.3
+          },
+          {
+            "date": "2026-02-01",
+            "value": 56.6
+          },
+          {
+            "date": "2026-01-01",
+            "value": 56.4
+          },
+          {
+            "date": "2025-12-01",
+            "value": 52.9
+          },
+          {
+            "date": "2025-11-01",
+            "value": 51.0
+          },
+          {
+            "date": "2025-10-01",
+            "value": 53.6
+          },
+          {
+            "date": "2025-09-01",
+            "value": 55.1
+          },
+          {
+            "date": "2025-08-01",
+            "value": 58.2
+          },
+          {
+            "date": "2025-07-01",
+            "value": 61.7
+          },
+          {
+            "date": "2025-06-01",
+            "value": 60.7
+          }
+        ]
+      },
+      {
+        "series_id": "UNRATE",
+        "category": "consumer_health",
+        "name": "Unemployment Rate",
+        "observations": [
+          {
+            "date": "2026-06-01",
+            "value": 4.2
+          },
+          {
+            "date": "2026-05-01",
+            "value": 4.3
+          },
+          {
+            "date": "2026-04-01",
+            "value": 4.3
+          },
+          {
+            "date": "2026-03-01",
+            "value": 4.3
+          },
+          {
+            "date": "2026-02-01",
+            "value": 4.4
+          },
+          {
+            "date": "2026-01-01",
+            "value": 4.3
+          },
+          {
+            "date": "2025-12-01",
+            "value": 4.4
+          },
+          {
+            "date": "2025-11-01",
+            "value": 4.5
+          },
+          {
+            "date": "2025-09-01",
+            "value": 4.4
+          },
+          {
+            "date": "2025-08-01",
+            "value": 4.3
+          },
+          {
+            "date": "2025-07-01",
+            "value": 4.3
+          },
+          {
+            "date": "2025-06-01",
+            "value": 4.1
+          }
+        ]
+      }
+    ],
+    "provider": [
+      "fred",
+      "bea",
+      "bea",
+      "bea",
+      "bea",
+      "bea",
+      "census"
+    ],
+    "bea_nipa": [
+      {
+        "dataset": "NIPA",
+        "table_name": "T20100",
+        "series": [
+          {
+            "code": "A067RC",
+            "description": "Equals: Disposable personal income",
+            "data": [
+              {
+                "year": "2022",
+                "value": 18910518.0
+              },
+              {
+                "year": "2023",
+                "value": 20749273.0
+              },
+              {
+                "year": "2024",
+                "value": 21917657.0
+              },
+              {
+                "year": "2025",
+                "value": 22866177.0
+              }
+            ]
+          },
+          {
+            "code": "DPCERC",
+            "description": "Personal consumption expenditures",
+            "data": [
+              {
+                "year": "2022",
+                "value": 17690013.0
+              },
+              {
+                "year": "2023",
+                "value": 18833150.0
+              },
+              {
+                "year": "2024",
+                "value": 19896009.0
+              },
+              {
+                "year": "2025",
+                "value": 20954857.0
+              }
+            ]
+          },
+          {
+            "code": "A067RX",
+            "description": "Total, Billions of chained (2017) dollars",
+            "data": [
+              {
+                "year": "2022",
+                "value": 16288070.0
+              },
+              {
+                "year": "2023",
+                "value": 17217775.0
+              },
+              {
+                "year": "2024",
+                "value": 17723264.0
+              },
+              {
+                "year": "2025",
+                "value": 18016601.0
+              }
+            ]
+          },
+          {
+            "code": "A067RL",
+            "description": "Disposable personal income, chained (2017) dollars",
+            "data": [
+              {
+                "year": "2022",
+                "value": -5.6
+              },
+              {
+                "year": "2023",
+                "value": 5.7
+              },
+              {
+                "year": "2024",
+                "value": 2.9
+              },
+              {
+                "year": "2025",
+                "value": 1.7
+              }
+            ]
+          },
+          {
+            "code": "A072RC",
+            "description": "Personal saving as a percentage of disposable personal income",
+            "data": [
+              {
+                "year": "2022",
+                "value": 3.3
+              },
+              {
+                "year": "2023",
+                "value": 5.6
+              },
+              {
+                "year": "2024",
+                "value": 5.4
+              },
+              {
+                "year": "2025",
+                "value": 4.6
+              }
+            ]
+          },
+          {
+            "code": "A065RC",
+            "description": "Personal income",
+            "data": [
+              {
+                "year": "2022",
+                "value": 22153803.0
+              },
+              {
+                "year": "2023",
+                "value": 23585016.0
+              },
+              {
+                "year": "2024",
+                "value": 24905900.0
+              },
+              {
+                "year": "2025",
+                "value": 26099930.0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "dataset": "NIPA",
+        "table_name": "T20305",
+        "series": [
+          {
+            "code": "DPCERC",
+            "description": "Personal consumption expenditures (PCE)",
+            "data": [
+              {
+                "year": "2022",
+                "value": 17690013.0
+              },
+              {
+                "year": "2023",
+                "value": 18833150.0
+              },
+              {
+                "year": "2024",
+                "value": 19896009.0
+              },
+              {
+                "year": "2025",
+                "value": 20954857.0
+              }
+            ]
+          },
+          {
+            "code": "DDURRC",
+            "description": "Durable goods",
+            "data": [
+              {
+                "year": "2022",
+                "value": 2077929.0
+              },
+              {
+                "year": "2023",
+                "value": 2141043.0
+              },
+              {
+                "year": "2024",
+                "value": 2178085.0
+              },
+              {
+                "year": "2025",
+                "value": 2265413.0
+              }
+            ]
+          },
+          {
+            "code": "DFDHRC",
+            "description": "Furnishings and durable household equipment",
+            "data": [
+              {
+                "year": "2022",
+                "value": 476136.0
+              },
+              {
+                "year": "2023",
+                "value": 479861.0
+              },
+              {
+                "year": "2024",
+                "value": 490018.0
+              },
+              {
+                "year": "2025",
+                "value": 507340.0
+              }
+            ]
+          },
+          {
+            "code": "DPCCRC",
+            "description": "PCE excluding food and energy",
+            "data": [
+              {
+                "year": "2022",
+                "value": 15469721.0
+              },
+              {
+                "year": "2023",
+                "value": 16626646.0
+              },
+              {
+                "year": "2024",
+                "value": 17658871.0
+              },
+              {
+                "year": "2025",
+                "value": 18659134.0
+              }
+            ]
+          },
+          {
+            "code": "DGDSRC",
+            "description": "Goods",
+            "data": [
+              {
+                "year": "2022",
+                "value": 5938667.0
+              },
+              {
+                "year": "2023",
+                "value": 6115666.0
+              },
+              {
+                "year": "2024",
+                "value": 6261530.0
+              },
+              {
+                "year": "2025",
+                "value": 6508041.0
+              }
+            ]
+          },
+          {
+            "code": "DHSGRC",
+            "description": "Housing",
+            "data": [
+              {
+                "year": "2022",
+                "value": 2679332.0
+              },
+              {
+                "year": "2023",
+                "value": 2940731.0
+              },
+              {
+                "year": "2024",
+                "value": 3146981.0
+              },
+              {
+                "year": "2025",
+                "value": 3310951.0
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "bea_regional": [
+      {
+        "code": "CAINC1-1",
+        "description": "Personal Income by State",
+        "geos": [
+          {
+            "geo_type": "STATE",
+            "geo_name": "California",
+            "geo_fips": "06000",
+            "data": [
+              {
+                "year": "2022",
+                "value": 3021645501.0
+              },
+              {
+                "year": "2023",
+                "value": 3182779295.0
+              },
+              {
+                "year": "2024",
+                "value": 3400237317.0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "code": "CAINC5N-704",
+        "description": "Building Material and Garden Equipment Dealers Earnings by State",
+        "geos": [
+          {
+            "geo_type": "STATE",
+            "geo_name": "California",
+            "geo_fips": "06000",
+            "data": [
+              {
+                "year": "2022",
+                "value": 8080758.0
+              },
+              {
+                "year": "2023",
+                "value": 8462961.0
+              },
+              {
+                "year": "2024",
+                "value": 8621130.0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "code": "CAINC5N-521",
+        "description": "Furniture and Related Product Manufacturing Earnings by State",
+        "geos": [
+          {
+            "geo_type": "STATE",
+            "geo_name": "California",
+            "geo_fips": "06000",
+            "data": [
+              {
+                "year": "2022",
+                "value": 2399612.0
+              },
+              {
+                "year": "2023",
+                "value": 2359672.0
+              },
+              {
+                "year": "2024",
+                "value": 2376299.0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "code": "CAINC5N-700",
+        "description": "Retail Trade Total Earnings by State",
+        "geos": [
+          {
+            "geo_type": "STATE",
+            "geo_name": "California",
+            "geo_fips": "06000",
+            "data": [
+              {
+                "year": "2022",
+                "value": 105612087.0
+              },
+              {
+                "year": "2023",
+                "value": 109166261.0
+              },
+              {
+                "year": "2024",
+                "value": 111882753.0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "code": "CAGDP1-1",
+        "description": "GDP by State",
+        "geos": [
+          {
+            "geo_type": "STATE",
+            "geo_name": "California",
+            "geo_fips": "06000",
+            "data": [
+              {
+                "year": "2022",
+                "value": 3147211352.0
+              },
+              {
+                "year": "2023",
+                "value": 3204016448.0
+              },
+              {
+                "year": "2024",
+                "value": 3306928555.0
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "census": [
+      {
+        "dataset": "acs5",
+        "variable": "B25003_002E",
+        "description": "Owner Units",
+        "geos": [
+          {
+            "geo_type": "STATE",
+            "geo_name": "California",
+            "geo_fips": "06000",
+            "data": [
+              {
+                "year": "2023",
+                "value": "7494811"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "dataset": "acs5",
+        "variable": "B23025_004E",
+        "description": "Unknown Metric",
+        "geos": [
+          {
+            "geo_type": "STATE",
+            "geo_name": "California",
+            "geo_fips": "06000",
+            "data": [
+              {
+                "year": "2023",
+                "value": "18700223"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "dataset": "acs5",
+        "variable": "B25003_003E",
+        "description": "Unknown Metric",
+        "geos": [
+          {
+            "geo_type": "STATE",
+            "geo_name": "California",
+            "geo_fips": "06000",
+            "data": [
+              {
+                "year": "2023",
+                "value": "5940036"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "dataset": "acs5",
+        "variable": "B17001_002E",
+        "description": "Poverty Count",
+        "geos": [
+          {
+            "geo_type": "STATE",
+            "geo_name": "California",
+            "geo_fips": "06000",
+            "data": [
+              {
+                "year": "2023",
+                "value": "4610600"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "dataset": "acs5",
+        "variable": "B01002_001E",
+        "description": "Median Age",
+        "geos": [
+          {
+            "geo_type": "STATE",
+            "geo_name": "California",
+            "geo_fips": "06000",
+            "data": [
+              {
+                "year": "2023",
+                "value": "37.6"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "dataset": "acs5",
+        "variable": "B25077_001E",
+        "description": "Median Home Value",
+        "geos": [
+          {
+            "geo_type": "STATE",
+            "geo_name": "California",
+            "geo_fips": "06000",
+            "data": [
+              {
+                "year": "2023",
+                "value": "695400"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "dataset": "acs5",
+        "variable": "B19013_001E",
+        "description": "Median Income",
+        "geos": [
+          {
+            "geo_type": "STATE",
+            "geo_name": "California",
+            "geo_fips": "06000",
+            "data": [
+              {
+                "year": "2023",
+                "value": "96334"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "dataset": "acs5",
+        "variable": "B01003_001E",
+        "description": "Total Population",
+        "geos": [
+          {
+            "geo_type": "STATE",
+            "geo_name": "California",
+            "geo_fips": "06000",
+            "data": [
+              {
+                "year": "2023",
+                "value": "39242785"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "finance-data": {
+    "snapshots": [
+      {
+        "symbol": "LZB",
+        "name": "La-Z-Boy Incorporated",
+        "sector": "Consumer Discretionary",
+        "industry": "Furnishings, Fixtures & Appliances",
+        "last": 39.68,
+        "prev": 38.84,
+        "open": 38.98,
+        "high": 39.785,
+        "low": 38.84,
+        "change_amt": 0.84,
+        "change_perc": 2.16,
+        "wk52_high": 44.9,
+        "wk52_low": 28.47,
+        "total_assets": 1554035000,
+        "eps": 2.47,
+        "pe_ratio": 15.72,
+        "peg_ratio": 1.211,
+        "pb_ratio": 1.498,
+        "ps_ratio": 0.731,
+        "forward_pe": 13.32,
+        "beta": 1.267,
+        "analyst_target_price": 46.0,
+        "analyst_consensus": "Buy",
+        "technical_signals": null,
+        "mlp_signals": null,
+        "ml_signals": null
+      },
+      {
+        "symbol": "W",
+        "name": "Wayfair Inc",
+        "sector": "Consumer Discretionary",
+        "industry": "Speciality Retail",
+        "last": 84.18,
+        "prev": 82.68,
+        "open": 83.15,
+        "high": 86.13,
+        "low": 81.87,
+        "change_amt": 1.5,
+        "change_perc": 1.81,
+        "wk52_high": 119.98,
+        "wk52_low": 55.6,
+        "total_assets": 11584012000,
+        "eps": -2.34,
+        "pe_ratio": 0.0,
+        "peg_ratio": 23.5,
+        "pb_ratio": 2679.46,
+        "ps_ratio": 0.864,
+        "forward_pe": 30.77,
+        "beta": 2.964,
+        "analyst_target_price": 94.11,
+        "analyst_consensus": "Buy",
+        "technical_signals": null,
+        "mlp_signals": null,
+        "ml_signals": null
+      },
+      {
+        "symbol": "XHB",
+        "name": "S&P Homebuilders SPDR",
+        "sector": "ETFs",
+        "industry": "ETFs - Consumer Discretionary",
+        "last": 108.44,
+        "prev": 106.69,
+        "open": 106.84,
+        "high": 109.6,
+        "low": 106.36,
+        "change_amt": 1.75,
+        "change_perc": 1.64,
+        "wk52_high": 0.0,
+        "wk52_low": 0.0,
+        "total_assets": 1600000000,
+        "eps": null,
+        "pe_ratio": null,
+        "peg_ratio": null,
+        "pb_ratio": null,
+        "ps_ratio": null,
+        "forward_pe": null,
+        "beta": null,
+        "analyst_target_price": null,
+        "analyst_consensus": null,
+        "technical_signals": null,
+        "mlp_signals": null,
+        "ml_signals": null
+      },
+      {
+        "symbol": "XRT",
+        "name": "S&P Retail SPDR",
+        "sector": "ETFs",
+        "industry": "ETFs - Consumer Discretionary",
+        "last": 87.01,
+        "prev": 86.38,
+        "open": 86.6,
+        "high": 87.66,
+        "low": 85.98,
+        "change_amt": 0.63,
+        "change_perc": 0.73,
+        "wk52_high": 0.0,
+        "wk52_low": 0.0,
+        "total_assets": 381400000,
+        "eps": null,
+        "pe_ratio": null,
+        "peg_ratio": null,
+        "pb_ratio": null,
+        "ps_ratio": null,
+        "forward_pe": null,
+        "beta": null,
+        "analyst_target_price": null,
+        "analyst_consensus": null,
+        "technical_signals": null,
+        "mlp_signals": null,
+        "ml_signals": null
+      }
+    ],
+    "performances": [
+      {
+        "symbol": "LZB",
+        "diffs": {
+          "1Y": {
+            "price": 37.0261118448,
+            "perc": 7.17
+          },
+          "3M": {
+            "price": 35.1663939791,
+            "perc": 12.83
+          },
+          "1M": {
+            "perc": -5.19,
+            "price": 41.85
+          },
+          "6M": {
+            "price": 37.5912334731,
+            "perc": 5.56
+          },
+          "2Y": {
+            "perc": 0.34,
+            "price": 39.5467665617
+          },
+          "1W": {
+            "perc": -0.48,
+            "price": 39.87
+          },
+          "Ytd": {
+            "price": 36.7723168384,
+            "perc": 7.91
+          }
+        }
+      },
+      {
+        "symbol": "W",
+        "diffs": {
+          "Ytd": {
+            "price": 100.41,
+            "perc": -16.16
+          },
+          "1W": {
+            "perc": -5.74,
+            "price": 89.31
+          },
+          "1Y": {
+            "price": 63.07,
+            "perc": 33.47
+          },
+          "1M": {
+            "perc": -9.28,
+            "price": 92.79
+          },
+          "3M": {
+            "price": 78.78,
+            "perc": 6.85
+          },
+          "2Y": {
+            "price": 48.04,
+            "perc": 75.23
+          },
+          "6M": {
+            "perc": -23.32,
+            "price": 109.78
+          }
+        }
+      },
+      {
+        "symbol": "XHB",
+        "diffs": {
+          "Ytd": {
+            "price": 102.6512814312,
+            "perc": 5.64
+          },
+          "1Y": {
+            "perc": 3.37,
+            "price": 104.9040400151
+          },
+          "3M": {
+            "perc": 0.14,
+            "price": 108.2913555952
+          },
+          "1W": {
+            "price": 108.25,
+            "perc": 0.18
+          },
+          "6M": {
+            "perc": -2.62,
+            "price": 111.355105119
+          },
+          "1M": {
+            "price": 114.28,
+            "perc": -5.11
+          },
+          "2Y": {
+            "perc": -1.18,
+            "price": 109.7358955967
+          }
+        }
+      },
+      {
+        "symbol": "XRT",
+        "diffs": {
+          "6M": {
+            "perc": -1.61,
+            "price": 88.4314656563
+          },
+          "1Y": {
+            "perc": 7.58,
+            "price": 80.8812926974
+          },
+          "1M": {
+            "perc": -1.37,
+            "price": 88.22
+          },
+          "Ytd": {
+            "perc": 2.51,
+            "price": 84.8786822622
+          },
+          "3M": {
+            "perc": 1.64,
+            "price": 85.6032985152
+          },
+          "2Y": {
+            "perc": 18.87,
+            "price": 73.1954397604
+          },
+          "1W": {
+            "perc": -2.7,
+            "price": 89.42
+          }
+        }
+      }
+    ],
+    "indicators": [
+      {
+        "id": "LZB_20260723",
+        "symbol": "LZB",
+        "rsi_14": 41.64,
+        "sma_50": 38.11,
+        "sma_200": 36.07,
+        "macd": 0.28,
+        "macd_signal": 0.44,
+        "bb_upper": 40.97,
+        "bb_lower": 38.22
+      },
+      {
+        "id": "XRT_20260723",
+        "symbol": "XRT",
+        "rsi_14": 36.44,
+        "sma_50": 85.43,
+        "sma_200": 84.89,
+        "macd": 0.66,
+        "macd_signal": 0.87,
+        "bb_upper": 90.06,
+        "bb_lower": 85.98
+      },
+      {
+        "id": "XHB_20260723",
+        "symbol": "XHB",
+        "rsi_14": 41.55,
+        "sma_50": 106.25,
+        "sma_200": 106.91,
+        "macd": -0.33,
+        "macd_signal": 0.28,
+        "bb_upper": 116.83,
+        "bb_lower": 103.12
+      },
+      {
+        "id": "W_20260723",
+        "symbol": "W",
+        "rsi_14": 31.51,
+        "sma_50": 79.35,
+        "sma_200": 87.04,
+        "macd": 0.99,
+        "macd_signal": 2.61,
+        "bb_upper": 97.83,
+        "bb_lower": 82.72
+      }
+    ],
+    "sentiments": [
+      {
+        "id": "LZB:20260615T081119",
+        "date": "2026-06-15T08:11:19Z",
+        "symbol": "LZB",
+        "title": "Furniture Market Set to Expand $840.5 Billion by 2034 | IKEA Group, American Signature, La-Z-Boy Inc.",
+        "score": 0.448615,
+        "label": "Bullish",
+        "source": "EIN Presswire",
+        "similarity": 0.6080806851387024
+      },
+      {
+        "id": "LZB:20260610T061034",
+        "date": "2026-06-10T06:10:34Z",
+        "symbol": "LZB",
+        "title": "Analysts Estimate La-Z-Boy (LZB) to Report a Decline in Earnings: What to Look Out for",
+        "score": -0.279337,
+        "label": "Somewhat-Bearish",
+        "source": "Yahoo Finance",
+        "similarity": 0.4883047938346863
+      },
+      {
+        "id": "LZB:20260618T085433",
+        "date": "2026-06-18T08:54:33Z",
+        "symbol": "LZB",
+        "title": "La-Z-Boy Inc. leads steady retail growth as sales increase in Q4",
+        "score": 0.487502,
+        "label": "Bullish",
+        "source": "Interior Daily",
+        "similarity": 0.47961315512657166
+      },
+      {
+        "id": "LZB:20260616T133947",
+        "date": "2026-06-16T13:39:47Z",
+        "symbol": "LZB",
+        "title": "La-Z-Boy earnings in focus: Can strategic shift offset weak demand? By Investing.com",
+        "score": 0.141015,
+        "label": "Neutral",
+        "source": "Investing.com South Africa",
+        "similarity": 0.47017011046409607
+      },
+      {
+        "id": "LZB:20260618T051033",
+        "date": "2026-06-18T05:10:33Z",
+        "symbol": "LZB",
+        "title": "La-Z-Boy posts flat Q4 as full year sales show slight uptick",
+        "score": 0.413969,
+        "label": "Bullish",
+        "source": "Big Furniture Group",
+        "similarity": 0.4547323286533356
+      },
+      {
+        "id": "LZB:20260616T172600",
+        "date": "2026-06-16T17:26:00Z",
+        "symbol": "LZB",
+        "title": "La-Z-Boy FQ4 results beat expectations, sets FQ1 outlook above street view (LZB:NYSE)",
+        "score": 0.71521,
+        "label": "Bullish",
+        "source": "Seeking Alpha",
+        "similarity": 0.4323818385601044
+      },
+      {
+        "id": "LZB:20260612T140938",
+        "date": "2026-06-12T14:09:38Z",
+        "symbol": "LZB",
+        "title": "La-Z-Boy (LZB) Q4 2026 Preview: EPS Est. $0.82",
+        "score": -0.205542,
+        "label": "Somewhat-Bearish",
+        "source": "AlphaStreet",
+        "similarity": 0.4314601421356201
+      },
+      {
+        "id": "LZB:20260613T080927",
+        "date": "2026-06-13T08:09:27Z",
+        "symbol": "LZB",
+        "title": "La-Z-Boy (LZB) Q4 2026 Preview: EPS Est. $0.82",
+        "score": -0.097074,
+        "label": "Neutral",
+        "source": "AlphaStreet",
+        "similarity": 0.42594853043556213
+      },
+      {
+        "id": "LZB:20260617T221046",
+        "date": "2026-06-17T22:10:46Z",
+        "symbol": "LZB",
+        "title": "La-Z-Boy Reports Financial Fourth Quarter Results",
+        "score": 0.413639,
+        "label": "Bullish",
+        "source": "Home Furnishings Business",
+        "similarity": 0.423063188791275
+      },
+      {
+        "id": "LZB:20260616T201547",
+        "date": "2026-06-16T20:15:47Z",
+        "symbol": "LZB",
+        "title": "La-Z-Boy (NYSE: LZB) Q4 EPS surges as margins rise and $300M buyback launched",
+        "score": 0.521856,
+        "label": "Bullish",
+        "source": "Stock Titan",
+        "similarity": 0.41553524136543274
+      }
+    ]
+  },
+  "web-sentiment": "An analysis of consumer sentiment, reviews, and social buzz for furniture retailers and products in California reveals a market divided between high-end design appreciation and frustration with mass-market logistics. \\n\\n---\\n\\n### 1. Overall Consumer Sentiment & Market Trends\\n* **The Shift to \\"Character\\" and Warmth:** According to design trends shaping California homes, consumers are moving away from minimalist, pale-wood aesthetics. There is a strong preference for darker-toned woods, reclaimed pieces, burl wood, and vintage-inspired items. California-based brands like **Olive Ateliers** (Los Angeles), **Nickey Kehoe**, and **Lulu & Georgia** are highly buzzed about on social media for capturing this layered, \\"well-loved\\" aesthetic.\\n* **High-End Resilience:** California remains a major hub for luxury furniture. Corte Madera-based **Restoration Hardware (RH)** continues to dominate the high-end market, with consumers willing to pay a premium for luxury, experiential retail galleries. \\n* **Sustainability & EPR Laws:** California’s strict Extended Producer Responsibility (EPR) laws are forcing retailers to focus heavily on sustainability, circularity, and eco-friendly packaging. Consumers are increasingly factoring a brand's environmental footprint into their purchasing decisions.\\n\\n---\\n\\n### 2. Retailer Reviews & Customer Sentiment\\nFeedback from local review platforms (Yelp) and community forums (Reddit) highlights a stark contrast between local boutique experiences and big-box discount retailers:\\n\\n#### **The Good: Local, Custom, and Solid Wood Retailers**\\nIn major metropolitan areas like Los Angeles, San Francisco, and San Diego, consumers highly praise independent and contemporary retailers that offer solid wood and custom options:\\n* **San Diego Rustic Furniture Warehouse & Rustic Home (San Marcos):** Highly rated (4.4+ stars) for offering solid wood pieces rather than \\"particle board poor-quality pieces.\\"\\n* **Sofa U Love & Chic Home Interiors (San Francisco):** Receive near-perfect ratings (4.9–5.0 stars) for contemporary designs, customization options, and high-touch customer service.\\n* **Comfort Furniture Galleries (San Diego):** Praised for quick turnaround times (2–3 weeks) on custom orders.\\n\\n#### **The Bad: Delivery and Quality Issues with Mass Retailers**\\nMass-market and discount furniture chains face significant consumer backlash online, primarily centered around delivery logistics and customer service:\\n* **Jerome’s Furniture (Southern California):** Receives mixed-to-poor reviews on specific warehouse locations due to strict, inconvenient pickup windows and delivery mishaps (e.g., refusing to release items close to closing time).\\n* **Bob’s Discount Furniture:** Social media buzz (particularly on Reddit) heavily criticizes the brand for poor durability (e.g., sectionals breaking within months) and a frustrating, fragmented customer service department where delivery teams and store representatives fail to communicate.\\n\\n---\\n\\n### 3. Social Buzz & Product Recommendations\\nOn platforms like Reddit, Houzz, and Apartment Therapy, California consumers frequently share recommendations and design dilemmas:\\n* **The \\"Costco Hack\\":** For budget-conscious buyers, California Reddit communities overwhelmingly recommend buying sectionals and couches from **Costco**. Consumers praise Costco's lifetime return policy and reliable delivery over traditional discount furniture stores.\\n* **Direct-to-Consumer (DTC) Favorites:** Brands like **Thuma** (highly rated for bed frames that assemble in minutes) and **Burrow** are frequently discussed for apartment living in high-density areas like SF and LA.\\n* **Design Aesthetics on Houzz:** There is a growing social buzz around creating a \\"moody luxe Italian\\" vibe in California apartments, with users seeking advice on placing low-profile, deep-seated sofas and pairing them with textured, earthy rugs.\\n* **The \\"Occasional Sofa\\":** A rising trend on Instagram and design blogs is the non-essential \\"occasional sofa\\"—smaller, statement-making seating placed in entryways, kitchens, or bedrooms rather than the main living room."
+}

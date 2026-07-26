@@ -356,7 +356,7 @@ Each insight must do ONE of the following:
 {
   "title": "Suggested Prompts",
   "type": "suggested_prompts",
-  "prompts": ["suggestion 1", "suggestion 2"],
+  "suggtested_prompts": ["suggestion 1", "suggestion 2"],
   "group": "prompts"
 }
 ```

@@ -42,18 +42,9 @@ If the question spans multiple industries — include all relevant ones in the g
 
 ## Finance Data Usage
 
-Use finance-data only when the query relates to a specific consumer sector. Pull sector ETFs or representative stocks, not individual company analysis.
-
-### Sector mappings — use these when relevant:
-
-| Sector                 | ETFs         | Representative Stocks         |
-| ---------------------- | ------------ | ----------------------------- |
-| Furniture & Home       | No major ETF | RH, WSM, FLXS, LZB, ETH, BBBY |
-| Home Improvement       | XHB          | HD, LOW, BLDR                 |
-| Apparel & Retail       | XRT, XLY     | NKE, LULU, TJX, ROST, GPS     |
-| Consumer Staples       | XLP          | PG, KO, WMT, COST             |
-| Consumer Discretionary | XLY          | AMZN, TGT, MCD, SBUX          |
-| Real Estate / Housing  | XHB, ITB     | DHI, LEN, PHM, TOL            |
+Use finance-data only when the query relates to a specific consumer sector.
+Pass the sector and user query as the goal — do not specify tickers or ETFs.
+The finance-data agent will identify the relevant securities itself.
 
 ### When to use finance-data:
 
@@ -66,8 +57,6 @@ Use finance-data only when the query relates to a specific consumer sector. Pull
 - General economic outlook queries
 - Regional economic analysis
 - Government data only queries
-
-Always limit to 5 tickers maximum.
 
 ## Examples
 
@@ -92,6 +81,10 @@ Classify industry and region from the user's question. Select all agents needed 
     {
       "id": "economic-data",
       "goal": "Retrieve consumer spending, income and demographic signals for the [Furniture|Apparel|Electronics] industry in [region] relevant to: [user question]"
+    },
+    {
+      "id": "finance-data",
+      "goal": "[Furniture|Apparel|Electronics| retail industry outlook — sector ETFs and top stocks"
     },
     {
       "id": "web-sentiment",
