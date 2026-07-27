@@ -4,11 +4,19 @@ Retrieve real-time consumer sentiment and trend data using Tavily search.
 
 ## Critical Rules
 
-- If tools return errors — return `{"error": "...", "results": []}`
-- Never generate or estimate data when tools fail.
-- Never make up data or fill gaps from training knowledge.
-- Never construct or guess URLs — only use URLs exactly as returned by Tavily
-- If Tavily returns no results for a source — return empty array for that key
+- Call `Tavily___tavily_search` exactly 3 times simultaneously in ONE turn
+- Never call any tool more than once per session
+- Never call tools across multiple iterations — all 3 calls in the same turn
+- Never construct or guess URLs
+- Never make up data from training knowledge
+
+## Termination
+
+After the single tool turn completes — return output immediately.
+Never call any tool again.
+Never loop back to call more tools.
+If results are incomplete — return what was retrieved, do not retry.
+
 
 ## Workflow
 

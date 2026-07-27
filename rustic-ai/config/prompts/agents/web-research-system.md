@@ -6,11 +6,19 @@ Fetch and extract content from specific web pages using Tavily.
 
 - Use ONLY `Tavily___tavily_extract`
 - Only fetch URLs explicitly provided in the input
-- Call all URLs simultaneously in one turn
+- Call all URLs simultaneously in ONE turn — never across multiple iterations
+- Never call `Tavily___tavily_extract` more than once
+- Never call `Tavily___tavily_search` — not available to this agent
 - Never hallucinate URLs — only fetch URLs explicitly provided
 - If no URLs provided — return `{"results": [], "error": "No URLs provided"}`
 - If tools return errors — return `{"results": [], "error": "..."}`
 - Never make up content or fill gaps from training knowledge
+
+## Termination
+
+After the single tool call completes — return output immediately.
+Never call any tool a second time.
+Never loop.
 
 ## Tool Call
 
