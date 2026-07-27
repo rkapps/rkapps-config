@@ -39,16 +39,16 @@ Respond with a single JSON object only. No prose outside the JSON. No markdown c
 
 Add a `group` field to every section. Sections with the same group name render side by side.
 
-| Group            | Sections                   |
-| ---------------- | -------------------------- |
-| `"overview"`     | context                    |
-| `"snapshot"`     | metric_cards               |
-| `"performance"`  | bar_chart                  |
-| `"fundamentals"` | fundamentals table         |
-| `"technicals"`   | technical indicators table |
-| `"risk"`         | bull vs bear table         |
-| `"insights"`     | insight_cards              |
-| `"prompts"`      | suggested_prompts          |
+| Group            | Sections                |
+| ---------------- | ----------------------- |
+| `"overview"`     | context                 |
+| `"snapshot"`     | metric_cards            |
+| `"performance"`  | bar_chart               |
+| `"fundamentals"` | fundamentals table      |
+| `"technicals"`   | technical signals table |
+| `"technicals"`   | bull vs bear table      |
+| `"insights"`     | insight_cards           |
+| `"prompts"`      | suggested_prompts       |
 
 Never put more than 2 sections in the same group.
 Never group `context`, `insight_cards`, or `suggested_prompts`.
@@ -76,59 +76,73 @@ Never group `context`, `insight_cards`, or `suggested_prompts`.
 { "type": "table", "title": "Technical Signals", "group": "technicals" }
 ```
 
-## Response Mode
+## Section Selection
 
-### Summary
+Choose sections based on data received. Never omit a section type if the data exists to populate it.
 
-Use for: "compare", "how are X doing", "overview", "quick look"
+### Always include
 
-- context
-- single comparison table (Price, P/E, Consensus, YTD, RSI, MACD, BETA)
-- insight_cards (3-5 insights)
+- `context` — 2-3 sentences maximum. State the key question, the main tension, and the macro backdrop. Nothing more.
+- `insight_cards` — 4-5 insights, cross-referencing all available data sources
+- `suggested_prompts` — always last
 
-### Detail
+### Include when data is present
 
-Use for: "detailed analysis", "deep dive", "full breakdown", "evaluate"
+- `metric_cards` — when snapshot data exists (price, P/E, consensus, beta)
+- `bar_chart` — when performance data exists (1M, 3M, 6M, YTD, 1Y, 2Y)
+  - Always include one bar_chart for historical performance
+  - Add a second bar_chart for peer comparison if multiple tickers
+- `table` (comparison) — when multiple tickers with shared metrics. Maximum 6 rows — prioritize Forward P/E, PEG, Beta, Upside to Target, Consensus. Omit P/B and P/S unless directly relevant.
+- `table` (technical indicators) — when RSI, MACD, SMA data exists. Include RSI, SMA50, SMA200, MACD only. Omit raw Bollinger band values.
+- `table` (bull vs bear) — when sentiment + fundamentals data exists for 2+ tickers. Include for comparison queries or when sentiment diverges meaningfully.
 
-- context
-- fundamentals table
-- performance bar_chart
-- technical indicators table
-- bull vs bear table
-- insight_cards (5-7 insights)
+### Never include
 
-Infer the mode from the user query — never ask which mode to use.
+- Sections with no supporting data
+- Duplicate sections covering the same data
+- More than 2 sections in the same group
+
+### Query intent — output depth
+
+- Comparison query ("compare", "vs", "how do X and Y compare")
+  → context + metric_cards + bar_chart + technical table + bull vs bear + insight_cards + suggested_prompts
+- Single ticker ("analyze", "evaluate", "deep dive")
+  → context + metric_cards + bar_chart + technical table + insight_cards + suggested_prompts
+- Quick look ("how is X doing", "what's happening with X")
+  → context + metric_cards + insight_cards + suggested_prompts
 
 ## Critical Field Names
 
-| Section       | Array field                                                   |
-| ------------- | ------------------------------------------------------------- |
-| context       | `type`, `title` and `content`                                 |
-| metric_cards  | `type`, `title` and `data`                                    |
-| bar_chart     | `type`, `title`, `orientation`, `format`, `data` and `groups` |
-| table         | `type`, `title`, `layout`, `headers` and `rows` and `totals`  |
-| insight_cards | `type`, `title` and `data`                                    |
-| consumer_buzz | `type`, `title`, `sentiment` and `related_searches`           |
-| prompts       | `type`, `title` and `suggested_prompts`                       |
+| Section           | Array field                                                   |
+| ----------------- | ------------------------------------------------------------- |
+| context           | `type`, `title` and `content`                                 |
+| metric_cards      | `type`, `title` and `data`                                    |
+| bar_chart         | `type`, `title`, `orientation`, `format`, `data` and `groups` |
+| table             | `type`, `title`, `layout`, `headers` and `rows` and `totals`  |
+| technical_signals | `type`, `title` and `tickers`                                 |
+| insight_cards     | `type`, `title` and `data`                                    |
+| consumer_buzz     | `type`, `title`, `sentiment` and `related_searches`           |
+| prompts           | `type`, `title` and `suggested_prompts`                       |
 
 metric_cards data items: `label`, `value`, `status` (and optional `benchmark`)
-bar_char data items: `name` and `values`
+bar_chart data items: `name` and `values`
 table rows: array of cell objects with `value` and optional `signal`
 insight_cards data items: `number`, `title`, `evidence`, `source`
 signal values: `"up"`, `"down"`, `"neutral"` only
 consumer buzz sentiment items: `source`, `icon`, `rating`, `max_rating`, `signal` and `theme`
+tickers data items: `symbol`, `rsi`, `rsi_signal`, `sma`, `macd`, `overall`
 
 ## Available Section Types
 
-Choose whichever sections best present the data for the query:
-
 ### context
 
-Plain text summary. Use for framing the question and macro environment. Can appear multiple times — use as an opening frame and/or a closing synthesis narrative.
+2-3 sentences only. Frame the question, state the key tension, note the macro environment.
+Use `**bold**` for: ticker symbols, key numbers, signal words (e.g. overbought, lagging, premium).
+No lists, no sub-points.
 
 ### metric_cards
 
-Key metrics with optional benchmark comparison. Use for single-ticker evaluation or key stats.
+Key metrics with optional benchmark comparison. Use for single-ticker evaluation or key stats. Maximum 6 cards.
 
 ### metric_cards fields
 
@@ -156,7 +170,7 @@ Never put context or explanation in `benchmark` — that belongs in `context` or
 ```json
 {
   "type": "table",
-  "title": "Compareison",
+  "title": "Comparison",
   "layout": "column",
   "headers": ["Metric", "NVDA", "AMD", "INTC"],
   "rows": [
@@ -186,16 +200,13 @@ Use `"arrow"` for returns, growth, and directional metrics.
 Use `"badge"` for status labels and categorical values.
 Signal values: `"up"` = green, `"down"` = red, `"neutral"` = gray.
 
-- `totals` is always an array — allows multiple summary rows (e.g. Total + Average)
-- Always place after `rows` — renderer displays them at the bottom with visual separation
-- Never include `signal` on total rows unless the total itself has directional meaning
-
 ### Table Rules
 
 - Metrics are always rows. Tickers are always columns.
 - `layout: "column"` — first header is always "Metric", remaining headers are ticker symbols
 - If a row has no data — omit it entirely
 - Never mix raw numbers and interpretations in the same row
+- Maximum 6 rows per table — include only the highest signal metrics
 
 ### Table Layout — Simple Rule
 
@@ -210,15 +221,15 @@ If your table has more than 2 columns — always use `"column"`. No exceptions.
 
 #### RSI row
 
-- RSI > 70 — `"signal": "down"`, `"note": "Overbought — consolidation risk"`
-- RSI < 30 — `"signal": "up"`, `"note": "Oversold — potential reversal watch"`
-- RSI 30-70 — no signal, `"note": "Neutral momentum"`
+- RSI > 70 — `"signal": "down"`, `"note": "Overbought"`
+- RSI < 30 — `"signal": "up"`, `"note": "Oversold"`
+- RSI 30-70 — no signal, `"note": "Neutral"`
 
 #### P/E row
 
-- P/E = 0 or null — `"value": "N/A"`, `"note": "Negative earnings — not meaningful"`
+- P/E = 0 or null — `"value": "N/A"`, `"note": "Negative earnings"`
 - P/E < 15 — `"signal": "up"`, `"note": "Deep value"`
-- P/E > 50 — `"signal": "down"`, `"note": "Growth premium — priced for expansion"`
+- P/E > 50 — `"signal": "down"`, `"note": "Growth premium"`
 
 #### Consensus row
 
@@ -232,7 +243,7 @@ If your table has more than 2 columns — always use `"column"`. No exceptions.
 
 #### Forward P/E row
 
-- Always add `"note"` interpreting what the multiple implies
+- Always add `"note"` interpreting what the multiple implies — max 5 words
 
 ### bar_chart
 
@@ -248,71 +259,75 @@ Use `"horizontal"` when:
 - Values span a very wide range (e.g. 9% to 463%)
 - Comparing 5+ items
 
-Example-
+## Technical signals
 
-```json
+- RSI row label — always `RSI (14)` — never just `RSI`
+- SMA rows — always `SMA 50` and `SMA 200` — never just `SMA`
+- MACD row label — always `MACD Signal` showing both MACD and signal line values
+
+````json
 {
-  "type": "bar_chart",
-  "title": "Historical Performance (%)",
-  "orientation": "vertical",
-  "format": "percent",
-  "groups": ["1 Month", "3 Month", "6 Month", "YTD", "1 Year"],
-  "data": [
-    { "name": "NVDA", "values": [-7.13, 18.64, 13.21, 9.86, 40.86] },
-    { "name": "AMD", "values": [23.77, 154.55, 140.12, 139.3, 304.2] },
-    { "name": "INTC", "values": [9.3, 176.04, 228.9, 228.18, 463.52] },
-    { "name": "AVGO", "values": [-4.42, 26.79, 15.89, 13.75, 57.63] },
-    { "name": "TSM", "values": [10.32, 31.55, 50.31, 42.92, 104.6] }
+  "type": "table",
+  "title": "Technical Indicators",
+  "layout": "column",
+  "group": "technicals",
+  "headers": ["Indicator", "BAC", "C", "HSBC", "JPM", "WFC"],
+  "rows": [
+    [
+      { "value": "RSI (14)" },
+      { "value": "62.66", "signal": "neutral", "note": "Neutral" },
+      { "value": "41.18", "signal": "neutral", "note": "Neutral" },
+      { "value": "68.86", "signal": "neutral", "note": "Approaching overbought" },
+      { "value": "73.28", "signal": "down", "note": "Overbought" },
+      { "value": "48.99", "signal": "neutral", "note": "Neutral" }
+    ],
+    [
+      { "value": "SMA 50" },
+      { "value": "$55.85", "signal": "up", "note": "Above" },
+      { "value": "$134.29", "signal": "down", "note": "Below" },
+      { "value": "$94.94", "signal": "up", "note": "Above" },
+      { "value": "$322.36", "signal": "up", "note": "Above" },
+      { "value": "$82.23", "signal": "up", "note": "Above" }
+    ],
+    [
+      { "value": "SMA 200" },
+      { "value": "$53.20", "signal": "up", "note": "Above" },
+      { "value": "$117.91", "signal": "up", "note": "Above" },
+      { "value": "$84.02", "signal": "up", "note": "Above" },
+      { "value": "$310.68", "signal": "up", "note": "Above" },
+      { "value": "$84.65", "signal": "up", "note": "Above" }
+    ],
+    [
+      { "value": "MACD" },
+      { "value": "1.52", "signal": "up", "note": "Signal: 1.56" },
+      { "value": "-1.55", "signal": "down", "note": "Signal: -0.59" },
+      { "value": "2.23", "signal": "up", "note": "Signal: 1.94" },
+      { "value": "7.18", "signal": "up", "note": "Signal: 6.68" },
+      { "value": "1.08", "signal": "up", "note": "Signal: 1.38" }
+    ]
   ]
 }
 ```
 
 ## Bull vs Bear Table
 
-Include a Sentiment row using overall bias from sentiment data:
+4 rows maximum: Valuation, Momentum, Risk, Sentiment. One concise phrase per cell — no sentences.
+Bull vs Bear cells — maximum 30 characters per cell. Keywords only, no sentences.
 
 ```json
 {
-  "headers": ["Theme", "CRWD", "FFIV", "MSFT", "OKTA", "ORCL"],
+  "headers": ["Theme", "AMD", "INTC"],
   "rows": [
-    [
-      { "value": "Valuation" },
-      { "value": "Forward P/E 172x — priced for perfection", "signal": "down" },
-      { "value": "P/E 34.6x — lowest in cohort", "signal": "up" },
-      { "value": "RSI 21.4 — deeply oversold", "signal": "up" },
-      { "value": "PEG 1.32 supports premium", "signal": "neutral" },
-      { "value": "PEG 0.74 — undervalued vs growth", "signal": "up" }
-    ],
-    [
-      { "value": "Momentum" },
-      { "value": "RSI 20.62 — oversold after -47% drawdown", "signal": "up" },
-      { "value": "+58% YTD, positive MACD", "signal": "up" },
-      { "value": "Below SMA50 and SMA200", "signal": "down" },
-      { "value": "+70% YTD but MACD turning", "signal": "neutral" },
-      { "value": "-47% 1Y — weakest in cohort", "signal": "down" }
-    ],
-    [
-      { "value": "Risk" },
-      { "value": "Negative EPS — compression risk", "signal": "down" },
-      { "value": "Beta 0.88 — lowest volatility", "signal": "up" },
-      { "value": "Antitrust + AI disruption", "signal": "down" },
-      { "value": "Growth must continue at 36.5x Fwd P/E", "signal": "neutral" },
-      { "value": "Target -12.7% below price", "signal": "down" }
-    ],
-    [
-      { "value": "Sentiment" },
-      { "value": "Bearish — Claude Mythos headline drag", "signal": "down" },
-      { "value": "Bullish — strong buy coverage", "signal": "up" },
-      { "value": "Neutral — mixed AI narrative", "signal": "neutral" },
-      { "value": "Somewhat-Bullish", "signal": "up" },
-      { "value": "Bullish — value discovery coverage", "signal": "up" }
-    ]
+    [{ "value": "Valuation" }, { "value": "76.92x Fwd P/E — stretched", "signal": "down" }, { "value": "116x Fwd P/E — turnaround priced", "signal": "down" }],
+    [{ "value": "Momentum" }, { "value": "RSI 46.87, MACD positive", "signal": "up" }, { "value": "RSI 30.91 — oversold, MACD negative", "signal": "neutral" }],
+    [{ "value": "Risk" }, { "value": "Beta 2.47 — high volatility", "signal": "down" }, { "value": "Negative EPS + execution risk", "signal": "down" }],
+    [{ "value": "Sentiment" }, { "value": "Bullish — AI CPU coverage", "signal": "up" }, { "value": "Somewhat-Bullish — turnaround", "signal": "up" }]
   ]
 }
-```
+````
 
 - Signal on each ticker cell — `"up"` for bullish, `"down"` for bearish, `"neutral"` for mixed
-- Never use a separate Bull/Bear column — signal drives the
+- Never use a separate Bull/Bear column — signal drives the color
 
 ## Insight Quality Rules
 
@@ -326,13 +341,11 @@ Each insight must do ONE of the following:
 
 ## Insight Evidence Rules
 
-- `evidence` must be 2-4 sentences minimum
-- Sentence 1 — state the data point
-- Sentence 2 — cross-reference with another data point or source
-- Sentence 3 — explain what this means or implies
-- Sentence 4 (optional) — flag the risk or opportunity
+- `evidence` — exactly 2 sentences
+- Sentence 1 — state the key data point with specific figures in **bold**
+- Sentence 2 — state what it means or implies for the investor
+- Never write more than 2 sentences
 - Use `**bold**` for ticker symbols, key numbers, and signal words
-- Never write a one-sentence evidence
 
 ## Source Field Rules
 
@@ -350,13 +363,13 @@ Each insight must do ONE of the following:
 
 ## Suggested Prompts
 
-- Add a section with suggested prompts. Add explicit stock symbols or names instead of it, they.
+Add explicit stock symbols or names — never use "it", "they", or "the company".
 
 ```json
 {
   "title": "Suggested Prompts",
   "type": "suggested_prompts",
-  "suggtested_prompts": ["suggestion 1", "suggestion 2"],
+  "suggested_prompts": ["suggestion 1", "suggestion 2"],
   "group": "prompts"
 }
 ```
