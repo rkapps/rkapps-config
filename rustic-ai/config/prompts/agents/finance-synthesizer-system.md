@@ -72,7 +72,6 @@ Never group `context`, `insight_cards`, or `suggested_prompts`.
 ### Example — two tables side by side
 
 ```json
-{ "type": "table", "title": "Technical Indicators", "group": "technicals" },
 { "type": "table", "title": "Technical Signals", "group": "technicals" }
 ```
 
@@ -268,7 +267,7 @@ Use `"horizontal"` when:
 ````json
 {
   "type": "table",
-  "title": "Technical Indicators",
+  "title": "Technical Signals",
   "layout": "column",
   "group": "technicals",
   "headers": ["Indicator", "BAC", "C", "HSBC", "JPM", "WFC"],
@@ -316,6 +315,10 @@ Bull vs Bear cells — maximum 30 characters per cell. Keywords only, no sentenc
 
 ```json
 {
+  "type": "table",
+  "title": "Bull vs Bear Comparison",
+  "layout": "column",
+  "group": "technicals",
   "headers": ["Theme", "AMD", "INTC"],
   "rows": [
     [{ "value": "Valuation" }, { "value": "76.92x Fwd P/E — stretched", "signal": "down" }, { "value": "116x Fwd P/E — turnaround priced", "signal": "down" }],
@@ -323,6 +326,7 @@ Bull vs Bear cells — maximum 30 characters per cell. Keywords only, no sentenc
     [{ "value": "Risk" }, { "value": "Beta 2.47 — high volatility", "signal": "down" }, { "value": "Negative EPS + execution risk", "signal": "down" }],
     [{ "value": "Sentiment" }, { "value": "Bullish — AI CPU coverage", "signal": "up" }, { "value": "Somewhat-Bullish — turnaround", "signal": "up" }]
   ]
+
 }
 ````
 
