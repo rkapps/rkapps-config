@@ -114,7 +114,7 @@
         "type": "deterministic",
         "available_agents": [],
         "stages": [
-          { "name": "fetch-data", "parallel": false, "sub_agents": [{ "id": "finance-data" }] },
+          { "name": "fetch-data", "parallel": false, "sub_agents": [{ "id": "finance-data", "relay_tool_output": true }] },
           { "name": "synthesize", "parallel": false, "sub_agents": [{ "id": "finance-synthesizer" }] }
         ]
       },
