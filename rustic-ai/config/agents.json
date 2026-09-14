@@ -44,11 +44,7 @@
       "llm_config": { "preset": "thorough" },
       "system_prompt": "prompts/agents/consumer-trend-synthesizer-system.md",
       "standalone": false,
-      "tools": [],
-      "conversation": {
-        "default_strategy": "stateless",
-        "allowed_strategies": ["stateless"]
-      }
+      "tools": []
     },
     {
       "id": "economic-data",
@@ -66,10 +62,6 @@
           { "name": "economic-taxonomy", "parallel": false, "sub_agents": [{ "id": "economic-taxonomy", "relay_tool_output": true }] },
           { "name": "economic_info", "parallel": false, "sub_agents": [{ "id": "economic-info", "relay_tool_output": true }] }
         ]
-      },
-      "conversation": {
-        "default_strategy": "stateful",
-        "allowed_strategies": ["stateless", "stateful"]
       }
     },
     {
@@ -80,11 +72,7 @@
       "llm_config": { "preset": "balanced" },
       "system_prompt": "prompts/agents/economic-taxonomy-system.md",
       "standalone": false,
-      "tools": ["economic_taxonomy"],
-      "conversation": {
-        "default_strategy": "stateful",
-        "allowed_strategies": ["stateless", "stateful"]
-      }
+      "tools": ["economic_taxonomy"]
     },
     {
       "id": "economic-info",
@@ -95,11 +83,7 @@
       "system_prompt": "prompts/agents/economic-info-system.md",
       "response_format_schema_path": "schemas/economic-info-response-schema.json",
       "standalone": false,
-      "tools": ["fred_series", "bea_nipa_data", "bea_regional_data", "census_data"],
-      "conversation": {
-        "default_strategy": "stateful",
-        "allowed_strategies": ["stateless", "stateful"]
-      }
+      "tools": ["fred_series", "bea_nipa_data", "bea_regional_data", "census_data"]
     },
     {
       "id": "finance-analyser",
@@ -118,7 +102,6 @@
           { "name": "synthesize", "parallel": false, "sub_agents": [{ "id": "finance-synthesizer" }] }
         ]
       },
-
       "conversation": {
         "default_strategy": "stateful",
         "allowed_strategies": ["stateless", "stateful"]
@@ -140,10 +123,6 @@
           { "name": "ticker_resolver", "parallel": false, "sub_agents": [{ "id": "finance-ticker-resolver" }] },
           { "name": "ticker_info", "parallel": false, "sub_agents": [{ "id": "finance-ticker-info", "relay_tool_output": true }] }
         ]
-      },
-      "conversation": {
-        "default_strategy": "stateful",
-        "allowed_strategies": ["stateful"]
       }
     },
     {
@@ -154,11 +133,7 @@
       "execution": "pipeline_agent",
       "system_prompt": "prompts/agents/finance-ticker-resolver-system.md",
       "standalone": false,
-      "tools": ["ticker_taxonomy", "ticker_peers", "ticker_screening"],
-      "conversation": {
-        "default_strategy": "stateful",
-        "allowed_strategies": ["stateful", "stateless"]
-      }
+      "tools": ["ticker_taxonomy", "ticker_peers", "ticker_screening"]
     },
     {
       "id": "finance-ticker-info",
@@ -169,11 +144,7 @@
       "system_prompt": "prompts/agents/finance-ticker-info-system.md",
       "response_format_schema_path": "schemas/finance-ticker-info-response-schema.json",
       "standalone": false,
-      "tools": ["ticker_indicator", "ticker_performance", "ticker_sentiment", "ticker_snapshot"],
-      "conversation": {
-        "default_strategy": "stateful",
-        "allowed_strategies": ["stateful", "stateless"]
-      }
+      "tools": ["ticker_indicator", "ticker_performance", "ticker_sentiment", "ticker_snapshot"]
     },
     {
       "id": "finance-synthesizer",
@@ -183,11 +154,7 @@
       "llm_config": { "preset": "thorough" },
       "system_prompt": "prompts/agents/finance-synthesizer-system.md",
       "standalone": false,
-      "tools": [],
-      "conversation": {
-        "default_strategy": "stateless",
-        "allowed_strategies": ["stateless"]
-      }
+      "tools": []
     },
     {
       "id": "web-research",
@@ -198,11 +165,7 @@
       "system_prompt": "prompts/agents/economic-data-system.md",
       "standalone": false,
       "tools": [],
-      "mcp_tools": ["Tavily___tavily_extract"],
-      "conversation": {
-        "default_strategy": "stateful",
-        "allowed_strategies": ["stateless", "stateful"]
-      }
+      "mcp_tools": ["Tavily___tavily_extract"]
     },
     {
       "id": "web-sentiment",
@@ -213,11 +176,7 @@
       "system_prompt": "prompts/agents/web-sentiment-system.md",
       "standalone": false,
       "tools": [],
-      "mcp_tools": ["Tavily___tavily_search", "Tavily___tavily_extract"],
-      "conversation": {
-        "default_strategy": "stateful",
-        "allowed_strategies": ["stateless", "stateful"]
-      }
+      "mcp_tools": ["Tavily___tavily_search", "Tavily___tavily_extract"]
     }
   ]
 }
