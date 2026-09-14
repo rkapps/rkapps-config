@@ -1,0 +1,125 @@
+{
+  "sections": [
+    {
+      "title": "SpaceX & The Public Space Sector",
+      "type": "context",
+      "content": "**SpaceX** remains private, but its reported **$1.75T IPO filing** has triggered a sharp repricing across the public space complex. The key tension: defense primes like **LMT** are grinding higher on fundamentals while speculative names **RKLB** and **SPCE** whipsaw violently on sentiment. Macro backdrop is mixed — capital is rotating toward cash-flowing aerospace names and away from pre-revenue space plays, echoing the 2021 EV-stock dynamic.",
+      "group": "overview"
+    },
+    {
+      "title": "Sector Snapshot",
+      "type": "metric_cards",
+      "data": [
+        { "label": "RKLB Price", "value": "$70.04", "change": "+7.83%", "status": "up" },
+        { "label": "LMT Price", "value": "$581.11", "change": "-0.28%", "status": "down" },
+        { "label": "BA Price", "value": "$227.69", "change": "+5.34%", "status": "up" },
+        { "label": "SPCE Price", "value": "$2.80", "change": "+9.61%", "status": "up" },
+        { "label": "RKLB Upside", "value": "+63.5%", "benchmark": "$114.47 target", "status": "up" },
+        { "label": "LMT Fwd P/E", "value": "19.16x", "benchmark": "vs BA 833x", "status": "neutral" }
+      ],
+      "group": "snapshot"
+    },
+    {
+      "title": "1-Year Total Return",
+      "type": "bar_chart",
+      "orientation": "horizontal",
+      "format": "percent",
+      "data": [
+        { "name": "RKLB", "values": [44.95] },
+        { "name": "LMT", "values": [42.18] },
+        { "name": "BA", "values": [-2.6] },
+        { "name": "SPCE", "values": [-30.71] }
+      ],
+      "group": "performance"
+    },
+    {
+      "title": "Fundamental Comparison",
+      "type": "table",
+      "layout": "column",
+      "headers": ["Metric", "RKLB", "LMT", "BA", "SPCE"],
+      "rows": [
+        [{ "value": "Forward P/E" }, { "value": "N/A", "signal": "neutral", "note": "Negative EPS" }, { "value": "19.16x", "signal": "up", "note": "Reasonable" }, { "value": "833.33x", "signal": "down", "note": "Extreme premium" }, { "value": "N/A", "signal": "neutral", "note": "Negative EPS" }],
+        [{ "value": "Beta" }, { "value": "2.55", "signal": "down", "note": "High vol" }, { "value": "0.11", "signal": "up", "note": "Defensive" }, { "value": "1.21", "signal": "neutral", "note": "Moderate" }, { "value": "2.74", "signal": "down", "note": "High vol" }],
+        [
+          { "value": "Upside", "value": "+63.5%", "signal": "up", "indicator": "arrow" },
+          { "value": "+8.1%", "signal": "neutral", "indicator": "arrow" },
+          { "value": "+18.9%", "signal": "up", "indicator": "arrow" },
+          { "value": "+25.9%", "signal": "up", "indicator": "arrow" }
+        ],
+        [{ "value": "Consensus" }, { "value": "Buy", "signal": "up", "indicator": "dot" }, { "value": "Hold", "signal": "neutral", "indicator": "dot" }, { "value": "Buy", "signal": "up", "indicator": "dot" }, { "value": "Hold", "signal": "neutral", "indicator": "dot" }],
+        [{ "value": "1Y Return" }, { "value": "+44.95%", "signal": "up", "indicator": "arrow" }, { "value": "+42.18%", "signal": "up", "indicator": "arrow" }, { "value": "-2.6%", "signal": "down", "indicator": "arrow" }, { "value": "-30.71%", "signal": "down", "indicator": "arrow" }],
+        [{ "value": "P/S Ratio" }, { "value": "59.72x", "signal": "down", "note": "Speculative" }, { "value": "1.75x", "signal": "up", "note": "Reasonable" }, { "value": "1.82x", "signal": "up", "note": "Reasonable" }, { "value": "250.21x", "signal": "down", "note": "Distressed" }]
+      ],
+      "group": "fundamentals"
+    },
+    {
+      "title": "Technical Signals",
+      "type": "table",
+      "layout": "column",
+      "headers": ["Indicator", "RKLB", "LMT", "BA", "SPCE"],
+      "rows": [
+        [{ "value": "RSI (14)" }, { "value": "39.89", "signal": "neutral", "note": "Neutral" }, { "value": "70.05", "signal": "down", "note": "Overbought" }, { "value": "59.51", "signal": "neutral", "note": "Neutral" }, { "value": "46.90", "signal": "neutral", "note": "Neutral" }],
+        [{ "value": "SMA 50" }, { "value": "$98.01", "signal": "down", "note": "Below" }, { "value": "$527.56", "signal": "up", "note": "Above" }, { "value": "$218.88", "signal": "up", "note": "Above" }, { "value": "$3.33", "signal": "down", "note": "Below" }],
+        [{ "value": "SMA 200" }, { "value": "$77.78", "signal": "down", "note": "Below" }, { "value": "$544.69", "signal": "up", "note": "Above" }, { "value": "$218.37", "signal": "up", "note": "Above" }, { "value": "$3.16", "signal": "down", "note": "Below" }],
+        [{ "value": "MACD Signal" }, { "value": "-9.19", "signal": "down", "note": "Signal: -9.15" }, { "value": "13.88", "signal": "up", "note": "Signal: 7.24" }, { "value": "-1.51", "signal": "down", "note": "Signal: -2.20" }, { "value": "-0.18", "signal": "down", "note": "Signal: -0.21" }]
+      ],
+      "group": "technicals"
+    },
+    {
+      "title": "Bull vs Bear Comparison",
+      "type": "table",
+      "layout": "column",
+      "headers": ["Theme", "RKLB", "LMT", "BA", "SPCE"],
+      "rows": [
+        [{ "value": "Valuation" }, { "value": "P/S 60x — speculative", "signal": "down" }, { "value": "Fwd P/E 19x — fair", "signal": "up" }, { "value": "Fwd P/E 833x — extreme", "signal": "down" }, { "value": "P/S 250x — distressed", "signal": "down" }],
+        [{ "value": "Momentum" }, { "value": "RSI 40, below SMAs", "signal": "down" }, { "value": "RSI 70 — overbought", "signal": "neutral" }, { "value": "RSI 60, above SMAs", "signal": "up" }, { "value": "RSI 47, below SMAs", "signal": "neutral" }],
+        [{ "value": "Risk" }, { "value": "Beta 2.55 — high vol", "signal": "down" }, { "value": "Beta 0.11 — defensive", "signal": "up" }, { "value": "Beta 1.21 — moderate", "signal": "neutral" }, { "value": "Beta 2.74 — high vol", "signal": "down" }],
+        [{ "value": "Sentiment" }, { "value": "Mixed — IPO shakeout", "signal": "neutral" }, { "value": "Steady — defense bid", "signal": "up" }, { "value": "Neutral — IPO overhang", "signal": "neutral" }, { "value": "Bullish — squeeze talk", "signal": "up" }]
+      ],
+      "group": "technicals"
+    },
+    {
+      "title": "Key Insights",
+      "type": "insight_cards",
+      "data": [
+        {
+          "number": "1",
+          "title": "SpaceX IPO Is Reshaping Capital Flows",
+          "evidence": "**RKLB** fell **-35.35%** over 1M while **LMT** gained **+6.75%** — capital is rotating from speculative space plays into cash-flowing defense primes ahead of the **$1.75T SpaceX IPO**.",
+          "source": "Cross-Reference: Performance & Sentiment"
+        },
+        {
+          "number": "2",
+          "title": "LMT Is Technically Stretched",
+          "evidence": "**LMT** trades at **RSI 70.05** — overbought — with a **+42.18%** 1Y return already priced in. The **+8.1%** upside to target suggests limited near-term room despite the **Hold** consensus.",
+          "source": "Technical Signals & Fundamentals"
+        },
+        {
+          "number": "3",
+          "title": "RKLB Below Key Moving Averages",
+          "evidence": "**RKLB** at **$70.04** sits below both **SMA 50 ($98.01)** and **SMA 200 ($77.78)**, with **MACD negative at -9.19** — momentum has clearly broken despite the **Buy** consensus and **+63.5%** implied upside.",
+          "source": "Technical Signals Table"
+        },
+        {
+          "number": "4",
+          "title": "SPCE Survival Question",
+          "evidence": "**SPCE** trades at **$2.80** with **-30.71%** 1Y return and **P/S of 250x** — the stock is below its **SMA 200 ($3.16)** but sentiment flipped **Bullish** on short-squeeze coverage, creating a high-risk mean-reversion setup.",
+          "source": "Sentiment & Fundamentals"
+        },
+        {
+          "number": "5",
+          "title": "BA Carries an Unsustainable Multiple",
+          "evidence": "**BA**'s **Forward P/E of 833.33x** reflects depressed forward earnings rather than a premium valuation — the **Buy** consensus and **+18.9%** upside hinge on earnings normalization, not multiple expansion.",
+          "source": "Fundamental Comparison"
+        }
+      ],
+      "group": "insights"
+    },
+    {
+      "title": "Suggested Prompts",
+      "type": "suggested_prompts",
+      "suggested_prompts": ["Compare RKLB vs BA valuation and momentum", "Deep dive on LMT defense backlog and dividend", "Analyze SpaceX IPO impact on RKLB sentiment", "Technical setup for SPCE near $2.80 support", "How does RKLB's Electron launch cadence affect the bull case"],
+      "group": "prompts"
+    }
+  ]
+}
