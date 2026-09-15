@@ -1,0 +1,245 @@
+{
+  "finance-data": {
+    "performances": [
+      {
+        "symbol": "DOCS",
+        "diffs": {
+          "1Y": { "price": 71.03, "perc": -62.85 },
+          "2Y": { "perc": -32.88, "price": 39.32 },
+          "1W": { "perc": 0.15, "price": 26.35 },
+          "1M": { "perc": 6.41, "price": 24.8 },
+          "3M": { "price": 20.89, "perc": 26.33 },
+          "5Y": { "perc": -72.01, "price": 94.29 },
+          "6M": { "price": 24.79, "perc": 6.45 },
+          "Ytd": { "price": 44.28, "perc": -40.4 }
+        }
+      },
+      {
+        "symbol": "HQY",
+        "diffs": {
+          "1Y": { "price": 92.49, "perc": 3.84 },
+          "3M": { "perc": 12.12, "price": 85.66 },
+          "6M": { "price": 79.57, "perc": 20.7 },
+          "1M": { "perc": -8.3, "price": 104.73 },
+          "Ytd": { "perc": 4.84, "price": 91.61 },
+          "1W": { "perc": -0.03, "price": 96.07 },
+          "5Y": { "perc": 56.49, "price": 61.37 },
+          "2Y": { "perc": 22.77, "price": 78.23 }
+        }
+      },
+      {
+        "symbol": "SBRA",
+        "diffs": {
+          "6M": { "perc": 2.3, "price": 20.0390125286 },
+          "1Y": { "price": 17.9435164116, "perc": 14.25 },
+          "3M": { "perc": 12.08, "price": 18.289970902 },
+          "1M": { "perc": 0.89, "price": 20.32 },
+          "5Y": { "perc": 94.08, "price": 10.5623882799 },
+          "2Y": { "perc": 25.2, "price": 16.3733074687 },
+          "1W": { "price": 20.78, "perc": -1.35 },
+          "Ytd": { "price": 18.1278007502, "perc": 13.09 }
+        }
+      }
+    ],
+    "sentiments": [
+      {
+        "id": "HQY:20260525T090911",
+        "date": "2026-05-25T09:09:11Z",
+        "symbol": "HQY",
+        "title": "HealthEquity, Inc. (HQY) Stock Analysis: Navigating a 28.11% Potential Upside in the Healthcare Sector",
+        "score": 0.461411,
+        "label": "Bullish",
+        "source": "DirectorsTalk Interviews",
+        "similarity": 0.4968231618404389
+      },
+      { "id": "HQY:20260605T110922", "date": "2026-06-05T11:09:22Z", "symbol": "HQY", "title": "Westfield Capital Management Co. LP Raises Position in HealthEquity, Inc. $HQY", "score": 0.516187, "label": "Bullish", "source": "MarketBeat", "similarity": 0.4742838442325592 },
+      { "id": "HQY:20260530T020952", "date": "2026-05-30T02:09:52Z", "symbol": "HQY", "title": "HealthEquity Reports First Quarter Ended April 30, 2026 Financial Results; Raises Guidance", "score": 0.479565, "label": "Bullish", "source": "GlobeNewswire", "similarity": 0.4701142013072967 },
+      { "id": "HQY:20260528T202800", "date": "2026-05-28T20:28:00Z", "symbol": "HQY", "title": "HealthEquity: Fiscal Q1 Earnings Snapshot", "score": 0.499091, "label": "Bullish", "source": "WKYC", "similarity": 0.4694477617740631 },
+      { "id": "HQY:20260612T054011", "date": "2026-06-12T05:40:11Z", "symbol": "HQY", "title": "Is HealthEquity's Improving Profitability Enough to Offset Key Risks?", "score": 0.336975, "label": "Somewhat-Bullish", "source": "TradingView", "similarity": 0.4677908420562744 },
+      { "id": "HQY:20260608T115600", "date": "2026-06-08T11:56:00Z", "symbol": "HQY", "title": "One in Three Americans Delay Medical Care Due to Cost, HealthEquity Research Finds", "score": 0.407919, "label": "Bullish", "source": "GlobeNewswire", "similarity": 0.4651052057743073 },
+      { "id": "HQY:20260611T171000", "date": "2026-06-11T17:10:00Z", "symbol": "HQY", "title": "Is HealthEquity's Improving Profitability Enough to Offset Key Risks?", "score": 0.317838, "label": "Somewhat-Bullish", "source": "Yahoo! Finance Canada", "similarity": 0.4644840657711029 },
+      {
+        "id": "HQY:20260529T173938",
+        "date": "2026-05-29T17:39:38Z",
+        "symbol": "HQY",
+        "title": "How Investors May Respond To HealthEquity (HQY) Upgraded Outlook, AI Efficiencies and Larger Buyback Plan",
+        "score": 0.490909,
+        "label": "Bullish",
+        "source": "Simply Wall Street",
+        "similarity": 0.4634830951690674
+      },
+      {
+        "id": "HQY:20260610T010856",
+        "date": "2026-06-10T01:08:56Z",
+        "symbol": "HQY",
+        "title": "The Bull Case For HealthEquity (HQY) Could Change Following Raised Earnings Outlook And Completed Buyback Program",
+        "score": 0.463624,
+        "label": "Bullish",
+        "source": "Yahoo Finance",
+        "similarity": 0.46230414509773254
+      },
+      { "id": "HQY:20260528T200959", "date": "2026-05-28T20:09:59Z", "symbol": "HQY", "title": "HealthEquity Reports First Quarter Ended April 30, 2026 Financial Results; Raises Guidance", "score": 0.861967, "label": "Bullish", "source": "GlobeNewswire", "similarity": 0.462027370929718 }
+    ],
+    "indicators": [
+      {
+        "symbol": "SBRA",
+        "price": 20.52,
+        "rsi_14": 40.48,
+        "rsi_band": "neutral",
+        "sma_50_distance_pct": -0.8216529724504673,
+        "sma_trend": "golden_cross",
+        "macd_histogram": -0.010000000000000002,
+        "macd_trend": "flat",
+        "bb_percent": 0.3595505617977529,
+        "signals": [
+          { "name": "Below SMA50", "direction": "Bearish" },
+          { "name": "MACD Bearish Crossover", "direction": "Bearish" },
+          { "name": "Volatility Expanding", "direction": "Neutral" }
+        ],
+        "overall": { "direction": "Bearish", "summary": "Bearish trend with confirming momentum", "conflicting": false },
+        "model_outlook": null
+      },
+      {
+        "symbol": "HQY",
+        "price": 96.26,
+        "rsi_14": 45.22,
+        "rsi_band": "neutral",
+        "sma_50_distance_pct": -3.3437092077517807,
+        "sma_trend": "golden_cross",
+        "macd_histogram": -0.7899999999999999,
+        "macd_trend": "expanding",
+        "bb_percent": 0.31552863436123374,
+        "signals": [
+          { "name": "SMA Stack Bullish", "direction": "Bullish" },
+          { "name": "Below SMA50", "direction": "Bearish" },
+          { "name": "MACD Histogram Expanding", "direction": "Bearish" },
+          { "name": "Volatility Contracting", "direction": "Neutral" }
+        ],
+        "overall": { "direction": "Bullish", "summary": "Bullish overall, with some conflicting signals", "conflicting": true },
+        "model_outlook": null
+      },
+      {
+        "symbol": "DOCS",
+        "price": 25.58,
+        "rsi_14": 52.08,
+        "rsi_band": "neutral",
+        "sma_50_distance_pct": 8.389830508474562,
+        "sma_trend": "death_cross",
+        "macd_histogram": -0.25999999999999995,
+        "macd_trend": "expanding",
+        "bb_percent": 0.5221238938053095,
+        "signals": [
+          { "name": "Above SMA50", "direction": "Bullish" },
+          { "name": "MACD Histogram Expanding", "direction": "Bearish" },
+          { "name": "Volatility Contracting", "direction": "Neutral" }
+        ],
+        "overall": { "direction": "Bullish", "summary": "Bullish trend with supporting momentum", "conflicting": false },
+        "model_outlook": null
+      }
+    ],
+    "snapshots": [
+      {
+        "symbol": "DOCS",
+        "name": "Doximity, Inc.",
+        "sector": "Healthcare",
+        "industry": "Health Information Services",
+        "last": 26.39,
+        "prev": 25.58,
+        "open": 26.37,
+        "high": 26.72,
+        "low": 25.81,
+        "change_amt": 0.81,
+        "change_perc": 3.17,
+        "wk52_high": 76.51,
+        "wk52_low": 17.15,
+        "total_assets": 4559532000,
+        "eps": 0.84,
+        "pe_ratio": 30.45,
+        "peg_ratio": 0.59,
+        "pb_ratio": 4.977,
+        "ps_ratio": 6.96,
+        "forward_pe": 19.01,
+        "beta": 1.248,
+        "analyst_target_price": 29.94,
+        "analyst_consensus": "Buy",
+        "dividend_amt": null,
+        "dividend_yield": null,
+        "profit_margin": 0.255,
+        "operating_margin_ttm": 0.215,
+        "return_on_equity_ttm": 0.172,
+        "ev_to_ebitda": 18.49,
+        "quarterly_revenue_growth_yoy": 0.073,
+        "quarterly_earnings_growth_yoy": -0.519,
+        "expense_ratio": null
+      },
+      {
+        "symbol": "HQY",
+        "name": "Healthequity Inc",
+        "sector": "Technology",
+        "industry": "Health Information Services",
+        "last": 96.04,
+        "prev": 96.26,
+        "open": 97.57,
+        "high": 98.02,
+        "low": 95.34,
+        "change_amt": -0.22,
+        "change_perc": -0.23,
+        "wk52_high": 107.62,
+        "wk52_low": 72.76,
+        "total_assets": 7962174000,
+        "eps": 2.77,
+        "pe_ratio": 34.75,
+        "peg_ratio": 1.401,
+        "pb_ratio": 3.999,
+        "ps_ratio": 5.85,
+        "forward_pe": 21.01,
+        "beta": 0.225,
+        "analyst_target_price": 119.0,
+        "analyst_consensus": "Buy",
+        "dividend_amt": null,
+        "dividend_yield": null,
+        "profit_margin": 0.174,
+        "operating_margin_ttm": 0.284,
+        "return_on_equity_ttm": 0.114,
+        "ev_to_ebitda": 16.72,
+        "quarterly_revenue_growth_yoy": 0.076,
+        "quarterly_earnings_growth_yoy": 0.147,
+        "expense_ratio": null
+      },
+      {
+        "symbol": "SBRA",
+        "name": "Sabra Health Care REIT Inc",
+        "sector": "Real Estate",
+        "industry": "REIT - Healthcare Facilities",
+        "last": 20.5,
+        "prev": 20.52,
+        "open": 20.67,
+        "high": 20.875,
+        "low": 20.475,
+        "change_amt": -0.02,
+        "change_perc": -0.1,
+        "wk52_high": 22.43,
+        "wk52_low": 16.16,
+        "total_assets": 5242096000,
+        "eps": 0.26,
+        "pe_ratio": 78.92,
+        "peg_ratio": 5.28,
+        "pb_ratio": 1.906,
+        "ps_ratio": 6.07,
+        "forward_pe": 32.15,
+        "beta": 0.636,
+        "analyst_target_price": 22.79,
+        "analyst_consensus": "Hold",
+        "dividend_amt": 1.2,
+        "dividend_yield": 0.0576,
+        "profit_margin": 0.0758,
+        "operating_margin_ttm": -0.125,
+        "return_on_equity_ttm": 0.0239,
+        "ev_to_ebitda": 19.49,
+        "quarterly_revenue_growth_yoy": 0.253,
+        "quarterly_earnings_growth_yoy": -0.056,
+        "expense_ratio": null
+      }
+    ]
+  }
+}
