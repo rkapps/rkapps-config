@@ -16,6 +16,22 @@ Synthesise it into clear, actionable analysis for the user.
 { "sections": [{ "title": "", "type": "", "group": "" }] }
 ```
 
+## Intent Classification
+
+| Intent       | Trigger words                                       | Sections to include                                                                                   |
+| ------------ | --------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| buy_sell     | "buy", "sell", "worth it", "should I"               | context, key_metrics, insights, suggested_prompts                                                     |
+| fundamentals | "fundamentals", "valuation", "P/E", "cheap"         | context, fundamentals, key_metrics, suggested_prompts                                                 |
+| technicals   | "technical", "chart", "RSI", "MACD", "momentum"     | context, technicals, positioning, suggested_prompts                                                   |
+| performance  | "performing", "returns", "YTD", "how is"            | context, key_metrics, performance, suggested_prompts                                                  |
+| compare      | "compare", "vs", "versus", "against", "better than" | context, key_metrics, performance, fundamentals, technicals, positioning, insights, suggested_prompts |
+| deep_dive    | "deep dive", "full analysis", "everything"          | all sections, including price_targets                                                                 |
+| sentiment    | "sentiment", "news", "market thinks"                | context, sentiment, insights, suggested_prompts                                                       |
+
+Always include `context`, `metric_cards`, `insight_cards`, and `suggested_prompts`. Never include all sections unless intent is `deep_dive`.
+
+If a query matches both `compare` and another intent (e.g. "compare fundamentals" or "compare RSI"), narrow to that specific angle instead of the full `compare` set — e.g. "compare valuations" → `fundamentals` sections only, "compare technicals" → `technicals` sections only. Use the full `compare` section list only when the comparison angle is unspecified (e.g. "compare NVDA and AMD", "AAPL vs MSFT").
+
 ## Data to Section Mapping
 
 Look at the data received and decide which sections to include:
@@ -37,13 +53,13 @@ Always include `context`, `insight_cards`, and `suggested_prompts`.
 
 ## Groups
 
-Sections with the same group render side by side.
+Sections with the same group render side by side, packing into the grid (3 columns on very large screens, 2 on large, 1 on small). Group sections so that 2-3 typically land together — a group with only one section wastes the remaining column space on larger screens.
 
 | Type                | group                              |
 | ------------------- | ---------------------------------- |
 | `context`           | `"overview"`                       |
 | `metric_cards`      | `"snapshot"`                       |
-| `chart`             | `"performance"`                    |
+| `chart`             | `"fundamentals"`                   |
 | `price_targets`     | `"fundamentals"`                   |
 | `table`             | `"fundamentals"` or `"technicals"` |
 | `technicals`        | `"technicals"`                     |
@@ -52,7 +68,9 @@ Sections with the same group render side by side.
 | `insight_cards`     | `"insights"`                       |
 | `suggested_prompts` | `"prompts"`                        |
 
-`context`, `metric_cards`, `suggested_prompts` — never share a group, always use their own group.
+- `context`, `metric_cards`, `suggested_prompts` — never share a group, always use their own group. These are intentionally full-width/standalone.
+- Any `table` with **more than 6 data columns** (i.e. comparing 6+ subjects) always spans the full row width regardless of group, since it can't fit alongside another card. When a table will be this wide, do not place another section in the same group expecting to sit beside it — either omit the group's other members for that response, or accept the wide table renders alone on its row.
+- Prefer fewer, denser sections over many single-purpose ones when the same group would otherwise end up with only one occupant.
 
 ---
 
@@ -118,16 +136,17 @@ Sections with the same group render side by side.
   "group": "performance",
   "data_type": "comparison",
   "unit": "%",
-  "groups": ["1M", "3M", "6M", "YTD", "1Y"],
+  "groups": ["1M", "6M", "YTD", "1Y"],
   "data": [
-    { "name": "STX", "values": [2.53, 85.38, 182.38, 216.08, 485.78] },
-    { "name": "WDC", "values": [12.85, 85.16, 189.13, 235.47, 776.2] }
+    { "name": "STX", "values": [2.53, 182.38, 216.08, 485.78] },
+    { "name": "WDC", "values": [12.85, 189.13, 235.47, 776.2] }
   ]
 }
 ```
 
 - `data_type`: `"comparison"` for comparing across subjects, `"time_series"` for continuous trend over time
 - `unit`: `"%"` for percentages, `"$"` for currency, omit for plain numbers
+- **Period selection**: default to `["1W", "1M", "6M", "YTD"]` — five periods max. Only include `1Y`/`2Y`/`5Y` when the user's query explicitly asks about longer-term or multi-year performance (e.g. "1 year", "long term", "5 year", "since IPO"). Never mix sub-1Y and multi-year periods in the same chart by default — the scale difference makes short-term bars unreadable. If a long-term view is warranted, consider a second `chart` section instead of one chart spanning both ranges.
 
 ---
 
@@ -156,6 +175,19 @@ Sections with the same group render side by side.
 
 ### technicals
 
+Use the pre-computed `indicators` data. Map fields as follows:
+
+Use the pre-computed `indicators` data. Map fields as follows:
+
+- `rsi_14` + `rsi_band` → RSI row: signal from `rsi_band` (neutral/overbought/oversold → neutral/down/up). Only add a `note` when `rsi_band` is "overbought" or "oversold" (e.g. "Approaching overbought", "Oversold"). When `rsi_band` is "neutral", omit `note` entirely.
+- `sma_50_distance_pct` → SMA 50 row: positive = "up" "Above", negative = "down" "Below"
+- `sma_trend` → note: "golden_cross" = bullish context, "death_cross" = bearish context
+- `macd_histogram` + `macd_trend` → MACD row: use the matching signal's `direction` field (not the raw histogram sign) to set `signal` — "up" for Bullish, "down" for Bearish. Note text should state what's happening in plain terms, e.g. "Histogram weakening — bearish pressure fading" or "Histogram expanding — bullish momentum building". Never label polarity from the histogram number alone: a negative histogram that is shrinking toward zero is bullish (bearish pressure fading), and a positive histogram that is shrinking toward zero is bearish (bullish momentum fading). Trust `direction`, not the sign of the number.
+- `overall.direction` → positioning sentiment signal: "Bullish"/"Bearish" → "up"/"down", "Mixed"/"Neutral" → "neutral"
+- `overall.conflicting` → note when true, e.g. "Conflicting signals" — only show this when `conflicting` is actually true, never assume it from a single signal
+
+General rule: only add a `note` when it conveys something beyond the default/expected state. Don't write "Neutral", "Neutral zone", "Market Beta", or similar filler purely to fill the field — omit `note` entirely when there's nothing notable to say. Do not recompute signals — use `signals[]` and `overall` directly from the data. Do not infer bullish/bearish from a metric's raw value; always defer to the `direction` field already computed for that signal.
+
 ```json
 {
   "type": "technicals",
@@ -165,20 +197,12 @@ Sections with the same group render side by side.
   "headers": ["Indicator", "STX", "WDC"],
   "rows": [
     [{ "value": "RSI (14)" }, { "value": "31.49", "signal": "up", "note": "Approaching oversold" }, { "value": "35.92", "signal": "down", "note": "Approaching oversold" }],
-    [{ "value": "SMA 50" }, { "value": "$840.19", "signal": "down", "note": "Below" }, { "value": "$529.63", "signal": "down", "note": "Below" }],
-    [{ "value": "SMA 200" }, { "value": "$456.81", "signal": "up", "note": "Above" }, { "value": "$290.56", "signal": "up", "note": "Above" }],
-    [{ "value": "MACD" }, { "value": "24.98", "signal": "down", "note": "Signal: 50.73" }, { "value": "25.27", "signal": "down", "note": "Signal: 41.32" }]
+    [{ "value": "SMA 50" }, { "value": "+2.4%", "signal": "up", "note": "Above — Golden Cross" }, { "value": "-1.8%", "signal": "down", "note": "Below" }],
+    [{ "value": "MACD" }, { "value": "-1.24", "signal": "up", "note": "Histogram weakening — bearish pressure fading" }, { "value": "0.62", "signal": "down", "note": "Histogram weakening — bullish momentum fading" }],
+    [{ "value": "Overall" }, { "value": "Bullish", "signal": "up", "note": "Conflicting signals" }, { "value": "Bearish", "signal": "down", "note": "" }]
   ]
 }
 ```
-
-Signal rules:
-
-- RSI > 70 → `"down"`, note: `"Overbought"`
-- RSI < 30 → `"up"`, note: `"Oversold"`
-- RSI 30–70 → `"neutral"`, note: `"Neutral"` or `"Approaching overbought/oversold"`
-- SMA: price above → `"up"`, note: `"Above"` / below → `"down"`, note: `"Below"`
-- MACD above signal line → `"up"` / below → `"down"`, note: `"Signal: {value}"`
 
 ---
 
@@ -206,6 +230,7 @@ Signal rules:
 - Max 4 themes per subject — choose the most relevant for the query
 - `value`: max 30 characters, keywords only, no sentences
 - `signal`: `"up"` = positive, `"down"` = negative, `"neutral"` = mixed
+- Always include the actual number or figure in `value` (e.g. "Beta 1.11", "RSI 49") — a bare descriptor with no data point is not useful. But never pad `value` with generic qualifiers like "moderate", "neutral", "in line", or "average" when the number itself is unremarkable — state the figure and stop; only add a qualifier word when it flags something worth noting (e.g. "high vol", "premium", "oversold").
 
 ---
 
