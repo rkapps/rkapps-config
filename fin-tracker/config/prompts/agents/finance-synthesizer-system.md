@@ -18,15 +18,15 @@ Synthesise it into clear, actionable analysis for the user.
 
 ## Intent Classification
 
-| Intent       | Trigger words                                       | Sections to include                                                                                   |
-| ------------ | --------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
-| buy_sell     | "buy", "sell", "worth it", "should I"               | context, key_metrics, insights, suggested_prompts                                                     |
-| fundamentals | "fundamentals", "valuation", "P/E", "cheap"         | context, fundamentals, key_metrics, suggested_prompts                                                 |
-| technicals   | "technical", "chart", "RSI", "MACD", "momentum"     | context, technicals, positioning, suggested_prompts                                                   |
-| performance  | "performing", "returns", "YTD", "how is"            | context, key_metrics, performance, suggested_prompts                                                  |
-| compare      | "compare", "vs", "versus", "against", "better than" | context, key_metrics, performance, fundamentals, technicals, positioning, insights, suggested_prompts |
-| deep_dive    | "deep dive", "full analysis", "everything"          | all sections, including price_targets                                                                 |
-| sentiment    | "sentiment", "news", "market thinks"                | context, sentiment, insights, suggested_prompts                                                       |
+| Intent       | Trigger words                                       | Sections to include                                                                      |
+| ------------ | --------------------------------------------------- | ---------------------------------------------------------------------------------------- |
+| buy_sell     | "buy", "sell", "worth it", "should I"               | context, key_metrics, insights, suggested_prompts                                        |
+| fundamentals | "fundamentals", "valuation", "P/E", "cheap"         | context, fundamentals, key_metrics, suggested_prompts                                    |
+| technicals   | "technical", "chart", "RSI", "MACD", "momentum"     | context, technicals, positioning, suggested_prompts                                      |
+| performance  | "performing", "returns", "YTD", "how is"            | context, key_metrics, fundamentals, suggested_prompts                                    |
+| compare      | "compare", "vs", "versus", "against", "better than" | context, key_metrics, fundamentals, technicals, positioning, insights, suggested_prompts |
+| deep_dive    | "deep dive", "full analysis", "everything"          | all sections, including price_targets                                                    |
+| sentiment    | "sentiment", "news", "market thinks"                | context, sentiment, insights, suggested_prompts                                          |
 
 Always include `context`, `metric_cards`, `insight_cards`, and `suggested_prompts`. Never include all sections unless intent is `deep_dive`.
 
@@ -58,17 +58,16 @@ Sections with the same group render side by side, packing into the grid (3 colum
 | Type                | group                              |
 | ------------------- | ---------------------------------- |
 | `context`           | `"overview"`                       |
-| `metric_cards`      | `"snapshot"`                       |
+| `metric_cards`      | `"overview"`                       |
 | `chart`             | `"fundamentals"`                   |
-| `price_targets`     | `"fundamentals"`                   |
 | `table`             | `"fundamentals"` or `"technicals"` |
+| `price_targets`     | `"fundamentals"`                   |
 | `technicals`        | `"technicals"`                     |
 | `positioning`       | `"technicals"`                     |
 | `consumer_buzz`     | `"insights"`                       |
 | `insight_cards`     | `"insights"`                       |
 | `suggested_prompts` | `"prompts"`                        |
 
-- `context`, `metric_cards`, `suggested_prompts` — never share a group, always use their own group. These are intentionally full-width/standalone.
 - Any `table` with **more than 6 data columns** (i.e. comparing 6+ subjects) always spans the full row width regardless of group, since it can't fit alongside another card. When a table will be this wide, do not place another section in the same group expecting to sit beside it — either omit the group's other members for that response, or accept the wide table renders alone on its row.
 - Prefer fewer, denser sections over many single-purpose ones when the same group would otherwise end up with only one occupant.
 
@@ -95,7 +94,7 @@ Sections with the same group render side by side, packing into the grid (3 colum
 {
   "type": "metric_cards",
   "title": "Key Metrics",
-  "group": "snapshot",
+  "group": "overview",
   "data": [{ "label": "Short label", "value": "$868.26", "status": "up", "change": "+5.86%", "benchmark": "$948 target" }]
 }
 ```
@@ -133,7 +132,7 @@ Sections with the same group render side by side, packing into the grid (3 colum
 {
   "type": "chart",
   "title": "Historical Performance",
-  "group": "performance",
+  "group": "fundamentals",
   "data_type": "comparison",
   "unit": "%",
   "groups": ["1M", "6M", "YTD", "1Y"],
@@ -146,7 +145,7 @@ Sections with the same group render side by side, packing into the grid (3 colum
 
 - `data_type`: `"comparison"` for comparing across subjects, `"time_series"` for continuous trend over time
 - `unit`: `"%"` for percentages, `"$"` for currency, omit for plain numbers
-- **Period selection**: default to `["1W", "1M", "6M", "YTD"]` — five periods max. Only include `1Y`/`2Y`/`5Y` when the user's query explicitly asks about longer-term or multi-year performance (e.g. "1 year", "long term", "5 year", "since IPO"). Never mix sub-1Y and multi-year periods in the same chart by default — the scale difference makes short-term bars unreadable. If a long-term view is warranted, consider a second `chart` section instead of one chart spanning both ranges.
+- **Period selection**: default to `["1M", "3M", "6M", "YTD"]` — five periods max. Only include `1Y`/`2Y`/`5Y` when the user's query explicitly asks about longer-term or multi-year performance (e.g. "1 year", "long term", "5 year", "since IPO"). Never mix sub-1Y and multi-year periods in the same chart by default — the scale difference makes short-term bars unreadable. If a long-term view is warranted, consider a second `chart` section instead of one chart spanning both ranges.
 
 ---
 
@@ -159,6 +158,7 @@ Sections with the same group render side by side, packing into the grid (3 colum
   "group": "fundamentals",
   "layout": "column",
   "headers": ["Metric", "STX", "WDC"],
+  "column_align": ["left", "right", "right"],
   "rows": [
     [{ "value": "Forward P/E" }, { "value": "33.44x", "signal": "neutral" }, { "value": "28.33x", "signal": "up" }],
     [{ "value": "Consensus" }, { "value": "Buy", "signal": "up" }, { "value": "Buy", "signal": "up" }]
