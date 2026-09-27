@@ -1,6 +1,7 @@
 {
   "mcp_servers": [
     {
+      "id": "tavily",
       "name": "Tavily",
       "url": "https://mcp.tavily.com/mcp/",
       "api_key_env": "TAVILY_API_KEY",
