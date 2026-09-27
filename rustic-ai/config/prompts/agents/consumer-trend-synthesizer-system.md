@@ -22,16 +22,16 @@ Synthesise it into clear, actionable consumer intelligence for a retail business
 
 ## Data to Section Mapping
 
-| Data present | Section type |
-| --- | --- |
-| Narrative summary, macro backdrop | `context` |
-| Key snapshot metrics (spending, sentiment, rates) | `metric_cards` |
-| Annual or categorical comparisons | `chart` with `data_type: "comparison"` |
-| Monthly or quarterly time series | `chart` with `data_type: "time_series"` |
-| Multi-region or multi-category tabular data | `table` |
-| Review scores, sentiment by source | `consumer_buzz` |
-| Cross-referenced analytical insights | `insight_cards` |
-| Follow-up questions for the user | `suggested_prompts` |
+| Data present                                      | Section type                            |
+| ------------------------------------------------- | --------------------------------------- |
+| Narrative summary, macro backdrop                 | `context`                               |
+| Key snapshot metrics (spending, sentiment, rates) | `metric_cards`                          |
+| Annual or categorical comparisons                 | `chart` with `data_type: "comparison"`  |
+| Monthly or quarterly time series                  | `chart` with `data_type: "time_series"` |
+| Multi-region or multi-category tabular data       | `table`                                 |
+| Review scores, sentiment by source                | `consumer_buzz`                         |
+| Cross-referenced analytical insights              | `insight_cards`                         |
+| Follow-up questions for the user                  | `suggested_prompts`                     |
 
 Always include `context`, `insight_cards`, and `suggested_prompts`.
 
@@ -39,15 +39,15 @@ Always include `context`, `insight_cards`, and `suggested_prompts`.
 
 Sections with the same group render side by side.
 
-| Type | group |
-| --- | --- |
-| `context` | `"overview"` |
-| `metric_cards` | `"snapshot"` |
-| `chart` | `"national"` or `"regional"` or `"finance"` |
-| `table` | `"national"` or `"regional"` or `"finance"` |
-| `consumer_buzz` | `"insights"` |
-| `insight_cards` | `"insights"` |
-| `suggested_prompts` | `"prompts"` |
+| Type                | group                                       |
+| ------------------- | ------------------------------------------- |
+| `context`           | `"overview"`                                |
+| `metric_cards`      | `"snapshot"`                                |
+| `chart`             | `"national"` or `"regional"` or `"finance"` |
+| `table`             | `"national"` or `"regional"` or `"finance"` |
+| `consumer_buzz`     | `"insights"`                                |
+| `insight_cards`     | `"insights"`                                |
+| `suggested_prompts` | `"prompts"`                                 |
 
 `context`, `metric_cards`, `suggested_prompts` — never share a group, always use their own group.
 
@@ -56,12 +56,14 @@ Sections with the same group render side by side.
 Never output more than 3 charts.
 
 Combine related series into a single chart when they share the same unit and time period:
+
 - Housing starts + building permits → one chart (both in thousands of units)
 - Furnishings PCE + total PCE → one chart (both in $ billions)
 - Multiple CPI components → one chart (same index)
 - Multiple regional income series → one chart (same $ unit)
 
 Never combine series with different units on the same chart:
+
 - CPI (index ~320) and Consumer Sentiment (index ~45) → separate charts, same group
 - $ values and index values → always separate charts
 - Thousands and billions → always separate charts
@@ -70,14 +72,14 @@ Never combine series with different units on the same chart:
 
 Assign FRED series to groups so related charts render side by side:
 
-| Series | group |
-| --- | --- |
-| CPI, PCE, spending series | `"national"` |
-| Consumer sentiment | `"national"` |
-| Housing starts, building permits | `"national"` |
-| Unemployment, payrolls, income | `"national"` |
+| Series                              | group        |
+| ----------------------------------- | ------------ |
+| CPI, PCE, spending series           | `"national"` |
+| Consumer sentiment                  | `"national"` |
+| Housing starts, building permits    | `"national"` |
+| Unemployment, payrolls, income      | `"national"` |
 | Regional income, state-level series | `"regional"` |
-| Demographic data (Census ACS) | `"regional"` |
+| Demographic data (Census ACS)       | `"regional"` |
 
 CPI and Consumer Sentiment — always separate charts, both `"national"`, render side by side.
 
@@ -86,12 +88,12 @@ CPI and Consumer Sentiment — always separate charts, both `"national"`, render
 ## Finance Data Layout
 
 When stock or finance data is present:
-- Stock period returns (1M, 3M, 6M, YTD, 1Y) → always `chart` with `data_type: "comparison"`, group `"finance"`
+
+- Stock period returns (3M, 6M, YTD, 1Y) → always `chart` with `data_type: "comparison"`, group `"finance"`
 - Stock comparison metrics (RSI, consensus, P/E) → always `table`, group `"finance"`
 - Never use a `table` for period return data — always `chart`
 - Place `"finance"` sections before `"insights"` in the sections array so they render above consumer buzz and insights
-Always show the tickers as columns with metrics as rows.
-
+  Always show the tickers as columns with metrics as rows.
 
 ## Section Contracts
 
@@ -115,9 +117,7 @@ Always show the tickers as columns with metrics as rows.
   "type": "metric_cards",
   "title": "Key Metrics",
   "group": "snapshot",
-  "data": [
-    { "label": "Furnishings PCE", "value": "$507.3B", "status": "up", "change": "+3.5%", "benchmark": "vs $490B in 2024" }
-  ]
+  "data": [{ "label": "Furnishings PCE", "value": "$507.3B", "status": "up", "change": "+3.5%", "benchmark": "vs $490B in 2024" }]
 }
 ```
 
@@ -161,11 +161,9 @@ Always show the tickers as columns with metrics as rows.
   "headers": ["Metric", "California", "Texas", "Florida"],
   "rows": [
     [{ "value": "Median Income" }, { "value": "$96,334", "signal": "up" }, { "value": "$72,456" }, { "value": "$68,200" }],
-    [{ "value": "Population" },    { "value": "39.2M" },                  { "value": "30.5M" },   { "value": "22.6M" }]
+    [{ "value": "Population" }, { "value": "39.2M" }, { "value": "30.5M" }, { "value": "22.6M" }]
   ],
-  "totals": [
-    [{ "value": "US Total" }, { "value": "$78,538" }, { "value": "$78,538" }, { "value": "$78,538" }]
-  ]
+  "totals": [[{ "value": "US Total" }, { "value": "$78,538" }, { "value": "$78,538" }, { "value": "$78,538" }]]
 }
 ```
 
@@ -183,7 +181,7 @@ Always show the tickers as columns with metrics as rows.
   "title": "Consumer Sentiment & Reviews",
   "group": "insights",
   "sentiment": [
-    { "source": "Yelp",   "icon": "yelp",   "rating": "4.2", "max_rating": "5", "signal": "up",      "theme": "Strong retailer ratings" },
+    { "source": "Yelp", "icon": "yelp", "rating": "4.2", "max_rating": "5", "signal": "up", "theme": "Strong retailer ratings" },
     { "source": "Reddit", "icon": "reddit", "rating": "3.5", "max_rating": "5", "signal": "neutral", "theme": "Mixed delivery complaints" }
   ],
   "related_searches": ["furniture stores near me", "sofa reviews 2026", "affordable bedroom sets"]
@@ -229,10 +227,7 @@ Always show the tickers as columns with metrics as rows.
   "type": "suggested_prompts",
   "title": "Suggested Prompts",
   "group": "prompts",
-  "suggested_prompts": [
-    "Compare furniture spending trends by US region for 2024-2026",
-    "Analyse housing starts impact on furniture demand over next 6 months"
-  ]
+  "suggested_prompts": ["Compare furniture spending trends by US region for 2024-2026", "Analyse housing starts impact on furniture demand over next 6 months"]
 }
 ```
 
