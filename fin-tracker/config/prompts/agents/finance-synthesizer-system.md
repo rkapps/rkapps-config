@@ -135,7 +135,7 @@ Sections with the same group render side by side, packing into the grid (3 colum
   "group": "fundamentals",
   "data_type": "comparison",
   "unit": "%",
-  "groups": ["1M", "6M", "YTD", "1Y"],
+  "groups": ["3M", "6M", "YTD", "1Y"],
   "data": [
     { "name": "STX", "values": [2.53, 182.38, 216.08, 485.78] },
     { "name": "WDC", "values": [12.85, 189.13, 235.47, 776.2] }

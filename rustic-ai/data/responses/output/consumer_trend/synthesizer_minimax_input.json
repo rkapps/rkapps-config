@@ -1,226 +1,5 @@
 {
   "economic-data": {
-    "fred_series": [
-      {
-        "series_id": "CPIAUCSL",
-        "category": "consumer_health",
-        "name": "Consumer Price Index",
-        "observations": [
-          { "date": "2026-05-01", "value": 333.979 },
-          { "date": "2026-04-01", "value": 332.407 },
-          { "date": "2026-03-01", "value": 330.293 },
-          { "date": "2026-02-01", "value": 327.46 },
-          { "date": "2026-01-01", "value": 326.588 },
-          { "date": "2025-12-01", "value": 326.031 },
-          { "date": "2025-11-01", "value": 325.063 },
-          { "date": "2025-09-01", "value": 324.245 },
-          { "date": "2025-08-01", "value": 323.291 },
-          { "date": "2025-07-01", "value": 322.169 },
-          { "date": "2025-06-01", "value": 321.435 },
-          { "date": "2025-05-01", "value": 320.62 }
-        ]
-      },
-      {
-        "series_id": "DFFFRC1A027NBEA",
-        "category": "consumer_spending",
-        "name": "Furniture and Furnishings Spending",
-        "observations": [
-          { "date": "2025-01-01", "value": 293.895 },
-          { "date": "2024-01-01", "value": 281.899 },
-          { "date": "2023-01-01", "value": 276.849 },
-          { "date": "2022-01-01", "value": 274.586 },
-          { "date": "2021-01-01", "value": 262.517 },
-          { "date": "2020-01-01", "value": 216.803 },
-          { "date": "2019-01-01", "value": 200.049 },
-          { "date": "2018-01-01", "value": 193.122 },
-          { "date": "2017-01-01", "value": 182.279 },
-          { "date": "2016-01-01", "value": 175.593 },
-          { "date": "2015-01-01", "value": 168.489 },
-          { "date": "2014-01-01", "value": 158.173 }
-        ]
-      },
-      {
-        "series_id": "DFDHRC1Q027SBEA",
-        "category": "consumer_spending",
-        "name": "Furnishings and Durable Equipment Spending",
-        "observations": [
-          { "date": "2026-01-01", "value": 521.899 },
-          { "date": "2025-10-01", "value": 510.964 },
-          { "date": "2025-07-01", "value": 507.997 },
-          { "date": "2025-04-01", "value": 507.27 },
-          { "date": "2025-01-01", "value": 503.129 },
-          { "date": "2024-10-01", "value": 501.823 },
-          { "date": "2024-07-01", "value": 493.577 },
-          { "date": "2024-04-01", "value": 485.049 },
-          { "date": "2024-01-01", "value": 479.623 },
-          { "date": "2023-10-01", "value": 477.666 },
-          { "date": "2023-07-01", "value": 479.778 },
-          { "date": "2023-04-01", "value": 477.942 }
-        ]
-      },
-      {
-        "series_id": "DSPIC96",
-        "category": "consumer_health",
-        "name": "Real Disposable Personal Income",
-        "observations": [
-          { "date": "2026-05-01", "value": 17983.8 },
-          { "date": "2026-04-01", "value": 17938.8 },
-          { "date": "2026-03-01", "value": 18030.5 },
-          { "date": "2026-02-01", "value": 18051.9 },
-          { "date": "2026-01-01", "value": 18134.6 },
-          { "date": "2025-12-01", "value": 18018.5 },
-          { "date": "2025-11-01", "value": 18035.1 },
-          { "date": "2025-10-01", "value": 18037.3 },
-          { "date": "2025-09-01", "value": 18094.6 },
-          { "date": "2025-08-01", "value": 18076.9 },
-          { "date": "2025-07-01", "value": 18040.9 },
-          { "date": "2025-06-01", "value": 17962.1 }
-        ]
-      },
-      {
-        "series_id": "HOUST",
-        "category": "housing",
-        "name": "Housing Starts",
-        "observations": [
-          { "date": "2026-05-01", "value": 1177.0 },
-          { "date": "2026-04-01", "value": 1392.0 },
-          { "date": "2026-03-01", "value": 1522.0 },
-          { "date": "2026-02-01", "value": 1346.0 },
-          { "date": "2026-01-01", "value": 1385.0 },
-          { "date": "2025-12-01", "value": 1378.0 },
-          { "date": "2025-11-01", "value": 1319.0 },
-          { "date": "2025-10-01", "value": 1273.0 },
-          { "date": "2025-09-01", "value": 1319.0 },
-          { "date": "2025-08-01", "value": 1291.0 },
-          { "date": "2025-07-01", "value": 1432.0 },
-          { "date": "2025-06-01", "value": 1379.0 }
-        ]
-      },
-      {
-        "series_id": "PCE",
-        "category": "consumer_health",
-        "name": "Personal Consumption Expenditures",
-        "observations": [
-          { "date": "2026-05-01", "value": 22059.8 },
-          { "date": "2026-04-01", "value": 21903.7 },
-          { "date": "2026-03-01", "value": 21814.7 },
-          { "date": "2026-02-01", "value": 21611.4 },
-          { "date": "2026-01-01", "value": 21478.7 },
-          { "date": "2025-12-01", "value": 21445.9 },
-          { "date": "2025-11-01", "value": 21356.0 },
-          { "date": "2025-10-01", "value": 21288.1 },
-          { "date": "2025-09-01", "value": 21202.4 },
-          { "date": "2025-08-01", "value": 21123.8 },
-          { "date": "2025-07-01", "value": 21007.3 },
-          { "date": "2025-06-01", "value": 20868.4 }
-        ]
-      },
-      {
-        "series_id": "PERMIT",
-        "category": "housing",
-        "name": "Building Permits",
-        "observations": [
-          { "date": "2026-05-01", "value": 1410.0 },
-          { "date": "2026-04-01", "value": 1423.0 },
-          { "date": "2026-03-01", "value": 1363.0 },
-          { "date": "2026-02-01", "value": 1540.0 },
-          { "date": "2026-01-01", "value": 1393.0 },
-          { "date": "2025-12-01", "value": 1482.0 },
-          { "date": "2025-11-01", "value": 1414.0 },
-          { "date": "2025-10-01", "value": 1418.0 },
-          { "date": "2025-09-01", "value": 1444.0 },
-          { "date": "2025-08-01", "value": 1347.0 },
-          { "date": "2025-07-01", "value": 1400.0 },
-          { "date": "2025-06-01", "value": 1399.0 }
-        ]
-      },
-      {
-        "series_id": "RHORUSQ156N",
-        "category": "housing",
-        "name": "Homeownership Rate",
-        "observations": [
-          { "date": "2026-01-01", "value": 65.3 },
-          { "date": "2025-10-01", "value": 65.7 },
-          { "date": "2025-07-01", "value": 65.3 },
-          { "date": "2025-04-01", "value": 65.0 },
-          { "date": "2025-01-01", "value": 65.1 },
-          { "date": "2024-10-01", "value": 65.7 },
-          { "date": "2024-07-01", "value": 65.6 },
-          { "date": "2024-04-01", "value": 65.6 },
-          { "date": "2024-01-01", "value": 65.6 },
-          { "date": "2023-10-01", "value": 65.7 },
-          { "date": "2023-07-01", "value": 66.0 },
-          { "date": "2023-04-01", "value": 65.9 }
-        ]
-      },
-      {
-        "series_id": "RSFSXMV",
-        "category": "consumer_spending",
-        "name": "Building Materials Retail Sales",
-        "observations": [
-          { "date": "2026-05-01", "value": 623444.0 },
-          { "date": "2026-04-01", "value": 618378.0 },
-          { "date": "2026-03-01", "value": 614158.0 },
-          { "date": "2026-02-01", "value": 602258.0 },
-          { "date": "2026-01-01", "value": 596884.0 },
-          { "date": "2025-12-01", "value": 596072.0 },
-          { "date": "2025-11-01", "value": 596008.0 },
-          { "date": "2025-10-01", "value": 593611.0 },
-          { "date": "2025-09-01", "value": 592652.0 },
-          { "date": "2025-08-01", "value": 592134.0 },
-          { "date": "2025-07-01", "value": 588742.0 },
-          { "date": "2025-06-01", "value": 586272.0 }
-        ]
-      },
-      {
-        "series_id": "UMCSENT",
-        "category": "consumer_health",
-        "name": "Consumer Sentiment",
-        "observations": [
-          { "date": "2026-05-01", "value": 44.8 },
-          { "date": "2026-04-01", "value": 49.8 },
-          { "date": "2026-03-01", "value": 53.3 },
-          { "date": "2026-02-01", "value": 56.6 },
-          { "date": "2026-01-01", "value": 56.4 },
-          { "date": "2025-12-01", "value": 52.9 },
-          { "date": "2025-11-01", "value": 51.0 },
-          { "date": "2025-10-01", "value": 53.6 },
-          { "date": "2025-09-01", "value": 55.1 },
-          { "date": "2025-08-01", "value": 58.2 },
-          { "date": "2025-07-01", "value": 61.7 },
-          { "date": "2025-06-01", "value": 60.7 }
-        ]
-      },
-      {
-        "series_id": "UNRATE",
-        "category": "consumer_health",
-        "name": "Unemployment Rate",
-        "observations": [
-          { "date": "2026-06-01", "value": 4.2 },
-          { "date": "2026-05-01", "value": 4.3 },
-          { "date": "2026-04-01", "value": 4.3 },
-          { "date": "2026-03-01", "value": 4.3 },
-          { "date": "2026-02-01", "value": 4.4 },
-          { "date": "2026-01-01", "value": 4.3 },
-          { "date": "2025-12-01", "value": 4.4 },
-          { "date": "2025-11-01", "value": 4.5 },
-          { "date": "2025-09-01", "value": 4.4 },
-          { "date": "2025-08-01", "value": 4.3 },
-          { "date": "2025-07-01", "value": 4.3 },
-          { "date": "2025-06-01", "value": 4.1 }
-        ]
-      }
-    ],
-    "census": [
-      { "dataset": "acs5", "variable": "B01003_001E", "description": "Total Population", "geos": [{ "geo_type": "US", "geo_name": "United States", "geo_fips": "00000", "data": [{ "year": "2023", "value": "332387540" }] }] },
-      { "dataset": "acs5", "variable": "B23025_004E", "description": "Unknown Metric", "geos": [{ "geo_type": "US", "geo_name": "United States", "geo_fips": "00000", "data": [{ "year": "2023", "value": "159808535" }] }] },
-      { "dataset": "acs5", "variable": "B01002_001E", "description": "Median Age", "geos": [{ "geo_type": "US", "geo_name": "United States", "geo_fips": "00000", "data": [{ "year": "2023", "value": "38.7" }] }] },
-      { "dataset": "acs5", "variable": "B19013_001E", "description": "Median Income", "geos": [{ "geo_type": "US", "geo_name": "United States", "geo_fips": "00000", "data": [{ "year": "2023", "value": "78538" }] }] },
-      { "dataset": "acs5", "variable": "B25077_001E", "description": "Median Home Value", "geos": [{ "geo_type": "US", "geo_name": "United States", "geo_fips": "00000", "data": [{ "year": "2023", "value": "303400" }] }] },
-      { "dataset": "acs5", "variable": "B25003_003E", "description": "Unknown Metric", "geos": [{ "geo_type": "US", "geo_name": "United States", "geo_fips": "00000", "data": [{ "year": "2023", "value": "44590828" }] }] },
-      { "dataset": "acs5", "variable": "B25003_002E", "description": "Owner Units", "geos": [{ "geo_type": "US", "geo_name": "United States", "geo_fips": "00000", "data": [{ "year": "2023", "value": "82892037" }] }] },
-      { "dataset": "acs5", "variable": "B17001_002E", "description": "Poverty Count", "geos": [{ "geo_type": "US", "geo_name": "United States", "geo_fips": "00000", "data": [{ "year": "2023", "value": "40390045" }] }] }
-    ],
     "bea_nipa": [
       {
         "dataset": "NIPA",
@@ -237,26 +16,6 @@
             ]
           },
           {
-            "code": "A067RC",
-            "description": "Equals: Disposable personal income",
-            "data": [
-              { "year": "2022", "value": 18910518.0 },
-              { "year": "2023", "value": 20749273.0 },
-              { "year": "2024", "value": 21917657.0 },
-              { "year": "2025", "value": 22866177.0 }
-            ]
-          },
-          {
-            "code": "DPCERC",
-            "description": "Personal consumption expenditures",
-            "data": [
-              { "year": "2022", "value": 17690013.0 },
-              { "year": "2023", "value": 18833150.0 },
-              { "year": "2024", "value": 19896009.0 },
-              { "year": "2025", "value": 20954857.0 }
-            ]
-          },
-          {
             "code": "A072RC",
             "description": "Personal saving as a percentage of disposable personal income",
             "data": [
@@ -264,6 +23,26 @@
               { "year": "2023", "value": 5.6 },
               { "year": "2024", "value": 5.4 },
               { "year": "2025", "value": 4.6 }
+            ]
+          },
+          {
+            "code": "A067RX",
+            "description": "Total, Billions of chained (2017) dollars",
+            "data": [
+              { "year": "2022", "value": 16288070.0 },
+              { "year": "2023", "value": 17217775.0 },
+              { "year": "2024", "value": 17723264.0 },
+              { "year": "2025", "value": 18016601.0 }
+            ]
+          },
+          {
+            "code": "A067RC",
+            "description": "Equals: Disposable personal income",
+            "data": [
+              { "year": "2022", "value": 18910518.0 },
+              { "year": "2023", "value": 20749273.0 },
+              { "year": "2024", "value": 21917657.0 },
+              { "year": "2025", "value": 22866177.0 }
             ]
           },
           {
@@ -277,13 +56,13 @@
             ]
           },
           {
-            "code": "A067RX",
-            "description": "Total, Billions of chained (2017) dollars",
+            "code": "DPCERC",
+            "description": "Personal consumption expenditures",
             "data": [
-              { "year": "2022", "value": 16288070.0 },
-              { "year": "2023", "value": 17217775.0 },
-              { "year": "2024", "value": 17723264.0 },
-              { "year": "2025", "value": 18016601.0 }
+              { "year": "2022", "value": 17690013.0 },
+              { "year": "2023", "value": 18833150.0 },
+              { "year": "2024", "value": 19896009.0 },
+              { "year": "2025", "value": 20954857.0 }
             ]
           }
         ]
@@ -313,13 +92,13 @@
             ]
           },
           {
-            "code": "DPCCRC",
-            "description": "PCE excluding food and energy",
+            "code": "DPCERC",
+            "description": "Personal consumption expenditures (PCE)",
             "data": [
-              { "year": "2022", "value": 15469721.0 },
-              { "year": "2023", "value": 16626646.0 },
-              { "year": "2024", "value": 17658871.0 },
-              { "year": "2025", "value": 18659134.0 }
+              { "year": "2022", "value": 17690013.0 },
+              { "year": "2023", "value": 18833150.0 },
+              { "year": "2024", "value": 19896009.0 },
+              { "year": "2025", "value": 20954857.0 }
             ]
           },
           {
@@ -333,6 +112,16 @@
             ]
           },
           {
+            "code": "DPCCRC",
+            "description": "PCE excluding food and energy",
+            "data": [
+              { "year": "2022", "value": 15469721.0 },
+              { "year": "2023", "value": 16626646.0 },
+              { "year": "2024", "value": 17658871.0 },
+              { "year": "2025", "value": 18659134.0 }
+            ]
+          },
+          {
             "code": "DDURRC",
             "description": "Durable goods",
             "data": [
@@ -341,33 +130,24 @@
               { "year": "2024", "value": 2178085.0 },
               { "year": "2025", "value": 2265413.0 }
             ]
-          },
-          {
-            "code": "DPCERC",
-            "description": "Personal consumption expenditures (PCE)",
-            "data": [
-              { "year": "2022", "value": 17690013.0 },
-              { "year": "2023", "value": 18833150.0 },
-              { "year": "2024", "value": 19896009.0 },
-              { "year": "2025", "value": 20954857.0 }
-            ]
           }
         ]
       }
     ],
+    "provider": ["bea", "bea", "bea", "bea", "fred", "census", "bea"],
     "bea_regional": [
       {
-        "code": "CAINC1-1",
-        "description": "Personal Income by State",
+        "code": "CAINC5N-704",
+        "description": "Building Material and Garden Equipment Dealers Earnings by State",
         "geos": [
           {
             "geo_type": "US",
             "geo_name": "United States",
             "geo_fips": "00000",
             "data": [
-              { "year": "2022", "value": 22144814000.0 },
-              { "year": "2023", "value": 23577208000.0 },
-              { "year": "2024", "value": 24897613000.0 }
+              { "year": "2022", "value": 76008000.0 },
+              { "year": "2023", "value": 79927000.0 },
+              { "year": "2024", "value": 82029000.0 }
             ]
           }
         ]
@@ -405,22 +185,6 @@
         ]
       },
       {
-        "code": "CAINC5N-704",
-        "description": "Building Material and Garden Equipment Dealers Earnings by State",
-        "geos": [
-          {
-            "geo_type": "US",
-            "geo_name": "United States",
-            "geo_fips": "00000",
-            "data": [
-              { "year": "2022", "value": 76008000.0 },
-              { "year": "2023", "value": 79927000.0 },
-              { "year": "2024", "value": 82029000.0 }
-            ]
-          }
-        ]
-      },
-      {
         "code": "CAGDP1-1",
         "description": "GDP by State",
         "geos": [
@@ -435,153 +199,714 @@
             ]
           }
         ]
+      },
+      {
+        "code": "CAINC1-1",
+        "description": "Personal Income by State",
+        "geos": [
+          {
+            "geo_type": "US",
+            "geo_name": "United States",
+            "geo_fips": "00000",
+            "data": [
+              { "year": "2022", "value": 22144814000.0 },
+              { "year": "2023", "value": 23577208000.0 },
+              { "year": "2024", "value": 24897613000.0 }
+            ]
+          }
+        ]
       }
+    ],
+    "fred_series": [
+      {
+        "series_id": "CPIAUCSL",
+        "category": "consumer_health",
+        "name": "Consumer Price Index",
+        "observations": [
+          { "date": "2026-08-01", "value": 334.131 },
+          { "date": "2026-07-01", "value": 332.813 },
+          { "date": "2026-06-01", "value": 332.568 },
+          { "date": "2026-05-01", "value": 333.979 },
+          { "date": "2026-04-01", "value": 332.407 },
+          { "date": "2026-03-01", "value": 330.293 },
+          { "date": "2026-02-01", "value": 327.46 },
+          { "date": "2026-01-01", "value": 326.588 },
+          { "date": "2025-12-01", "value": 326.031 },
+          { "date": "2025-11-01", "value": 325.063 },
+          { "date": "2025-09-01", "value": 324.245 },
+          { "date": "2025-08-01", "value": 323.291 }
+        ]
+      },
+      {
+        "series_id": "DFFFRC1A027NBEA",
+        "category": "consumer_spending",
+        "name": "Furniture and Furnishings Spending",
+        "observations": [
+          { "date": "2025-01-01", "value": 293.895 },
+          { "date": "2024-01-01", "value": 281.899 },
+          { "date": "2023-01-01", "value": 276.849 },
+          { "date": "2022-01-01", "value": 274.586 },
+          { "date": "2021-01-01", "value": 262.517 },
+          { "date": "2020-01-01", "value": 216.803 },
+          { "date": "2019-01-01", "value": 200.049 },
+          { "date": "2018-01-01", "value": 193.122 },
+          { "date": "2017-01-01", "value": 182.279 },
+          { "date": "2016-01-01", "value": 175.593 },
+          { "date": "2015-01-01", "value": 168.489 },
+          { "date": "2014-01-01", "value": 158.173 }
+        ]
+      },
+      {
+        "series_id": "DFDHRC1Q027SBEA",
+        "category": "consumer_spending",
+        "name": "Furnishings and Durable Equipment Spending",
+        "observations": [
+          { "date": "2026-04-01", "value": 533.002 },
+          { "date": "2026-01-01", "value": 521.899 },
+          { "date": "2025-10-01", "value": 510.964 },
+          { "date": "2025-07-01", "value": 507.997 },
+          { "date": "2025-04-01", "value": 507.27 },
+          { "date": "2025-01-01", "value": 503.129 },
+          { "date": "2024-10-01", "value": 501.823 },
+          { "date": "2024-07-01", "value": 493.577 },
+          { "date": "2024-04-01", "value": 485.049 },
+          { "date": "2024-01-01", "value": 479.623 },
+          { "date": "2023-10-01", "value": 477.666 },
+          { "date": "2023-07-01", "value": 479.778 }
+        ]
+      },
+      {
+        "series_id": "DSPIC96",
+        "category": "consumer_health",
+        "name": "Real Disposable Personal Income",
+        "observations": [
+          { "date": "2026-07-01", "value": 18122.5 },
+          { "date": "2026-06-01", "value": 18054.9 },
+          { "date": "2026-05-01", "value": 18000.1 },
+          { "date": "2026-04-01", "value": 17957.1 },
+          { "date": "2026-03-01", "value": 18030.5 },
+          { "date": "2026-02-01", "value": 18051.9 },
+          { "date": "2026-01-01", "value": 18134.6 },
+          { "date": "2025-12-01", "value": 18018.5 },
+          { "date": "2025-11-01", "value": 18035.1 },
+          { "date": "2025-10-01", "value": 18037.3 },
+          { "date": "2025-09-01", "value": 18094.6 },
+          { "date": "2025-08-01", "value": 18076.9 }
+        ]
+      },
+      {
+        "series_id": "HOUST",
+        "category": "housing",
+        "name": "Housing Starts",
+        "observations": [
+          { "date": "2026-08-01", "value": 1275.0 },
+          { "date": "2026-07-01", "value": 1309.0 },
+          { "date": "2026-06-01", "value": 1439.0 },
+          { "date": "2026-05-01", "value": 1182.0 },
+          { "date": "2026-04-01", "value": 1414.0 },
+          { "date": "2026-03-01", "value": 1522.0 },
+          { "date": "2026-02-01", "value": 1346.0 },
+          { "date": "2026-01-01", "value": 1385.0 },
+          { "date": "2025-12-01", "value": 1378.0 },
+          { "date": "2025-11-01", "value": 1319.0 },
+          { "date": "2025-10-01", "value": 1273.0 },
+          { "date": "2025-09-01", "value": 1319.0 }
+        ]
+      },
+      {
+        "series_id": "PCE",
+        "category": "consumer_health",
+        "name": "Personal Consumption Expenditures",
+        "observations": [
+          { "date": "2026-07-01", "value": 22250.4 },
+          { "date": "2026-06-01", "value": 22214.2 },
+          { "date": "2026-05-01", "value": 22136.8 },
+          { "date": "2026-04-01", "value": 21949.5 },
+          { "date": "2026-03-01", "value": 21814.7 },
+          { "date": "2026-02-01", "value": 21611.4 },
+          { "date": "2026-01-01", "value": 21478.7 },
+          { "date": "2025-12-01", "value": 21445.9 },
+          { "date": "2025-11-01", "value": 21356.0 },
+          { "date": "2025-10-01", "value": 21288.1 },
+          { "date": "2025-09-01", "value": 21202.4 },
+          { "date": "2025-08-01", "value": 21123.8 }
+        ]
+      },
+      {
+        "series_id": "PERMIT",
+        "category": "housing",
+        "name": "Building Permits",
+        "observations": [
+          { "date": "2026-08-01", "value": 1403.0 },
+          { "date": "2026-07-01", "value": 1433.0 },
+          { "date": "2026-06-01", "value": 1374.0 },
+          { "date": "2026-05-01", "value": 1410.0 },
+          { "date": "2026-04-01", "value": 1423.0 },
+          { "date": "2026-03-01", "value": 1363.0 },
+          { "date": "2026-02-01", "value": 1540.0 },
+          { "date": "2026-01-01", "value": 1393.0 },
+          { "date": "2025-12-01", "value": 1482.0 },
+          { "date": "2025-11-01", "value": 1414.0 },
+          { "date": "2025-10-01", "value": 1418.0 },
+          { "date": "2025-09-01", "value": 1444.0 }
+        ]
+      },
+      {
+        "series_id": "RHORUSQ156N",
+        "category": "housing",
+        "name": "Homeownership Rate",
+        "observations": [
+          { "date": "2026-04-01", "value": 65.0 },
+          { "date": "2026-01-01", "value": 65.3 },
+          { "date": "2025-10-01", "value": 65.7 },
+          { "date": "2025-07-01", "value": 65.3 },
+          { "date": "2025-04-01", "value": 65.0 },
+          { "date": "2025-01-01", "value": 65.1 },
+          { "date": "2024-10-01", "value": 65.7 },
+          { "date": "2024-07-01", "value": 65.6 },
+          { "date": "2024-04-01", "value": 65.6 },
+          { "date": "2024-01-01", "value": 65.6 },
+          { "date": "2023-10-01", "value": 65.7 },
+          { "date": "2023-07-01", "value": 66.0 }
+        ]
+      },
+      {
+        "series_id": "RSFSXMV",
+        "category": "consumer_spending",
+        "name": "Building Materials Retail Sales",
+        "observations": [
+          { "date": "2026-08-01", "value": 631568.0 },
+          { "date": "2026-07-01", "value": 622897.0 },
+          { "date": "2026-06-01", "value": 624447.0 },
+          { "date": "2026-05-01", "value": 625517.0 },
+          { "date": "2026-04-01", "value": 619754.0 },
+          { "date": "2026-03-01", "value": 614158.0 },
+          { "date": "2026-02-01", "value": 602258.0 },
+          { "date": "2026-01-01", "value": 596884.0 },
+          { "date": "2025-12-01", "value": 596072.0 },
+          { "date": "2025-11-01", "value": 596008.0 },
+          { "date": "2025-10-01", "value": 593611.0 },
+          { "date": "2025-09-01", "value": 592652.0 }
+        ]
+      },
+      {
+        "series_id": "UMCSENT",
+        "category": "consumer_health",
+        "name": "Consumer Sentiment",
+        "observations": [
+          { "date": "2026-08-01", "value": 51.7 },
+          { "date": "2026-07-01", "value": 55.2 },
+          { "date": "2026-06-01", "value": 49.5 },
+          { "date": "2026-05-01", "value": 44.8 },
+          { "date": "2026-04-01", "value": 49.8 },
+          { "date": "2026-03-01", "value": 53.3 },
+          { "date": "2026-02-01", "value": 56.6 },
+          { "date": "2026-01-01", "value": 56.4 },
+          { "date": "2025-12-01", "value": 52.9 },
+          { "date": "2025-11-01", "value": 51.0 },
+          { "date": "2025-10-01", "value": 53.6 },
+          { "date": "2025-09-01", "value": 55.1 }
+        ]
+      },
+      {
+        "series_id": "UNRATE",
+        "category": "consumer_health",
+        "name": "Unemployment Rate",
+        "observations": [
+          { "date": "2026-08-01", "value": 4.1 },
+          { "date": "2026-07-01", "value": 4.1 },
+          { "date": "2026-06-01", "value": 4.2 },
+          { "date": "2026-05-01", "value": 4.3 },
+          { "date": "2026-04-01", "value": 4.3 },
+          { "date": "2026-03-01", "value": 4.3 },
+          { "date": "2026-02-01", "value": 4.4 },
+          { "date": "2026-01-01", "value": 4.3 },
+          { "date": "2025-12-01", "value": 4.4 },
+          { "date": "2025-11-01", "value": 4.5 },
+          { "date": "2025-09-01", "value": 4.4 },
+          { "date": "2025-08-01", "value": 4.3 }
+        ]
+      }
+    ],
+    "census": [
+      { "dataset": "acs5", "variable": "B17001_002E", "description": "Poverty Count", "geos": [{ "geo_type": "US", "geo_name": "United States", "geo_fips": "00000", "data": [{ "year": "2023", "value": "40390045" }] }] },
+      { "dataset": "acs5", "variable": "B01003_001E", "description": "Total Population", "geos": [{ "geo_type": "US", "geo_name": "United States", "geo_fips": "00000", "data": [{ "year": "2023", "value": "332387540" }] }] },
+      { "dataset": "acs5", "variable": "B25077_001E", "description": "Median Home Value", "geos": [{ "geo_type": "US", "geo_name": "United States", "geo_fips": "00000", "data": [{ "year": "2023", "value": "303400" }] }] },
+      { "dataset": "acs5", "variable": "B25003_003E", "description": "Unknown Metric", "geos": [{ "geo_type": "US", "geo_name": "United States", "geo_fips": "00000", "data": [{ "year": "2023", "value": "44590828" }] }] },
+      { "dataset": "acs5", "variable": "B25003_002E", "description": "Owner Units", "geos": [{ "geo_type": "US", "geo_name": "United States", "geo_fips": "00000", "data": [{ "year": "2023", "value": "82892037" }] }] },
+      { "dataset": "acs5", "variable": "B01002_001E", "description": "Median Age", "geos": [{ "geo_type": "US", "geo_name": "United States", "geo_fips": "00000", "data": [{ "year": "2023", "value": "38.7" }] }] },
+      { "dataset": "acs5", "variable": "B19013_001E", "description": "Median Income", "geos": [{ "geo_type": "US", "geo_name": "United States", "geo_fips": "00000", "data": [{ "year": "2023", "value": "78538" }] }] },
+      { "dataset": "acs5", "variable": "B23025_004E", "description": "Unknown Metric", "geos": [{ "geo_type": "US", "geo_name": "United States", "geo_fips": "00000", "data": [{ "year": "2023", "value": "159808535" }] }] }
     ]
   },
+  "finance-data": {
+    "performances": [
+      {
+        "symbol": "ETD",
+        "diffs": {
+          "3M": { "perc": 10.5, "price": 19.2666631717 },
+          "1M": { "price": 20.7531966224, "perc": 2.59 },
+          "6M": { "perc": 14.69, "price": 18.5627043682 },
+          "Ytd": { "perc": 13.12, "price": 18.8215473597 },
+          "1Y": { "perc": -8.25, "price": 23.2046987677 },
+          "1W": { "price": 21.41, "perc": -0.56 },
+          "2Y": { "perc": -8.38, "price": 23.2365691665 }
+        }
+      },
+      {
+        "symbol": "FLXS",
+        "diffs": {
+          "3M": { "price": 72.91, "perc": 22.58 },
+          "2Y": { "price": 42.6697064252, "perc": 109.45 },
+          "Ytd": { "price": 39.1701025071, "perc": 128.16 },
+          "1M": { "price": 81.77, "perc": 9.29 },
+          "1Y": { "perc": 93.65, "price": 46.1498248275 },
+          "1W": { "price": 79.69, "perc": 12.15 },
+          "6M": { "price": 45.4587439326, "perc": 96.6 }
+        }
+      },
+      {
+        "symbol": "LEG",
+        "diffs": {
+          "1Y": { "price": 8.6042072608, "perc": 6.92 },
+          "2Y": { "price": 12.7067085725, "perc": -27.6 },
+          "6M": { "perc": -3.01, "price": 9.4855948501 },
+          "Ytd": { "price": 10.8383679679, "perc": -15.12 },
+          "3M": { "perc": -20.75, "price": 11.6086435331 },
+          "1M": { "price": 9.2, "perc": 0.0 }
+        }
+      },
+      {
+        "symbol": "LZB",
+        "diffs": {
+          "1M": { "perc": -6.91, "price": 32.0968118824 },
+          "2Y": { "perc": -25.08, "price": 39.8828733142 },
+          "3M": { "price": 40.642066994, "perc": -26.48 },
+          "1Y": { "perc": -9.56, "price": 33.039487053 },
+          "Ytd": { "perc": -18.13, "price": 36.4957988881 },
+          "1W": { "price": 29.84, "perc": 0.13 },
+          "6M": { "perc": -5.11, "price": 31.4906313919 }
+        }
+      },
+      {
+        "symbol": "SN",
+        "diffs": {
+          "1Y": { "price": 106.07, "perc": 67.57 },
+          "1M": { "perc": -5.73, "price": 188.55 },
+          "Ytd": { "perc": 58.84, "price": 111.9 },
+          "2Y": { "price": 105.96, "perc": 67.74 },
+          "6M": { "perc": 74.07, "price": 102.11 },
+          "1W": { "perc": 7.23, "price": 165.75 },
+          "3M": { "perc": 22.49, "price": 145.1 }
+        }
+      }
+    ],
+    "indicators": [
+      {
+        "symbol": "SN",
+        "price": 176.94,
+        "rsi_14": 63.31,
+        "rsi_band": "neutral",
+        "sma_50_distance_pct": 3.033832178419617,
+        "sma_trend": "golden_cross",
+        "macd_histogram": -0.08000000000000007,
+        "macd_trend": "flat",
+        "bb_percent": 0.6032141867553341,
+        "signals": [],
+        "overall": null,
+        "model_outlook": null
+      },
+      {
+        "symbol": "LEG",
+        "price": 9.2,
+        "rsi_14": 33.31,
+        "rsi_band": "neutral",
+        "sma_50_distance_pct": -12.21374045801528,
+        "sma_trend": "death_cross",
+        "macd_histogram": 0.0,
+        "macd_trend": "flat",
+        "bb_percent": 0.1874999999999989,
+        "signals": [
+          { "name": "Below SMA50", "direction": "Bearish" },
+          { "name": "Death Cross Active", "direction": "Bearish" },
+          { "name": "Volatility Contracting", "direction": "Neutral" }
+        ],
+        "overall": { "direction": "Mixed", "summary": "Mixed signals — trend and momentum disagree", "conflicting": true },
+        "model_outlook": null
+      },
+      {
+        "symbol": "LZB",
+        "price": 29.91,
+        "rsi_14": 36.12,
+        "rsi_band": "neutral",
+        "sma_50_distance_pct": -16.662022847589856,
+        "sma_trend": "death_cross",
+        "macd_histogram": 0.20000000000000015,
+        "macd_trend": "flat",
+        "bb_percent": 0.21999999999999975,
+        "signals": [],
+        "overall": null,
+        "model_outlook": null
+      },
+      { "symbol": "ETD", "price": 21.05, "rsi_14": 34.03, "rsi_band": "neutral", "sma_50_distance_pct": -7.55379885814668, "sma_trend": "golden_cross", "macd_histogram": -0.12, "macd_trend": "flat", "bb_percent": 0.23277909738717345, "signals": [], "overall": null, "model_outlook": null },
+      {
+        "symbol": "FLXS",
+        "price": 88.37,
+        "rsi_14": 78.27,
+        "rsi_band": "overbought",
+        "sma_50_distance_pct": 12.48727087576375,
+        "sma_trend": "golden_cross",
+        "macd_histogram": 0.30000000000000004,
+        "macd_trend": "flat",
+        "bb_percent": 1.2313953488372105,
+        "signals": [],
+        "overall": null,
+        "model_outlook": null
+      }
+    ],
+    "snapshots": [
+      {
+        "symbol": "ETD",
+        "name": "Ethan Allen Interiors Inc.",
+        "sector": "Consumer Discretionary",
+        "industry": "Furnishings, Fixtures & Appliances",
+        "last": 21.29,
+        "prev": 21.05,
+        "open": 21.09,
+        "high": 21.385,
+        "low": 20.9,
+        "change_amt": 0.24,
+        "change_perc": 1.14,
+        "wk52_high": 24.0,
+        "wk52_low": 15.63,
+        "total_assets": 529757000,
+        "eps": 1.54,
+        "pe_ratio": 13.65,
+        "peg_ratio": 1.993,
+        "pb_ratio": 1.14,
+        "ps_ratio": 0.914,
+        "forward_pe": 14.41,
+        "beta": 1.022,
+        "analyst_target_price": 22.0,
+        "analyst_consensus": "Hold",
+        "dividend_amt": 1.56,
+        "dividend_yield": 0.0731,
+        "profit_margin": 0.0688,
+        "operating_margin_ttm": 0.105,
+        "return_on_equity_ttm": 0.0836,
+        "ev_to_ebitda": 7.64,
+        "quarterly_revenue_growth_yoy": -0.085,
+        "quarterly_earnings_growth_yoy": -0.037,
+        "expense_ratio": null
+      },
+      {
+        "symbol": "FLXS",
+        "name": "Flexsteel Industries, Inc.",
+        "sector": "Consumer Discretionary",
+        "industry": "Furnishings, Fixtures & Appliances",
+        "last": 89.37,
+        "prev": 88.37,
+        "open": 88.37,
+        "high": 90.0,
+        "low": 87.07,
+        "change_amt": 1.0,
+        "change_perc": 1.13,
+        "wk52_high": 88.49,
+        "wk52_low": 33.56,
+        "total_assets": 361587000,
+        "eps": 6.32,
+        "pe_ratio": 13.98,
+        "peg_ratio": 1.335,
+        "pb_ratio": 2.599,
+        "ps_ratio": 0.787,
+        "forward_pe": 16.03,
+        "beta": 0.586,
+        "analyst_target_price": 79.5,
+        "analyst_consensus": "Buy",
+        "dividend_amt": 0.85,
+        "dividend_yield": 0.01,
+        "profit_margin": 0.0722,
+        "operating_margin_ttm": 0.142,
+        "return_on_equity_ttm": 0.22,
+        "ev_to_ebitda": 8.02,
+        "quarterly_revenue_growth_yoy": 0.007,
+        "quarterly_earnings_growth_yoy": 0.366,
+        "expense_ratio": null
+      },
+      {
+        "symbol": "LEG",
+        "name": "Leggett & Platt, Incorporated",
+        "sector": "Consumer Discretionary",
+        "industry": "Furnishings, Fixtures & Appliances",
+        "last": 9.2,
+        "prev": 9.2,
+        "open": 9.2,
+        "high": 9.2,
+        "low": 9.2,
+        "change_amt": 0.0,
+        "change_perc": 0.0,
+        "wk52_high": 12.82,
+        "wk52_low": 8.19,
+        "total_assets": 1256619000,
+        "eps": 1.56,
+        "pe_ratio": 5.9,
+        "peg_ratio": 2.96,
+        "pb_ratio": 1.162,
+        "ps_ratio": 0.323,
+        "forward_pe": 14.56,
+        "beta": 0.748,
+        "analyst_target_price": 10.0,
+        "analyst_consensus": "Hold",
+        "dividend_amt": 0.2,
+        "dividend_yield": 0.0215,
+        "profit_margin": 0.0564,
+        "operating_margin_ttm": 0.0838,
+        "return_on_equity_ttm": 0.226,
+        "ev_to_ebitda": 5.2,
+        "quarterly_revenue_growth_yoy": -0.055,
+        "quarterly_earnings_growth_yoy": -0.129,
+        "expense_ratio": null
+      },
+      {
+        "symbol": "LZB",
+        "name": "La-Z-Boy Incorporated",
+        "sector": "Consumer Discretionary",
+        "industry": "Furnishings, Fixtures & Appliances",
+        "last": 29.88,
+        "prev": 29.91,
+        "open": 30.09,
+        "high": 30.32,
+        "low": 29.645,
+        "change_amt": -0.03,
+        "change_perc": -0.1,
+        "wk52_high": 44.56,
+        "wk52_low": 28.26,
+        "total_assets": 1197978000,
+        "eps": 1.96,
+        "pe_ratio": 15.26,
+        "peg_ratio": 1.07,
+        "pb_ratio": 1.186,
+        "ps_ratio": 0.568,
+        "forward_pe": 11.76,
+        "beta": 1.248,
+        "analyst_target_price": 41.0,
+        "analyst_consensus": "Buy",
+        "dividend_amt": 0.946,
+        "dividend_yield": 0.0315,
+        "profit_margin": 0.0386,
+        "operating_margin_ttm": 0.0273,
+        "return_on_equity_ttm": 0.0805,
+        "ev_to_ebitda": 5.97,
+        "quarterly_revenue_growth_yoy": -0.034,
+        "quarterly_earnings_growth_yoy": 1.331,
+        "expense_ratio": null
+      },
+      {
+        "symbol": "SN",
+        "name": "Somnigroup International Inc. ",
+        "sector": "Consumer Discretionary",
+        "industry": "Furnishings, Fixtures & Appliances",
+        "last": 177.74,
+        "prev": 176.94,
+        "open": 175.37,
+        "high": 181.085,
+        "low": 174.4451,
+        "change_amt": 0.8,
+        "change_perc": 0.45,
+        "wk52_high": 194.54,
+        "wk52_low": 83.12,
+        "total_assets": 24925813000,
+        "eps": 5.15,
+        "pe_ratio": 34.36,
+        "peg_ratio": 2.308,
+        "pb_ratio": 8.35,
+        "ps_ratio": 3.607,
+        "forward_pe": 23.09,
+        "beta": 1.198,
+        "analyst_target_price": 209.56,
+        "analyst_consensus": "Buy",
+        "dividend_amt": null,
+        "dividend_yield": null,
+        "profit_margin": 0.101,
+        "operating_margin_ttm": 0.102,
+        "return_on_equity_ttm": 0.275,
+        "ev_to_ebitda": 22.25,
+        "quarterly_revenue_growth_yoy": 0.222,
+        "quarterly_earnings_growth_yoy": -0.063,
+        "expense_ratio": null
+      }
+    ],
+    "sentiments": [
+      {
+        "id": "LZB:20260615T081119",
+        "date": "2026-06-15T08:11:19Z",
+        "symbol": "LZB",
+        "title": "Furniture Market Set to Expand $840.5 Billion by 2034 | IKEA Group, American Signature, La-Z-Boy Inc.",
+        "score": 0.421554,
+        "label": "Bullish",
+        "source": "EIN Presswire",
+        "similarity": 0.5797547698020935
+      },
+      {
+        "id": "FLXS:20260906T170243",
+        "date": "2026-09-06T17:02:43Z",
+        "symbol": "FLXS",
+        "title": "Zacks Industry Outlook Highlights Flexsteel Industries and Bassett Furniture Industries",
+        "score": 0.338422,
+        "label": "Somewhat-Bullish",
+        "source": "Eastern Progress",
+        "similarity": 0.4981115162372589
+      },
+      { "id": "FLXS:20260528T123913", "date": "2026-05-28T12:39:13Z", "symbol": "FLXS", "title": "Flexsteel Industries Sees Outsized Growth as Margins Rise, Buybacks Cut Share Count", "score": 0.412335, "label": "Bullish", "source": "TradingView", "similarity": 0.4631359279155731 },
+      { "id": "FLXS:20260827T191631", "date": "2026-08-27T19:16:31Z", "symbol": "FLXS", "title": "Flexsteel (NASDAQ:FLXS): Can Stronger Orders Drive Progress?", "score": 0.298376, "label": "Somewhat-Bullish", "source": "Kalkine Media", "similarity": 0.46068525314331055 },
+      { "id": "LZB:20260818T131122", "date": "2026-08-18T13:11:22Z", "symbol": "LZB", "title": "La-Z-Boy earnings up next: Can furniture giant sustain momentum?", "score": 0.112878, "label": "Neutral", "source": "Investing.com", "similarity": 0.4463587999343872 },
+      { "id": "FLXS:20260818T141158", "date": "2026-08-18T14:11:58Z", "symbol": "FLXS", "title": "Flexsteel Industries Q4 Earnings Call Highlights", "score": 0.300869, "label": "Somewhat-Bullish", "source": "Yahoo Finance", "similarity": 0.4393649399280548 },
+      {
+        "id": "FLXS:20260817T194315",
+        "date": "2026-08-17T19:43:15Z",
+        "symbol": "FLXS",
+        "title": "Flexsteel Industries, Inc. Reports Fourth Quarter and Fiscal Year 2026 Results; Continued Net Sales Growth and Record Diluted Earnings Per Share",
+        "score": 0.432303,
+        "label": "Bullish",
+        "source": "Business Wire",
+        "similarity": 0.43720513582229614
+      },
+      { "id": "LZB:20260820T064038", "date": "2026-08-20T06:40:38Z", "symbol": "LZB", "title": "La-Z-Boy’s retail momentum offset by wholesale numbers in Q1", "score": -0.081116, "label": "Neutral", "source": "Furniture Today", "similarity": 0.43506085872650146 },
+      { "id": "LZB:20260616T133947", "date": "2026-06-16T13:39:47Z", "symbol": "LZB", "title": "La-Z-Boy earnings in focus: Can strategic shift offset weak demand? By Investing.com", "score": 0.105377, "label": "Neutral", "source": "Investing.com South Africa", "similarity": 0.43370822072029114 },
+      { "id": "FLXS:20260526T023857", "date": "2026-05-26T02:38:57Z", "symbol": "FLXS", "title": "Flexsteel Industries Sees Outsized Growth as Margins Rise, Buybacks Cut Share Count", "score": 0.520425, "label": "Bullish", "source": "Barchart.com", "similarity": 0.4324932396411896 }
+    ]
+  },
+  "web-research": {
+    "agents": [{ "id": "economic-taxonomy", "goal": "Get the economic taxonomy to identify relevant categories for furniture industry performance and contributing factors" }],
+    "execution": "sequential",
+    "stop": false,
+    "reasoning": "The user is asking about the furniture industry's current performance and contributing factors. I need to first retrieve the economic taxonomy to identify the proper categories and data series related to the furniture industry (likely under manufacturing, retail trade, or consumer durables) before retrieving specific economic data."
+  },
   "web-sentiment": {
-    "yelp": [],
+    "yelp": [
+      {
+        "url": "https://www.yelp.com/search?find_desc=Furniture+Stores&find_loc=Downtown%2C+Los+Angeles%2C+CA",
+        "title": "Best Furniture Stores near Downtown, Los Angeles, CA",
+        "content": "1. Joybird Downtown Los Angeles · (81 reviews). Furniture Stores · Home Decor · Rugs. 0.6 mi · 767 S Alameda St, Ste 152 Los Angeles, CA 90021. (213) 481-6696 ; 2.",
+        "score": 0.37394494,
+        "raw_content": null,
+        "id": "956092-00"
+      },
+      {
+        "url": "https://www.yelp.com/biz/geg-comfort-los-angeles-3",
+        "title": "GEG COMFORT - Furniture Stores",
+        "content": "Comfort 4.8 (21 reviews) Furniture Stores, Excellent service and delivery. Shipping was quick and they don't even charge",
+        "score": 0.2639507,
+        "raw_content": null,
+        "id": "13aaf2-01"
+      },
+      {
+        "url": "https://www.yelp.com/biz/landon-cole-furniture-los-angeles",
+        "title": "Landon Cole Furniture Photos",
+        "content": "Furniture 5.0 (64 reviews) The quality is exceptional, and All of the 5 star reviews are true. This is the best furniture shopping experience I've ever had. In",
+        "score": 0.22281043,
+        "raw_content": null,
+        "id": "bc1ff0-02"
+      },
+      {
+        "url": "https://www.yelp.com/search?find_desc=Furniture+Stores&find_loc=San+Pedro%2C+Los+Angeles%2C+CA",
+        "title": "Best Furniture Stores near San Pedro, Los Angeles, CA",
+        "content": "Best Furniture Stores near San Pedro, Los Angeles, CA ; Studio Collective & Co · Interior Design. 24.6 mi · West Hollywood, CA 90069 ; Donaldson + Partners",
+        "score": 0.20424701,
+        "raw_content": null,
+        "id": "6edb04-03"
+      },
+      {
+        "url": "https://www.yelp.com/biz/bob-s-discount-furniture-and-mattress-store-los-angeles-3",
+        "title": "Bob's Discount Furniture and Mattress Store",
+        "content": "Delivery today was fantastic, they brought up the couch & had great communication. Everything was perfect! was never greeted . 5.0 (438 reviews)",
+        "score": 0.17084005,
+        "raw_content": null,
+        "id": "4bd141-04"
+      }
+    ],
     "reddit": [
       {
-        "url": "https://www.reddit.com/r/neoliberal/comments/1uw7gqj/june_2026_us_cpi_release_overall_prices_decreased",
-        "title": "June 2026 US CPI release: overall prices decreased 0.4% MoM, increased 3.5% YoY",
-        "content": "- just in time for oil futures to skyrocket again\\n- Submission statement: the Consumer Price Index for All Urban Consumers (CPI-U), released by the U.S. Bureau of Labor Statistics (BLS), is one of the country's primary official measures of inflation. Various other subindices included in the report are also of relevance for policy making, such as \" core CPI \", which is the index for all items less food and energy. By stripping out those two volatile categories of items, core CPI is thought to better represent the underlying trend of changes in price in the economy. This is of relevance to this subreddit because of its impact on financial markets, monetary policy, economics, political opinion, and consumer sentiment. [...] # June 2026 US CPI release: overall prices decreased 0.4% MoM, increased 3.5% YoY\\n\\n## Post details\\nr/neoliberal | 95 upvotes | 34 comments | Posted by u/JeromesNiece on 2026-07-14T12:36:44.099Z\\n\\n## Content\\n The headline index had increased 0.5% MoM, 4.2% YoY the prior month, in May. Consensus forecast was for -0.1% MoM, 3.8% YoY, so actual figures surprised significantly lower. Core CPI (all items less food and energy) remained unchanged (0.0%) MoM, up 2.6% YoY in June, compared with 0.2% MoM, 2.9% YoY the month prior, in May. Consensus forecast for core CPI was +0.2% MoM, 2.8% YoY, so actual figures for core CPI also surprised low. FRED graph of YoY change in headline and core CPI . FRED graph of MoM change in headline and core CPI. [...] ## Top Comments\\n- Fun fact, 2Q GDP tracking is down to 1.4% at Bank of America/1.3% at GDPNow (not an official forecast of the Atlanta Fed.) Rather, it is best viewed as a running estimate of real GDP growth based on available economic data for the current measured quarter. Due to lower than expected net exports and inventories High Inflation and Low GDP growth\\n- Doubt\\n- Remember that you have a patriotic duty to constantly and loudly complain about how expensive things are.\\n- Headline if Biden was president: inflation, while lower, remains sticky and far above target.\\n- GOP strategists seeing these numbers only for Trump to immediately nuke the oil market again:\\n- just in time for oil futures to skyrocket again",
-        "score": 0.37917203,
-        "raw_content": "# June 2026 US CPI release: overall prices decreased 0.4% MoM, increased 3.5% YoY\\n\\n## Post details\\nr/neoliberal | 95 upvotes | 34 comments | Posted by u/JeromesNiece on 2026-07-14T12:36:44.099Z\\n\\n## Content\\nhttps://www.bls.gov/news.release/cpi.nr0.htm The headline index had increased 0.5% MoM, 4.2% YoY the prior month, in May. Consensus forecast was for -0.1% MoM, 3.8% YoY, so actual figures surprised significantly lower. Core CPI (all items less food and energy) remained unchanged (0.0%) MoM, up 2.6% YoY in June, compared with 0.2% MoM, 2.9% YoY the month prior, in May. Consensus forecast for core CPI was +0.2% MoM, 2.8% YoY, so actual figures for core CPI also surprised low. FRED graph of YoY change in headline and core CPI . FRED graph of MoM change in headline and core CPI.\\n\\n## Top Comments\\n- Fun fact, 2Q GDP tracking is down to 1.4% at Bank of America/1.3% at GDPNow (not an official forecast of the Atlanta Fed.) Rather, it is best viewed as a running estimate of real GDP growth based on available economic data for the current measured quarter. Due to lower than expected net exports and inventories High Inflation and Low GDP growth\\n- Doubt\\n- Remember that you have a patriotic duty to constantly and loudly complain about how expensive things are.\\n- Headline if Biden was president: inflation, while lower, remains sticky and far above target.\\n- GOP strategists seeing these numbers only for Trump to immediately nuke the oil market again:\\n- just in time for oil futures to skyrocket again\\n- Submission statement: the Consumer Price Index for All Urban Consumers (CPI-U), released by the U.S. Bureau of Labor Statistics (BLS), is one of the country's primary official measures of inflation. Various other subindices included in the report are also of relevance for policy making, such as \" core CPI \", which is the index for all items less food and energy. By stripping out those two volatile categories of items, core CPI is thought to better represent the underlying trend of changes in price in the economy. This is of relevance to this subreddit because of its impact on financial markets, monetary policy, economics, political opinion, and consumer sentiment."
+        "url": "https://www.reddit.com/r/Kitsap/comments/1wlz7n9/places_to_buy_furniture",
+        "title": "Places to Buy Furniture : r/Kitsap",
+        "content": "We share reviews, recommendations, and experiences with items built to last, be it tools, appliances, clothing, or tech. county in the United States.",
+        "score": 0.5354634,
+        "raw_content": null,
+        "id": "b3e669-00"
       },
       {
-        "url": "https://www.reddit.com/r/Economics/comments/1uf9fog/feds_preferred_inflation_gauge_keeps_climbing",
-        "title": "Fed's Preferred Inflation Gauge Keeps Climbing",
-        "content": "reductions in PPACA subsidies, but also the growing costs placed on consumers for financial services and insurance due to the economic uncertainty we are facing. Recreation services and goods have increased; that's a sign that people are spending money. And they are spending money in a period of real wage gains. Personal Income and Outlays, May 2026 | U.S. Bureau of Economic Analysis (BEA) [...] - Real disposable personal income (DPI) increased by 0.3%, after falling by 0.5% in April. That's good news; shows wage growth offsetting some of the loss of purchasing power, though we all know wages are stickier than prices. PCE increased 4.1%; core PCE increased 3.4% (strips out food and energy). That is significantly higher than the Fed 2% target , and suggests that price pressures from oil/gas will continue making their way through the supply chain (this is before the inflation from AI and the impact on computer chips/parts kicks in). Supercore PCE (which is Powell's preferred measure) increased more than core PCE. It's 3.5% annually (Table 2.8.11). Housing/rent prices have stabilized, being reduced from the >4% rates we saw throughout nearly all of 2025. They are now hovering [...] we saw throughout nearly all of 2025. They are now hovering between 3 and 3.2%. We are still seeing signs of strong consumer spending, irregardless of the consumer sentiment surveys (or the WSJ article noting and detailing economic anxiety rising up the income distribution). From Table 2.8.11, furnishings and durable household equipment, recreational goods and vehicles, clothing and footwear, and other nondurable goods all grew much faster than average. Healthcare, recreation service, and financial services and insurance all grew faster than average for services. Price pressures from healthcare and financial services and insurance are a bit worrisome for the future, because that is likely due to a combination of Medicaid cuts and reductions in PPACA subsidies, but also the growing costs",
-        "score": 0.3070675,
-        "raw_content": "# Fed's Preferred Inflation Gauge Keeps Climbing\\n\\n## Post details\\nr/Economics | 149 upvotes | 83 comments | Posted by u/EconomistWithaD on 2026-06-25T13:03:46.848Z\\n\\n## Content\\nNone\\n\\n## Top Comments\\n- Rates have been too low for a while now. They've been letting inflation run rampant for too long. Sooner or later the price is going to need to be paid for the huge money printing spree of the 2020s.\\n- None\\n- Inflation won't get fixed until the AI bubble pops. Durable price increases are about to run through a bunch of consumer electronics and things with electronics components and the companies spending the Capex are getting punished for it in the market. Once one of them stops a bunch of these prices are going to collapse. It doesn't help that all this stuff was pressured by the tariffs and the war too. We need a Volcker moment to knock this structural shit out.\\n- I'm still in the camp of no rate hikes this year, although my conviction in that is weakening. You'll see topline inflation take a big step back within the next two readings with oil back down to the low $70s and Warsh clearly doesn't want to raise rates unless is back is firmly pinned against the wall.\\n- With every inflation measure (CPI, PPI, PCE) over 4% and showing signs of rising, not sure how much longer the story of zero, or at most, one, rate hike this year can hold. Particularly with GDP and the labor market looking stronger than originally believed. We may see a rate hike as soon as next month. At a minimum, the language coming out of the next meeting will be a lot more hawkish.\\n- Real disposable personal income (DPI) increased by 0.3%, after falling by 0.5% in April. That's good news; shows wage growth offsetting some of the loss of purchasing power, though we all know wages are stickier than prices. PCE increased 4.1%; core PCE increased 3.4% (strips out food and energy). That is significantly higher than the Fed 2% target , and suggests that price pressures from oil/gas will continue making their way through the supply chain (this is before the inflation from AI and the impact on computer chips/parts kicks in). Supercore PCE (which is Powell's preferred measure) increased more than core PCE. It's 3.5% annually (Table 2.8.11). Housing/rent prices have stabilized, being reduced from the >4% rates we saw throughout nearly all of 2025. They are now hovering between 3 and 3.2%. We are still seeing signs of strong consumer spending, irregardless of the consumer sentiment surveys (or the WSJ article noting and detailing economic anxiety rising up the income distribution). From Table 2.8.11, furnishings and durable household equipment, recreational goods and vehicles, clothing and footwear, and other nondurable goods all grew much faster than average. Healthcare, recreation service, and financial services and insurance all grew faster than average for services. Price pressures from healthcare and financial services and insurance are a bit worrisome for the future, because that is likely due to a combination of Medicaid cuts and reductions in PPACA subsidies, but also the growing costs placed on consumers for financial services and insurance due to the economic uncertainty we are facing. Recreation services and goods have increased; that's a sign that people are spending money. And they are spending money in a period of real wage gains. Personal Income and Outlays, May 2026 | U.S. Bureau of Economic Analysis (BEA)"
+        "url": "https://www.houzz.com/professionals/furniture-and-accessories/probr0-bo~t_11802",
+        "title": "Best 15 Local Furniture Stores Near Me",
+        "content": "En ILC Interiorismo Low Cost realizamos de principio a fin cualquier diseño de espacios. Elaboramos proyectos comp...\\n\\n28004, Madrid, Comunidad de Madrid, Spain\\n\\nFounded in 1982 in beautiful Boone, North Carolina. Wellington's is a family owned leather furniture business that...\\n\\nPO Box 40, Johns Island, South Carolina 29457, United States\\n\\nOFFERS STUNNING MODERN FURNITURE IN MIAMI, DORAL, FORT LAUDERDALE AND NAPLES\\nWith each day that passes there ar...\\n\\nMiami, Florida 33137, United States\\n\\n## Featured Reviews for Local Furniture Stores Near Me\\n\\n### COMPANY\\n\\n### BUSINESS SERVICES\\n\\n### GET HELP\\n\\n### CONNECT WITH US [...] ## Project Type\\n\\n## Rating (1)\\n\\nCedar Mill Designs\\n\\nCedar Mill Designs has the ability to process logs into any final form you can dream. Using a log from your proper...\\n\\nGrand Rapids, Michigan, United States\\n\\nIKEA Furniture Assembly Toronto - ASSEMBLYman.ca\\n\\nWelcome to IKEA Furniture Assembly Service - www.ASSEMBLYman.ca!\\nBOUGHT IKEA? Didn't expect it to come in a who...\\n\\nVaughan, Ontario L6L 4L6, Canada\\n\\nRosielloArreda\\n\\nIl mondo cambia e noi con lui. La nostra attività si svolge seguendo le esigenze del cliente, possiamo ricevere in...\\n\\nVia Orbassano 26, 10060 None TO, Italy\\n\\nThe Bespoke Footstool Company\\n\\nThe Bespoke Footstool Company creates fine made to measure footstools, table stools, ottomans and pouffes for the...\\n\\nRamsgate, Surrey Gu26 6jx, United Kingdom\\n\\nLa Lune Collection [...] La Lune Collection\\n\\nFor 40 years La Lune Collection has designed and crafted in Wisconsin the finest rustic furniture for commercial a...\\n\\n930 E Burleigh Street, Milwaukee, Wisconsin 53212, United States\\n\\nCasco Bay Furniture specializes in the manufacturing and selling of high-quality home furnishings at the lowest po...\\n\\n415 Congress Street, Portland, Maine 04101, United States\\n\\nPatio Lane Outdoor Living is a full-service outdoor living showroom in Clearwater, Florida, serving homeowners thr...\\n\\n10820 US 19 North, Clearwater, Florida 33764, United States\\n\\nBrooklyn-based studio providing custom-built contemporary wood furnishings and accessories. Specialty in hand-turn...\\n\\n136 West 16th Street #4E, New York, New York 10011, United States",
+        "score": 0.3498664,
+        "raw_content": null,
+        "id": "fc8683-01"
       },
       {
-        "url": "https://www.reddit.com/r/financialindependence/comments/1uv54wp/daily_fi_discussion_thread_monday_july_13_2026",
-        "title": "Daily FI discussion thread - Monday, July 13, 2026",
-        "content": "- TiL it is a good idea to turn the knobs on the hot/cold feeds into your washing machine once in a while. Mine hadn't been turned in over a decade and it took a lot of penetrating oil and angry swearing strength to break them loose. [...] ## Top Comments\\n- Happy Monday. Really feels like it's been sinking in that part time work has been the good move. Fridays off makes the week feel better. [...] - Unrequested update: I posted last month about whether I should keep my ESPP shares or sell immediately to lock in the gains even if it meant more taxes. I did liquidate everything and the stock is down 13% since then, so I already profited even after considering the higher tax rate.",
-        "score": 0.18316986,
-        "raw_content": "# Daily FI discussion thread - Monday, July 13, 2026\\n\\n## Post details\\nr/financialindependence | 40 upvotes | 306 comments | Posted by u/AutoModerator on 2026-07-13T08:00:17.846Z\\n\\n## Content\\nPlease use this thread to have discussions which you don't feel warrant a new post to the sub. While the Rules for posting questions on the basics of personal finance/investing topics are relaxed a little bit here, the rules against memes/spam/self-promotion/excessive rudeness/politics still apply! Have a look at the FAQ for this subreddit before posting to see if your question is frequently asked. Since this post does tend to get busy, consider sorting the comments by \"new\" (instead of \"best\" or \"top\") to see the newest comments.\\n\\n## Top Comments\\n- Happy Monday. Really feels like it's been sinking in that part time work has been the good move. Fridays off makes the week feel better.\\n- Has anyone successfully negotiated a deferred start date of 2-3 months after receiving a job offer? I'm in advanced rounds with a company that has been on my radar for a while, I know a lot about them and their work is genuinely exciting. I'd be taking a 10-15% cut on my current base pay of $200k (which I don't mind, my current job despite high pay is turning into a bit of a dead end), but the bigger problem is I have a vesting event in November where I earn $90k before taxes in company RSUs. I'm hoping to shoot my shot and negotiate as best as I can to start after Thanksgiving even with a mid-August offer, but I don't know if it will work out.\\n- Unrequested update: I posted last month about whether I should keep my ESPP shares or sell immediately to lock in the gains even if it meant more taxes. I did liquidate everything and the stock is down 13% since then, so I already profited even after considering the higher tax rate.\\n- What a Monday. Thought over the weekend that switching jobs to an adjacent team might be the fresh air I need. Mentioned to my boss and within an hour had the approval of everyone who matters, just waiting on a rubber stamp from the powers that be. Just good timing for the current needs. Also had the solution to a difficult project problem just come to mind which helps me wrap up the last bit of work for the new team before swapping. And the interview that I thought I flubbed last week actually did go well enough that I'm heading to the next round. So that front is still a real possibility. I'm low on sleep from a tired baby but feeling pretty good. If the new job offer does come through I'll feel a little bad for adding complexity to the sister team. But hard to say no to 50% raises.\\n- TiL it is a good idea to turn the knobs on the hot/cold feeds into your washing machine once in a while. Mine hadn't been turned in over a decade and it took a lot of penetrating oil and angry swearing strength to break them loose."
+        "url": "https://www.reddit.com/r/nova/comments/1wqaije/any_recommendations_for_furniture_stores_im",
+        "title": "Any recommendations for furniture stores. I'm looking to ...",
+        "content": "Ikea and Costco are probably at the top in terms of value. I would stick to their more expensive stuff though. Above the upper end of Ikea",
+        "score": 0.2798831,
+        "raw_content": null,
+        "id": "879f43-02"
       },
       {
-        "url": "https://www.reddit.com/r/economy/comments/1uh8916/theres_a_new_type_of_inflation_to_worry_about",
-        "title": "There's a new type of inflation to worry about : r/economy",
-        "content": "35 votes, 15 comments. This week's market charts include a newcomer, showing inflation in electronics arising from the AI boom and soaring demand for…",
-        "score": 0.14887464,
-        "raw_content": null
+        "url": "https://www.reddit.com/r/SofaSnobs/comments/1wp39j8/anyone_who_actually_works_in_design_or_home_decor",
+        "title": "Anyone who actually works in design or home decor, what ...",
+        "content": "Sherrill, Harden, Century, and Baker are just some examples of brands that are known for kiln-dried hardwood frames, Try Benchmade Modern - made in US",
+        "score": 0.26421046,
+        "raw_content": null,
+        "id": "df2e66-03"
       },
       {
-        "url": "https://www.reddit.com/r/Bogleheads/comments/1uuqjew/do_official_inflation_stats_seem_divorced_from",
-        "title": "Do official inflation stats seem divorced from the real costs of living?",
-        "content": "# Do official inflation stats seem divorced from the real costs of living?\\n\\n## Post details\\nr/Bogleheads | 240 upvotes | 186 comments | Posted by u/SuperSkew on 2026-07-12T20:26:35.754Z [...] - Short answer: you're not crazy, but it's complicated. There are multiple ways inflation gets measured. The Fed uses the Personal Consumption Expenditures (PCE) Index . This tracks the prices of goods and services that all consumers buy. Key point here is that the PCE allows for shifting consumer behaviors. So if you can buy a cheaper sorta-like-it product instead, then inflation isn't so high, doncha know. The PCI is consistently lower than the more commonly-used CPI, so the authority meant to keep inflation low uses a metric that consistently under-assesses inflation for the same products. Chained CPI is a lot like the PCE, and this is what determines how the IRS adjusts tax brackets every year. So over time, this tends to nudge people into higher tax brackets and gets them paying more [...] - My insurance (health, auto and home) are up way more. My property taxes up way more. Home repairs way more. Utilities up way more. Food reflects inflation rate for food BUT I also buy cheaper stuff now. I rarely drive so cant comment on gas as fill up 2-3x a year at most.\\n- Agreed. Costs have gone up way more than 3%. My homeowners went up 40% last year!\\n- None\\n- \"If we don't measure the numbers, we won't have bad numbers!\"",
-        "score": 0.13828741,
-        "raw_content": "# Do official inflation stats seem divorced from the real costs of living?\\n\\n## Post details\\nr/Bogleheads | 240 upvotes | 186 comments | Posted by u/SuperSkew on 2026-07-12T20:26:35.754Z\\n\\n## Content\\nOfficial inflation rates have bounced around 3% the past year, just popped above 4%, according the BLS. Does that reflect reality for most people's total expenses? Not just for the hypothetical \"basket of goods,\" but for individuals' actual expenses to live their lives? We all know about gas and food prices. But here are examples that make the rate seem off: Auto, homeowners, and umbrella insurance going up 10%, 20% or more. Medicare premiums up 9%, while SS COLA up only 2.5%. The coffee I like best was $12/bag a few months ago, suddenly $19. Blood tests that used to be a few bucks no longer covered by my same insurance plan now running a few hundred bucks each. Even Netflix going from $10 to $12/month for basic is a 20% jump. The natural gas monopoly in my area tacked a $35 \"weather normalization\" charge in January because temps were mild and demand was low. Property taxes, toll rates, I could keep going. There are at least two reasons this isn't just a theoretical question. If you are using financial modeling software or working with a financial planner, your inflation-rate assumption makes a huge difference in your results. But BLS inflation rate doesn't capture how much people's expenses are actually rising, what does that do to the validity of your plan? And any investment where the CPI comes into play, like TIPS, require an accurate accounting of inflation to deliver what they promise. What do the Bogleheads think?\\n\\n## Top Comments\\n- Mod note: this would probably be a good time to remind everyone that sub rules do not allow for the promotion of conspiracy theories or other forms of misinformation.\\n- I don't believe the Feds numbers. We know the official number excludes \"non-core\" items of food and energy. My thought on that is who lives in an exclusively \"core\" world? Everyone I know lives in world where buying food and various forms of energy sources aren't optional. Some portion of our inflation is tied to deficit spending. There is debate on how much. Perhaps not all but definitely more than zero.\\n- The problem is we haven't had a bad recession in a very long time. Like most young people have never even experienced one in their adult life. When one does happen, and it will, everyone stops buying stuff and prices plummet. Problem is very few will buy at the new cheaper price, so the price plummets more. The companies are losing money so they lay employees off. More price pressure because these people lost their paychecks. I have lived thru them and I can say what we are experiencing today, a boom time, is better than a recession. Yes prices are high but it's better than all the desperation and fear of a recession. 2007 was BAD and I hope I never experience that again\\n- Stats seem divorced from what we feel, in part because they measure different things. Inflation measures rate of change, people feel absolute levels. We could have 0% inflation for the next year, and most of us would still feel the sting of inflation, because prices didn't go back down to where they were before. The calm cool mathematics of inflation are divorced from the emotional feeling of remembering when things used to be cheaper. It's also divorced because some prices (increasing or decreasing) are more in our face than others. Home owners / renters insurance? The homeowners is buried in your escrow payment, you don't even see a line item of it unless you look. Rent? 1-12 month lag due to leases. Price of homes? how often do people buy a new home? Price of a new laptop computer? You buy one of those every 3-5 years. Bread, milk, eggs, fast food? See that fequently. Gas? Price is staring at you from every street corner.\\n- Im not from US. Here in Europe, i think the rates are similar. I havent tracked it precisely, but i \"feels\" right with inflation numbers. We all know about gas and food prices. Do we? My friends from Texas keep telling me groceries got cheaper. Maybe its dependant on which state you are on? Auto, homeowners, and umbrella insurance going up 10%, 20% or more. Home prices have exeeded average CPI numbers. But its not the only spending people have. Auto has actually dropped down the last few years after the covid shortage bump. Especially the used market.\\n- My insurance (health, auto and home) are up way more. My property taxes up way more. Home repairs way more. Utilities up way more. Food reflects inflation rate for food BUT I also buy cheaper stuff now. I rarely drive so cant comment on gas as fill up 2-3x a year at most.\\n- Agreed. Costs have gone up way more than 3%. My homeowners went up 40% last year!\\n- None\\n- \"If we don't measure the numbers, we won't have bad numbers!\"\\n- Short answer: you're not crazy, but it's complicated. There are multiple ways inflation gets measured. The Fed uses the Personal Consumption Expenditures (PCE) Index . This tracks the prices of goods and services that all consumers buy. Key point here is that the PCE allows for shifting consumer behaviors. So if you can buy a cheaper sorta-like-it product instead, then inflation isn't so high, doncha know. The PCI is consistently lower than the more commonly-used CPI, so the authority meant to keep inflation low uses a metric that consistently under-assesses inflation for the same products. Chained CPI is a lot like the PCE, and this is what determines how the IRS adjusts tax brackets every year. So over time, this tends to nudge people into higher tax brackets and gets them paying more in taxes, because it under-estimates purchasing power for like products (because you could just eat a cheaper meat/grain/veggie/fruit). This also drives federal food assistance program adjustments every year. By law, federal employee and military pay is supposed to be adjusted with the Employment Cost Index , another measure of inflation that tracks private-sector wage growth. In practice, the President and Congress often override the statutory method to make larger or smaller wage increases. Most economists, federal use the Consumer Price Index (CPI) and variations of it, which tracks a fixed basket of goods; the variations focus on specific population groups. Social Security uses the CPI-W, which tracks household goods purchased by people whose income comes mostly from wages. There are other inflation measures, like the Producer Price Index (PPI) which tracks wholesale prices, and the GDP Deflator, which tracks prices of all final goods and services produced in the country (no set basket; it includes everything). All of these inflation measures have their flaws, and since purchasing power only goes down (and this is on purpose), prices always go up and never really come down, at least not in the aggregate. When there's been a recent spike in inflation, it takes years to adjust to the new normal, even when inflation is low... and inflation hasn't really been low since 2019-2020."
-      },
-      {
-        "url": "https://www.reddit.com/r/dataisbeautiful/comments/1ufa255/oc_why_everything_feels_expensive_in_the_us_by",
-        "title": "[OC] Why \"everything feels expensive\" in the U.S. by CPI category",
-        "content": "# [OC] Why \"everything feels expensive\" in the U.S. by CPI category\\n\\n## Post details\\nr/dataisbeautiful | 766 upvotes | 81 comments | Posted by u/Dry-Town7979 on 2026-06-25T13:28:55.845Z\\n\\n## Content\\nNone [...] - Not sure where the numbers come from because so many things are at least doubled in price. Even cheap Walmart brands are expensive.\\n- Surprised housing or rent isn't on here\\n- Now, let's do over the past five years.\\n- Corporate greed, there, that's why Or corrupt politicians bought out by those backed by corporate greed\\n- Lets see the delta over the last 3 years, and broken down by state.\\n- People don't buy a CPI basket they buy gasoline or electricity, groceries or housing so when thr necessities rise faster than the average inflation feels higher than the head number even if math is correct [...] ## Top Comments\\n- Thank you for your Original Content , u/Dry-Town7979 ! Here is some important information about this post: View the author's citations View other OC posts by this author Remember that all visualizations on r/DataIsBeautiful should be viewed with a healthy dose of skepticism. If you see a potential issue or oversight in the visualization, please post a constructive comment below. Post approval does not signify that this visualization has been verified or its sources checked. Not satisfied with this visual? Think you can do better? Remix this visual with the data in the author's citation. I'm open source | How I work",
-        "score": 0.10140263,
-        "raw_content": "# [OC] Why \"everything feels expensive\" in the U.S. by CPI category\\n\\n## Post details\\nr/dataisbeautiful | 766 upvotes | 81 comments | Posted by u/Dry-Town7979 on 2026-06-25T13:28:55.845Z\\n\\n## Content\\nNone\\n\\n## Top Comments\\n- Thank you for your Original Content , u/Dry-Town7979 ! Here is some important information about this post: View the author's citations View other OC posts by this author Remember that all visualizations on r/DataIsBeautiful should be viewed with a healthy dose of skepticism. If you see a potential issue or oversight in the visualization, please post a constructive comment below. Post approval does not signify that this visualization has been verified or its sources checked. Not satisfied with this visual? Think you can do better? Remix this visual with the data in the author's citation. I'm open source | How I work\\n- I notice it doesnt say alcoholic drinks. Maybe because where i live alcoholic drinks have gone down in price, at least the ones i drink have. Which is not good for an alcoholic, i can get a 25oz malt liquor can at 8.1% alcohol (twice as big and twice as strong as a Bud Light, so one can = 4 Bud Lights) for like 1.33. So i can get trashed on 4-5 dollars. Its literally cheaper than eating or going out or socializing if you arent just sitting around silently staring at your phones with your friends. The economy is coming to a halt, but here drink up! Let them eat cake has become let them get drunk.\\n- Crazy that the Gulf states don't have a backup plan to the Straight.\\n- For people feeling the gloom we don't have the direct power over fuel prices but using whatever land or space available to grow food is something we can all do. During WWII there were victory gardens or whatever (someone fact check this I'm in a hurry). The idea being while food is in short supply during a war all homeowners who can grow food should grow food. It's not just cost or food but specifically fruits and vegetables, especially organic, is getting way out of access when it's as important as ever we nutrition ourselves and get those antioxidants and fiber. Do it if not for yourself for your community. Grow, share, learn from friends and family, teach, celebrate, embrace pollinators. There is no hope showing up. We are the hope. You are the hope.\\n- Not sure where the numbers come from because so many things are at least doubled in price. Even cheap Walmart brands are expensive.\\n- Surprised housing or rent isn't on here\\n- Now, let's do over the past five years.\\n- Corporate greed, there, that's why Or corrupt politicians bought out by those backed by corporate greed\\n- Lets see the delta over the last 3 years, and broken down by state.\\n- People don't buy a CPI basket they buy gasoline or electricity, groceries or housing so when thr necessities rise faster than the average inflation feels higher than the head number even if math is correct"
-      },
-      {
-        "url": "https://www.reddit.com/r/MiddleClassFinance/comments/1ur33kl/95_percent_say_us_in_affordability_crisis_survey",
-        "title": "95 percent say US in affordability crisis: Survey",
-        "content": "# 95 percent say US in affordability crisis: Survey\\n\\n## Post details\\nr/MiddleClassFinance | 2243 upvotes | 277 comments | Posted by u/Abject-Pick-6472 on 2026-07-08T19:34:36.528Z\\n\\n## Content\\nNone [...] - The inflation will continue until morale improves\\n- Some people blame capitalism, which is erroneous. Capitalism leads to affordability for the masses. That's why we had so many affordable cars, houses, appliances, etc. in the mid-20th century. Then the government regulations started coming and growing exponentially. That's why things are no longer affordable; because the regulations conflict with the free market. In other words, capitalism is greatly being interfered with\\n- Thank the Fed. And they're about to make it worse.\\n- I'm an engineer and have 1 dependent. I wouldn't be able to afford my modest mortgage and the rest of my bills if I lost the supplementary $1,800/month I get from the VA. It's rough out here. I am lucky. [...] ## Top Comments\\n- I was in graduate school for a long time and am used to living frugally and I feel like my lifestyle has downgraded since graduation to be a psychologist. This means limited eating out at low cost local restaurants to once or twice a month, meal prepping from mostly scratch, shopping only at Aldi, no drinking at home or out, used paid off car, little fresh fruit or meat, used clothing/jewelry, etc. I'm finding that's not enough and I make nearly 90k as a single woman in Chicago. Between rent, the cost of running a car in a large city (tires and new car parts have skyrocketed), I'm looking at cutting things like seltzer water",
-        "score": 0.08059611,
-        "raw_content": "# 95 percent say US in affordability crisis: Survey\\n\\n## Post details\\nr/MiddleClassFinance | 2243 upvotes | 277 comments | Posted by u/Abject-Pick-6472 on 2026-07-08T19:34:36.528Z\\n\\n## Content\\nNone\\n\\n## Top Comments\\n- I was in graduate school for a long time and am used to living frugally and I feel like my lifestyle has downgraded since graduation to be a psychologist. This means limited eating out at low cost local restaurants to once or twice a month, meal prepping from mostly scratch, shopping only at Aldi, no drinking at home or out, used paid off car, little fresh fruit or meat, used clothing/jewelry, etc. I'm finding that's not enough and I make nearly 90k as a single woman in Chicago. Between rent, the cost of running a car in a large city (tires and new car parts have skyrocketed), I'm looking at cutting things like seltzer water\\n- The upper class is doing just fine; everyone else—the bottom 80%—is left holding the bag. Based on economic trends and the available body of data , that is likely to continue uninterrupted for the foreseeable future.\\n- Well when you make it impossible to get a job the economy kind of suffers. I'm north of 51 but under 53 and the amount of interviews I've went on I could count on one hand that panned out to anything. I can't get higher due to my age and there's nothing I can do about it. I can't afford anything I carry mental illness and this entire reality sucks. I'm trying my best but when the door is closed every entrance you walk through it gets deflating.\\n- Imagine if they came here to The Netherlands and saw how things are so much more expensive and the pay is so much lower.\\n- The inflation will continue until morale improves\\n- Some people blame capitalism, which is erroneous. Capitalism leads to affordability for the masses. That's why we had so many affordable cars, houses, appliances, etc. in the mid-20th century. Then the government regulations started coming and growing exponentially. That's why things are no longer affordable; because the regulations conflict with the free market. In other words, capitalism is greatly being interfered with\\n- Thank the Fed. And they're about to make it worse.\\n- I'm an engineer and have 1 dependent. I wouldn't be able to afford my modest mortgage and the rest of my bills if I lost the supplementary $1,800/month I get from the VA. It's rough out here. I am lucky.\\n- The K shaped economy is real. In my zip code every high end Resturant is full of people even in the middle of the week, and I made hot dogs and Mac n cheese for dinner…..\\n- Wasn't it reported for like 2-3 years before this recession that we were due for a major correction though? I'm not a fan of the current administration to be clear. But imo we were living above our means for sure"
-      },
-      {
-        "url": "https://www.reddit.com/r/NoStupidQuestions/comments/1uh66i2/how_are_people_buying_things_with_prices",
-        "title": "How are people buying things with prices skyrocketting?",
-        "content": "(quick vent) I make decent wage, (20/hour), I live in my means, I have not bought a new laptop in 4-5 years, I have 10+ year old gaming mouse, old headset,",
-        "score": 0.053705383,
-        "raw_content": null
-      },
-      {
-        "url": "https://www.reddit.com/r/vinted/comments/1udellj/children_are_being_sold_on_vinted",
-        "title": "children are being sold on vinted",
-        "content": "# children are being sold on vinted\\n\\n## Post details\\nr/vinted | 1946 upvotes | 736 comments | Posted by u/hell0k1ttycum on 2026-06-23T11:32:32.772Z\\n\\n## Content\\nhave yall noticed that those kid toys are being sold for more than 10k, and the description is always like 150cm, healthy, boy/girl etc… vinted does nothing about this. idk if this is a new scam or ppl are actually selling kids but this is sick and vinted needs to be boycotted [...] ## Top Comments\\n- I feel physically sick The Mario doll. Translates to good health/smells good. There ages and heigh are in the description. Horrible! I am now deleting vinted.\\n- are yall being so for real rn 😐 why would this even possibly be true\\n- Who has a large social media following or knows someone who can post and call them out...smh\\n- It says plush toys for boys and girls, what makes you think its something other then that, just curious\\n- OMG! Please do not waste law enforcements time with effing nonsense. The amount of people acting like this is real is insane! [...] - I feel like there's literally no way this could be real. The dark web & black market exists for a reason. I feel like this is too easy, too traceable, & doesn't really make sense when you think about it. How the hell are they shipping a child in place of a stuffed animal? Won't they notice the weight difference? Also how are they shipping them…? In a box for SpeedX to take??? Edit to add: I've heard about this from a few people who know I am a seller and we've all talked about how it doesn't make sense and it's also starting to go viral now. I've seen these posts on IG too",
-        "score": 0.01802942,
-        "raw_content": "# children are being sold on vinted\\n\\n## Post details\\nr/vinted | 1946 upvotes | 736 comments | Posted by u/hell0k1ttycum on 2026-06-23T11:32:32.772Z\\n\\n## Content\\nhave yall noticed that those kid toys are being sold for more than 10k, and the description is always like 150cm, healthy, boy/girl etc… vinted does nothing about this. idk if this is a new scam or ppl are actually selling kids but this is sick and vinted needs to be boycotted\\n\\n## Top Comments\\n- I feel physically sick The Mario doll. Translates to good health/smells good. There ages and heigh are in the description. Horrible! I am now deleting vinted.\\n- are yall being so for real rn 😐 why would this even possibly be true\\n- Who has a large social media following or knows someone who can post and call them out...smh\\n- It says plush toys for boys and girls, what makes you think its something other then that, just curious\\n- OMG! Please do not waste law enforcements time with effing nonsense. The amount of people acting like this is real is insane!\\n- I feel like there's literally no way this could be real. The dark web & black market exists for a reason. I feel like this is too easy, too traceable, & doesn't really make sense when you think about it. How the hell are they shipping a child in place of a stuffed animal? Won't they notice the weight difference? Also how are they shipping them…? In a box for SpeedX to take??? Edit to add: I've heard about this from a few people who know I am a seller and we've all talked about how it doesn't make sense and it's also starting to go viral now. I've seen these posts on IG too\\n- Maybe im wrong but wouldn't criminals that sell childern sell them on dark web or somewhere like that? I mean what kind of a criminal would sell childern on vinted, the app that is very used and seen. I think that MAYBE there were some real cases MAYBE but i really think that people are trolling now and make fake vinted posts since i found out some were just few days old and what criminal would post it when it got to the police already. Just my opinion though. I really hope it's not true and if it is...i pray for these poor childern to be okay.\\n- No, they are not. Mods I wish you'd take this down. It only fuels conspiracy theories, the mentally unwell and people who have no clue about the actual dark web. It's a disservice and harmful to those actually trafficked.\\n- Whether or not this real, I don't know. But it's hard to take you seriously with such a disgusting user name.\\n- It's been proven fake, by German and European police, not to mention trafficking specialists. It's unlikely any child trafficker would sell an actual child in a sight like vinted as it's much too risky, and they all share the same pattern and platform in description which is also unlikely."
-      },
-      {
-        "url": "https://www.reddit.com/r/amazonprime/comments/1ujcff6/order_cancelled_for_multiple_violations_of_return",
-        "title": "Order cancelled for 'multiple violations of return and refund policy'",
-        "content": "- I have found that they are not reasonable and in fact they are rude. I was dropped from their Vine program for suspicious activity and or receiving goods or gift cards in exchange for good reviews. I have never had a relationship with a seller nor have I ever received any product for reviews, but after sending many emails in my defense, I got the same form reply. I was dropped from the program and I am no longer able to review my own purchases. I had just renewed my membership when this happened so I am on the hook with Amazon for a year, but I no longer buy anything from them. I have found that I can buy the same items from Walmart+ and sometimes I can buy for less money. I will not reward a company that cares so little about their loyal customers. In your case, they have obviously [...] - Don't email them back or give them a your information. Call or email Amazon.com directly in case this is a scam. Sounds this is what is going on, and they just want your info so they can hack into it and scam you. Prayers & blessings for you. 😎🙏🥲💜\\n- They did something similar like this to me about 6 months ago, but mine didnt say it couldnt be reversed it said it was restricted until further review then went back to normal.\\n- Customer service can't help you. I worked there up until last November. I'd start looking at Walmart if I were you. Good luck. [...] # Order cancelled for 'multiple violations of return and refund policy'\\n\\n## Post details\\nr/amazonprime | 135 upvotes | 204 comments | Posted by u/pulse_demon96 on 2026-06-30T02:21:23.025Z\\n\\n## Content\\nI haven't returned or requested a refund for anything in over a year, and I'm a Prime for Young Adults member. I got similar emails after my Prime Day orders titled 'Your Amazon .com inquiry' saying 'We have restricted your account to digital purchases only,' but those Prime Day orders still shipped. Now I ordered something else and instantly got this email cancelling it. What the hell is going on?! Read more",
-        "score": 0.011254362,
-        "raw_content": "# Order cancelled for 'multiple violations of return and refund policy'\\n\\n## Post details\\nr/amazonprime | 135 upvotes | 204 comments | Posted by u/pulse_demon96 on 2026-06-30T02:21:23.025Z\\n\\n## Content\\nI haven't returned or requested a refund for anything in over a year, and I'm a Prime for Young Adults member. I got similar emails after my Prime Day orders titled 'Your Amazon .com inquiry' saying 'We have restricted your account to digital purchases only,' but those Prime Day orders still shipped. Now I ordered something else and instantly got this email cancelling it. What the hell is going on?! Read more\\n\\n## Top Comments\\n- I got the same email. I have had some returns thorough and a few refunds due to some theft in the area,but I followed correct procedure,reported it to the police and sent a police report that Amazon verified for each item.\\n- That's ridiculous, I return items but only for valid reasons. Example, they shipped me an outfit for my son for the 4th of July. The top was 2T (correct) and the shorts 4T (wrong) it's getting returned tomorrow. I buy a ton yearly and only return a small percentage of it. I better not ever get that email. Can you just make a new account?\\n- Possible scam?\\n- I'm not surprised. At the beginning of the recent quarter there was notice made publicly that accounts making too many returns would face a ban. Apparently that is happening and to be expected. This was a problem due to mostly women of the cause. Women tend to buy an outfit, wear it once for an occasion and then return it. It costs Amazon and 3rd party retailers too much money because often returns comes back not qualified for resale.\\n- Could this be a phishing email? Be careful responding to an email or phone number provided. Only communicate with Amazon after you change your password, log out, log in phone restart. Then choose the call me option on the customer service option. Go to your account and get customer service to call you to discuss this. You should have your account pulled up with screen shots on your camera before anything disappear. Photos of all all orders this year and possibly last year And screen shots of your return orders. Also, change your password. I hope this helps.\\n- Don't email them back or give them a your information. Call or email Amazon.com directly in case this is a scam. Sounds this is what is going on, and they just want your info so they can hack into it and scam you. Prayers & blessings for you. 😎🙏🥲💜\\n- They did something similar like this to me about 6 months ago, but mine didnt say it couldnt be reversed it said it was restricted until further review then went back to normal.\\n- Customer service can't help you. I worked there up until last November. I'd start looking at Walmart if I were you. Good luck.\\n- Is there anyone else on the account with you? You said you have a prime for Young Adults membership. So if someone else is the primary account holder, and they are doing shady returns. If you aren't the primary account holder your account could get cancelled too I suppose.\\n- I have found that they are not reasonable and in fact they are rude. I was dropped from their Vine program for suspicious activity and or receiving goods or gift cards in exchange for good reviews. I have never had a relationship with a seller nor have I ever received any product for reviews, but after sending many emails in my defense, I got the same form reply. I was dropped from the program and I am no longer able to review my own purchases. I had just renewed my membership when this happened so I am on the hook with Amazon for a year, but I no longer buy anything from them. I have found that I can buy the same items from Walmart+ and sometimes I can buy for less money. I will not reward a company that cares so little about their loyal customers. In your case, they have obviously made a mistake. In my case, I am not sure if it was a faulty algorithm or an unhappy seller, but either way I was falsley assused of something I did not do. I did not care about the Vine program, but not being able to even review my own products was a bridge too far."
+        "url": "https://www.reddit.com/r/HENRYUK/comments/1wrog07/good_furniture_brands",
+        "title": "Good furniture brands? : r/HENRYUK",
+        "content": "Hi everyone, we just moved here from the US and I need some recommendation for a good furniture brand in the UK. I tried Dunelm (which seems to be loved",
+        "score": 0.2571984,
+        "raw_content": null,
+        "id": "0e4fa2-04"
       }
     ],
     "news": [
       {
-        "url": "https://tradingeconomics.com/united-states/retail-sales",
-        "title": "US Retail Sales",
-        "content": "## Retail sales in the US rose 0.2% mom in June 2026, following an upwardly revised 1% rise in May and in line with expectations. Increases were seen in sales at motor vehicle & part dealers (1.9%), nonstore retailers (1.9%), sporting goods, hobby, musical instrument (1.3%), electronics & appliances (0.8%), building materials (0.1%), general merchandise stores (0.1%) and food & drinking places (0.1%). ## Retail Sales in the United States increased 0.20 percent in June of 2026 over the previous month. | Retail Sales Clothing Stores MoM | -0.30 | 0.90 | percent | Jun 2026 |. | Retail Sales Electronics Stores MoM | 0.80 | -0.20 | percent | Jun 2026 |. | Retail Sales Ex Autos MoM | -0.20 | 1.00 | percent | Jun 2026 |. | Retail Sales Furniture Stores MoM | 0.00 | 1.60 | percent | Jun 2026 |. | Retail Sales MoM | 0.20 | 1.00 | percent | Jun 2026 |.",
-        "score": 0.533714,
-        "raw_content": null
+        "url": "https://www.marketresearchfuture.com/reports/furniture-market-7625",
+        "title": "Furniture Market Analysis, Revenue, Trends, Forecast - 2035",
+        "content": "The global Furniture Market reached an estimated USD 740.20 billion in 2025 and is projected to grow from USD 783.13 billion in 2026 to USD 1,300.79 billion by 2035, registering a CAGR of 5.80% during the forecast period (2026–2035). This expansion is anchored in accelerating millennial and Gen-Z homeownership cycles that lagged historical norms by nearly a decade, combined with a wave of hybrid-work office reconfigurations triggered by post-pandemic workplace policy shifts. The U.S. [...] # Furniture Market (2026 - 2035)\\n\\nFurniture Market Size, Share, Industry Trend & Analysis Research Report: By Application (Home Furniture, Office Furniture, Hospitality Furniture, Educational Furniture, Others), By Material (Wood, Metal, Plastic & Polymer, Others), By Price Range (Economy, Mid-Range, Premium), By Distribution Channel (B2C / Retail, B2B / Project) - Forecast to 2035\\n\\nForecast Period\\n\\n2025 Market Size\\n\\nUSD 740.20 Billion (2025)\\n\\n2035 Market Size\\n\\nUSD 1,300.79 Billion (2035) [...] April 06, 2026\\n\\nNA\\n\\nNorth America Furniture Market\\n\\nJuly 31, 2026\\n\\nCW\\n\\nChina Wood Furniture Market\\n\\nApril 06, 2026\\n\\nNA\\n\\nNorth America Furniture Market\\n\\nJuly 31, 2026\\n\\n#### Customer Stories\\n\\nClient 01\\n\\n“This is really good guys. Excellent work on a tight deadline. I will continue to use you going forward and recommend you to others. Nice job”\\n\\nMojaye Rail Fabrication Limited\\n\\nNoah Malgeri Co-Founder\\n\\nClient 02",
+        "score": 0.8965509,
+        "raw_content": null,
+        "id": "a65673-00"
       },
       {
-        "url": "https://www.mordorintelligence.com/industry-reports/united-states-ecommerce-market",
-        "title": "US E-commerce Market Size, Share & 2031 Growth Trends Report",
-        "content": "# US E-commerce Market Size & Share Analysis - Growth Trends and Forecast (2026 - 2031). The United States E-Commerce Market Report is Segmented by Business Model (B2C, B2B), Device Type (Smartphone / Mobile, Desktop and Laptop, Other Device Types), Payment Method (Credit / Debit Cards, Digital Wallets, BNPL, Other Payment Method), B2C Product Category (Beauty and Personal Care, Consumer Electronics, Fashion and Apparel, and More). The Market Forecasts are Provided in Terms of Value (USD). ## US E-commerce Market Size and Share. ## US E-commerce Market Analysis by Mordor Intelligence. US ecommerce market size in 2026 is estimated at USD 1,381.6 billion, growing from 2025 value of USD 1,250 billion with 2031 projections showing USD 2,279.2 billion, growing at 10.53% CAGR over 2026-2031. * By B2C product category, consumer electronics led with 24.30% of US ecommerce market share in 2025, while food & beverages is projected to expand at a 14.75% CAGR through 2031.",
-        "score": 0.35723165,
-        "raw_content": null
+        "url": "https://www.furnilytics.com/market/us-furniture-market-hub",
+        "title": "United States Furniture Market | Monthly Industry Statistics & Latest Data",
+        "content": "Despite the current downturn, product search trends are expanding, with an index of 141.6 points, although this remains 11.9% below the peak observed in 2026 ( This divergence suggests that while immediate retail demand may be under pressure, consumer interest in furniture products is still present, potentially signaling a recovery phase in the longer term as market conditions stabilize.\\n\\nUS Furniture Retail Market Size (\\n\\nFurnilytics © [...] In the context of the United States' role as an import country, the exchange rate dynamics can significantly impact demand and supply conditions. The recent exchange rate values, including 1.17064 and 1.16732 USD per EUR in 2026 ( suggest a consistent trend that may support stable import volumes, thereby affecting overall market consumption and production strategies.\\n\\nUSD per EUR Exchange Rate (\\n\\nFurnilytics ©\\n\\nLatest value: 1.2 in 2026-09; range: 1.0 in 2022-10 to 1.2 in 2018-02. [...] United States Housing Market Activity (\\n\\nFurnilytics ©\\n\\nLatest value: 63.4 index in 2026-07; range: 57.2 index in 2024-03 to 118.9 index in 2022-04.\\n\\n## Industry & Production",
+        "score": 0.8533396,
+        "raw_content": null,
+        "id": "cc89ae-01"
       },
       {
-        "url": "https://www.bls.gov/news.release/cpi.htm",
-        "title": "Consumer Price Index News Release - 2026 M06 Results",
-        "content": "| Other miscellaneous foods([4](https://www.bls.gov/news.release/cpi.htm#cpipress7.f.4 \"Click to jump to footnotes at bottom of the table\")) | 0.568 | 4.3 | 0.024 | 1.02 | L-Mar. 2026 | 5.2 |. | Vehicle accessories other than tires([4](https://www.bls.gov/news.release/cpi.htm#cpipress7.f.4 \"Click to jump to footnotes at bottom of the table\")) | 0.054 | 3.1 | 0.002 | 1.45 | L-Mar. 2026 | 4.6 |. | Motor vehicle fees([4](https://www.bls.gov/news.release/cpi.htm#cpipress7.f.4 \"Click to jump to footnotes at bottom of the table\")) | 0.510 | 3.6 | 0.019 | 0.67 | L-Mar. 2026 | 3.6 |. | Postage and delivery services([4](https://www.bls.gov/news.release/cpi.htm#cpipress7.f.4 \"Click to jump to footnotes at bottom of the table\")) | 0.066 | 14.6 | 0.008 | 0.32 | S-Apr. 2026 | 9.6 |. | Haircuts and other personal care services([4](https://www.bls.gov/news.release/cpi.htm#cpipress7.f.4 \"Click to jump to footnotes at bottom of the table\")) | 0.656 | 4.4 | 0.029 | 0.55 | L-Mar. 2026 | 4.5 |.",
-        "score": 0.34099028,
-        "raw_content": null
+        "url": "https://www.mordorintelligence.com/industry-reports/home-office-furniture-market",
+        "title": "Home Office Furniture Market Report | Industry Analysis, Size & Trends Overview",
+        "content": "Image © Mordor Intelligence. Reuse requires attribution under CC BY 4.0.\\n\\n## Home Office Furniture Market Analysis by Mordor Intelligence\\n\\nThe Home Office Furniture market size is expected to grow from USD 38.40 billion in 2025 to USD 41.21 billion in 2026 and is forecast to reach USD 58.63 billion by 2031 at 7.31% CAGR over 2026-2031. [...] ## Key Questions Answered in the Report\\n\\nHow large is the Home Office Furniture market in 2026? \\n\\nThe Home Office Furniture market size is valued at USD 41.21 billion in 2026.\\n\\nWhat is the current Home Office Furniture Market size? \\n\\nIn 2026, the Home Office Furniture Market size is expected to reach USD 41.21 billion.\\n\\nWhat is the expected growth rate for Home Office Furniture through 2031? \\n\\nThe market is projected to expand at a 7.31% CAGR, reaching USD 58.63 billion by 2031 at 7.31 % [...] |  |  |\\n --- | --- |\\n| Study Period | 2020 - 2031 |\\n| Market Size (2026) | USD 41.21 Billion |\\n| Market Size (2031) | USD 58.63 Billion |\\n| Growth Rate (2026 - 2031) | 7.31 % |\\n| Fastest Growing Market | Asia Pacific |\\n| Largest Market | North America |\\n| Market Concentration | Medium |\\n| Major Players \\\\Disclaimer: Major Players sorted in no particular order  Image © Mordor Intelligence. Reuse requires attribution under CC BY 4.0. |",
+        "score": 0.85186684,
+        "raw_content": null,
+        "id": "7ce6ad-02"
       },
       {
-        "url": "https://coloradobiz.com/us-consumers-continue-spending-despite-inflation",
-        "title": "US consumers continue spending despite rising inflation",
-        "content": "Consumer spending in the U.S. rose by $156 billion in May despite inflation hitting a three-year high, showing resilience amid economic uncertainty.",
-        "score": 0.23728463,
-        "raw_content": null
+        "url": "https://www.marketdataforecast.com/market-reports/united-states-outdoor-furniture-market",
+        "title": "U.S. Outdoor Furniture Market Size, Share & Growth, 2034",
+        "content": "The U.S. outdoor furniture market was valued at USD 7 billion in 2025, is estimated to reach USD 7.44 billion in 2026, and is projected to reach USD 12.09 billion by 2034, growing at a CAGR of 6.26% from 2026 to 2034. [...] $7 Bn\\n\\nMarket Estimate, 2026\\n\\n$7.44 Bn\\n\\nMarket Forecast, 2034\\n\\n$12.09 Bn\\n\\nCAGR, 2026–2034\\n\\n6.26%\\n\\n# U.S. Outdoor Furniture Market Size, Share, Trends & Forecast (2026–2034) [...] Market Scope: Comprehensive analysis of the U.S. outdoor furniture market covering product categories, materials, end users, price ranges, retail distribution channels, and evolving lifestyle trends.\\n Market Valuation: Valued at USD 7.00 billion in 2025, estimated at USD 7.44 billion in 2026, and projected to reach USD 12.09 billion by 2034, registering a steady CAGR of 6.26% from 2026 to 2034.",
+        "score": 0.85186684,
+        "raw_content": null,
+        "id": "837ac6-03"
       },
       {
-        "url": "https://www.marketdataforecast.com/market-reports/united-states-online-shopping-market",
-        "title": "U.S. Online Shopping Market Size, Share, & Growth, 2034",
-        "content": "# U.S. Online Shopping Market Report. U.S. Online Shopping Market Size, Share, Trends & Growth Forecast Report By Product Category, By Device Type, By Payment Method, and By Country (California, Texas, New York, Florida & Rest of the United States) – Industry Analysis and Forecast, 2026 to 2034. ## **U.S. Online Shopping Market Size**. Online shopping represents a robust digital commerce ecosystem where consumers purchase goods and services through internet-connected devices. According to the U.S. Census Bureau, e-commerce sales accounted for 15.6% of total retail sales in the fourth quarter of 2023, indicating a significant integration of digital platforms into daily economic activity. The market is characterized by intense competition among established retailers and direct-to-consumer brands that utilize social media and digital marketing to reach audiences. The widespread ownership of smartphones is fuelling the growth of the U.S. online shopping market.",
-        "score": 0.21202022,
-        "raw_content": null
-      },
-      {
-        "url": "https://capitaloneshopping.com/research/online-shopping-statistics",
-        "title": "Online Shopping Statistics (2026): Growth, Sales & ...",
-        "content": "# Online Shopping Statistics. **Highlights.** Global online shopping revenue totaled an estimated **$6.42 trillion** in 2025; projections indicate that sales will exceed *$8.9 trillion* by 2030. * Online shopping represents **20.5%** of all retail sales worldwide as of 2025. * American online spending totaled **$1.43 trillion** in 2025; projections indicate that online spending will exceed *$1.98* trillion in 2030. In the first four (4) months of 2026, online shoppers in the U.S. spent a record average of $4.254 billion per day. * American online shoppers spent a total of $510.455 billion in the first 4 months of 2026. * Online shopping sales in the U.S. totaled $302.326 billion in the first fiscal quarter (Q1) of 2026, up 9.65% year-over-year (YoY). * As of 2026 Q1, e-commerce accounts for 16.8% of all retail sales in the U.S., up 5.48% YoY. * As a share of total retail revenue, 2026 Q1 e-commerce was down 8.25% from its quarterly record in 2025 Q4 (18.3%).",
-        "score": 0.18466489,
-        "raw_content": null
-      },
-      {
-        "url": "https://www.facebook.com/McKinsey/posts/consumers-are-still-opening-their-wallets-whats-changing-is-how-they-decide-what/1541054944157190",
-        "title": "Consumers are still opening their... - McKinsey & Company",
-        "content": "## McKinsey & Company's Post. ### **McKinsey & Company**. June 27 at 6:01 AM ·. Consumers are still opening their wallets. What's changing is how they decide what's worth paying for. People are making more nuanced trade-offs across value, experiences, health, and technology. Companies that understand how these priorities interact—and adapt accordingly—will be better positioned for growth. Read our latest State of the Consumer report: https://mck.co/4xWo0IK. May be a graphic of text that says 'McKinsey & Company State of the Consumer 2026 How technology and cost consciousness are changing decision making. Companies that map these priorities and adapt their offerings accordingly will be best positioned to capture loyalty and drive growth in an increasingly discerning market. Audrey Vaux PVT LTD Company Pakistan.",
-        "score": 0.11078845,
-        "raw_content": null
-      },
-      {
-        "url": "https://www.mckinsey.com/industries/consumer-packaged-goods/our-insights/state-of-consumer",
-        "title": "How four trends are reshaping consumer behavior",
-        "content": "The consumer is changing fast. Four trends reshape retail: tech-driven purchase, health revolution, experience economy, resourceful consumers.",
-        "score": 0.10108273,
-        "raw_content": null
-      },
-      {
-        "url": "https://www.instagram.com/p/Dav1MP9Ey4x",
-        "title": "Instagram",
-        "content": "Sign up for Instagram to stay in the loop. By continuing, you agree to Instagram's Terms of Use and Privacy Policy. May be an image of text that says 'CNBC/NRF RETAIL MONITOR SHOWSSALESGROWTHINJUNE JUNE SHOWS SALES GROWTH ila FCW'. June delivered another win for retail 💸📈🛍\u{fe0f} with spending up for the 9th month in a row as consumers leaned into summer sales. May be an image of carpet and text that says 'FLOORING SUMMIT ANNOUNCES 2026 AWARD WINNERS FLOORING SUSTAINABILITY SUMMIT IT Ⅲ时口 JIP 16. May be an image of carpet and text that says 'FEATURE BRAND REVIVAL ArmstrongFlooring 5 FCW F1R0 FCW FIRO. May be an image of \u{200e}buildings and \u{200e}text that says '\u{200e}MULTIFAMILY MULT GAINS LIFT OVERALL IFTOVERALLSTART RALLSTARTS STARTS FCW 1COTIESI0 سي\u{200e}'\u{200e}\u{200e}. May be an image of text. May be an image of text that says 'FEATURE WHOLEHOMEI WHOLEHOMEPERFORMANCE HOME PERFORMANCE LAMINATE'S TECHNOLOGY TT FCW 139・ 139 เรอครม'.",
-        "score": 0.04974123,
-        "raw_content": null
-      },
-      {
-        "url": "https://www.census.gov/retail/sales.html",
-        "title": "Monthly Retail Trade - Sales Report",
-        "content": "[](https://www.census.gov/retail/sales.html). [end of header](https://www.census.gov/retail/sales.html). [](https://www.census.gov/retail/sales.html). *   [Retail - Monthly](https://www.census.gov/retail/index.html)>. *   [Main](https://www.census.gov/retail/index.html). *   [About](https://www.census.gov/retail/about_surveys.html). *   [Data](https://www.census.gov/retail/data.html). *   [Technical Documentation](https://www.census.gov/retail/how_surveys_are_conducted.html). *   [Release Schedule](https://www.census.gov/retail/release_schedule.html). *   [Definitions](https://www.census.gov/retail/definitions.html). *   [FAQs](https://www.census.gov/retail/faqs.html). *   [Contact Us](https://www.census.gov/retail/contact.html). *   [Main](https://www.census.gov/retail/index.html). *   [About](https://www.census.gov/retail/about_surveys.html). *   [Data](https://www.census.gov/retail/data.html). *   [Technical Documentation](https://www.census.gov/retail/how_surveys_are_conducted.html). *   [Release Schedule](https://www.census.gov/retail/release_schedule.html). *   [Definitions](https://www.census.gov/retail/definitions.html). *   [FAQs](https://www.census.gov/retail/faqs.html). *   [Contact Us](https://www.census.gov/retail/contact.html). [](https://www.census.gov/retail/sales.html). [](https://www.census.gov/retail/sales.html). [](https://www.census.gov/retail/sales.html). [![Image 4: PDF File icon](https://www.census.gov/retail/econ_assets/economic_indicators/img/pdf_file_icon.svg)](https://www.census.gov/retail/marts/www/marts_current.pdf \"Advance Monthly Retail Trade Report\")[Advance Monthly Retail Trade Report](https://www.census.gov/retail/marts/www/marts_current.pdf \"Advance Monthly Retail Trade Report\"). [![Image 5: Microsoft Excel icon](https://www.census.gov/retail/econ_assets/economic_indicators/img/xls.svg)](https://www.census.gov/retail/marts/www/marts_current.xlsx \"Advance Monthly Retail Trade Report Tables\")[Advance Monthly Retail Trade Report Tables](https://www.census.gov/retail/marts/www/marts_current.xlsx). [](https://www.census.gov/retail/marts/www/marts_current.xlsx \"Advance Monthly Retail Trade Report Tables\"). [](https://www.census.gov/retail/mrts/www/nrelys.txt \"Reliability of Monthly Estimates\")[Reliability of Monthly Estimates](https://www.census.gov/retail/mrts/www/nrelys.txt \"Reliability of Monthly Estimates\"). [](https://www.census.gov/retail/econ_assets/page/local/external-link.svg)](https://www.census.gov/econ/www/index.html \"Business and Industry\")[Business and Industry](https://www.census.gov/econ/www/index.html \"Business and Industry\"). [](https://www.census.gov/retail/econ_assets/page/local/external-link.svg)](https://www.census.gov/retail/state_retail_sales.html \"Monthly State Retail Trade Report\"). [](https://www.census.gov/retail/econ_assets/page/local/external-link.svg)](https://www.census.gov/retail/state_retail_sales.html \"Monthly State Retail Sales\").",
-        "score": 0.029627915,
-        "raw_content": null
+        "url": "https://straitsresearch.com/report/home-office-furniture-market",
+        "title": "Home Office Furniture Market Size, Share, Growth, ...",
+        "content": "## Home Office Furniture Market Size Analysis\\n\\nThe global home office furniture market size was valued at USD 37.07 billion in 2025 and is projected to grow from USD 39.90 billion in 2026 to USD 71.91 billion by 2034, registering a CAGR of 7.64% during the forecast period from 2026 to 2034. North America dominated the home office furniture market with a market share of 36.5% in 2025. [...] | Market Metric | Details & Data (2025-2034) |\\n --- | --- |\\n| Market Size in 2025 | USD 37.07 Billion |\\n| Market Size in 2026 | USD 39.90 Billion |\\n| Market Size in 2034 | USD 71.91 Billion |\\n| CAGR | 7.64% (2026-2034) |\\n| Base Year for Estimation | 2025 |\\n| Historical Data | 2022-2024 |\\n| Forecast Period | 2026-2034 |\\n| Study Period | 2022-2034 |\\n| Dominant Region | North America |\\n| Fastest Growing Region | Asia Pacific |",
+        "score": 0.7653308,
+        "raw_content": null,
+        "id": "e4abe5-04"
       }
     ]
   }

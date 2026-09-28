@@ -42,7 +42,7 @@ Sections with the same group render side by side.
 | Type                | group                                       |
 | ------------------- | ------------------------------------------- |
 | `context`           | `"overview"`                                |
-| `metric_cards`      | `"snapshot"`                                |
+| `metric_cards`      | `"overview"`                                |
 | `chart`             | `"national"` or `"regional"` or `"finance"` |
 | `table`             | `"national"` or `"regional"` or `"finance"` |
 | `consumer_buzz`     | `"insights"`                                |
@@ -90,6 +90,7 @@ CPI and Consumer Sentiment — always separate charts, both `"national"`, render
 When stock or finance data is present:
 
 - Stock period returns (3M, 6M, YTD, 1Y) → always `chart` with `data_type: "comparison"`, group `"finance"`
+- Ignore the 1W and 1M stock period data.
 - Stock comparison metrics (RSI, consensus, P/E) → always `table`, group `"finance"`
 - Never use a `table` for period return data — always `chart`
 - Place `"finance"` sections before `"insights"` in the sections array so they render above consumer buzz and insights
@@ -116,7 +117,7 @@ When stock or finance data is present:
 {
   "type": "metric_cards",
   "title": "Key Metrics",
-  "group": "snapshot",
+  "group": "overview",
   "data": [{ "label": "Furnishings PCE", "value": "$507.3B", "status": "up", "change": "+3.5%", "benchmark": "vs $490B in 2024" }]
 }
 ```
